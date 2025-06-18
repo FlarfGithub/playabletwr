@@ -1,8 +1,8 @@
 random_faction_name = {
 	random_list = {
 		# Regional-based names
-		10 = { name = "[ROOT.GetRegion] Defense Pact" }
-		10 = { name = "[ROOT.GetContinent] Unity League" }
-		10 = { name = "[ROOT.GetArea] Cooperative" }
+		10 = { custom_effect_tooltip = random_faction_name_region_defense_pact }
+		10 = { custom_effect_tooltip = random_faction_name_continent_unity_league }
+		10 = { custom_effect_tooltip = random_faction_name_area_cooperative }
 	}
 }

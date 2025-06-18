@@ -82,7 +82,7 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.02
+                industrial_capacity_factory = 0.02
                 political_power_factor = 0.03
                 stability_factor = -0.02
             }
@@ -93,7 +93,7 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.05
+                industrial_capacity_factory = 0.05
                 political_power_factor = 0.05
                 stability_factor = -0.05
                 consumer_goods_factor = -0.02
@@ -105,11 +105,11 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.08
+                industrial_capacity_factory = 0.08
                 political_power_factor = 0.07
                 stability_factor = -0.07
                 consumer_goods_factor = -0.05
-                construction_speed_factor = 0.02
+                industrial_construction_speed_factor = 0.02
             }
         }
         
@@ -118,11 +118,11 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.10
+                industrial_capacity_factory = 0.10
                 political_power_factor = 0.10
                 stability_factor = 0.05
                 consumer_goods_factor = -0.08
-                construction_speed_factor = 0.05
+                industrial_construction_speed_factor = 0.05
                 resistance_target = -0.05
             }
         }
@@ -132,11 +132,11 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.15
+                industrial_capacity_factory = 0.15
                 political_power_factor = 0.15
                 stability_factor = 0.10
                 consumer_goods_factor = -0.10
-                construction_speed_factor = 0.10
+                industrial_construction_speed_factor = 0.10
                 resistance_target = -0.10
             }
         }
@@ -146,11 +146,11 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.20
+                industrial_capacity_factory = 0.20
                 political_power_factor = 0.20
                 stability_factor = -0.10
                 consumer_goods_factor = -0.15
-                construction_speed_factor = 0.15
+                industrial_construction_speed_factor = 0.15
                 resistance_target = -0.15
             }
         }
@@ -556,7 +556,7 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.02
+                industrial_capacity_factory = 0.02
                 political_power_factor = 0.02
                 stability_factor = 0.02
             }
@@ -567,7 +567,7 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.05
+                industrial_capacity_factory = 0.05
                 political_power_factor = 0.03
                 stability_factor = 0.05
                 socialist_acceptance = 5
@@ -579,7 +579,7 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.08
+                industrial_capacity_factory = 0.08
                 political_power_factor = 0.05
                 stability_factor = 0.08
                 socialist_acceptance = 10
@@ -592,12 +592,12 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.10
+                industrial_capacity_factory = 0.10
                 political_power_factor = 0.07
                 stability_factor = 0.10
                 socialist_acceptance = 15
                 consumer_goods_factor = -0.05
-                construction_speed_factor = 0.02
+                industrial_construction_speed_factor = 0.02
             }
         }
         
@@ -606,12 +606,12 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.15
+                industrial_capacity_factory = 0.15
                 political_power_factor = 0.10
                 stability_factor = 0.15
                 socialist_acceptance = 20
                 consumer_goods_factor = -0.08
-                construction_speed_factor = 0.05
+                industrial_construction_speed_factor = 0.05
             }
         }
         
@@ -620,12 +620,12 @@ ideas = {
             allowed = { }
             removal_cost = -1
             modifier = {
-                factory_output = 0.20
+                industrial_capacity_factory = 0.20
                 political_power_factor = 0.15
                 stability_factor = 0.20
                 socialist_acceptance = 25
                 consumer_goods_factor = -0.10
-                construction_speed_factor = 0.08
+                industrial_construction_speed_factor = 0.08
             }
         }
         
@@ -649,7 +649,7 @@ ideas = {
                 research_speed_factor = 0.05
                 political_power_factor = 0.03
                 stability_factor = 0.05
-                democratic_acceptance = 5
+                acceptance_of_democratic_diplomacy = 5
             }
         }
         
@@ -661,7 +661,7 @@ ideas = {
                 research_speed_factor = 0.08
                 political_power_factor = 0.05
                 stability_factor = 0.08
-                democratic_acceptance = 10
+                acceptance_of_democratic_diplomacy = 10
                 production_factory_efficiency_gain_factor = 0.02
             }
         }
@@ -674,9 +674,9 @@ ideas = {
                 research_speed_factor = 0.10
                 political_power_factor = 0.07
                 stability_factor = 0.10
-                democratic_acceptance = 15
+                acceptance_of_democratic_diplomacy = 15
                 production_factory_efficiency_gain_factor = 0.05
-                construction_speed_factor = 0.02
+                industrial_construction_speed_factor = 0.02
             }
         }
         
@@ -688,9 +688,9 @@ ideas = {
                 research_speed_factor = 0.15
                 political_power_factor = 0.10
                 stability_factor = 0.15
-                democratic_acceptance = 20
+                acceptance_of_democratic_diplomacy = 20
                 production_factory_efficiency_gain_factor = 0.08
-                construction_speed_factor = 0.05
+                industrial_construction_speed_factor = 0.05
             }
         }
         
@@ -702,9 +702,9 @@ ideas = {
                 research_speed_factor = 0.20
                 political_power_factor = 0.15
                 stability_factor = 0.20
-                democratic_acceptance = 25
+                acceptance_of_democratic_diplomacy = 25
                 production_factory_efficiency_gain_factor = 0.10
-                construction_speed_factor = 0.08
+                industrial_construction_speed_factor = 0.08
             }
         }
     }
