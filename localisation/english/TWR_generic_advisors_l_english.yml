@@ -1,71 +1,73 @@
-﻿ # FASCIST ADVISORS
- TWR_generic_fascist_advisor:0 'Fascist Advisor'
- TWR_generic_fascist_advisor_desc:0 'A political advisor who promotes fascist ideology and militarization.'
- TWR_generic_fascist_propagandist:0 'Fascist Propagandist'
- TWR_generic_fascist_propagandist_desc:0 'A skilled propagandist who spreads fascist ideology and increases war support.'
- TWR_generic_fascist_militarist:0 'Fascist Militarist'
- TWR_generic_fascist_militarist_desc:0 'A hardline militarist who promotes fascist ideology and military expansion.'
- 
- # COMMUNIST ADVISORS
- TWR_generic_communist_advisor:0 'Communist Advisor'
- TWR_generic_communist_advisor_desc:0 'A political advisor who promotes communist ideology and industrialization.'
- TWR_generic_communist_propagandist:0 'Communist Propagandist'
- TWR_generic_communist_propagandist_desc:0 'A skilled propagandist who spreads communist ideology and workers' rights.'
- TWR_generic_communist_industrialist:0 'Communist Industrialist'
- TWR_generic_communist_industrialist_desc:0 'An industrial planner who promotes communist ideology and rapid industrialization.'
- 
- # DEMOCRATIC ADVISORS
- TWR_generic_democratic_advisor:0 'Democratic Advisor'
- TWR_generic_democratic_advisor_desc:0 'A political advisor who promotes democratic values and stability.'
- TWR_generic_democratic_reformer:0 'Democratic Reformer'
- TWR_generic_democratic_reformer_desc:0 'A reformer who promotes democratic institutions and civil liberties.'
- TWR_generic_democratic_institution_builder:0 'Democratic Institution Builder'
- TWR_generic_democratic_institution_builder_desc:0 'A builder of democratic institutions who promotes stability and trade.'
- 
- # MONARCHIST ADVISORS
- TWR_generic_monarchist_advisor:0 'Monarchist Advisor'
- TWR_generic_monarchist_advisor_desc:0 'A political advisor who promotes monarchist traditions and stability.'
- TWR_generic_monarchist_traditionalist:0 'Monarchist Traditionalist'
- TWR_generic_monarchist_traditionalist_desc:0 'A traditionalist who promotes monarchist values and conservative policies.'
- TWR_generic_monarchist_royalist:0 'Monarchist Royalist'
- TWR_generic_monarchist_royalist_desc:0 'A royalist who promotes monarchist ideology and military tradition.'
- 
- # AUTHORITARIAN ADVISORS
- TWR_generic_authoritarian_advisor:0 'Authoritarian Advisor'
- TWR_generic_authoritarian_advisor_desc:0 'A political advisor who promotes authoritarian control and stability.'
- TWR_generic_authoritarian_strongman:0 'Authoritarian Strongman'
- TWR_generic_authoritarian_strongman_desc:0 'A strongman who promotes authoritarian rule and military discipline.'
- TWR_generic_authoritarian_dictator:0 'Authoritarian Dictator'
- TWR_generic_authoritarian_dictator_desc:0 'A dictator who promotes authoritarian ideology and centralized control.'
- 
- # LIBERAL ADVISORS
- TWR_generic_liberal_advisor:0 'Liberal Advisor'
- TWR_generic_liberal_advisor_desc:0 'A political advisor who promotes liberal values and free trade.'
- TWR_generic_liberal_reformer:0 'Liberal Reformer'
- TWR_generic_liberal_reformer_desc:0 'A reformer who promotes liberal policies and market reforms.'
- TWR_generic_liberal_market_advocate:0 'Liberal Market Advocate'
- TWR_generic_liberal_market_advocate_desc:0 'A market advocate who promotes liberal ideology and economic efficiency.'
- 
- # CONSERVATIVE ADVISORS
- TWR_generic_conservative_advisor:0 'Conservative Advisor'
- TWR_generic_conservative_advisor_desc:0 'A political advisor who promotes conservative values and stability.'
- TWR_generic_conservative_traditionalist:0 'Conservative Traditionalist'
- TWR_generic_conservative_traditionalist_desc:0 'A traditionalist who promotes conservative policies and military tradition.'
- TWR_generic_conservative_defense_advocate:0 'Conservative Defense Advocate'
- TWR_generic_conservative_defense_advocate_desc:0 'A defense advocate who promotes conservative ideology and military strength.'
- 
- # SOCIALIST ADVISORS
- TWR_generic_socialist_advisor:0 'Socialist Advisor'
- TWR_generic_socialist_advisor_desc:0 'A political advisor who promotes socialist values and workers' rights.'
- TWR_generic_socialist_reformer:0 'Socialist Reformer'
- TWR_generic_socialist_reformer_desc:0 'A reformer who promotes socialist policies and social welfare.'
- TWR_generic_socialist_workers_advocate:0 'Socialist Workers' Advocate'
- TWR_generic_socialist_workers_advocate_desc:0 'A workers' advocate who promotes socialist ideology and industrial development.'
- 
- # TECHNOCRAT ADVISORS
- TWR_generic_technocrat_advisor:0 'Technocrat Advisor'
- TWR_generic_technocrat_advisor_desc:0 'A political advisor who promotes scientific planning and efficiency.'
- TWR_generic_technocrat_scientist:0 'Technocrat Scientist'
- TWR_generic_technocrat_scientist_desc:0 'A scientist who promotes technocratic policies and research development.'
- TWR_generic_technocrat_industrial_planner:0 'Technocrat Industrial Planner'
- TWR_generic_technocrat_industrial_planner_desc:0 'An industrial planner who promotes technocratic ideology and scientific management.' 
+﻿l_english:
+
+# FASCIST ADVISORS
+"TWR_generic_fascist_advisor":0 "Fascist Advisor"
+"TWR_generic_fascist_advisor_desc":0 "A political advisor who promotes fascist ideology and militarization."
+"TWR_generic_fascist_propagandist":0 "Fascist Propagandist"
+"TWR_generic_fascist_propagandist_desc":0 "A skilled propagandist who spreads fascist ideology and increases war support."
+"TWR_generic_fascist_militarist":0 "Fascist Militarist"
+"TWR_generic_fascist_militarist_desc":0 "A hardline militarist who promotes fascist ideology and military expansion."
+
+# COMMUNIST ADVISORS
+"TWR_generic_communist_advisor":0 "Communist Advisor"
+"TWR_generic_communist_advisor_desc":0 "A political advisor who promotes communist ideology and industrialization."
+"TWR_generic_communist_propagandist":0 "Communist Propagandist"
+"TWR_generic_communist_propagandist_desc":0 "A skilled propagandist who spreads communist ideology and workers' rights."
+"TWR_generic_communist_industrialist":0 "Communist Industrialist"
+"TWR_generic_communist_industrialist_desc":0 "An industrial planner who promotes communist ideology and rapid industrialization."
+
+# DEMOCRATIC ADVISORS
+"TWR_generic_democratic_advisor":0 "Democratic Advisor"
+"TWR_generic_democratic_advisor_desc":0 "A political advisor who promotes democratic values and stability."
+"TWR_generic_democratic_reformer":0 "Democratic Reformer"
+"TWR_generic_democratic_reformer_desc":0 "A reformer who promotes democratic institutions and civil liberties."
+"TWR_generic_democratic_institution_builder":0 "Democratic Institution Builder"
+"TWR_generic_democratic_institution_builder_desc":0 "A builder of democratic institutions who promotes stability and trade."
+
+# MONARCHIST ADVISORS
+"TWR_generic_monarchist_advisor":0 "Monarchist Advisor"
+"TWR_generic_monarchist_advisor_desc":0 "A political advisor who promotes monarchist traditions and stability."
+"TWR_generic_monarchist_traditionalist":0 "Monarchist Traditionalist"
+"TWR_generic_monarchist_traditionalist_desc":0 "A traditionalist who promotes monarchist values and conservative policies."
+"TWR_generic_monarchist_royalist":0 "Monarchist Royalist"
+"TWR_generic_monarchist_royalist_desc":0 "A royalist who promotes monarchist ideology and military tradition."
+
+# AUTHORITARIAN ADVISORS
+"TWR_generic_authoritarian_advisor":0 "Authoritarian Advisor"
+"TWR_generic_authoritarian_advisor_desc":0 "A political advisor who promotes authoritarian control and stability."
+"TWR_generic_authoritarian_strongman":0 "Authoritarian Strongman"
+"TWR_generic_authoritarian_strongman_desc":0 "A strongman who promotes authoritarian rule and military discipline."
+"TWR_generic_authoritarian_dictator":0 "Authoritarian Dictator"
+"TWR_generic_authoritarian_dictator_desc":0 "A dictator who promotes authoritarian ideology and centralized control."
+
+# LIBERAL ADVISORS
+"TWR_generic_liberal_advisor":0 "Liberal Advisor"
+"TWR_generic_liberal_advisor_desc":0 "A political advisor who promotes liberal values and free trade."
+"TWR_generic_liberal_reformer":0 "Liberal Reformer"
+"TWR_generic_liberal_reformer_desc":0 "A reformer who promotes liberal policies and market reforms."
+"TWR_generic_liberal_market_advocate":0 "Liberal Market Advocate"
+"TWR_generic_liberal_market_advocate_desc":0 "A market advocate who promotes liberal ideology and economic efficiency."
+
+# CONSERVATIVE ADVISORS
+"TWR_generic_conservative_advisor":0 "Conservative Advisor"
+"TWR_generic_conservative_advisor_desc":0 "A political advisor who promotes conservative values and stability."
+"TWR_generic_conservative_traditionalist":0 "Conservative Traditionalist"
+"TWR_generic_conservative_traditionalist_desc":0 "A traditionalist who promotes conservative policies and military tradition."
+"TWR_generic_conservative_defense_advocate":0 "Conservative Defense Advocate"
+"TWR_generic_conservative_defense_advocate_desc":0 "A defense advocate who promotes conservative ideology and military strength."
+
+# SOCIALIST ADVISORS
+"TWR_generic_socialist_advisor":0 "Socialist Advisor"
+"TWR_generic_socialist_advisor_desc":0 "A political advisor who promotes socialist values and workers' rights."
+"TWR_generic_socialist_reformer":0 "Socialist Reformer"
+"TWR_generic_socialist_reformer_desc":0 "A reformer who promotes socialist policies and social welfare."
+"TWR_generic_socialist_workers_advocate":0 "Socialist Workers' Advocate"
+"TWR_generic_socialist_workers_advocate_desc":0 "A workers' advocate who promotes socialist ideology and industrial development."
+
+# TECHNOCRAT ADVISORS
+"TWR_generic_technocrat_advisor":0 "Technocrat Advisor"
+"TWR_generic_technocrat_advisor_desc":0 "A political advisor who promotes scientific planning and efficiency."
+"TWR_generic_technocrat_scientist":0 "Technocrat Scientist"
+"TWR_generic_technocrat_scientist_desc":0 "A scientist who promotes technocratic policies and research development."
+"TWR_generic_technocrat_industrial_planner":0 "Technocrat Industrial Planner"
+"TWR_generic_technocrat_industrial_planner_desc":0 "An industrial planner who promotes technocratic ideology and scientific management." 
