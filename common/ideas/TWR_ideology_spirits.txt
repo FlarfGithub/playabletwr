@@ -707,5 +707,57 @@ ideas = {
                 industrial_construction_speed_factor = 0.08
             }
         }
+        
+        # IDEOLOGY DRIFT BOOST (for focus/event references)
+        twr_ideology_drift_boost = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                drift_defence_factor = 0.15
+                political_power_factor = 0.05
+            }
+        }
     }
-} 
+    
+    GEN_european_armour = {
+        picture = GFX_idea_generic_army
+        allowed = { }
+        removal_cost = -1
+        modifier = {
+            division_armor_attack_factor = 0.05
+        }
+    }
+    GEN_lighting_warfare = {
+        picture = GFX_idea_generic_army
+        allowed = { }
+        removal_cost = -1
+        modifier = {
+            division_speed_factor = 0.05
+        }
+    }
+    GEN_heavy_plated = {
+        picture = GFX_idea_generic_army
+        allowed = { }
+        removal_cost = -1
+        modifier = {
+            division_defense_factor = 0.05
+        }
+    }
+    GEN_greater_power_equipment = {
+        picture = GFX_idea_generic_army
+        allowed = { }
+        removal_cost = -1
+        modifier = {
+            infantry_equipment_production_factor = 0.05
+        }
+    }
+    GEN_reformed_military_system = {
+        picture = GFX_idea_generic_army
+        allowed = { }
+        removal_cost = -1
+        modifier = {
+            army_experience_gain = 0.05
+        }
+    }
+}

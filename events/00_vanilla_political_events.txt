@@ -1,40 +1,43 @@
-namespace = vanilla_political_events
+namespace = TWR_playabletwr
 
 # Democratic Election Event
 country_event = {
-    id = vanilla_political_events.1
-    title = playabletwr_democratic_election_title
-    desc = playabletwr_democratic_election_desc
+    id = TWR_playabletwr.1
+    is_triggered_only = no
+    title = TWR_playabletwr_democratic_election_title
+    desc = TWR_playabletwr_democratic_election_desc
     picture = GFX_report_event_democracy
     trigger = { has_government = democratic }
     option = {
-        name = playabletwr_democratic_election_option
+        name = TWR_playabletwr_democratic_election_option
         set_politics = { ruling_party = democratic elections_allowed = yes }
     }
 }
 
 # Civil War Event
 country_event = {
-    id = vanilla_political_events.2
-    title = playabletwr_civil_war_title
-    desc = playabletwr_civil_war_desc
+    id = TWR_playabletwr.2
+    is_triggered_only = no
+    title = TWR_playabletwr_civil_war_title
+    desc = TWR_playabletwr_civil_war_desc
     picture = GFX_report_event_civil_war
     trigger = { NOT = { has_government = democratic } }
     option = {
-        name = playabletwr_civil_war_option
+        name = TWR_playabletwr_civil_war_option
         start_civil_war = { ideology = democratic size = 0.3 }
     }
 }
 
 # Government Change Event
 country_event = {
-    id = vanilla_political_events.3
-    title = playabletwr_government_change_title
-    desc = playabletwr_government_change_desc
+    id = TWR_playabletwr.3
+    is_triggered_only = no
+    title = TWR_playabletwr_government_change_title
+    desc = TWR_playabletwr_government_change_desc
     picture = GFX_report_event_political
     trigger = { }
     option = {
-        name = playabletwr_government_change_option
+        name = TWR_playabletwr_government_change_option
         set_politics = { ruling_party = ROOT }
     }
-} 
+}

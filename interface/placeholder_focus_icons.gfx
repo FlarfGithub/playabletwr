@@ -1,0 +1,160 @@
+spriteTypes = {
+    # Placeholder icons for all focus icons used in playabletwr
+    spriteType = {
+        name = "GFX_goal_generic_axis_build_infantry"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_build_airforce"
+        texturefile = "gfx/interface/goals/focus_generic_airforce.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_navy_doctrines_tactics"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_construction2"
+        texturefile = "gfx/interface/goals/focus_generic_construction.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_self_management"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_massive_army"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_iron_t34"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_army_motorized"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_provoke_border_clashes"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_iron_sherman"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_steel"
+        texturefile = "gfx/interface/goals/focus_generic_industry.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_army_tanks"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_small_arms"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_position_armies"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_coastal_fort"
+        texturefile = "gfx/interface/goals/focus_generic_fort.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_military_academy"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_heavy_artillery"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_little_entente"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_army_agreement"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_air_fighter"
+        texturefile = "gfx/interface/goals/focus_generic_airforce.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_helicopter"
+        texturefile = "gfx/interface/goals/focus_generic_airforce.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_airland_battle"
+        texturefile = "gfx/interface/goals/focus_generic_airforce.tga"
+    }
+    spriteType = {
+        name = "GFX_GER_interceptor"
+        texturefile = "gfx/interface/goals/focus_generic_airforce.tga"
+    }
+    spriteType = {
+        name = "GFX_GENERIC_skilled_fighters"
+        texturefile = "gfx/interface/goals/focus_generic_airforce.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_CZE_military_aeronautical_institute"
+        texturefile = "gfx/interface/goals/focus_generic_airforce.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_navy_battleship"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_build_tank"
+        texturefile = "gfx/interface/goals/focus_generic_army.tga"
+    }
+    spriteType = {
+        name = "GFX_focus_generic_cruiser2"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_occupy_states_coastal"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_navy_carrier"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_navy_cruiser"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_construct_naval_dockyard"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_continuous_naval_production"
+        texturefile = "gfx/interface/goals/focus_generic_navy.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_demand_territory"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_fascist_drift"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_support_the_left_right"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_neutrality_focus"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_political_pressure"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_revolution"
+        texturefile = "gfx/interface/goals/focus_generic_political.tga"
+    }
+    # Add more as needed for all icons referenced in focuses
+}

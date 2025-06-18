@@ -2,28 +2,28 @@ political_decisions = {
     # Boost Party Popularity
     boost_democratic_popularity = {
         icon = GFX_goal_generic_demand_territory
-        cost = 50
+        cost = 10
         available = { has_government = democratic }
         visible = { has_government = democratic }
         remove_effect = { add_popularity = { ideology = democratic popularity = 0.1 } }
     }
     boost_fascist_popularity = {
         icon = GFX_goal_generic_fascist_drift
-        cost = 50
+        cost = 10
         available = { has_government = fascism }
         visible = { has_government = fascism }
         remove_effect = { add_popularity = { ideology = fascism popularity = 0.1 } }
     }
     boost_communist_popularity = {
         icon = GFX_goal_generic_support_the_left_right
-        cost = 50
+        cost = 10
         available = { has_government = communism }
         visible = { has_government = communism }
         remove_effect = { add_popularity = { ideology = communism popularity = 0.1 } }
     }
     boost_neutrality_popularity = {
         icon = GFX_goal_generic_neutrality_focus
-        cost = 50
+        cost = 10
         available = { has_government = neutrality }
         visible = { has_government = neutrality }
         remove_effect = { add_popularity = { ideology = neutrality popularity = 0.1 } }
@@ -31,7 +31,7 @@ political_decisions = {
     # Hold Election
     hold_election = {
         icon = GFX_goal_generic_political_pressure
-        cost = 150
+        cost = 10
         available = { has_government = democratic }
         visible = { has_government = democratic }
         remove_effect = { set_politics = { ruling_party = democratic elections_allowed = yes } }
@@ -39,9 +39,9 @@ political_decisions = {
     # Stage Coup
     stage_coup = {
         icon = GFX_goal_generic_revolution
-        cost = 200
+        cost = 10
         available = { NOT = { has_government = democratic } }
         visible = { NOT = { has_government = democratic } }
         remove_effect = { start_civil_war = { ideology = democratic size = 0.3 } }
     }
-} 
+}

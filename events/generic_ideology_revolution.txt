@@ -151,4 +151,4 @@ country_event = {
         add_political_power = 50
         add_stability = 0.05
     }
-} 
+}

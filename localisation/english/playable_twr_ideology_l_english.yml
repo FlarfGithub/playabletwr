@@ -1,211 +1,131 @@
 ﻿l_english:
- # ============================================================================
- # PLAYABLE TWR SUBMOD - DRAMATIC IDEOLOGY FOCUS LOCALIZATION
- # ============================================================================
- # TWR-Style: Dramatic story-like names, gradual political change, civil war risks
- 
- # === DEMOCRATIC BRANCH ===
- PTWR_Democratic_Path:0 'The People's Awakening'
- PTWR_Democratic_Path_desc:0 'The masses are stirring. In the streets and squares, voices cry out for representation, for rights, for a government that truly serves the people. The old order trembles as democracy's flame ignites in the hearts of the nation.'
- 
- PTWR_democratic_propaganda:0 'Democratic Propaganda'
- PTWR_democratic_propaganda_desc:0 'We shall spread the message of democracy and civil rights. The people must understand that only through democracy can they achieve true representation and freedom.'
- 
- PTWR_democratic_mobilization:0 'Democratic Mobilization'
- PTWR_democratic_mobilization_desc:0 'From the factories to the farms, from the universities to the urban centers, the democratic movement spreads like wildfire. Ordinary citizens are organizing, demanding their voices be heard.'
- 
- PTWR_democratic_victory:0 'Democratic Victory'
- PTWR_democratic_victory_desc:0 'The democratic revolution is complete. The people have spoken, and their will shall be done. Democracy has triumphed over tyranny, and a new era of freedom and equality dawns upon our nation.'
- 
- PTWR_democratic_coup:0 'The Democratic Coup'
- PTWR_democratic_coup_desc:0 'The time has come to overthrow tyranny and establish democracy. Through the will of the people and the power of the ballot, we shall seize control.'
- 
- # === FASCIST BRANCH ===
- PTWR_Fascist_Path:0 'The Iron Fist Rises'
- PTWR_Fascist_Path_desc:0 'In these troubled times, the people cry out for strength, for order, for a leader who will restore national greatness. The fascist movement answers their call with promises of unity, discipline, and power.'
- 
- PTWR_fascist_propaganda:0 'Fascist Propaganda'
- PTWR_fascist_propaganda_desc:0 'We shall spread our message of strength and unity through every available medium. The people must understand that only through fascism can our nation achieve its true potential.'
- 
- PTWR_fascist_mobilization:0 'Total Mobilization'
- PTWR_fascist_mobilization_desc:0 'Every citizen becomes a soldier, every factory becomes an arsenal. We shall transform our society into a war machine, ready to defend our nation and expand our influence.'
- 
- PTWR_fascist_victory:0 'Fascist Victory'
- PTWR_fascist_victory_desc:0 'The fascist revolution is complete. The strong shall lead, the weak shall serve, and our nation shall rise to greatness through unity and discipline.'
- 
- PTWR_fascist_coup:0 'The Fascist Coup'
- PTWR_fascist_coup_desc:0 'The time for change has come. Through force of will and strength of arms, we shall seize control of the government and establish fascist rule.'
- 
- # === COMMUNIST BRANCH ===
- PTWR_Communist_Path:0 'The Red Dawn'
- PTWR_Communist_Path_desc:0 'The workers are awakening to their true power. The capitalist system has failed them, and now they rise to claim what is rightfully theirs. The red flag of revolution flies high as the masses demand justice and equality.'
- 
- PTWR_communist_propaganda:0 'Communist Propaganda'
- PTWR_communist_propaganda_desc:0 'We shall spread the message of workers' liberation and class struggle. The proletariat must understand that only through communism can they achieve true freedom.'
- 
- PTWR_communist_mobilization:0 'Workers' Mobilization'
- PTWR_communist_mobilization_desc:0 'From the factories and mines, from the fields and workshops, the workers are organizing. Trade unions grow stronger, strikes become more frequent, and the revolutionary spirit spreads.'
- 
- PTWR_communist_victory:0 'Communist Victory'
- PTWR_communist_victory_desc:0 'The communist revolution is complete. The workers now control the means of production, and a new era of equality and justice has begun.'
- 
- PTWR_communist_coup:0 'The Communist Coup'
- PTWR_communist_coup_desc:0 'The revolution is not complete until all workers are free. We shall overthrow the capitalist class and establish the dictatorship of the proletariat.'
- 
- # === MONARCHIST BRANCH ===
- PTWR_Monarchist_Path:0 'The Crown's Return'
- PTWR_Monarchist_Path_desc:0 'The ancient traditions call to us. In these chaotic times, the people yearn for the stability and continuity that only monarchy can provide. The divine right of kings shall be restored.'
- 
- PTWR_monarchist_propaganda:0 'Royalist Propaganda'
- PTWR_monarchist_propaganda_desc:0 'We shall spread the message of royal legitimacy and divine right. The people must understand that only through monarchy can our nation find true stability.'
- 
- PTWR_monarchist_mobilization:0 'Royal Restoration'
- PTWR_monarchist_mobilization_desc:0 'The rightful monarch shall be restored to the throne, bringing stability and continuity to our troubled land. The ancient bloodline shall once again rule our nation.'
- 
- PTWR_monarchist_victory:0 'Monarchist Victory'
- PTWR_monarchist_victory_desc:0 'The monarchist restoration is complete. The crown is restored, and our nation once again enjoys the stability and continuity of royal rule.'
- 
- PTWR_monarchist_coup:0 'The Royal Coup'
- PTWR_monarchist_coup_desc:0 'The time has come to restore the rightful monarch to the throne. Through traditional authority and divine right, we shall seize control and restore royal rule.'
- 
- # === AUTHORITARIAN BRANCH ===
- PTWR_Authoritarian_Path:0 'The Strong Hand'
- PTWR_Authoritarian_Path_desc:0 'Chaos and disorder threaten our nation. The people cry out for strong leadership, for a firm hand to guide them through these troubled times. We shall establish order, discipline, and centralized authority.'
- 
- PTWR_authoritarian_propaganda:0 'Authoritarian Propaganda'
- PTWR_authoritarian_propaganda_desc:0 'We shall spread the message of strong leadership and centralized control. The people must understand that only through authoritarian rule can order be restored.'
- 
- PTWR_authoritarian_mobilization:0 'Authoritarian Mobilization'
- PTWR_authoritarian_mobilization_desc:0 'All power shall be concentrated in the hands of the state. Bureaucracy, surveillance, and control shall ensure that every aspect of society serves the national interest.'
- 
- PTWR_authoritarian_victory:0 'Authoritarian Victory'
- PTWR_authoritarian_victory_desc:0 'The authoritarian revolution is complete. One leader, one vision, one nation. Order has been restored through strong leadership and centralized control.'
- 
- PTWR_authoritarian_coup:0 'The Authoritarian Coup'
- PTWR_authoritarian_coup_desc:0 'The time for change has come. Through force of will and strength of arms, we shall seize control of the government and establish authoritarian rule.'
- 
- # === LIBERAL BRANCH ===
- PTWR_Liberal_Path:0 'The Free Market Awakens'
- PTWR_Liberal_Path_desc:0 'The invisible hand of the market calls to us. Individual liberty, free enterprise, and limited government shall be our guiding principles. Let the people be free to pursue their own happiness and prosperity.'
- 
- PTWR_liberal_propaganda:0 'Liberal Propaganda'
- PTWR_liberal_propaganda_desc:0 'We shall spread the message of individual liberty and free markets. The people must understand that only through liberalism can they achieve true economic and personal freedom.'
- 
- PTWR_liberal_mobilization:0 'Liberal Mobilization'
- PTWR_liberal_mobilization_desc:0 'We shall unleash the power of the free market, removing government interference and allowing competition to drive innovation and prosperity.'
- 
- PTWR_liberal_victory:0 'Liberal Victory'
- PTWR_liberal_victory_desc:0 'The liberal revolution is complete. Individual rights and free markets are now the foundation of our society. Personal freedom shall be our highest value.'
- 
- PTWR_liberal_coup:0 'The Liberal Coup'
- PTWR_liberal_coup_desc:0 'The time has come to overthrow tyranny and establish liberal democracy. Through the power of individual liberty and free markets, we shall seize control.'
- 
- # === CONSERVATIVE BRANCH ===
- PTWR_Conservative_Path:0 'The Traditional Order'
- PTWR_Conservative_Path_desc:0 'Change is not always progress. We shall preserve the traditional values and institutions that have made our nation great. Stability, order, and respect for authority shall guide our path forward.'
- 
- PTWR_conservative_propaganda:0 'Conservative Propaganda'
- PTWR_conservative_propaganda_desc:0 'We shall spread the message of traditional values and stability. The people must understand that only through conservatism can our nation maintain its strength and character.'
- 
- PTWR_conservative_mobilization:0 'Conservative Mobilization'
- PTWR_conservative_mobilization_desc:0 'We shall strengthen the traditional institutions that have served our nation well - the family, the church, and the established social order.'
- 
- PTWR_conservative_victory:0 'Conservative Victory'
- PTWR_conservative_victory_desc:0 'The conservative order is established. We shall preserve what works and reform only what is broken, ensuring that our traditional values continue to guide future generations.'
- 
- PTWR_conservative_coup:0 'The Conservative Coup'
- PTWR_conservative_coup_desc:0 'The time has come to restore traditional order and values. Through the strength of tradition and established institutions, we shall seize control.'
- 
- # === SOCIALIST BRANCH ===
- PTWR_Socialist_Path:0 'The Workers' Revolution'
- PTWR_Socialist_Path_desc:0 'The workers shall own the means of production. We shall build a society based on cooperation, equality, and social justice. The state shall serve the people, not the wealthy few.'
- 
- PTWR_socialist_propaganda:0 'Socialist Propaganda'
- PTWR_socialist_propaganda_desc:0 'We shall spread the message of workers' rights and social equality. The people must understand that only through socialism can they achieve true economic justice.'
- 
- PTWR_socialist_mobilization:0 'Socialist Mobilization'
- PTWR_socialist_mobilization_desc:0 'We shall establish strong labor unions, fair wages, and safe working conditions. The workers who build our nation shall share in its prosperity.'
- 
- PTWR_socialist_victory:0 'Socialist Victory'
- PTWR_socialist_victory_desc:0 'The socialist revolution is complete. We have created a society where cooperation and equality ensure that no one is left behind.'
- 
- PTWR_socialist_coup:0 'The Socialist Coup'
- PTWR_socialist_coup_desc:0 'The time has come to overthrow capitalism and establish socialism. Through the power of the workers and collective ownership, we shall seize control.'
- 
- # === TECHNOCRAT BRANCH ===
- PTWR_Technocrat_Path:0 'The Age of Experts'
- PTWR_Technocrat_Path_desc:0 'Let the experts rule. We shall establish a government based on scientific principles, rational planning, and technical expertise. Efficiency and progress shall guide our decisions, not ideology or emotion.'
- 
- PTWR_technocrat_propaganda:0 'Technocrat Propaganda'
- PTWR_technocrat_propaganda_desc:0 'We shall spread the message of scientific government and rational planning. The people must understand that only through technocracy can our nation achieve true efficiency and progress.'
- 
- PTWR_technocrat_mobilization:0 'Technocrat Mobilization'
- PTWR_technocrat_mobilization_desc:0 'We shall invest heavily in research and development, using science and technology to solve our nation's problems and drive progress.'
- 
- PTWR_technocrat_victory:0 'Technocrat Victory'
- PTWR_technocrat_victory_desc:0 'The technocratic revolution is complete. Government by experts, guided by science and reason, now rules our nation. Efficiency and progress are our watchwords.'
- 
- PTWR_technocrat_coup:0 'The Technocrat Coup'
- PTWR_technocrat_coup_desc:0 'The time has come to overthrow ideology and establish technocracy. Through the power of science and rational planning, we shall seize control.'
- 
- # === MOVEMENT SPIRITS ===
- playable_twr_democratic_movement_spirit:0 'Democratic Movement'
- playable_twr_democratic_movement_spirit_desc:0 'A growing movement for democracy and civil rights is gaining momentum across the nation. The people are beginning to demand greater representation and freedoms.'
- 
- playable_twr_fascist_movement_spirit:0 'Fascist Movement'
- playable_twr_fascist_movement_spirit_desc:0 'A fascist movement is gaining strength, promising order, unity, and national greatness. The people are drawn to its message of strength and discipline.'
- 
- playable_twr_communist_movement_spirit:0 'Communist Movement'
- playable_twr_communist_movement_spirit_desc:0 'A communist movement is spreading among the workers and intellectuals. The promise of equality and collective ownership is gaining support.'
- 
- playable_twr_monarchist_movement_spirit:0 'Monarchist Movement'
- playable_twr_monarchist_movement_spirit_desc:0 'A monarchist movement is gaining support, calling for the restoration of traditional authority and the divine right of kings.'
- 
- playable_twr_authoritarian_movement_spirit:0 'Authoritarian Movement'
- playable_twr_authoritarian_movement_spirit_desc:0 'An authoritarian movement is gaining strength, promising strong leadership and centralized control to solve the nation's problems.'
- 
- playable_twr_liberal_movement_spirit:0 'Liberal Movement'
- playable_twr_liberal_movement_spirit_desc:0 'A liberal movement is growing, advocating for individual freedoms, free markets, and limited government intervention.'
- 
- playable_twr_conservative_movement_spirit:0 'Conservative Movement'
- playable_twr_conservative_movement_spirit_desc:0 'A conservative movement is gaining support, emphasizing traditional values, stability, and gradual reform over radical change.'
- 
- playable_twr_socialist_movement_spirit:0 'Socialist Movement'
- playable_twr_socialist_movement_spirit_desc:0 'A socialist movement is spreading, advocating for workers' rights, social equality, and collective welfare over individual profit.'
- 
- playable_twr_radical_movement_spirit:0 'Radical Movement'
- playable_twr_radical_movement_spirit_desc:0 'A radical movement is gaining momentum, calling for fundamental change and the complete overthrow of the existing order.'
- 
- playable_twr_technocrat_movement_spirit:0 'Technocrat Movement'
- playable_twr_technocrat_movement_spirit_desc:0 'A technocrat movement is growing, advocating for government by experts and scientific planning over ideology and emotion.'
- 
- # === PERMANENT SPIRITS ===
- playable_twr_democratic_spirit_idea:0 'Democratic Spirit'
- playable_twr_democratic_spirit_idea_desc:0 'The democratic spirit flows through our institutions, ensuring that the will of the people guides our nation's destiny.'
- 
- playable_twr_fascist_spirit_idea:0 'Fascist Spirit'
- playable_twr_fascist_spirit_idea_desc:0 'The fascist spirit unites our people under a single purpose, creating a society where the collective will triumphs over individual weakness.'
- 
- playable_twr_communist_spirit_idea:0 'Communist Spirit'
- playable_twr_communist_spirit_idea_desc:0 'The communist spirit awakens the masses, creating a society based on equality, collective ownership, and the dictatorship of the proletariat.'
- 
- playable_twr_monarchist_spirit_idea:0 'Monarchist Spirit'
- playable_twr_monarchist_spirit_idea_desc:0 'The monarchist spirit preserves our ancient traditions, ensuring that divine authority and natural hierarchy guide our society.'
- 
- playable_twr_authoritarian_spirit_idea:0 'Authoritarian Spirit'
- playable_twr_authoritarian_spirit_idea_desc:0 'The authoritarian spirit demands obedience and respect, creating a society where strong leadership brings order and discipline.'
- 
- playable_twr_liberal_spirit_idea:0 'Liberal Spirit'
- playable_twr_liberal_spirit_idea_desc:0 'The liberal spirit champions individual liberty, creating a society where personal freedom and free markets drive progress.'
- 
- playable_twr_conservative_spirit_idea:0 'Conservative Spirit'
- playable_twr_conservative_spirit_idea_desc:0 'The conservative spirit values tradition and stability, preserving the institutions and values that have made our nation great.'
- 
- playable_twr_socialist_spirit_idea:0 'Socialist Spirit'
- playable_twr_socialist_spirit_idea_desc:0 'The socialist spirit emphasizes collective welfare, creating a society where cooperation and equality ensure that no one is left behind.'
- 
- playable_twr_radical_spirit_idea:0 'Radical Spirit'
- playable_twr_radical_spirit_idea_desc:0 'The radical spirit demands fundamental change, tearing down the old order to build something entirely new.'
- 
- playable_twr_technocrat_spirit_idea:0 'Technocrat Spirit'
- playable_twr_technocrat_spirit_idea_desc:0 'The technocrat spirit values expertise and efficiency, using scientific principles and rational planning to guide our nation's future.' 
+PTWR_Democratic_Path:0 "The People's Awakening"
+PTWR_Democratic_Path_desc:0 "The masses are stirring. In the streets and squares, voices cry out for representation, for rights, for a government that truly serves the people. The old order trembles as democracy's flame ignites in the hearts of the nation."
+PTWR_democratic_propaganda:0 "Democratic Propaganda"
+PTWR_democratic_propaganda_desc:0 "We shall spread the message of democracy and civil rights. The people must understand that only through democracy can they achieve true representation and freedom."
+PTWR_democratic_mobilization:0 "Democratic Mobilization"
+PTWR_democratic_mobilization_desc:0 "From the factories to the farms, from the universities to the urban centers, the democratic movement spreads like wildfire. Ordinary citizens are organizing, demanding their voices be heard."
+PTWR_democratic_victory:0 "Democratic Victory"
+PTWR_democratic_victory_desc:0 "The democratic revolution is complete. The people have spoken, and their will shall be done. Democracy has triumphed over tyranny, and a new era of freedom and equality dawns upon our nation."
+PTWR_democratic_coup:0 "The Democratic Coup"
+PTWR_democratic_coup_desc:0 "The time has come to overthrow tyranny and establish democracy. Through the will of the people and the power of the ballot, we shall seize control."
+PTWR_Fascist_Path:0 "The Iron Fist Rises"
+PTWR_Fascist_Path_desc:0 "In these troubled times, the people cry out for strength, for order, for a leader who will restore national greatness. The fascist movement answers their call with promises of unity, discipline, and power."
+PTWR_fascist_propaganda:0 "Fascist Propaganda"
+PTWR_fascist_propaganda_desc:0 "We shall spread our message of strength and unity through every available medium. The people must understand that only through fascism can our nation achieve its true potential."
+PTWR_fascist_mobilization:0 "Total Mobilization"
+PTWR_fascist_mobilization_desc:0 "Every citizen becomes a soldier, every factory becomes an arsenal. We shall transform our society into a war machine, ready to defend our nation and expand our influence."
+PTWR_fascist_victory:0 "Fascist Victory"
+PTWR_fascist_victory_desc:0 "The fascist revolution is complete. The strong shall lead, the weak shall serve, and our nation shall rise to greatness through unity and discipline."
+PTWR_fascist_coup:0 "The Fascist Coup"
+PTWR_fascist_coup_desc:0 "The time for change has come. Through force of will and strength of arms, we shall seize control of the government and establish fascist rule."
+PTWR_Communist_Path:0 "The Red Dawn"
+PTWR_Communist_Path_desc:0 "The workers are awakening to their true power. The capitalist system has failed them, and now they rise to claim what is rightfully theirs. The red flag of revolution flies high as the masses demand justice and equality."
+PTWR_communist_propaganda:0 "Communist Propaganda"
+PTWR_communist_propaganda_desc:0 "We shall spread the message of workers' liberation and class struggle. The proletariat must understand that only through communism can they achieve true freedom."
+PTWR_communist_mobilization:0 "Workers' Mobilization"
+PTWR_communist_mobilization_desc:0 "From the factories and mines, from the fields and workshops, the workers are organizing. Trade unions grow stronger, strikes become more frequent, and the revolutionary spirit spreads."
+PTWR_communist_victory:0 "Communist Victory"
+PTWR_communist_victory_desc:0 "The communist revolution is complete. The workers now control the means of production, and a new era of equality and justice has begun."
+PTWR_communist_coup:0 "The Communist Coup"
+PTWR_communist_coup_desc:0 "The revolution is not complete until all workers are free. We shall overthrow the capitalist class and establish the dictatorship of the proletariat."
+PTWR_Monarchist_Path:0 "The Crown's Return"
+PTWR_Monarchist_Path_desc:0 "The ancient traditions call to us. In these chaotic times, the people yearn for the stability and continuity that only monarchy can provide. The divine right of kings shall be restored."
+PTWR_monarchist_propaganda:0 "Royalist Propaganda"
+PTWR_monarchist_propaganda_desc:0 "We shall spread the message of royal legitimacy and divine right. The people must understand that only through monarchy can our nation find true stability."
+PTWR_monarchist_mobilization:0 "Royal Restoration"
+PTWR_monarchist_mobilization_desc:0 "The rightful monarch shall be restored to the throne, bringing stability and continuity to our troubled land. The ancient bloodline shall once again rule our nation."
+PTWR_monarchist_victory:0 "Monarchist Victory"
+PTWR_monarchist_victory_desc:0 "The monarchist restoration is complete. The crown is restored, and our nation once again enjoys the stability and continuity of royal rule."
+PTWR_monarchist_coup:0 "The Royal Coup"
+PTWR_monarchist_coup_desc:0 "The time has come to restore the rightful monarch to the throne. Through traditional authority and divine right, we shall seize control and restore royal rule."
+PTWR_Authoritarian_Path:0 "The Strong Hand"
+PTWR_Authoritarian_Path_desc:0 "Chaos and disorder threaten our nation. The people cry out for strong leadership, for a firm hand to guide them through these troubled times. We shall establish order, discipline, and centralized authority."
+PTWR_authoritarian_propaganda:0 "Authoritarian Propaganda"
+PTWR_authoritarian_propaganda_desc:0 "We shall spread the message of strong leadership and centralized control. The people must understand that only through authoritarian rule can order be restored."
+PTWR_authoritarian_mobilization:0 "Authoritarian Mobilization"
+PTWR_authoritarian_mobilization_desc:0 "All power shall be concentrated in the hands of the state. Bureaucracy, surveillance, and control shall ensure that every aspect of society serves the national interest."
+PTWR_authoritarian_victory:0 "Authoritarian Victory"
+PTWR_authoritarian_victory_desc:0 "The authoritarian revolution is complete. One leader, one vision, one nation. Order has been restored through strong leadership and centralized control."
+PTWR_authoritarian_coup:0 "The Authoritarian Coup"
+PTWR_authoritarian_coup_desc:0 "The time for change has come. Through force of will and strength of arms, we shall seize control of the government and establish authoritarian rule."
+PTWR_Liberal_Path:0 "The Free Market Awakens"
+PTWR_Liberal_Path_desc:0 "The invisible hand of the market calls to us. Individual liberty, free enterprise, and limited government shall be our guiding principles. Let the people be free to pursue their own happiness and prosperity."
+PTWR_liberal_propaganda:0 "Liberal Propaganda"
+PTWR_liberal_propaganda_desc:0 "We shall spread the message of individual liberty and free markets. The people must understand that only through liberalism can they achieve true economic and personal freedom."
+PTWR_liberal_mobilization:0 "Liberal Mobilization"
+PTWR_liberal_mobilization_desc:0 "We shall unleash the power of the free market, removing government interference and allowing competition to drive innovation and prosperity."
+PTWR_liberal_victory:0 "Liberal Victory"
+PTWR_liberal_victory_desc:0 "The liberal revolution is complete. Individual rights and free markets are now the foundation of our society. Personal freedom shall be our highest value."
+PTWR_liberal_coup:0 "The Liberal Coup"
+PTWR_liberal_coup_desc:0 "The time has come to overthrow tyranny and establish liberal democracy. Through the power of individual liberty and free markets, we shall seize control."
+PTWR_Conservative_Path:0 "The Traditional Order"
+PTWR_Conservative_Path_desc:0 "Change is not always progress. We shall preserve the traditional values and institutions that have made our nation great. Stability, order, and respect for authority shall guide our path forward."
+PTWR_conservative_propaganda:0 "Conservative Propaganda"
+PTWR_conservative_propaganda_desc:0 "We shall spread the message of traditional values and stability. The people must understand that only through conservatism can our nation maintain its strength and character."
+PTWR_conservative_mobilization:0 "Conservative Mobilization"
+PTWR_conservative_mobilization_desc:0 "We shall strengthen the traditional institutions that have served our nation well - the family, the church, and the established social order."
+PTWR_conservative_victory:0 "Conservative Victory"
+PTWR_conservative_victory_desc:0 "The conservative order is established. We shall preserve what works and reform only what is broken, ensuring that our traditional values continue to guide future generations."
+PTWR_conservative_coup:0 "The Conservative Coup"
+PTWR_conservative_coup_desc:0 "The time has come to restore traditional order and values. Through the strength of tradition and established institutions, we shall seize control."
+PTWR_Socialist_Path:0 "The Workers' Revolution"
+PTWR_Socialist_Path_desc:0 "The workers shall own the means of production. We shall build a society based on cooperation, equality, and social justice. The state shall serve the people, not the wealthy few."
+PTWR_socialist_propaganda:0 "Socialist Propaganda"
+PTWR_socialist_propaganda_desc:0 "We shall spread the message of workers' rights and social equality. The people must understand that only through socialism can they achieve true economic justice."
+PTWR_socialist_mobilization:0 "Socialist Mobilization"
+PTWR_socialist_mobilization_desc:0 "We shall establish strong labor unions, fair wages, and safe working conditions. The workers who build our nation shall share in its prosperity."
+PTWR_socialist_victory:0 "Socialist Victory"
+PTWR_socialist_victory_desc:0 "The socialist revolution is complete. We have created a society where cooperation and equality ensure that no one is left behind."
+PTWR_socialist_coup:0 "The Socialist Coup"
+PTWR_socialist_coup_desc:0 "The time has come to overthrow capitalism and establish socialism. Through the power of the workers and collective ownership, we shall seize control."
+PTWR_Technocrat_Path:0 "The Age of Experts"
+PTWR_Technocrat_Path_desc:0 "Let the experts rule. We shall establish a government based on scientific principles, rational planning, and technical expertise. Efficiency and progress shall guide our decisions, not ideology or emotion."
+PTWR_technocrat_propaganda:0 "Technocrat Propaganda"
+PTWR_technocrat_propaganda_desc:0 "We shall spread the message of scientific government and rational planning. The people must understand that only through technocracy can our nation achieve true efficiency and progress."
+PTWR_technocrat_mobilization:0 "Technocrat Mobilization"
+PTWR_technocrat_mobilization_desc:0 "We shall invest heavily in research and development, using science and technology to solve our nation's problems and drive progress."
+PTWR_technocrat_victory:0 "Technocrat Victory"
+PTWR_technocrat_victory_desc:0 "The technocratic revolution is complete. Government by experts, guided by science and reason, now rules our nation. Efficiency and progress are our watchwords."
+PTWR_technocrat_coup:0 "The Technocrat Coup"
+PTWR_technocrat_coup_desc:0 "The time has come to overthrow ideology and establish technocracy. Through the power of science and rational planning, we shall seize control."
+playable_twr_democratic_movement_spirit:0 "Democratic Movement"
+playable_twr_democratic_movement_spirit_desc:0 "A growing movement for democracy and civil rights is gaining momentum across the nation. The people are beginning to demand greater representation and freedoms."
+playable_twr_fascist_movement_spirit:0 "Fascist Movement"
+playable_twr_fascist_movement_spirit_desc:0 "A fascist movement is gaining strength, promising order, unity, and national greatness. The people are drawn to its message of strength and discipline."
+playable_twr_communist_movement_spirit:0 "Communist Movement"
+playable_twr_communist_movement_spirit_desc:0 "A communist movement is spreading among the workers and intellectuals. The promise of equality and collective ownership is gaining support."
+playable_twr_monarchist_movement_spirit:0 "Monarchist Movement"
+playable_twr_monarchist_movement_spirit_desc:0 "A monarchist movement is gaining support, calling for the restoration of traditional authority and the divine right of kings."
+playable_twr_authoritarian_movement_spirit:0 "Authoritarian Movement"
+playable_twr_authoritarian_movement_spirit_desc:0 "An authoritarian movement is gaining strength, promising strong leadership and centralized control to solve the nation's problems."
+playable_twr_liberal_movement_spirit:0 "Liberal Movement"
+playable_twr_liberal_movement_spirit_desc:0 "A liberal movement is growing, advocating for individual freedoms, free markets, and limited government intervention."
+playable_twr_conservative_movement_spirit:0 "Conservative Movement"
+playable_twr_conservative_movement_spirit_desc:0 "A conservative movement is gaining support, emphasizing traditional values, stability, and gradual reform over radical change."
+playable_twr_socialist_movement_spirit:0 "Socialist Movement"
+playable_twr_socialist_movement_spirit_desc:0 "A socialist movement is spreading, advocating for workers' rights, social equality, and collective welfare over individual profit."
+playable_twr_radical_movement_spirit:0 "Radical Movement"
+playable_twr_radical_movement_spirit_desc:0 "A radical movement is gaining momentum, calling for fundamental change and the complete overthrow of the existing order."
+playable_twr_technocrat_movement_spirit:0 "Technocrat Movement"
+playable_twr_technocrat_movement_spirit_desc:0 "A technocrat movement is growing, advocating for government by experts and scientific planning over ideology and emotion."
+playable_twr_democratic_spirit_idea:0 "Democratic Spirit"
+playable_twr_democratic_spirit_idea_desc:0 "The democratic spirit flows through our institutions, ensuring that the will of the people guides our nation's destiny."
+playable_twr_fascist_spirit_idea:0 "Fascist Spirit"
+playable_twr_fascist_spirit_idea_desc:0 "The fascist spirit unites our people under a single purpose, creating a society where the collective will triumphs over individual weakness."
+playable_twr_communist_spirit_idea:0 "Communist Spirit"
+playable_twr_communist_spirit_idea_desc:0 "The communist spirit awakens the masses, creating a society based on equality, collective ownership, and the dictatorship of the proletariat."
+playable_twr_monarchist_spirit_idea:0 "Monarchist Spirit"
+playable_twr_monarchist_spirit_idea_desc:0 "The monarchist spirit preserves our ancient traditions, ensuring that divine authority and natural hierarchy guide our society."
+playable_twr_authoritarian_spirit_idea:0 "Authoritarian Spirit"
+playable_twr_authoritarian_spirit_idea_desc:0 "The authoritarian spirit demands obedience and respect, creating a society where strong leadership brings order and discipline."
+playable_twr_liberal_spirit_idea:0 "Liberal Spirit"
+playable_twr_liberal_spirit_idea_desc:0 "The liberal spirit champions individual liberty, creating a society where personal freedom and free markets drive progress."
+playable_twr_conservative_spirit_idea:0 "Conservative Spirit"
+playable_twr_conservative_spirit_idea_desc:0 "The conservative spirit values tradition and stability, preserving the institutions and values that have made our nation great."
+playable_twr_socialist_spirit_idea:0 "Socialist Spirit"
+playable_twr_socialist_spirit_idea_desc:0 "The socialist spirit emphasizes collective welfare, creating a society where cooperation and equality ensure that no one is left behind."
+playable_twr_radical_spirit_idea:0 "Radical Spirit"
+playable_twr_radical_spirit_idea_desc:0 "The radical spirit demands fundamental change, tearing down the old order to build something entirely new."
+playable_twr_technocrat_spirit_idea:0 "Technocrat Spirit"
+playable_twr_technocrat_spirit_idea_desc:0 "The technocrat spirit values expertise and efficiency, using scientific principles and rational planning to guide our nation's future."
