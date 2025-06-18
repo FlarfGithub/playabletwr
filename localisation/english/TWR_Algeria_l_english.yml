@@ -1,9 +1,9 @@
 ﻿l_english:
  
  #Events in France
- algeria.0.t:0 'Independence Protests in Algiers'
- algeria.0.d:0 'Only a few days after the start of the Morrocan War, protesters have started to appear in Algiers in ever larger numbers. Hundreds, now thousands of locals have begun gathering in the capital, demanding an independent and sovereign Algeria. Tensions keep rising with the understaffed and underequipped garrison being pushed to its limits. We will have to wait and see how things turn out.'
- algeria.0.a:0 'When one domino falls, the others follow suit...'
+ algeria.0.t:0 "Independence Protests in Algiers"
+ algeria.0.d:0 "Only a few days after the start of the Morrocan War, protesters have started to appear in Algiers in ever larger numbers. Hundreds, now thousands of locals have begun gathering in the capital, demanding an independent and sovereign Algeria. Tensions keep rising with the understaffed and underequipped garrison being pushed to its limits. We will have to wait and see how things turn out."
+ algeria.0.a:0 "When one domino falls, the others follow suit..."
  
  #Leaders
  ALG_Abbas:0 'Initially an advocate of reforms, Ferhat Abbas even went as far as to write a letter to the French State leader, Philippe Pétain. But in all of his attempts to improve his people's situation, Abbas was met with nothing but disappointments. He soon turned to nationalism, joining the many nationalists that have been laying the groundwork for a grand coalition of the Algerian independence movement. The colonial administration, lacking sufficient intelligence, continued to allow this problem to manifest. Abbas soon rose to become the dominant leader of the secret organization, vowing to never repeat the mistakes of his reformist past, he promised his comrades and supporters that Algeria will be free. As the wave of decolonization swept across Northern Africa, Abbas's organization took over the Algerian population like a storm. Overnight, the Front de Libération Nationale (FLN) assumed the role of primary leader of the Algerian Revolution against incompetent French rule, a calling for Abbas to fulfil his promises.'

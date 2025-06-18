@@ -1,21 +1,21 @@
 ﻿l_english:
- generic_politics_and_diplomacy:0 'Politics and Diplomacy'
- generic_politics_and_diplomacy_desc:0 'Begin political reforms and establish diplomatic relations.'
- generic_ideology_branch:0 'Ideological Debate'
- generic_ideology_branch_desc:0 'Debate the future direction of the nation and open the path to new ideologies.'
- generic_industry_1:0 'Expand Industry'
- generic_industry_1_desc:0 'Invest in new factories to boost our industrial output.'
- generic_industry_2:0 'Infrastructure Effort'
- generic_industry_2_desc:0 'Improve our nation's infrastructure to support further growth.'
- generic_military_1:0 'Arm the Nation'
- generic_military_1_desc:0 'Increase our stockpile of weapons for the army.'
- generic_military_2:0 'Fortify the Homeland'
- generic_military_2_desc:0 'Construct bunkers to defend our territory.'
- generic_navy_1:0 'Naval Expansion'
- generic_navy_1_desc:0 'Expand our navy with new convoys.'
- generic_air_1:0 'Air Force Expansion'
- generic_air_1_desc:0 'Expand our air force with new fighters.'
- generic_science_1:0 'Research Initiative'
- generic_science_1_desc:0 'Invest in research to gain an additional research slot.'
- generic_stability_1:0 'Propaganda Campaign'
- generic_stability_1_desc:0 'Boost national stability through propaganda.' 
+ generic_politics_and_diplomacy:0 "Politics and Diplomacy"
+ generic_politics_and_diplomacy_desc:0 "Begin political reforms and establish diplomatic relations."
+ generic_ideology_branch:0 "Ideological Debate"
+ generic_ideology_branch_desc:0 "Debate the future direction of the nation and open the path to new ideologies."
+ generic_industry_1:0 "Expand Industry"
+ generic_industry_1_desc:0 "Invest in new factories to boost our industrial output."
+ generic_industry_2:0 "Infrastructure Effort"
+ generic_industry_2_desc:0 "Improve our nation's infrastructure to support further growth."
+ generic_military_1:0 "Arm the Nation"
+ generic_military_1_desc:0 "Increase our stockpile of weapons for the army."
+ generic_military_2:0 "Fortify the Homeland"
+ generic_military_2_desc:0 "Construct bunkers to defend our territory."
+ generic_navy_1:0 "Naval Expansion"
+ generic_navy_1_desc:0 "Expand our navy with new convoys."
+ generic_air_1:0 "Air Force Expansion"
+ generic_air_1_desc:0 "Expand our air force with new fighters."
+ generic_science_1:0 "Research Initiative"
+ generic_science_1_desc:0 "Invest in research to gain an additional research slot."
+ generic_stability_1:0 "Propaganda Campaign"
+ generic_stability_1_desc:0 "Boost national stability through propaganda." 

@@ -1,38 +1,38 @@
 ﻿l_english:
 
-ARM_national_socialist:0 'Independent State of Armenia'
-ARM_national_socialist_DEF:0 'The Independent State of Armenia'
-ARM_fascist:0 'State of Armenia'
-ARM_fascist_DEF:0 'The State of Armenia'
-ARM_paternal_autocrat:0 'State of Armenia'
-ARM_paternal_autocrat_DEF:0 'The State of Armenia'
-ARM_conservative:0 'Republic of Armenia'
-ARM_conservative_DEF:0 'The Republic of Armenia'
-ARM_market_liberal:0 'Republic of Armenia'
-ARM_market_liberal_DEF:0 'The Republic of Armenia'
-ARM_liberal:0 'Republic of Armenia'
-ARM_liberal_DEF:0 'The Republic of Armenia'
-ARM_social_democrat:0 'Republic of Armenia'
-ARM_social_democrat_DEF:0 'The Republic of Armenia'
-ARM_marxist_leninist:0 'Armenian Socialist Theocracy'
-ARM_marxist_leninist_DEF:0 'The Armenian Socialist Theocracy'
-ARM_bolshevik_leninist:0 'Armenian Socialist Republic'
-ARM_bolshevik_leninist_DEF:0 'The Armenian Socialist Republic'
-ARM_socialist:0 'Armenian Socialist Republic'
-ARM_socialist_DEF:0 'The Armenian Socialist Republic'
-ARM_national_socialist_ADJ:0 'Armenian'
-ARM_fascist_ADJ:0 'Armenian'
-ARM_paternal_autocrat_ADJ:0 'Armenian'
-ARM_conservative_ADJ:0 'Armenian'
-ARM_market_liberal_ADJ:0 'Armenian'
-ARM_liberal_ADJ:0 'Armenian'
-ARM_social_democrat_ADJ:0 'Armenian'
-ARM_marxist_leninist_ADJ:0 'Armenian'
-ARM_bolshevik_leninist_ADJ:0 'Armenian'
-ARM_socialist_ADJ:0 'Armenian'
+ARM_national_socialist:0 "Independent State of Armenia"
+ARM_national_socialist_DEF:0 "The Independent State of Armenia"
+ARM_fascist:0 "State of Armenia"
+ARM_fascist_DEF:0 "The State of Armenia"
+ARM_paternal_autocrat:0 "State of Armenia"
+ARM_paternal_autocrat_DEF:0 "The State of Armenia"
+ARM_conservative:0 "Republic of Armenia"
+ARM_conservative_DEF:0 "The Republic of Armenia"
+ARM_market_liberal:0 "Republic of Armenia"
+ARM_market_liberal_DEF:0 "The Republic of Armenia"
+ARM_liberal:0 "Republic of Armenia"
+ARM_liberal_DEF:0 "The Republic of Armenia"
+ARM_social_democrat:0 "Republic of Armenia"
+ARM_social_democrat_DEF:0 "The Republic of Armenia"
+ARM_marxist_leninist:0 "Armenian Socialist Theocracy"
+ARM_marxist_leninist_DEF:0 "The Armenian Socialist Theocracy"
+ARM_bolshevik_leninist:0 "Armenian Socialist Republic"
+ARM_bolshevik_leninist_DEF:0 "The Armenian Socialist Republic"
+ARM_socialist:0 "Armenian Socialist Republic"
+ARM_socialist_DEF:0 "The Armenian Socialist Republic"
+ARM_national_socialist_ADJ:0 "Armenian"
+ARM_fascist_ADJ:0 "Armenian"
+ARM_paternal_autocrat_ADJ:0 "Armenian"
+ARM_conservative_ADJ:0 "Armenian"
+ARM_market_liberal_ADJ:0 "Armenian"
+ARM_liberal_ADJ:0 "Armenian"
+ARM_social_democrat_ADJ:0 "Armenian"
+ARM_marxist_leninist_ADJ:0 "Armenian"
+ARM_bolshevik_leninist_ADJ:0 "Armenian"
+ARM_socialist_ADJ:0 "Armenian"
 
-ARM_national_socialist_party:0 'HL'
-ARM_national_socialist_party_long:0 'Haykakan Legion (Armenian Legion)'
+ARM_national_socialist_party:0 "HL"
+ARM_national_socialist_party_long:0 "Haykakan Legion (Armenian Legion)"
 ARM_paternal_autocrat_party:0 'Tseghakronutyun'
 ARM_paternal_autocrat_party_long:0 'Tseghakronutyun (Taron Nationalist Movement)'
 ARM_fascist_party:0 'Tseghakronutyun'
@@ -422,3 +422,5 @@ COUNTRY_PATH_GER_OLD:0 'Protectorates will be Annexed'
 COUNTRY_PATH_GER_OLD_DESC:0 ''
 COUNTRY_PATH_GER_NEW:0 'Protectorates remain Unchanged'
 COUNTRY_PATH_GER_NEW_DESC:0 ''
+
+finish_ambitions_desc:0 "Ambitions for Finland are set by the current government."

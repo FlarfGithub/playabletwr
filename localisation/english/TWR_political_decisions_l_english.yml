@@ -1,28 +1,28 @@
 ﻿l_english:
  # Political Power Decisions
- TWR_hold_election:0 'Hold Elections'
- TWR_hold_election_desc:0 'Organize democratic elections to strengthen our political system.'
+ TWR_hold_election:0 "Hold Elections"
+ TWR_hold_election_desc:0 "Organize democratic elections to strengthen our political system."
 
- TWR_political_pressure:0 'Apply Political Pressure'
- TWR_political_pressure_desc:0 'Use political influence to sway public opinion.'
+ TWR_political_pressure:0 "Apply Political Pressure"
+ TWR_political_pressure_desc:0 "Use political influence to sway public opinion."
 
  # Stability Decisions
- TWR_improve_relations:0 'Improve Internal Relations'
- TWR_improve_relations_desc:0 'Work to improve relations between different groups in our society.'
+ TWR_improve_relations:0 "Improve Internal Relations"
+ TWR_improve_relations_desc:0 "Work to improve relations between different groups in our society."
 
- TWR_anti_corruption_campaign:0 'Anti-Corruption Campaign'
- TWR_anti_corruption_campaign_desc:0 'Launch a campaign to root out corruption in our government.'
+ TWR_anti_corruption_campaign:0 "Anti-Corruption Campaign"
+ TWR_anti_corruption_campaign_desc:0 "Launch a campaign to root out corruption in our government."
 
  # War Support Decisions
- TWR_propaganda_campaign:0 'Propaganda Campaign'
- TWR_propaganda_campaign_desc:0 'Launch a propaganda campaign to increase support for our cause.'
+ TWR_propaganda_campaign:0 "Propaganda Campaign"
+ TWR_propaganda_campaign_desc:0 "Launch a propaganda campaign to increase support for our cause."
 
- TWR_military_parade:0 'Military Parade'
- TWR_military_parade_desc:0 'Organize a military parade to boost morale and show our strength.'
+ TWR_military_parade:0 "Military Parade"
+ TWR_military_parade_desc:0 "Organize a military parade to boost morale and show our strength."
 
  # Ideology Decisions
- TWR_ideological_campaign:0 'Ideological Campaign'
- TWR_ideological_campaign_desc:0 'Promote our ideology to increase its popularity.'
+ TWR_ideological_campaign:0 "Ideological Campaign"
+ TWR_ideological_campaign_desc:0 "Promote our ideology to increase its popularity."
 
- TWR_political_reform:0 'Political Reform'
- TWR_political_reform_desc:0 'Implement political reforms to strengthen our system.'
+ TWR_political_reform:0 "Political Reform"
+ TWR_political_reform_desc:0 "Implement political reforms to strengthen our system."

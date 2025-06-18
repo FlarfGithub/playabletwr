@@ -1,10 +1,10 @@
 ﻿l_english:
- TWR_ai_ideology_advisors:0 'Ideological Advisor System'
- TWR_ai_ideology_advisors_desc:0 'Controls political advisor availability:\n\nPlayers only: Only human players\nGeneric: Countries without focus trees\nAll: All nations\nOff: Disable mechanics'
- TWR_ai_ideology_advisors_players:0 'Players only'
- TWR_ai_ideology_advisors_players_desc:0 'Only human players will have access to ideology-shifting advisors'
- TWR_ai_ideology_advisors_generic:0 'Generic focus countries'
- TWR_ai_ideology_advisors_all:0 'All countries'
- TWR_ai_ideology_advisors_off:0 'Disabled'
- NEW_COMMANDER_BUTTON:0 'Assign New Commander'
- NEW_COMMANDER_TOOLTIP:0 'Assign a new commander to lead this army group' 
+ TWR_ai_ideology_advisors:0 "Ideological Advisor System"
+ TWR_ai_ideology_advisors_desc:0 "Controls political advisor availability:\n\nPlayers only: Only human players\nGeneric: Countries without focus trees\nAll: All nations\nOff: Disable mechanics"
+ TWR_ai_ideology_advisors_players:0 "Players only"
+ TWR_ai_ideology_advisors_players_desc:0 "Only human players will have access to ideology-shifting advisors"
+ TWR_ai_ideology_advisors_generic:0 "Generic focus countries"
+ TWR_ai_ideology_advisors_all:0 "All countries"
+ TWR_ai_ideology_advisors_off:0 "Disabled"
+ NEW_COMMANDER_BUTTON:0 "Assign New Commander"
+ NEW_COMMANDER_TOOLTIP:0 "Assign a new commander to lead this army group" 
