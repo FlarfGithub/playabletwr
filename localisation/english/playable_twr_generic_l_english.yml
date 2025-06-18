@@ -1,326 +1,326 @@
 ﻿l_english:
  # Playable TWR Extension Focuses
- PTWR_Ideology_Branch:0 "Ideological Development"
- PTWR_Ideology_Branch_desc:0 "Develop our political ideology and establish a clear direction for the nation."
- PTWR_Democratic_Path:0 "Democratic Path"
- PTWR_Democratic_Path_desc:0 "Embrace democratic principles and institutions. Will change our government to either Liberal or Social Democrat."
- PTWR_Fascist_Path:0 "Fascist Path"
- PTWR_Fascist_Path_desc:0 "Adopt authoritarian nationalist policies. Will change our government to either National Socialist or Fascist."
- PTWR_Communist_Path:0 "Communist Path"
- PTWR_Communist_Path_desc:0 "Pursue socialist revolution and collective ownership. Will change our government to Socialist, Bolshevik-Leninist, or Marxist-Leninist."
- PTWR_Monarchist_Path:0 "Monarchist Path"
- PTWR_Monarchist_Path_desc:0 "Restore or strengthen monarchical rule. Will change our government to Paternal Autocrat."
- PTWR_Authoritarian_Path:0 "Authoritarian Path"
- PTWR_Authoritarian_Path_desc:0 "Establish strong centralized authority. Will change our government to Paternal Autocrat."
- PTWR_Liberal_Path:0 "Liberal Path"
- PTWR_Liberal_Path_desc:0 "Promote individual freedoms and free markets. Will change our government to Liberal."
- PTWR_Conservative_Path:0 "Conservative Path"
- PTWR_Conservative_Path_desc:0 "Maintain traditional values and institutions. Will change our government to Conservative."
- PTWR_Socialist_Path:0 "Socialist Path"
- PTWR_Socialist_Path_desc:0 "Advocate for social ownership and welfare. Will change our government to Socialist."
- PTWR_Radical_Path:0 "Radical Path"
- PTWR_Radical_Path_desc:0 "Embrace extreme political change and reform. Will change our government to either Bolshevik-Leninist or National Socialist."
- PTWR_Technocrat_Path:0 "Technocrat Path"
- PTWR_Technocrat_Path_desc:0 "Embrace scientific governance and technological progress. Will change our government to Paternal Autocrat."
+ PTWR_Ideology_Branch:0 'Ideological Development'
+ PTWR_Ideology_Branch_desc:0 'Develop our political ideology and establish a clear direction for the nation.'
+ PTWR_Democratic_Path:0 'Democratic Path'
+ PTWR_Democratic_Path_desc:0 'Embrace democratic principles and institutions. Will change our government to either Liberal or Social Democrat.'
+ PTWR_Fascist_Path:0 'Fascist Path'
+ PTWR_Fascist_Path_desc:0 'Adopt authoritarian nationalist policies. Will change our government to either National Socialist or Fascist.'
+ PTWR_Communist_Path:0 'Communist Path'
+ PTWR_Communist_Path_desc:0 'Pursue socialist revolution and collective ownership. Will change our government to Socialist, Bolshevik-Leninist, or Marxist-Leninist.'
+ PTWR_Monarchist_Path:0 'Monarchist Path'
+ PTWR_Monarchist_Path_desc:0 'Restore or strengthen monarchical rule. Will change our government to Paternal Autocrat.'
+ PTWR_Authoritarian_Path:0 'Authoritarian Path'
+ PTWR_Authoritarian_Path_desc:0 'Establish strong centralized authority. Will change our government to Paternal Autocrat.'
+ PTWR_Liberal_Path:0 'Liberal Path'
+ PTWR_Liberal_Path_desc:0 'Promote individual freedoms and free markets. Will change our government to Liberal.'
+ PTWR_Conservative_Path:0 'Conservative Path'
+ PTWR_Conservative_Path_desc:0 'Maintain traditional values and institutions. Will change our government to Conservative.'
+ PTWR_Socialist_Path:0 'Socialist Path'
+ PTWR_Socialist_Path_desc:0 'Advocate for social ownership and welfare. Will change our government to Socialist.'
+ PTWR_Radical_Path:0 'Radical Path'
+ PTWR_Radical_Path_desc:0 'Embrace extreme political change and reform. Will change our government to either Bolshevik-Leninist or National Socialist.'
+ PTWR_Technocrat_Path:0 'Technocrat Path'
+ PTWR_Technocrat_Path_desc:0 'Embrace scientific governance and technological progress. Will change our government to Paternal Autocrat.'
 
  # Country-specific focus names (example: Iran)
- PTWR_Fascist_Path_IRN:0 "Iranian Beacon of Fascism"
- PTWR_Fascist_Path_IRN_desc:0 "Lead Iran to a new era of fascist glory and national strength."
- PTWR_Communist_Path_IRN:0 "Red Persia"
- PTWR_Communist_Path_IRN_desc:0 "Embrace the revolutionary spirit and bring socialism to Iran."
- PTWR_Democratic_Path_IRN:0 "Persian Democracy"
- PTWR_Democratic_Path_IRN_desc:0 "Establish democratic institutions and freedoms in Iran."
- PTWR_Monarchist_Path_IRN:0 "Restore the Shah"
- PTWR_Monarchist_Path_IRN_desc:0 "Return Iran to monarchical rule under the Shah."
- PTWR_Authoritarian_Path_IRN:0 "Authoritarian Persia"
- PTWR_Authoritarian_Path_IRN_desc:0 "Centralize power and rule Iran with an iron fist."
- PTWR_Liberal_Path_IRN:0 "Liberal Awakening"
- PTWR_Liberal_Path_IRN_desc:0 "Promote liberal reforms and economic freedom in Iran."
- PTWR_Conservative_Path_IRN:0 "Guardians of Tradition"
- PTWR_Conservative_Path_IRN_desc:0 "Preserve Iran's traditions and conservative values."
- PTWR_Socialist_Path_IRN:0 "Socialist Iran"
- PTWR_Socialist_Path_IRN_desc:0 "Build a welfare state and social justice for all Iranians."
- PTWR_Radical_Path_IRN:0 "Radical Revolution"
- PTWR_Radical_Path_IRN_desc:0 "Embrace radical change and transform Iran's society."
- PTWR_Technocrat_Path_IRN:0 "Scientific Persia"
- PTWR_Technocrat_Path_IRN_desc:0 "Modernize Iran through scientific governance and technological progress."
+ PTWR_Fascist_Path_IRN:0 'Iranian Beacon of Fascism'
+ PTWR_Fascist_Path_IRN_desc:0 'Lead Iran to a new era of fascist glory and national strength.'
+ PTWR_Communist_Path_IRN:0 'Red Persia'
+ PTWR_Communist_Path_IRN_desc:0 'Embrace the revolutionary spirit and bring socialism to Iran.'
+ PTWR_Democratic_Path_IRN:0 'Persian Democracy'
+ PTWR_Democratic_Path_IRN_desc:0 'Establish democratic institutions and freedoms in Iran.'
+ PTWR_Monarchist_Path_IRN:0 'Restore the Shah'
+ PTWR_Monarchist_Path_IRN_desc:0 'Return Iran to monarchical rule under the Shah.'
+ PTWR_Authoritarian_Path_IRN:0 'Authoritarian Persia'
+ PTWR_Authoritarian_Path_IRN_desc:0 'Centralize power and rule Iran with an iron fist.'
+ PTWR_Liberal_Path_IRN:0 'Liberal Awakening'
+ PTWR_Liberal_Path_IRN_desc:0 'Promote liberal reforms and economic freedom in Iran.'
+ PTWR_Conservative_Path_IRN:0 'Guardians of Tradition'
+ PTWR_Conservative_Path_IRN_desc:0 'Preserve Iran's traditions and conservative values.'
+ PTWR_Socialist_Path_IRN:0 'Socialist Iran'
+ PTWR_Socialist_Path_IRN_desc:0 'Build a welfare state and social justice for all Iranians.'
+ PTWR_Radical_Path_IRN:0 'Radical Revolution'
+ PTWR_Radical_Path_IRN_desc:0 'Embrace radical change and transform Iran's society.'
+ PTWR_Technocrat_Path_IRN:0 'Scientific Persia'
+ PTWR_Technocrat_Path_IRN_desc:0 'Modernize Iran through scientific governance and technological progress.'
 
 # PLAYABLE TWR SUBMOD - GENERIC IDEOLOGY FOCUSES
 
 # First Row - Ideology Paths
-playable_twr_democratic_path:0 "Democratic Path"
-playable_twr_democratic_path_desc:0 "The path of democracy offers stability and progress, though it may reduce our willingness to engage in foreign conflicts."
-playable_twr_fascist_path:0 "Fascist Path"
-playable_twr_fascist_path_desc:0 "Fascism promises strength and unity, but at the cost of individual freedoms and economic efficiency."
-playable_twr_communist_path:0 "Communist Path"
-playable_twr_communist_path_desc:0 "Communism offers industrial might and resistance to foreign influence, though it may destabilize our society."
-playable_twr_monarchist_path:0 "Monarchist Path"
-playable_twr_monarchist_path_desc:0 "Monarchism provides strong leadership and stability, but may slow our technological advancement."
-playable_twr_authoritarian_path:0 "Authoritarian Path"
-playable_twr_authoritarian_path_desc:0 "Authoritarianism ensures strong leadership and war readiness, though it may reduce our economic efficiency."
-playable_twr_liberal_path:0 "Liberal Path"
-playable_twr_liberal_path_desc:0 "Liberalism promotes free trade and innovation, but may reduce our social stability."
-playable_twr_conservative_path:0 "Conservative Path"
-playable_twr_conservative_path_desc:0 "Conservatism provides strong defense and political stability, though it may slow our construction efforts."
-playable_twr_socialist_path:0 "Socialist Path"
-playable_twr_socialist_path_desc:0 "Socialism offers industrial efficiency and social stability, but may reduce our political flexibility."
-playable_twr_radical_path:0 "Radical Path"
-playable_twr_radical_path_desc:0 "Radicalism provides military speed and manpower, though it may destabilize our society."
-playable_twr_technocrat_path:0 "Technocrat Path"
-playable_twr_technocrat_path_desc:0 "Technocracy offers scientific governance and technological advancement, though it may reduce social stability."
+playable_twr_democratic_path:0 'Democratic Path'
+playable_twr_democratic_path_desc:0 'The path of democracy offers stability and progress, though it may reduce our willingness to engage in foreign conflicts.'
+playable_twr_fascist_path:0 'Fascist Path'
+playable_twr_fascist_path_desc:0 'Fascism promises strength and unity, but at the cost of individual freedoms and economic efficiency.'
+playable_twr_communist_path:0 'Communist Path'
+playable_twr_communist_path_desc:0 'Communism offers industrial might and resistance to foreign influence, though it may destabilize our society.'
+playable_twr_monarchist_path:0 'Monarchist Path'
+playable_twr_monarchist_path_desc:0 'Monarchism provides strong leadership and stability, but may slow our technological advancement.'
+playable_twr_authoritarian_path:0 'Authoritarian Path'
+playable_twr_authoritarian_path_desc:0 'Authoritarianism ensures strong leadership and war readiness, though it may reduce our economic efficiency.'
+playable_twr_liberal_path:0 'Liberal Path'
+playable_twr_liberal_path_desc:0 'Liberalism promotes free trade and innovation, but may reduce our social stability.'
+playable_twr_conservative_path:0 'Conservative Path'
+playable_twr_conservative_path_desc:0 'Conservatism provides strong defense and political stability, though it may slow our construction efforts.'
+playable_twr_socialist_path:0 'Socialist Path'
+playable_twr_socialist_path_desc:0 'Socialism offers industrial efficiency and social stability, but may reduce our political flexibility.'
+playable_twr_radical_path:0 'Radical Path'
+playable_twr_radical_path_desc:0 'Radicalism provides military speed and manpower, though it may destabilize our society.'
+playable_twr_technocrat_path:0 'Technocrat Path'
+playable_twr_technocrat_path_desc:0 'Technocracy offers scientific governance and technological advancement, though it may reduce social stability.'
 
 # Second Row - National Spirits
-playable_twr_democratic_spirit:0 "Democratic Spirit"
-playable_twr_democratic_spirit_desc:0 "Our democratic institutions provide stability and construction efficiency, though they may reduce our war support."
-playable_twr_fascist_spirit:0 "Fascist Spirit"
-playable_twr_fascist_spirit_desc:0 "Our fascist ideology provides military strength and manpower, though it may reduce our stability and economic efficiency."
-playable_twr_communist_spirit:0 "Communist Spirit"
-playable_twr_communist_spirit_desc:0 "Our communist system provides industrial efficiency and resistance to foreign influence, though it may reduce our stability."
-playable_twr_monarchist_spirit:0 "Monarchist Spirit"
-playable_twr_monarchist_spirit_desc:0 "Our monarchist system provides strong leadership and stability, though it may reduce our war support and research speed."
-playable_twr_authoritarian_spirit:0 "Authoritarian Spirit"
-playable_twr_authoritarian_spirit_desc:0 "Our authoritarian system provides war readiness and political power, though it may reduce our stability and economic efficiency."
-playable_twr_liberal_spirit:0 "Liberal Spirit"
-playable_twr_liberal_spirit_desc:0 "Our liberal system provides trade benefits and research speed, though it may reduce our stability and economic efficiency."
-playable_twr_conservative_spirit:0 "Conservative Spirit"
-playable_twr_conservative_spirit_desc:0 "Our conservative system provides strong defense and political power, though it may slow our construction and reduce war support."
-playable_twr_socialist_spirit:0 "Socialist Spirit"
-playable_twr_socialist_spirit_desc:0 "Our socialist system provides industrial efficiency and stability, though it may reduce our political flexibility and economic efficiency."
-playable_twr_radical_spirit:0 "Radical Spirit"
-playable_twr_radical_spirit_desc:0 "Our radical ideology provides military speed and manpower, though it may significantly reduce our stability and political power."
-playable_twr_technocrat_spirit:0 "Technocrat Spirit"
-playable_twr_technocrat_spirit_desc:0 "Our technocratic system provides research speed and industrial efficiency, though it may reduce our stability and political power."
+playable_twr_democratic_spirit:0 'Democratic Spirit'
+playable_twr_democratic_spirit_desc:0 'Our democratic institutions provide stability and construction efficiency, though they may reduce our war support.'
+playable_twr_fascist_spirit:0 'Fascist Spirit'
+playable_twr_fascist_spirit_desc:0 'Our fascist ideology provides military strength and manpower, though it may reduce our stability and economic efficiency.'
+playable_twr_communist_spirit:0 'Communist Spirit'
+playable_twr_communist_spirit_desc:0 'Our communist system provides industrial efficiency and resistance to foreign influence, though it may reduce our stability.'
+playable_twr_monarchist_spirit:0 'Monarchist Spirit'
+playable_twr_monarchist_spirit_desc:0 'Our monarchist system provides strong leadership and stability, though it may reduce our war support and research speed.'
+playable_twr_authoritarian_spirit:0 'Authoritarian Spirit'
+playable_twr_authoritarian_spirit_desc:0 'Our authoritarian system provides war readiness and political power, though it may reduce our stability and economic efficiency.'
+playable_twr_liberal_spirit:0 'Liberal Spirit'
+playable_twr_liberal_spirit_desc:0 'Our liberal system provides trade benefits and research speed, though it may reduce our stability and economic efficiency.'
+playable_twr_conservative_spirit:0 'Conservative Spirit'
+playable_twr_conservative_spirit_desc:0 'Our conservative system provides strong defense and political power, though it may slow our construction and reduce war support.'
+playable_twr_socialist_spirit:0 'Socialist Spirit'
+playable_twr_socialist_spirit_desc:0 'Our socialist system provides industrial efficiency and stability, though it may reduce our political flexibility and economic efficiency.'
+playable_twr_radical_spirit:0 'Radical Spirit'
+playable_twr_radical_spirit_desc:0 'Our radical ideology provides military speed and manpower, though it may significantly reduce our stability and political power.'
+playable_twr_technocrat_spirit:0 'Technocrat Spirit'
+playable_twr_technocrat_spirit_desc:0 'Our technocratic system provides research speed and industrial efficiency, though it may reduce our stability and political power.'
 
 # Country-Specific Focus Names
-playable_twr_democratic_path_IRN:0 "Iranian Democratic Path"
-playable_twr_democratic_path_BRA:0 "Brazilian Democratic Path"
-playable_twr_democratic_path_MEX:0 "Mexican Democratic Path"
-playable_twr_democratic_path_CAN:0 "Canadian Democratic Path"
-playable_twr_democratic_path_FIN:0 "Finnish Democratic Path"
-playable_twr_democratic_path_NOR:0 "Norwegian Democratic Path"
-playable_twr_democratic_path_JAP:0 "Japanese Democratic Path"
-playable_twr_democratic_path_KOR:0 "Korean Democratic Path"
-playable_twr_democratic_path_FRA:0 "French Democratic Path"
-playable_twr_democratic_path_ARM:0 "Armenian Democratic Path"
+playable_twr_democratic_path_IRN:0 'Iranian Democratic Path'
+playable_twr_democratic_path_BRA:0 'Brazilian Democratic Path'
+playable_twr_democratic_path_MEX:0 'Mexican Democratic Path'
+playable_twr_democratic_path_CAN:0 'Canadian Democratic Path'
+playable_twr_democratic_path_FIN:0 'Finnish Democratic Path'
+playable_twr_democratic_path_NOR:0 'Norwegian Democratic Path'
+playable_twr_democratic_path_JAP:0 'Japanese Democratic Path'
+playable_twr_democratic_path_KOR:0 'Korean Democratic Path'
+playable_twr_democratic_path_FRA:0 'French Democratic Path'
+playable_twr_democratic_path_ARM:0 'Armenian Democratic Path'
 
-playable_twr_fascist_path_IRN:0 "Iranian Fascist Path"
-playable_twr_fascist_path_BRA:0 "Brazilian Fascist Path"
-playable_twr_fascist_path_MEX:0 "Mexican Fascist Path"
-playable_twr_fascist_path_CAN:0 "Canadian Fascist Path"
-playable_twr_fascist_path_FIN:0 "Finnish Fascist Path"
-playable_twr_fascist_path_NOR:0 "Norwegian Fascist Path"
-playable_twr_fascist_path_JAP:0 "Japanese Fascist Path"
-playable_twr_fascist_path_KOR:0 "Korean Fascist Path"
-playable_twr_fascist_path_FRA:0 "French Fascist Path"
-playable_twr_fascist_path_ARM:0 "Armenian Fascist Path"
+playable_twr_fascist_path_IRN:0 'Iranian Fascist Path'
+playable_twr_fascist_path_BRA:0 'Brazilian Fascist Path'
+playable_twr_fascist_path_MEX:0 'Mexican Fascist Path'
+playable_twr_fascist_path_CAN:0 'Canadian Fascist Path'
+playable_twr_fascist_path_FIN:0 'Finnish Fascist Path'
+playable_twr_fascist_path_NOR:0 'Norwegian Fascist Path'
+playable_twr_fascist_path_JAP:0 'Japanese Fascist Path'
+playable_twr_fascist_path_KOR:0 'Korean Fascist Path'
+playable_twr_fascist_path_FRA:0 'French Fascist Path'
+playable_twr_fascist_path_ARM:0 'Armenian Fascist Path'
 
-playable_twr_communist_path_IRN:0 "Iranian Communist Path"
-playable_twr_communist_path_BRA:0 "Brazilian Communist Path"
-playable_twr_communist_path_MEX:0 "Mexican Communist Path"
-playable_twr_communist_path_CAN:0 "Canadian Communist Path"
-playable_twr_communist_path_FIN:0 "Finnish Communist Path"
-playable_twr_communist_path_NOR:0 "Norwegian Communist Path"
-playable_twr_communist_path_JAP:0 "Japanese Communist Path"
-playable_twr_communist_path_KOR:0 "Korean Communist Path"
-playable_twr_communist_path_FRA:0 "French Communist Path"
-playable_twr_communist_path_ARM:0 "Armenian Communist Path"
+playable_twr_communist_path_IRN:0 'Iranian Communist Path'
+playable_twr_communist_path_BRA:0 'Brazilian Communist Path'
+playable_twr_communist_path_MEX:0 'Mexican Communist Path'
+playable_twr_communist_path_CAN:0 'Canadian Communist Path'
+playable_twr_communist_path_FIN:0 'Finnish Communist Path'
+playable_twr_communist_path_NOR:0 'Norwegian Communist Path'
+playable_twr_communist_path_JAP:0 'Japanese Communist Path'
+playable_twr_communist_path_KOR:0 'Korean Communist Path'
+playable_twr_communist_path_FRA:0 'French Communist Path'
+playable_twr_communist_path_ARM:0 'Armenian Communist Path'
 
-playable_twr_monarchist_path_IRN:0 "Iranian Monarchist Path"
-playable_twr_monarchist_path_BRA:0 "Brazilian Monarchist Path"
-playable_twr_monarchist_path_MEX:0 "Mexican Monarchist Path"
-playable_twr_monarchist_path_CAN:0 "Canadian Monarchist Path"
-playable_twr_monarchist_path_FIN:0 "Finnish Monarchist Path"
-playable_twr_monarchist_path_NOR:0 "Norwegian Monarchist Path"
-playable_twr_monarchist_path_JAP:0 "Japanese Monarchist Path"
-playable_twr_monarchist_path_KOR:0 "Korean Monarchist Path"
-playable_twr_monarchist_path_FRA:0 "French Monarchist Path"
-playable_twr_monarchist_path_ARM:0 "Armenian Monarchist Path"
+playable_twr_monarchist_path_IRN:0 'Iranian Monarchist Path'
+playable_twr_monarchist_path_BRA:0 'Brazilian Monarchist Path'
+playable_twr_monarchist_path_MEX:0 'Mexican Monarchist Path'
+playable_twr_monarchist_path_CAN:0 'Canadian Monarchist Path'
+playable_twr_monarchist_path_FIN:0 'Finnish Monarchist Path'
+playable_twr_monarchist_path_NOR:0 'Norwegian Monarchist Path'
+playable_twr_monarchist_path_JAP:0 'Japanese Monarchist Path'
+playable_twr_monarchist_path_KOR:0 'Korean Monarchist Path'
+playable_twr_monarchist_path_FRA:0 'French Monarchist Path'
+playable_twr_monarchist_path_ARM:0 'Armenian Monarchist Path'
 
-playable_twr_authoritarian_path_IRN:0 "Iranian Authoritarian Path"
-playable_twr_authoritarian_path_BRA:0 "Brazilian Authoritarian Path"
-playable_twr_authoritarian_path_MEX:0 "Mexican Authoritarian Path"
-playable_twr_authoritarian_path_CAN:0 "Canadian Authoritarian Path"
-playable_twr_authoritarian_path_FIN:0 "Finnish Authoritarian Path"
-playable_twr_authoritarian_path_NOR:0 "Norwegian Authoritarian Path"
-playable_twr_authoritarian_path_JAP:0 "Japanese Authoritarian Path"
-playable_twr_authoritarian_path_KOR:0 "Korean Authoritarian Path"
-playable_twr_authoritarian_path_FRA:0 "French Authoritarian Path"
-playable_twr_authoritarian_path_ARM:0 "Armenian Authoritarian Path"
+playable_twr_authoritarian_path_IRN:0 'Iranian Authoritarian Path'
+playable_twr_authoritarian_path_BRA:0 'Brazilian Authoritarian Path'
+playable_twr_authoritarian_path_MEX:0 'Mexican Authoritarian Path'
+playable_twr_authoritarian_path_CAN:0 'Canadian Authoritarian Path'
+playable_twr_authoritarian_path_FIN:0 'Finnish Authoritarian Path'
+playable_twr_authoritarian_path_NOR:0 'Norwegian Authoritarian Path'
+playable_twr_authoritarian_path_JAP:0 'Japanese Authoritarian Path'
+playable_twr_authoritarian_path_KOR:0 'Korean Authoritarian Path'
+playable_twr_authoritarian_path_FRA:0 'French Authoritarian Path'
+playable_twr_authoritarian_path_ARM:0 'Armenian Authoritarian Path'
 
-playable_twr_liberal_path_IRN:0 "Iranian Liberal Path"
-playable_twr_liberal_path_BRA:0 "Brazilian Liberal Path"
-playable_twr_liberal_path_MEX:0 "Mexican Liberal Path"
-playable_twr_liberal_path_CAN:0 "Canadian Liberal Path"
-playable_twr_liberal_path_FIN:0 "Finnish Liberal Path"
-playable_twr_liberal_path_NOR:0 "Norwegian Liberal Path"
-playable_twr_liberal_path_JAP:0 "Japanese Liberal Path"
-playable_twr_liberal_path_KOR:0 "Korean Liberal Path"
-playable_twr_liberal_path_FRA:0 "French Liberal Path"
-playable_twr_liberal_path_ARM:0 "Armenian Liberal Path"
+playable_twr_liberal_path_IRN:0 'Iranian Liberal Path'
+playable_twr_liberal_path_BRA:0 'Brazilian Liberal Path'
+playable_twr_liberal_path_MEX:0 'Mexican Liberal Path'
+playable_twr_liberal_path_CAN:0 'Canadian Liberal Path'
+playable_twr_liberal_path_FIN:0 'Finnish Liberal Path'
+playable_twr_liberal_path_NOR:0 'Norwegian Liberal Path'
+playable_twr_liberal_path_JAP:0 'Japanese Liberal Path'
+playable_twr_liberal_path_KOR:0 'Korean Liberal Path'
+playable_twr_liberal_path_FRA:0 'French Liberal Path'
+playable_twr_liberal_path_ARM:0 'Armenian Liberal Path'
 
-playable_twr_conservative_path_IRN:0 "Iranian Conservative Path"
-playable_twr_conservative_path_BRA:0 "Brazilian Conservative Path"
-playable_twr_conservative_path_MEX:0 "Mexican Conservative Path"
-playable_twr_conservative_path_CAN:0 "Canadian Conservative Path"
-playable_twr_conservative_path_FIN:0 "Finnish Conservative Path"
-playable_twr_conservative_path_NOR:0 "Norwegian Conservative Path"
-playable_twr_conservative_path_JAP:0 "Japanese Conservative Path"
-playable_twr_conservative_path_KOR:0 "Korean Conservative Path"
-playable_twr_conservative_path_FRA:0 "French Conservative Path"
-playable_twr_conservative_path_ARM:0 "Armenian Conservative Path"
+playable_twr_conservative_path_IRN:0 'Iranian Conservative Path'
+playable_twr_conservative_path_BRA:0 'Brazilian Conservative Path'
+playable_twr_conservative_path_MEX:0 'Mexican Conservative Path'
+playable_twr_conservative_path_CAN:0 'Canadian Conservative Path'
+playable_twr_conservative_path_FIN:0 'Finnish Conservative Path'
+playable_twr_conservative_path_NOR:0 'Norwegian Conservative Path'
+playable_twr_conservative_path_JAP:0 'Japanese Conservative Path'
+playable_twr_conservative_path_KOR:0 'Korean Conservative Path'
+playable_twr_conservative_path_FRA:0 'French Conservative Path'
+playable_twr_conservative_path_ARM:0 'Armenian Conservative Path'
 
-playable_twr_socialist_path_IRN:0 "Iranian Socialist Path"
-playable_twr_socialist_path_BRA:0 "Brazilian Socialist Path"
-playable_twr_socialist_path_MEX:0 "Mexican Socialist Path"
-playable_twr_socialist_path_CAN:0 "Canadian Socialist Path"
-playable_twr_socialist_path_FIN:0 "Finnish Socialist Path"
-playable_twr_socialist_path_NOR:0 "Norwegian Socialist Path"
-playable_twr_socialist_path_JAP:0 "Japanese Socialist Path"
-playable_twr_socialist_path_KOR:0 "Korean Socialist Path"
-playable_twr_socialist_path_FRA:0 "French Socialist Path"
-playable_twr_socialist_path_ARM:0 "Armenian Socialist Path"
+playable_twr_socialist_path_IRN:0 'Iranian Socialist Path'
+playable_twr_socialist_path_BRA:0 'Brazilian Socialist Path'
+playable_twr_socialist_path_MEX:0 'Mexican Socialist Path'
+playable_twr_socialist_path_CAN:0 'Canadian Socialist Path'
+playable_twr_socialist_path_FIN:0 'Finnish Socialist Path'
+playable_twr_socialist_path_NOR:0 'Norwegian Socialist Path'
+playable_twr_socialist_path_JAP:0 'Japanese Socialist Path'
+playable_twr_socialist_path_KOR:0 'Korean Socialist Path'
+playable_twr_socialist_path_FRA:0 'French Socialist Path'
+playable_twr_socialist_path_ARM:0 'Armenian Socialist Path'
 
-playable_twr_radical_path_IRN:0 "Iranian Radical Path"
-playable_twr_radical_path_BRA:0 "Brazilian Radical Path"
-playable_twr_radical_path_MEX:0 "Mexican Radical Path"
-playable_twr_radical_path_CAN:0 "Canadian Radical Path"
-playable_twr_radical_path_FIN:0 "Finnish Radical Path"
-playable_twr_radical_path_NOR:0 "Norwegian Radical Path"
-playable_twr_radical_path_JAP:0 "Japanese Radical Path"
-playable_twr_radical_path_KOR:0 "Korean Radical Path"
-playable_twr_radical_path_FRA:0 "French Radical Path"
-playable_twr_radical_path_ARM:0 "Armenian Radical Path"
+playable_twr_radical_path_IRN:0 'Iranian Radical Path'
+playable_twr_radical_path_BRA:0 'Brazilian Radical Path'
+playable_twr_radical_path_MEX:0 'Mexican Radical Path'
+playable_twr_radical_path_CAN:0 'Canadian Radical Path'
+playable_twr_radical_path_FIN:0 'Finnish Radical Path'
+playable_twr_radical_path_NOR:0 'Norwegian Radical Path'
+playable_twr_radical_path_JAP:0 'Japanese Radical Path'
+playable_twr_radical_path_KOR:0 'Korean Radical Path'
+playable_twr_radical_path_FRA:0 'French Radical Path'
+playable_twr_radical_path_ARM:0 'Armenian Radical Path'
 
-playable_twr_technocrat_path_IRN:0 "Iranian Technocrat Path"
-playable_twr_technocrat_path_BRA:0 "Brazilian Technocrat Path"
-playable_twr_technocrat_path_MEX:0 "Mexican Technocrat Path"
-playable_twr_technocrat_path_CAN:0 "Canadian Technocrat Path"
-playable_twr_technocrat_path_FIN:0 "Finnish Technocrat Path"
-playable_twr_technocrat_path_NOR:0 "Norwegian Technocrat Path"
-playable_twr_technocrat_path_JAP:0 "Japanese Technocrat Path"
-playable_twr_technocrat_path_KOR:0 "Korean Technocrat Path"
-playable_twr_technocrat_path_FRA:0 "French Technocrat Path"
-playable_twr_technocrat_path_ARM:0 "Armenian Technocrat Path"
+playable_twr_technocrat_path_IRN:0 'Iranian Technocrat Path'
+playable_twr_technocrat_path_BRA:0 'Brazilian Technocrat Path'
+playable_twr_technocrat_path_MEX:0 'Mexican Technocrat Path'
+playable_twr_technocrat_path_CAN:0 'Canadian Technocrat Path'
+playable_twr_technocrat_path_FIN:0 'Finnish Technocrat Path'
+playable_twr_technocrat_path_NOR:0 'Norwegian Technocrat Path'
+playable_twr_technocrat_path_JAP:0 'Japanese Technocrat Path'
+playable_twr_technocrat_path_KOR:0 'Korean Technocrat Path'
+playable_twr_technocrat_path_FRA:0 'French Technocrat Path'
+playable_twr_technocrat_path_ARM:0 'Armenian Technocrat Path'
 
 # National Spirit Names
-playable_twr_democratic_spirit:0 "Democratic Spirit"
-playable_twr_democratic_spirit_desc:0 "Our democratic institutions provide stability and construction efficiency, though they may reduce our war support."
-playable_twr_fascist_spirit:0 "Fascist Spirit"
-playable_twr_fascist_spirit_desc:0 "Our fascist ideology provides military strength and manpower, though it may reduce our stability and economic efficiency."
-playable_twr_communist_spirit:0 "Communist Spirit"
-playable_twr_communist_spirit_desc:0 "Our communist system provides industrial efficiency and resistance to foreign influence, though it may reduce our stability."
-playable_twr_monarchist_spirit:0 "Monarchist Spirit"
-playable_twr_monarchist_spirit_desc:0 "Our monarchist system provides strong leadership and stability, though it may reduce our war support and research speed."
-playable_twr_authoritarian_spirit:0 "Authoritarian Spirit"
-playable_twr_authoritarian_spirit_desc:0 "Our authoritarian system provides war readiness and political power, though it may reduce our stability and economic efficiency."
-playable_twr_liberal_spirit:0 "Liberal Spirit"
-playable_twr_liberal_spirit_desc:0 "Our liberal system provides trade benefits and research speed, though it may reduce our stability and economic efficiency."
-playable_twr_conservative_spirit:0 "Conservative Spirit"
-playable_twr_conservative_spirit_desc:0 "Our conservative system provides strong defense and political power, though it may slow our construction and reduce war support."
-playable_twr_socialist_spirit:0 "Socialist Spirit"
-playable_twr_socialist_spirit_desc:0 "Our socialist system provides industrial efficiency and stability, though it may reduce our political flexibility and economic efficiency."
-playable_twr_radical_spirit:0 "Radical Spirit"
-playable_twr_radical_spirit_desc:0 "Our radical ideology provides military speed and manpower, though it may significantly reduce our stability and political power."
-playable_twr_technocrat_spirit:0 "Technocrat Spirit"
-playable_twr_technocrat_spirit_desc:0 "Our technocratic system provides research speed and industrial efficiency, though it may reduce our stability and political power."
+playable_twr_democratic_spirit:0 'Democratic Spirit'
+playable_twr_democratic_spirit_desc:0 'Our democratic institutions provide stability and construction efficiency, though they may reduce our war support.'
+playable_twr_fascist_spirit:0 'Fascist Spirit'
+playable_twr_fascist_spirit_desc:0 'Our fascist ideology provides military strength and manpower, though it may reduce our stability and economic efficiency.'
+playable_twr_communist_spirit:0 'Communist Spirit'
+playable_twr_communist_spirit_desc:0 'Our communist system provides industrial efficiency and resistance to foreign influence, though it may reduce our stability.'
+playable_twr_monarchist_spirit:0 'Monarchist Spirit'
+playable_twr_monarchist_spirit_desc:0 'Our monarchist system provides strong leadership and stability, though it may reduce our war support and research speed.'
+playable_twr_authoritarian_spirit:0 'Authoritarian Spirit'
+playable_twr_authoritarian_spirit_desc:0 'Our authoritarian system provides war readiness and political power, though it may reduce our stability and economic efficiency.'
+playable_twr_liberal_spirit:0 'Liberal Spirit'
+playable_twr_liberal_spirit_desc:0 'Our liberal system provides trade benefits and research speed, though it may reduce our stability and economic efficiency.'
+playable_twr_conservative_spirit:0 'Conservative Spirit'
+playable_twr_conservative_spirit_desc:0 'Our conservative system provides strong defense and political power, though it may slow our construction and reduce war support.'
+playable_twr_socialist_spirit:0 'Socialist Spirit'
+playable_twr_socialist_spirit_desc:0 'Our socialist system provides industrial efficiency and stability, though it may reduce our political flexibility and economic efficiency.'
+playable_twr_radical_spirit:0 'Radical Spirit'
+playable_twr_radical_spirit_desc:0 'Our radical ideology provides military speed and manpower, though it may significantly reduce our stability and political power.'
+playable_twr_technocrat_spirit:0 'Technocrat Spirit'
+playable_twr_technocrat_spirit_desc:0 'Our technocratic system provides research speed and industrial efficiency, though it may reduce our stability and political power.'
 
 # Sub-Branch Focus Names and Descriptions
-playable_twr_democratic_elections:0 "Democratic Elections"
-playable_twr_democratic_elections_desc:0 "Establish free and fair elections to strengthen our democracy."
-playable_twr_democratic_institutions:0 "Democratic Institutions"
-playable_twr_democratic_institutions_desc:0 "Build strong democratic institutions and checks on power."
-playable_twr_democratic_diplomacy:0 "Democratic Diplomacy"
-playable_twr_democratic_diplomacy_desc:0 "Promote democratic values through international cooperation."
+playable_twr_democratic_elections:0 'Democratic Elections'
+playable_twr_democratic_elections_desc:0 'Establish free and fair elections to strengthen our democracy.'
+playable_twr_democratic_institutions:0 'Democratic Institutions'
+playable_twr_democratic_institutions_desc:0 'Build strong democratic institutions and checks on power.'
+playable_twr_democratic_diplomacy:0 'Democratic Diplomacy'
+playable_twr_democratic_diplomacy_desc:0 'Promote democratic values through international cooperation.'
 
-playable_twr_fascist_militarization:0 "Fascist Militarization"
-playable_twr_fascist_militarization_desc:0 "Militarize our society and prepare for expansion."
-playable_twr_fascist_unity:0 "Fascist Unity"
-playable_twr_fascist_unity_desc:0 "Unite the nation under fascist principles and leadership."
-playable_twr_fascist_expansion:0 "Fascist Expansion"
-playable_twr_fascist_expansion_desc:0 "Prepare for territorial expansion and conquest."
+playable_twr_fascist_militarization:0 'Fascist Militarization'
+playable_twr_fascist_militarization_desc:0 'Militarize our society and prepare for expansion.'
+playable_twr_fascist_unity:0 'Fascist Unity'
+playable_twr_fascist_unity_desc:0 'Unite the nation under fascist principles and leadership.'
+playable_twr_fascist_expansion:0 'Fascist Expansion'
+playable_twr_fascist_expansion_desc:0 'Prepare for territorial expansion and conquest.'
 
-playable_twr_communist_industrialization:0 "Communist Industrialization"
-playable_twr_communist_industrialization_desc:0 "Rapidly industrialize our economy under state control."
-playable_twr_communist_revolution:0 "Communist Revolution"
-playable_twr_communist_revolution_desc:0 "Complete the socialist revolution and eliminate class divisions."
-playable_twr_communist_international:0 "Communist International"
-playable_twr_communist_international_desc:0 "Promote international solidarity and revolutionary movements."
+playable_twr_communist_industrialization:0 'Communist Industrialization'
+playable_twr_communist_industrialization_desc:0 'Rapidly industrialize our economy under state control.'
+playable_twr_communist_revolution:0 'Communist Revolution'
+playable_twr_communist_revolution_desc:0 'Complete the socialist revolution and eliminate class divisions.'
+playable_twr_communist_international:0 'Communist International'
+playable_twr_communist_international_desc:0 'Promote international solidarity and revolutionary movements.'
 
-playable_twr_monarchist_restoration:0 "Monarchist Restoration"
-playable_twr_monarchist_restoration_desc:0 "Restore or strengthen monarchical authority and tradition."
-playable_twr_monarchist_tradition:0 "Monarchist Tradition"
-playable_twr_monarchist_tradition_desc:0 "Embrace traditional values and monarchical institutions."
-playable_twr_monarchist_legitimacy:0 "Monarchist Legitimacy"
-playable_twr_monarchist_legitimacy_desc:0 "Establish the legitimacy and authority of monarchical rule."
+playable_twr_monarchist_restoration:0 'Monarchist Restoration'
+playable_twr_monarchist_restoration_desc:0 'Restore or strengthen monarchical authority and tradition.'
+playable_twr_monarchist_tradition:0 'Monarchist Tradition'
+playable_twr_monarchist_tradition_desc:0 'Embrace traditional values and monarchical institutions.'
+playable_twr_monarchist_legitimacy:0 'Monarchist Legitimacy'
+playable_twr_monarchist_legitimacy_desc:0 'Establish the legitimacy and authority of monarchical rule.'
 
-playable_twr_authoritarian_control:0 "Authoritarian Control"
-playable_twr_authoritarian_control_desc:0 "Establish strict control over all aspects of society."
-playable_twr_authoritarian_leadership:0 "Authoritarian Leadership"
-playable_twr_authoritarian_leadership_desc:0 "Strengthen centralized leadership and decision-making."
-playable_twr_authoritarian_discipline:0 "Authoritarian Discipline"
-playable_twr_authoritarian_discipline_desc:0 "Enforce discipline and order throughout the nation."
+playable_twr_authoritarian_control:0 'Authoritarian Control'
+playable_twr_authoritarian_control_desc:0 'Establish strict control over all aspects of society.'
+playable_twr_authoritarian_leadership:0 'Authoritarian Leadership'
+playable_twr_authoritarian_leadership_desc:0 'Strengthen centralized leadership and decision-making.'
+playable_twr_authoritarian_discipline:0 'Authoritarian Discipline'
+playable_twr_authoritarian_discipline_desc:0 'Enforce discipline and order throughout the nation.'
 
-playable_twr_liberal_market:0 "Liberal Market"
-playable_twr_liberal_market_desc:0 "Establish free market principles and economic liberalism."
-playable_twr_liberal_freedoms:0 "Liberal Freedoms"
-playable_twr_liberal_freedoms_desc:0 "Protect individual rights and civil liberties."
-playable_twr_liberal_innovation:0 "Liberal Innovation"
-playable_twr_liberal_innovation_desc:0 "Promote innovation and technological advancement."
+playable_twr_liberal_market:0 'Liberal Market'
+playable_twr_liberal_market_desc:0 'Establish free market principles and economic liberalism.'
+playable_twr_liberal_freedoms:0 'Liberal Freedoms'
+playable_twr_liberal_freedoms_desc:0 'Protect individual rights and civil liberties.'
+playable_twr_liberal_innovation:0 'Liberal Innovation'
+playable_twr_liberal_innovation_desc:0 'Promote innovation and technological advancement.'
 
-playable_twr_conservative_tradition:0 "Conservative Tradition"
-playable_twr_conservative_tradition_desc:0 "Preserve traditional values and social institutions."
-playable_twr_conservative_defense:0 "Conservative Defense"
-playable_twr_conservative_defense_desc:0 "Strengthen national defense and military preparedness."
-playable_twr_conservative_values:0 "Conservative Values"
-playable_twr_conservative_values_desc:0 "Uphold conservative moral and social values."
+playable_twr_conservative_tradition:0 'Conservative Tradition'
+playable_twr_conservative_tradition_desc:0 'Preserve traditional values and social institutions.'
+playable_twr_conservative_defense:0 'Conservative Defense'
+playable_twr_conservative_defense_desc:0 'Strengthen national defense and military preparedness.'
+playable_twr_conservative_values:0 'Conservative Values'
+playable_twr_conservative_values_desc:0 'Uphold conservative moral and social values.'
 
-playable_twr_socialist_workers:0 "Socialist Workers"
-playable_twr_socialist_workers_desc:0 "Empower the working class and establish workers' rights."
-playable_twr_socialist_equality:0 "Socialist Equality"
-playable_twr_socialist_equality_desc:0 "Promote social equality and reduce economic disparities."
-playable_twr_socialist_cooperation:0 "Socialist Cooperation"
-playable_twr_socialist_cooperation_desc:0 "Foster international cooperation and solidarity."
+playable_twr_socialist_workers:0 'Socialist Workers'
+playable_twr_socialist_workers_desc:0 'Empower the working class and establish workers' rights.'
+playable_twr_socialist_equality:0 'Socialist Equality'
+playable_twr_socialist_equality_desc:0 'Promote social equality and reduce economic disparities.'
+playable_twr_socialist_cooperation:0 'Socialist Cooperation'
+playable_twr_socialist_cooperation_desc:0 'Foster international cooperation and solidarity.'
 
-playable_twr_radical_change:0 "Radical Change"
-playable_twr_radical_change_desc:0 "Implement radical reforms and social transformation."
-playable_twr_radical_movement:0 "Radical Movement"
-playable_twr_radical_movement_desc:0 "Build a mass movement for radical political change."
-playable_twr_radical_action:0 "Radical Action"
-playable_twr_radical_action_desc:0 "Take decisive action to achieve radical political goals."
+playable_twr_radical_change:0 'Radical Change'
+playable_twr_radical_change_desc:0 'Implement radical reforms and social transformation.'
+playable_twr_radical_movement:0 'Radical Movement'
+playable_twr_radical_movement_desc:0 'Build a mass movement for radical political change.'
+playable_twr_radical_action:0 'Radical Action'
+playable_twr_radical_action_desc:0 'Take decisive action to achieve radical political goals.'
 
 # Sub-Branch National Spirit Names and Descriptions
-playable_twr_democratic_institutions_spirit:0 "Democratic Institutions"
-playable_twr_democratic_institutions_spirit_desc:0 "Our democratic institutions provide stability, political power, and research benefits, though they may increase consumer goods costs."
+playable_twr_democratic_institutions_spirit:0 'Democratic Institutions'
+playable_twr_democratic_institutions_spirit_desc:0 'Our democratic institutions provide stability, political power, and research benefits, though they may increase consumer goods costs.'
 
-playable_twr_fascist_militarization_spirit:0 "Fascist Militarization"
-playable_twr_fascist_militarization_spirit_desc:0 "Our fascist militarization provides military strength and war support, though it may increase consumer goods costs."
+playable_twr_fascist_militarization_spirit:0 'Fascist Militarization'
+playable_twr_fascist_militarization_spirit_desc:0 'Our fascist militarization provides military strength and war support, though it may increase consumer goods costs.'
 
-playable_twr_communist_industrialization_spirit:0 "Communist Industrialization"
-playable_twr_communist_industrialization_spirit_desc:0 "Our communist industrialization provides industrial efficiency and construction speed, though it may reduce stability and increase consumer goods costs."
+playable_twr_communist_industrialization_spirit:0 'Communist Industrialization'
+playable_twr_communist_industrialization_spirit_desc:0 'Our communist industrialization provides industrial efficiency and construction speed, though it may reduce stability and increase consumer goods costs.'
 
-playable_twr_monarchist_tradition_spirit:0 "Monarchist Tradition"
-playable_twr_monarchist_tradition_spirit_desc:0 "Our monarchist tradition provides political power and stability, though it may reduce research speed and war support."
+playable_twr_monarchist_tradition_spirit:0 'Monarchist Tradition'
+playable_twr_monarchist_tradition_spirit_desc:0 'Our monarchist tradition provides political power and stability, though it may reduce research speed and war support.'
 
-playable_twr_authoritarian_control_spirit:0 "Authoritarian Control"
-playable_twr_authoritarian_control_spirit_desc:0 "Our authoritarian control provides war support and political power, though it may reduce stability and increase consumer goods costs."
+playable_twr_authoritarian_control_spirit:0 'Authoritarian Control'
+playable_twr_authoritarian_control_spirit_desc:0 'Our authoritarian control provides war support and political power, though it may reduce stability and increase consumer goods costs.'
 
-playable_twr_liberal_market_spirit:0 "Liberal Market"
-playable_twr_liberal_market_spirit_desc:0 "Our liberal market provides trade benefits and research speed, though it may reduce stability and increase consumer goods costs."
+playable_twr_liberal_market_spirit:0 'Liberal Market'
+playable_twr_liberal_market_spirit_desc:0 'Our liberal market provides trade benefits and research speed, though it may reduce stability and increase consumer goods costs.'
 
-playable_twr_conservative_defense_spirit:0 "Conservative Defense"
-playable_twr_conservative_defense_spirit_desc:0 "Our conservative defense provides strong defensive capabilities and political power, though it may slow construction and reduce war support."
+playable_twr_conservative_defense_spirit:0 'Conservative Defense'
+playable_twr_conservative_defense_spirit_desc:0 'Our conservative defense provides strong defensive capabilities and political power, though it may slow construction and reduce war support.'
 
-playable_twr_socialist_workers_spirit:0 "Socialist Workers"
-playable_twr_socialist_workers_spirit_desc:0 "Our socialist workers provide industrial efficiency and stability, though they may reduce political flexibility and increase consumer goods costs."
+playable_twr_socialist_workers_spirit:0 'Socialist Workers'
+playable_twr_socialist_workers_spirit_desc:0 'Our socialist workers provide industrial efficiency and stability, though they may reduce political flexibility and increase consumer goods costs.'
 
-playable_twr_radical_movement_spirit:0 "Radical Movement"
-playable_twr_radical_movement_spirit_desc:0 "Our radical movement provides manpower and military speed, though it may significantly reduce stability and political power."
+playable_twr_radical_movement_spirit:0 'Radical Movement'
+playable_twr_radical_movement_spirit_desc:0 'Our radical movement provides manpower and military speed, though it may significantly reduce stability and political power.'
 
-playable_twr_technocrat_innovation:0 "Technocrat Innovation"
-playable_twr_technocrat_innovation_desc:0 "Promote scientific innovation and technological advancement."
+playable_twr_technocrat_innovation:0 'Technocrat Innovation'
+playable_twr_technocrat_innovation_desc:0 'Promote scientific innovation and technological advancement.'
 
-playable_twr_technocrat_efficiency:0 "Technocrat Efficiency"
-playable_twr_technocrat_efficiency_desc:0 "Optimize government and industry through scientific management."
+playable_twr_technocrat_efficiency:0 'Technocrat Efficiency'
+playable_twr_technocrat_efficiency_desc:0 'Optimize government and industry through scientific management.'
 
-playable_twr_technocrat_progress:0 "Technocrat Progress"
-playable_twr_technocrat_progress_desc:0 "Advance society through scientific progress and rational planning." 
+playable_twr_technocrat_progress:0 'Technocrat Progress'
+playable_twr_technocrat_progress_desc:0 'Advance society through scientific progress and rational planning.' 

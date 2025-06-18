@@ -1,22 +1,22 @@
 ﻿l_english:
 
  # Game Rules
- TWR_GENERIC_IDEOLOGY_GROUP:0 "Generic Ideology Settings"
+ TWR_GENERIC_IDEOLOGY_GROUP:0 'Generic Ideology Settings'
 
- TWR_GENERIC_IDEOLOGY_FOCUSES:0 "Generic Ideology Focuses"
- TWR_GENERIC_IDEOLOGY_FOCUSES_ON:0 "Enabled"
- TWR_GENERIC_IDEOLOGY_FOCUSES_ON_DESC:0 "Generic countries will have access to the new ideology focus trees."
- TWR_GENERIC_IDEOLOGY_FOCUSES_OFF:0 "Disabled"
- TWR_GENERIC_IDEOLOGY_FOCUSES_OFF_DESC:0 "Generic countries will use the default focus trees."
+ TWR_GENERIC_IDEOLOGY_FOCUSES:0 'Generic Ideology Focuses'
+ TWR_GENERIC_IDEOLOGY_FOCUSES_ON:0 'Enabled'
+ TWR_GENERIC_IDEOLOGY_FOCUSES_ON_DESC:0 'Generic countries will have access to the new ideology focus trees.'
+ TWR_GENERIC_IDEOLOGY_FOCUSES_OFF:0 'Disabled'
+ TWR_GENERIC_IDEOLOGY_FOCUSES_OFF_DESC:0 'Generic countries will use the default focus trees.'
 
- TWR_GENERIC_IDEOLOGY_ADVISORS:0 "Generic Ideology Advisors"
- TWR_GENERIC_IDEOLOGY_ADVISORS_ON:0 "Enabled"
- TWR_GENERIC_IDEOLOGY_ADVISORS_ON_DESC:0 "Generic countries will have access to the new ideology advisors."
- TWR_GENERIC_IDEOLOGY_ADVISORS_OFF:0 "Disabled"
- TWR_GENERIC_IDEOLOGY_ADVISORS_OFF_DESC:0 "Generic countries will use the default advisors."
+ TWR_GENERIC_IDEOLOGY_ADVISORS:0 'Generic Ideology Advisors'
+ TWR_GENERIC_IDEOLOGY_ADVISORS_ON:0 'Enabled'
+ TWR_GENERIC_IDEOLOGY_ADVISORS_ON_DESC:0 'Generic countries will have access to the new ideology advisors.'
+ TWR_GENERIC_IDEOLOGY_ADVISORS_OFF:0 'Disabled'
+ TWR_GENERIC_IDEOLOGY_ADVISORS_OFF_DESC:0 'Generic countries will use the default advisors.'
 
- TWR_GENERIC_IDEOLOGY_AI:0 "Generic Ideology AI"
- TWR_GENERIC_IDEOLOGY_AI_ON:0 "Enabled"
- TWR_GENERIC_IDEOLOGY_AI_ON_DESC:0 "AI-controlled generic countries will use the new ideology system."
- TWR_GENERIC_IDEOLOGY_AI_OFF:0 "Disabled"
- TWR_GENERIC_IDEOLOGY_AI_OFF_DESC:0 "AI-controlled generic countries will use the default ideology system." 
+ TWR_GENERIC_IDEOLOGY_AI:0 'Generic Ideology AI'
+ TWR_GENERIC_IDEOLOGY_AI_ON:0 'Enabled'
+ TWR_GENERIC_IDEOLOGY_AI_ON_DESC:0 'AI-controlled generic countries will use the new ideology system.'
+ TWR_GENERIC_IDEOLOGY_AI_OFF:0 'Disabled'
+ TWR_GENERIC_IDEOLOGY_AI_OFF_DESC:0 'AI-controlled generic countries will use the default ideology system.' 
