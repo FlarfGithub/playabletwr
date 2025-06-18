@@ -323,4 +323,47 @@ playable_twr_technocrat_efficiency:0 'Technocrat Efficiency'
 playable_twr_technocrat_efficiency_desc:0 'Optimize government and industry through scientific management.'
 
 playable_twr_technocrat_progress:0 'Technocrat Progress'
-playable_twr_technocrat_progress_desc:0 'Advance society through scientific progress and rational planning.' 
+playable_twr_technocrat_progress_desc:0 'Advance society through scientific progress and rational planning.'
+
+# Vanilla Political Events
+playabletwr_democratic_election_title:0 "Democratic Election!"
+playabletwr_democratic_election_desc:0 "A new election is being held."
+playabletwr_democratic_election_option:0 "Let the people decide!"
+
+playabletwr_civil_war_title:0 "Civil War!"
+playabletwr_civil_war_desc:0 "A civil war has broken out."
+playabletwr_civil_war_option:0 "To arms!"
+
+playabletwr_government_change_title:0 "Government Change!"
+playabletwr_government_change_desc:0 "A new government has taken power."
+playabletwr_government_change_option:0 "A new era begins."
+
+# Generic Ideology Revolution Event Options
+# (Add option names for each event)
+generic_ideology_revolution.1.a:0 "Support the revolution!"
+generic_ideology_revolution.2.a:0 "Support the revolution!"
+generic_ideology_revolution.3.a:0 "Support the revolution!"
+generic_ideology_revolution.4.a:0 "Support the revolution!"
+generic_ideology_revolution.5.a:0 "Support the revolution!"
+generic_ideology_revolution.6.a:0 "Support the revolution!"
+generic_ideology_revolution.7.a:0 "Support the revolution!"
+generic_ideology_revolution.8.a:0 "Support the revolution!"
+generic_ideology_revolution.9.a:0 "Support the revolution!"
+generic_ideology_revolution.1.t:0 "National Socialist Revolution!"
+generic_ideology_revolution.1.d:0 "A National Socialist revolution has begun."
+generic_ideology_revolution.2.t:0 "Fascist Revolution!"
+generic_ideology_revolution.2.d:0 "A Fascist revolution has begun."
+generic_ideology_revolution.3.t:0 "Falangist Revolution!"
+generic_ideology_revolution.3.d:0 "A Falangist revolution has begun."
+generic_ideology_revolution.4.t:0 "Social Democrat Revolution!"
+generic_ideology_revolution.4.d:0 "A Social Democrat revolution has begun."
+generic_ideology_revolution.5.t:0 "Liberal Revolution!"
+generic_ideology_revolution.5.d:0 "A Liberal revolution has begun."
+generic_ideology_revolution.6.t:0 "Conservative Revolution!"
+generic_ideology_revolution.6.d:0 "A Conservative revolution has begun."
+generic_ideology_revolution.7.t:0 "Marxist Revolution!"
+generic_ideology_revolution.7.d:0 "A Marxist revolution has begun."
+generic_ideology_revolution.8.t:0 "Stalinist Revolution!"
+generic_ideology_revolution.8.d:0 "A Stalinist revolution has begun."
+generic_ideology_revolution.9.t:0 "Anarchist Revolution!"
+generic_ideology_revolution.9.d:0 "An Anarchist revolution has begun." 
