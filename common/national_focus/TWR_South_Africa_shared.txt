@@ -1,0 +1,7127 @@
+###################
+## Starting Tree ##
+###################
+
+shared_focus = {
+	id = SAF_The_Upcoming_Elections
+	icon = GFX_GENERIC_parliament
+	cost = 7
+	x = 8
+	y = 0
+	cancelable = yes
+	cancel_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Upcoming_Elections"
+		country_event = { id = southafrica_elections.1 }
+	}
+}
+
+shared_focus = {
+	id = SAF_The_Question_of_Economy
+	icon = GFX_GENERIC_Public_Housing_Construction
+	cost = 7
+	x = -1
+	y = 2
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Question_of_Economy"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		country_event = { id = southafrica_elections.3 }
+	}
+}
+
+shared_focus = {
+	id = SAF_Domestic_Policies
+	icon = GFX_GENERIC_destruction
+	cost = 7
+	x = 0
+	y = 1
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Domestic_Policies"
+		country_event = { id = southafrica_elections.4 }
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = SAF_Our_Foreign_Policy
+	icon = GFX_GENERIC_ringing_phone
+	cost = 7
+	x = 1
+	y = 2
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Our_Foreign_Policy"
+		country_event = { id = southafrica_elections.5 }
+	}
+}
+
+shared_focus = {
+	id = SAF_A_Defence_Contract
+	icon = GFX_GENERIC_assault_rifles
+	cost = 7
+	x = 2
+	y = 1
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Defense_Contract"
+		#Award it to South African firm or British Company
+		country_event = southafrica_elections.6
+	}
+}
+
+shared_focus = {
+	id = SAF_Handling_Political_Polarisation
+	icon = GFX_GENERIC_Riot_focus
+	cost = 6
+	x = -2
+	y = 1
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Handling_Political_Polarisation"
+		country_event = southafrica_elections.8
+	}
+}
+
+shared_focus = {
+	id = SAF_Railways_Modernisation
+	icon = GFX_GENERIC_Railway_Bill
+	cost = 7
+	x = 5
+	y = 1
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Railways_Modernisation"
+		#Non political, just gives you new trains and a small rail boost
+		add_equipment_to_stockpile = {
+			type = train_equipment
+    		amount = 25
+			producer = ENG
+		}
+		add_timed_idea = {
+			idea = SAF_railways_temp
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Fight_Bigotry
+	icon = GFX_HUN_fascist_defeated
+	cost = 7
+	x = -5
+	y = 1
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Fight_Bigotry"
+		#Try to fight fash and national party influence, you get called a race traitor though.
+		country_event = southafrica_elections.7
+	}
+}
+
+shared_focus = {
+	id = SAF_Opening_Jan_Smuts_Airport
+	icon = GFX_GEN_good_airport
+	cost = 5
+	x = 3
+	y = 2
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Opening_Jan_Smuts_Airport"
+		#Event about the Jan Smuts Airport
+		capital_scope = {
+			add_building_construction = {
+			type = air_base
+			level = 2
+			instant_build = yes
+			}
+		}
+		country_event = southafrica_elections.9
+	}
+}
+
+shared_focus = {
+	id = SAF_Uniting_the_United_Party
+	icon = GFX_SAF_United_Party
+	cost = 7
+	x = -3
+	y = 2
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_Upcoming_Elections
+	prerequisite = {
+		focus = SAF_The_Upcoming_Elections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Uniting_the_United_Party"
+		#Event about coalition unity and also con or lib pop
+		country_event = southafrica_elections.10
+	}
+}
+
+shared_focus = {
+	id = SAF_The_1953_Elections
+	icon = GFX_SAF_1953_Elections
+	cost = 1
+	x = 0
+	y = 2
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_Domestic_Policies
+	available = { always = no }
+	prerequisite = {
+		focus = SAF_The_Question_of_Economy
+	}
+	prerequisite = {
+		focus = SAF_Domestic_Policies
+	}
+	prerequisite = {
+		focus = SAF_Our_Foreign_Policy
+	}
+	prerequisite = {
+		focus = SAF_Uniting_the_United_Party
+	}
+	prerequisite = {
+		focus = SAF_Opening_Jan_Smuts_Airport
+	}
+	prerequisite = {
+		focus = SAF_Fight_Bigotry
+	}
+	prerequisite = {
+		focus = SAF_A_Defence_Contract
+	}
+	prerequisite = {
+		focus = SAF_Handling_Political_Polarisation
+	}
+	prerequisite = {
+		focus = SAF_Railways_Modernisation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_1953_Elections"
+		effect_tooltip = { country_event = { id = southafrica_elections.11 } }
+	}
+}
+
+#######################
+## United Party Tree ##
+#######################
+shared_focus = {
+	id = SAF_United_Hofmeyrs_United_Party
+	icon = GFX_SAF_HendrikVictory
+	cost = 5
+	x = 4
+	y = 0
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Hofmeyrs_United_Party"
+		add_country_leader_trait = HoG_Silent_Workhorse
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Native_Migration_Reform
+	icon = GFX_GENERIC_Help_Refugees
+	cost = 7
+	x = -1
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_United_Hofmeyrs_United_Party
+	prerequisite = {
+		focus = SAF_United_Hofmeyrs_United_Party
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Native_Migration_Reform"
+		add_ideas = SAF_Native_Migration_Reform_idea
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Meet_with_the_Native_Representation_Council
+	icon = GFX_GENERIC_Peace_Agreement
+	cost = 7
+	x = 0
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_United_Native_Migration_Reform
+	prerequisite = {
+		focus = SAF_United_Native_Migration_Reform
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Meet_with_the_Native_Representation_Council"
+		country_event = { id = southafrica_united.2 days = 1 }
+
+		#Increase NRC power or do nothing
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Encourage_Commonwealth_Immigration
+	icon = GFX_ENG_common_economic_vision_2
+	cost = 7
+	x = 0
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_United_Meet_with_the_Native_Representation_Council
+	prerequisite = {
+		focus = SAF_United_Meet_with_the_Native_Representation_Council
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Encourage_Commonwealth_Immigration"
+		country_event = southafrica_united.14
+		#Add alternative idea of temp pop boost
+	}
+}
+
+shared_focus = {
+	id = SAF_United_A_New_Budget
+	icon = GFX_GENERIC_Government_Funding
+	cost = 7
+	x = 1
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	select_effect = {
+	if = {
+	limit = { is_in_coalition_with_social_democrat = yes }
+	country_event = { id = southafrica_united.15 days = 14 }
+	#SALP Demand support to labour
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_United_Hofmeyrs_United_Party
+	prerequisite = {
+		focus = SAF_United_Hofmeyrs_United_Party
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_A_New_Budget"
+		if = {
+		limit = { has_country_flag = SAF_SALP_SUGGESTION_ADOPTED }
+		add_timed_idea = {
+		idea = SAF_United_Budget_idea_2
+		days = 365
+			}
+		}
+		if = {
+		limit = { NOT = { has_country_flag = SAF_SALP_SUGGESTION_ADOPTED } }
+		add_timed_idea = {
+		idea = SAF_United_Budget_idea
+		days = 365
+			}
+		}
+		country_event = {
+			id = southafricaflavour.2
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Education_Action
+	icon = GFX_POR_Education_Reform
+	cost = 8
+	x = 0
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_United_A_New_Budget
+	prerequisite = {
+		focus = SAF_United_A_New_Budget
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Education_Action"
+		#event
+		country_event = southafrica_united.16
+		set_country_flag = HOF_EDUCATION_REFORMS
+		add_timed_idea = { idea = ENG_school_funding_boost days = 365 }
+		add_tech_bonus = {
+			bonus = 0.45
+			uses = 1
+			category = industry
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Post_Election_Reshuffle
+	icon = GFX_GENERIC_Pawns
+	cost = 7
+	x = 0
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_United_Education_Action
+	prerequisite = {
+		focus = SAF_United_Education_Action
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Post_Election_Reshuffle"
+		country_event = {
+			id = southafrica_united.3
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_The_ANC_Solution
+	icon = GFX_SAF_Transistional_Coalition
+	cost = 7
+	x = -1
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_United_Post_Election_Reshuffle
+	prerequisite = {
+		focus = SAF_United_Post_Election_Reshuffle
+	}
+	prerequisite = {
+		focus = SAF_United_Encourage_Commonwealth_Immigration
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_ANC_Solution"
+		add_stability = 0.05
+		add_political_power = 150
+		country_event = {
+			id = southafricaflavour.3
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Reduce_Racial_Tensions
+	icon = GFX_GENERIC_handshake
+	cost = 8
+	x = -3
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_ANC_Solution
+	prerequisite = {
+		focus = SAF_The_ANC_Solution
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Reduce_Racial_Tensions"
+		swap_ideas = {
+			remove_idea = SAF_Racial_Discrimination_idea
+			add_idea = SAF_Curbed_Racial_Discrimination_idea
+		}
+		country_event = {
+			id = southafricaflavour.4
+		}
+	}
+}
+
+
+shared_focus = {
+	id = SAF_The_United_Plan
+	icon = GFX_GENERIC_Report
+	cost = 6
+	x = 0
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_ANC_Solution
+	prerequisite = {
+		focus = SAF_The_ANC_Solution
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_United_Plan"
+		country_event = {
+			id = southafricaflavour.5
+		}
+		capital_scope = {
+			add_extra_state_shared_building_slots = 2
+		}
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}
+
+shared_focus = {
+	id = SAF_Increase_Local_Competition
+	icon = GFX_GEN_economic_friendship
+	cost = 8
+	x = 0
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_United_Plan
+	prerequisite = {
+		focus = SAF_The_United_Plan
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Increase_Local_Competition"
+		add_timed_idea = {
+    		idea = SAF_market_liberalisation
+    		days = 420
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_The_International_Market
+	icon = GFX_GENERIC_Market_Liberal
+	cost = 7
+	x = 3
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_ANC_Solution
+	prerequisite = {
+		focus = SAF_The_ANC_Solution
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_International_Market"
+		add_ideas = GEN_trading_market
+		add_equipment_to_stockpile = {
+		type = convoy
+		amount = 100
+		producer = SAF
+		}
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = SAF_Reach_Out_to_the_US
+	icon = GFX_USA_white_house_icon_bright
+	cost = 7
+	x = -1
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	relative_position_id = SAF_The_International_Market
+	prerequisite = {
+		focus = SAF_The_International_Market
+	}
+	mutually_exclusive = {
+		focus = SAF_Our_Commonwealth_Ties
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Reach_Out_to_the_US"
+		country_event = {
+			id = southafricaflavour.7
+		}
+		USA = {
+			country_event = {
+				id = southafricaflavour.8
+			}
+		}
+		add_ideas  = SAF_American_Investment
+	}
+}
+
+shared_focus = {
+	id = SAF_Our_Commonwealth_Ties
+	icon = GFX_ENG_commonwealth_ties
+	cost = 7
+	x = 1
+	y = 1
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	relative_position_id = SAF_The_International_Market
+	prerequisite = {
+		focus = SAF_The_International_Market
+	}
+	mutually_exclusive = {
+		focus = SAF_Reach_Out_to_the_US
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Our_Commonwealth_Ties"
+		country_event = {
+			id = southafricaflavour.9
+		}
+		ENG = {
+			country_event = {
+				id = southafricaflavour.10
+			}
+		}
+		add_ideas = SAF_Anglo_Ties
+	}
+}
+
+shared_focus = {
+	id = SAF_Road_to_Greatness
+	icon = GFX_GENERIC_road_works
+	cost = 8
+	x = 0
+	y = 1
+	cancelable = yes
+	cancel_if_invalid = yes
+	available = {
+		has_country_leader = {
+			name = "Jan Hendrik Hofmeyr"
+			ruling_only = yes
+		}
+	}
+	relative_position_id = SAF_Increase_Local_Competition
+	prerequisite = {
+		focus = SAF_Reach_Out_to_the_US
+		focus = SAF_Our_Commonwealth_Ties
+	}
+	prerequisite = {
+		focus = SAF_Increase_Local_Competition
+	}
+	prerequisite = {
+		focus = SAF_Reduce_Racial_Tensions
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Road_to_Greatness"
+		country_event = {
+			id = southafricaflavour.6
+		}
+		add_timed_idea = {
+    		idea = ENG_political_momentum
+    		days = 100
+		}
+		custom_effect_tooltip = SAF_further_content_beyond
+	}
+}
+
+######################################
+### Post Hofmeyr Death United Tree ###
+######################################
+
+shared_focus = {
+	id = SAF_Pass_The_Torch
+	icon = GFX_SAF_United_Party
+	cost = 0
+	x = 15
+	y = 0
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Pass_The_Torch"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Addressing_the_Party
+	icon = GFX_GENERIC_civilian_bureaucrat
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Pass_The_Torch
+	cancel_if_invalid = yes
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_Pass_The_Torch
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Addressing_the_Party"
+		country_event = {
+			id = southafrica_united.4
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Statement_to_the_House
+	icon = GFX_GENERIC_parliament
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Addressing_the_Party
+	prerequisite = {
+		focus = SAF_United_Addressing_the_Party
+	}
+	#BASICALLY, CHANGE TO NEW PARTY ELECTIONS
+	available = {
+	NOT = { has_country_flag = OB_STRUGGLING }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Statement_to_the_House"
+		clr_country_flag = SALP_COALITION_MADE
+		country_event = southafrica_united.17
+	}
+}
+
+shared_focus = {
+	id = SAF_United_The_Question_of_Southwest_Africa
+	icon = GFX_SAF_integration
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Statement_to_the_House
+	bypass = {
+	OR = {
+	has_war_with = NMB
+	NOT = {
+	controls_state = 541
+	controls_state = 945
+			}
+		}
+	}
+	available = {
+	}
+	prerequisite = {
+		focus = SAF_United_Statement_to_the_House
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_The_Question_of_Southwest_Africa"
+		country_event = {
+			id = southafrica_united.5
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_A_Conservative_Direction
+	icon = GFX_ENG_conservative_torch
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = SAF_United_The_Question_of_Southwest_Africa
+	available = {
+	NOT = { has_country_flag = UP_GOES_LEFT }
+	}
+	prerequisite = {
+		focus = SAF_United_The_Question_of_Southwest_Africa
+	}
+	mutually_exclusive = {
+		focus = SAF_United_Reform_Commitments
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_A_Conservative_Direction"
+		add_political_power = 150
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.1
+		}
+		country_event = {
+			id = southafricaflavour.12
+		}
+		add_ideas = {
+			SAF_HoG_Bernard_Friedman
+			SAF_FM_Vause_Raw
+			SAF_MoS_Pieter_V_G_van_der_Byl
+			SAF_AM_Jacobus_Basson
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Encourage_National_Unity
+	icon = GFX_GENERIC_Liberal_Conservatism
+	cost = 9
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_A_Conservative_Direction
+	prerequisite = {
+		focus = SAF_United_A_Conservative_Direction
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Encourage_National_Unity"
+		add_stability = 0.15
+
+		set_temp_variable = { coalition_stability_temp = 0.25 }
+		alter_coalition_stability = yes
+
+		if = {
+		limit = { has_idea = SAF_Afrikaner_Nationalism_idea }
+		swap_ideas = {
+		remove_idea = SAF_Afrikaner_Nationalism_idea
+		add_idea = SAF_Afrikaner_Nationalism_idea_3
+			}
+		}
+		if = {
+		limit = { has_idea = SAF_Afrikaner_Nationalism_idea_2 }
+		swap_ideas = {
+		remove_idea = SAF_Afrikaner_Nationalism_idea_2
+		add_idea = SAF_Afrikaner_Nationalism_idea_3
+			}
+		}
+
+		country_event = southafrica_national.22
+		#Suppression of Anti-Democratic Forces Bill decision maybe
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Gradual_Reform
+	icon = GFX_GENERIC_Government_Funding
+	cost = 7
+	x = -1
+	y = 1
+	relative_position_id = SAF_United_Encourage_National_Unity
+	prerequisite = {
+		focus = SAF_United_Encourage_National_Unity
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Gradual_Reform"
+		add_ideas = SAF_Gradual_Reform_idea
+		country_event = {
+			id = southafricaflavour.12
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Mining_Subsidies
+	icon = GFX_GENERIC_Mining_Bill
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Gradual_Reform
+	prerequisite = {
+		focus = SAF_United_Gradual_Reform
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Mining_Subsidies"
+		add_timed_idea = {
+    		idea = SAF_mining_subsidies
+    		days = 365
+		}
+		add_resource = {
+			type = steel
+			amount = 15
+			state = 275
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Open_to_Foreign_Investments
+	icon = GFX_ENG_USA_atlantic_union
+	#Full Commitment
+	cost = 9
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Mining_Subsidies
+	prerequisite = {
+		focus = SAF_United_Mining_Subsidies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Open_to_Foreign_Investments"
+		#Application to Join TA
+		unlock_decision_tooltip = SAF_application_to_join_TOR
+
+		unlock_decision_tooltip = SAF_request_custodianship_over_lesotho_and_swaziland
+		#Request Custodianship over Lesotho and Swaziland
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Modern_Innovations
+	icon = GFX_GENERIC_Research_Buff
+	cost = 8
+	x = 1
+	y = 1
+	relative_position_id = SAF_United_Encourage_National_Unity
+	prerequisite = {
+		focus = SAF_United_Encourage_National_Unity
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Modern_Innovations"
+		add_timed_idea = {
+    		idea = ENG_domestic_technology_subsidies
+    		days = 365
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Encourage_Business
+	icon = GFX_ENG_small_businesses
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Modern_Innovations
+	prerequisite = {
+		focus = SAF_United_Modern_Innovations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Encourage_Business"
+		add_ideas = SAF_New_Economic_Model_idea
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Improve_Working_Conditions
+	icon = GFX_GENERIC_food_for_worker
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Encourage_Business
+	prerequisite = {
+		focus = SAF_United_Encourage_Business
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Improve_Working_Conditions"
+		swap_ideas = {
+			remove_idea = SAF_New_Economic_Model_idea
+			add_idea = SAF_New_Economic_Model_idea1
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Jewel_of_the_South
+	icon = GFX_GENERIC_Judicial
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = SAF_Open_to_Foreign_Investments
+	prerequisite = {
+		focus = SAF_Open_to_Foreign_Investments
+	}
+	prerequisite = {
+		focus = SAF_United_Improve_Working_Conditions
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Jewel_of_the_South"
+		add_political_power = 150
+		add_stability = 0.15
+		unlock_decision_tooltip = SAF_form_the_saeu
+
+		activate_targeted_decision = {
+		target = LES
+		decision = SAF_assert_economic_dependency
+		}
+		activate_targeted_decision = {
+		target = SWA
+		decision = SAF_assert_economic_dependency
+		}
+
+		activate_targeted_decision = {
+		target = LES
+		decision = SAF_strengthen_economic_ties
+		}
+		activate_targeted_decision = {
+		target = SWA
+		decision = SAF_strengthen_economic_ties
+		}
+
+		#End of content, give an ending event
+		#custom_effect_tooltip = END_OF_UNIQUE_POLITICAL_CONTENT
+	}
+}
+
+#LIBERAL WING
+shared_focus = {
+	id = SAF_United_Reform_Commitments
+	icon = GFX_GENERIC_Pass_Legislation
+	cost = 6
+	x = 2
+	y = 1
+	relative_position_id = SAF_United_The_Question_of_Southwest_Africa
+	available = {
+		NOT = { has_country_flag = UP_GOES_RIGHT }
+	}
+	prerequisite = {
+		focus = SAF_United_The_Question_of_Southwest_Africa
+	}
+	mutually_exclusive = {
+		focus = SAF_United_A_Conservative_Direction
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Reform_Commitments"
+		add_political_power = 100
+		add_ideas = {
+			SAF_HoG_Margaret_Ballinger
+			SAF_FM_Bernard_Friedman
+			SAF_MoS_Jan_Steytler
+			SAF_AM_Alan_Paton
+		}
+		country_event = {
+			id = southafricaflavour.13
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Reform_in_Southwest_Africa
+	icon = GFX_GENERIC_scale_stable
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Reform_Commitments
+	prerequisite = {
+		focus = SAF_United_Reform_Commitments
+	}
+	bypass = {
+	OR = {
+	has_war_with = NMB
+	NOT = {
+	controls_state = 541
+	controls_state = 945
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Reform_in_Southwest_Africa"
+		unlock_decision_tooltip = SAF_NMB_promote_local_autonomy
+		unlock_decision_tooltip = SAF_NMB_talks_with_local_militants
+
+		set_country_flag = REFORMS_IN_SWA_SAF
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Meet_with_the_ANC
+	icon = GFX_SAF_Transistional_Coalition
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Reform_in_Southwest_Africa
+	prerequisite = {
+		focus = SAF_United_Reform_in_Southwest_Africa
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Meet_with_the_ANC"
+		country_event = {
+			id = southafrica_united.6
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Electoral_Reform
+	icon = GFX_SAF_1953_Elections
+	cost = 9
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Meet_with_the_ANC
+	prerequisite = {
+		focus = SAF_United_Meet_with_the_ANC
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Electoral_Reform"
+		country_event = {
+			id = southafricaflavour.14
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_True_Representation
+	icon = GFX_SAF_shield_laurel_blank
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_United_Electoral_Reform
+	prerequisite = {
+		focus = SAF_United_Electoral_Reform
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_True_Representation"
+		country_event = {
+			id = southafricaflavour.15
+		}
+		custom_effect_tooltip = begins_mission_to_repeal_representation_act_tt
+		#IT CAN FAIL
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Stamp_Out_the_Fascists
+	icon = GFX_GENERIC_destroy_nazism
+	cost = 7
+	x = 1
+	y = 1
+	relative_position_id = SAF_United_True_Representation
+	prerequisite = {
+		focus = SAF_United_True_Representation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Stamp_Out_the_Fascists"
+		add_stability = 0.15
+		add_popularity = {
+			ideology = fascist
+			popularity = -1.0
+		}
+		add_popularity = {
+			ideology = national_socialist
+			popularity = -1.0
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Abolish_the_Colour_Bar
+	icon = GFX_GENERIC_meeting_2
+	cost = 9
+	x = -1
+	y = 1
+	relative_position_id = SAF_United_True_Representation
+	prerequisite = {
+		focus = SAF_United_True_Representation
+	}
+	available = {
+	has_country_flag = UNITED_PARTY_DRAFTED_NEW_CONSTITUTION
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Abolish_the_Colour_Bar"
+		add_political_power = -100
+		add_stability = 0.15
+		swap_ideas = {
+			remove_idea = SAF_Transition_to_Majority_Rule_idea2
+			add_idea = SAF_Transition_to_Majority_Rule_idea3
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_United_Organise_a_New_Election
+	icon = GFX_GENERIC_elections
+	cost = 11
+	x = 0
+	y = 1
+	cancelable = yes
+	relative_position_id = SAF_United_Abolish_the_Colour_Bar
+	available = {
+		custom_trigger_tooltip = {
+    		tooltip = SAF_has_abolished_representation_of_natives_act
+        	has_idea = SAF_representation_of_natives_act_abolished
+		}
+	}
+	prerequisite = {
+		focus = SAF_United_Abolish_the_Colour_Bar
+	}
+	select_effect = {
+		country_event = { id = southafrica_united.19 days = 14 }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_United_Organise_a_New_Election"
+		country_event = southafrica_united.18
+		#Only happen when it comes to it
+		custom_effect_tooltip = SAF_further_content_beyond
+	}
+}
+
+#########################
+## National Party Tree ##
+#########################
+shared_focus = {
+	id = SAF_National_Malans_National_Party
+	icon = GFX_SAF_MalanVictory
+	cost = 7
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Malans_National_Party"
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Implement_Apartheid
+	icon = GFX_USA_segregation
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Malans_National_Party
+	prerequisite = {
+		focus = SAF_National_Malans_National_Party
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Implement_Apartheid"
+		#Decision
+		country_event = southafrica_national.2
+		hidden_effect = {
+		country_event = { id = southafrica_national.8 days = 14 random_days = 30 }
+		}
+
+		#Governor General steps down early
+		#FIRST LAW - Population Registration Act
+		#SECOND LAW - Prohibition of Mixed Marriages Act
+		#THIRD LAW - Immorality Amendment Act
+		#THIRD POINT ONE LAW - Group Areas Act
+
+		#NP Moderates and Conservatives - Mainly differ in implementation and image only, same decisions
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Immigration_Reform
+	icon = GFX_ENG_immigration
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Implement_Apartheid
+	prerequisite = {
+		focus = SAF_National_Implement_Apartheid
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Immigration_Reform"
+		country_event = southafrica_national.24
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Promote_Our_Heritage
+	icon = GFX_goal_generic_propaganda
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Immigration_Reform
+	prerequisite = {
+		focus = SAF_National_Immigration_Reform
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Promote_Our_Heritage"
+		swap_ideas = {
+			remove_idea = SAF_Afrikaner_Nationalism_idea
+			add_idea = SAF_Afrikaner_Nationalism_NP_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Bantu_Education_Act
+	icon = GFX_POR_Education_Reform
+	cost = 6
+	x = -1
+	y = 1
+	relative_position_id = SAF_National_Promote_Our_Heritage
+	prerequisite = {
+		focus = SAF_National_Promote_Our_Heritage
+	}
+	available = {
+		has_country_flag = Population_Registration_Act_Enacted
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Bantu_Education_Act"
+		add_political_power = 100
+		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = SAF_Afrikaner_Nationalism_NP_idea
+			add_idea = SAF_Afrikaner_Nationalism_NP_idea_2
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_University_Education
+	icon = GFX_JAP_Tokyo_University
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Bantu_Education_Act
+	prerequisite = {
+		focus = SAF_National_Bantu_Education_Act
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_University_Education"
+		add_tech_bonus = {
+		bonus = 0.35
+		uses = 1
+		category = excavation_tech
+		}
+		swap_ideas = {
+			remove_idea = SAF_Afrikaner_Nationalism_NP_idea_2
+			add_idea = SAF_Afrikaner_Nationalism_NP_idea_3
+		}
+		719 = {
+		add_dynamic_modifier = {
+        modifier = SAF_temporary_resource_boost
+        days = 100
+    		}
+		}
+		943 = {
+		add_dynamic_modifier = {
+        modifier = SAF_temporary_resource_boost
+        days = 100
+    		}
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Promote_Bantu_Self_Governance
+	#BANTU AUTHORITIES ACT
+	icon = GFX_focus_generic_self_management
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_University_Education
+	prerequisite = {
+		focus = SAF_National_University_Education
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Promote_Bantu_Self_Governance"
+		hidden_effect = {
+		country_event = { id = southafrica_national.25 days = 365 }
+		}
+
+		unlock_decision_category_tooltip = SAF_bantu_administration
+		set_country_flag = BANTU_AUTHORITIES_START
+		#Decision category for Bantustans
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Bantu_Authorities_Act
+	#CHANGED TO NATIVES RESETTLEMENT
+	icon = GFX_GENERIC_destruction
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = SAF_National_Promote_Our_Heritage
+	prerequisite = {
+		focus = SAF_National_Promote_Our_Heritage
+	}
+	available = {
+		has_country_flag = GROUP_AREAS_ACT_ENACTED
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Bantu_Authorities_Act"
+		add_political_power = 90
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		}
+		capital_scope = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Voter_Representation_Policies
+	icon = GFX_GENERIC_Room_Meeting
+	cost = 12
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Bantu_Authorities_Act
+	prerequisite = {
+		focus = SAF_National_Bantu_Authorities_Act
+	}
+	cancelable = yes
+	cancel_if_invalid = yes
+	select_effect = {
+	hidden_effect = {
+	country_event = { id = southafrica_national.26 days = 7 }
+	country_event = { id = southafrica_national.9 days = 14 }
+	country_event = { id = southafrica_national.27 days = 36 }
+	country_event = { id = southafrica_national.28 days = 70 }
+	country_event = { id = southafrica_national.30 days = 75 }
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Voter_Representation_Policies"
+		#Formation of Liberal Progressive Party
+
+		country_event = southafrica_national.29
+		country_event = { id = southafrica_national.31 days = 4 }
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Abolish_the_Cape_Qualified_Franchise
+	#Change to End Coloured Representation
+	icon = GFX_GENERIC_Ripping_Papers
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Voter_Representation_Policies
+	prerequisite = {
+		focus = SAF_National_Voter_Representation_Policies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Abolish_the_Cape_Qualified_Franchise"
+		country_event = southafrica_national.32
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Suppress_Communist_Elements
+	icon = GFX_SAF_suppresscommies
+	cost = 6
+	x = 1
+	y = 1
+	relative_position_id = SAF_National_Promote_Bantu_Self_Governance
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_National_Promote_Bantu_Self_Governance
+	}
+	prerequisite = {
+		focus = SAF_National_Abolish_the_Cape_Qualified_Franchise
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Suppress_Communist_Elements"
+		country_event = southafrica_national.5
+		set_country_flag = OB_COUP_BLOCKED
+		#Stop riots brutally and Suppression of Communism Act
+		#No more possible Fascist Coup
+		#At some point the struggle goes full militant, and a new mechanic is introduced - once Socialist value reaches a threshold, ANC uprising
+
+		hidden_effect = {
+		country_event = { id = southafrica_national.34 days = 70 random_days = 30 }
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Looking_to_the_Future
+	icon = GFX_SAF_affairs_of_the_union
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Suppress_Communist_Elements
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_National_Suppress_Communist_Elements
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Looking_to_the_Future"
+		add_stability = 0.05
+		add_political_power = 100
+
+		#Void the Trusteeship
+		unlock_decision_tooltip = SAF_Incorporate_South_West_Africa
+		set_country_flag = SAF_SWA_INCORPORATE
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Verligtes
+	icon = GFX_ENG_conservative_torch
+	cost = 7
+	x = -2
+	y = 1
+	available = {
+	NOT = {
+	has_country_leader = {
+    name = "Daniel F. Malan"
+    ruling_only = yes
+		}
+	has_country_leader = {
+    name = "Eben Dönges"
+    ruling_only = yes
+		}
+	}
+	has_country_leader_ideology = authoritarian_democracy
+	}
+	relative_position_id = SAF_National_Looking_to_the_Future
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_National_Looking_to_the_Future
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Die_Middelground
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Verkramptes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Verligtes"
+		#Temporary idea for opinion gain
+		add_political_power = 100
+		add_timed_idea = {
+    	idea = SAF_verligte_diplomacy
+    	days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Supporting_Our_Agriculture
+	icon = GFX_GENERIC_Agriculture_Bill
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Verligtes
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_National_Verligtes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Supporting_Our_Agriculture"
+		add_stability = 0.05
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	    type = industrial_complex
+	    level = 1
+	    instant_build = yes
+			}
+		}
+		country_event = southafrica_national.36
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Reaffirm_the_Sterling_Area
+	icon = GFX_SAF_The_Rand
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Supporting_Our_Agriculture
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_National_Supporting_Our_Agriculture
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Reaffirm_the_Sterling_Area"
+		country_event = {
+			id = southafricaflavour.9
+		}
+		ENG = {
+			country_event = {
+				id = southafricaflavour.10
+			}
+		}
+		add_ideas = SAF_Anglo_Ties
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Die_Middelground
+	icon = GFX_SAF_national_party
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Looking_to_the_Future
+	cancelable = yes
+	available = {
+	has_country_leader = {
+    name = "Eben Dönges"
+    ruling_only = yes
+		}
+	}
+	prerequisite = {
+		focus = SAF_National_Looking_to_the_Future
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Verligtes
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Verkramptes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Die_Middelground"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Encourage_Debate
+	icon = GFX_GENERIC_debate_2
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Die_Middelground
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_National_Die_Middelground
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Encourage_Debate"
+		#Event about debating, shifts the verkampt and verligte influences
+		#Unlocks SANP debate decisions
+		country_event = southafrica_national.37
+		unlock_decision_tooltip = SAF_NP_conservatives
+		unlock_decision_tooltip = SAF_NP_moderates
+		set_country_flag = SANP_DECISIONS_UNLOCKED
+	}
+}
+
+shared_focus = {
+	id = SAF_National_The_Matter_of_the_OB
+	icon = GFX_focus_SAF_support_ossewabrandwag
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Encourage_Debate
+	cancelable = yes
+	prerequisite = {
+		focus = SAF_National_Encourage_Debate
+		focus = SAF_National_Supporting_Our_Agriculture
+		focus = SAF_National_Nationalist_Reshuffle
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_The_Matter_of_the_OB"
+		country_event = southafrica_national.38
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Verkramptes
+	icon = GFX_focus_hol_oranje_boven
+	cost = 7
+	x = 2
+	y = 1
+	relative_position_id = SAF_National_Looking_to_the_Future
+	cancelable = yes
+	available = {
+	NOT = {
+	has_country_leader = {
+    name = "Daniel F. Malan"
+    ruling_only = yes
+		}
+	}
+	has_country_leader_ideology = technocratic_spartanism
+	}
+	prerequisite = {
+		focus = SAF_National_Looking_to_the_Future
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Verligtes
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Die_Middelground
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Verkramptes"
+		add_political_power = 100
+		add_timed_idea = {
+    	idea = SAF_i_am_racist
+    	days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Nationalist_Reshuffle
+	icon = GFX_GENERIC_parliament
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Verkramptes
+	prerequisite = {
+		focus = SAF_National_Verkramptes
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Nationalist_Reshuffle"
+
+		country_event = southafrica_national.39
+		#Free ministers! All Verkampt and you can't appoint softies anymore!
+		#A choice I suppose, choose to have an all-racist cabinet or just moderately racist people
+	}
+}
+
+shared_focus = {
+	id = SAF_National_The_German_Model
+	icon = GFX_GER_rk_quotas
+	cost = 8
+	x = 0
+	y = 1
+	cancelable = yes
+	relative_position_id = SAF_National_Nationalist_Reshuffle
+	prerequisite = {
+		focus = SAF_National_Nationalist_Reshuffle
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_The_German_Model"
+		#Uhhhhh an event to discuss if South Africa can learn something from the Nazis, holy shit this is not good
+		country_event = southafrica_national.40
+	}
+}
+
+shared_focus = {
+	id = SAF_Keep_the_Nation_Together
+	icon = GFX_SAF_wine
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Reaffirm_the_Sterling_Area
+	available = {
+	OR = {
+	has_country_leader_ideology = authoritarian_democracy
+	AND = {
+	has_country_leader = {
+    name = "Eben Dönges"
+    ruling_only = yes
+	}
+	custom_trigger_tooltip = {
+	tooltip = NP_MOD_HIGHER_THAN_CON
+	check_variable = { NP_MOD_VAR > NP_CON_VAR }
+				}
+			}
+		}
+	}
+	prerequisite = {
+		focus = SAF_National_Reaffirm_the_Sterling_Area
+		focus = SAF_National_The_German_Model
+	}
+	prerequisite = {
+		focus = SAF_National_The_Matter_of_the_OB
+	}
+	mutually_exclusive = {
+		focus = SAF_The_Road_to_a_Republic
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Keep_the_Nation_Together"
+		#Make a neat little branch with 4 to 5 focuses connecting to this
+		#Must be Moderate or Centrist
+		#Add an additional focus that allows pivot
+
+		add_stability = 0.05
+		country_event = southafrica_national.45
+	}
+}
+
+shared_focus = {
+	id = SAF_Course_Correction
+	icon = GFX_GENERIC_Crush_Parliament
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Keep_the_Nation_Together
+	available = {
+	has_country_leader_ideology = technocratic_spartanism
+	}
+	prerequisite = {
+		focus = SAF_Keep_the_Nation_Together
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Course_Correction"
+		country_event = southafrica_national.46
+		custom_effect_tooltip = SAF_further_content_beyond
+		#Republic Referendum again
+		#If Eben cant contain conservative power, conservative coup
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Prioritize_the_Economy
+	icon = GFX_GENERIC_price_lines_up
+	cost = 8
+	x = 2
+	y = 1
+	relative_position_id = SAF_Keep_the_Nation_Together
+	cancel_if_invalid = yes
+	available = {
+	has_country_leader_ideology = authoritarian_democracy
+	}
+	select_effect = {
+		hidden_effect = {
+		if = {
+		limit = {
+		has_country_leader = {
+    	name = "Eben Dönges"
+    	ruling_only = yes
+				}
+		check_variable = { NP_CON_VAR > 0.8 }
+				}
+		country_event = { id = southafrica_national.44 days = 5 random_days = 30}
+			}
+		}
+	}
+	prerequisite = {
+		focus = SAF_Keep_the_Nation_Together
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Prioritize_the_Economy"
+		add_ideas = SAF_New_Economic_Model_idea
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Bantu_Development
+	icon = GFX_GENERIC_Redraw_Borders
+	cost = 8
+	x = -1
+	y = 1
+	relative_position_id = SAF_National_Prioritize_the_Economy
+	cancel_if_invalid = yes
+	available = {
+	has_country_leader_ideology = authoritarian_democracy
+	}
+	prerequisite = {
+		focus = SAF_National_Prioritize_the_Economy
+	}
+	select_effect = {
+		hidden_effect = {
+		if = {
+		limit = {
+		has_country_leader = {
+    	name = "Eben Dönges"
+    	ruling_only = yes
+				}
+		check_variable = { NP_CON_VAR > 0.8 }
+				}
+		country_event = { id = southafrica_national.44 days = 5 random_days = 30}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Bantu_Development"
+		943 = {
+			add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		country_event = southafrica_national.53
+		set_country_flag = NP_LIMITED_BANTU
+		#Set up limited puppets
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Modern_Innovations
+	icon = GFX_GENERIC_Research_Buff
+	cost = 8
+	x = -2
+	y = 1
+	relative_position_id = SAF_Keep_the_Nation_Together
+	cancel_if_invalid = yes
+	prerequisite = {
+		focus = SAF_Keep_the_Nation_Together
+	}
+	select_effect = {
+		hidden_effect = {
+		if = {
+		limit = {
+		has_country_leader = {
+    	name = "Eben Dönges"
+    	ruling_only = yes
+				}
+		check_variable = { NP_CON_VAR > 0.8 }
+				}
+		country_event = { id = southafrica_national.44 days = 5 random_days = 30}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Modern_Innovations"
+		add_timed_idea = {
+    		idea = ENG_domestic_technology_subsidies
+    		days = 365
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Support_Anticommunism_Struggle
+	icon = GFX_GENERIC_Anti_Com
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_National_Modern_Innovations
+	cancel_if_invalid = yes
+	available = {
+	has_country_leader_ideology = authoritarian_democracy
+	}
+	prerequisite = {
+		focus = SAF_National_Modern_Innovations
+	}
+	select_effect = {
+		hidden_effect = {
+		if = {
+		limit = {
+		has_country_leader = {
+    	name = "Eben Dönges"
+    	ruling_only = yes
+				}
+		check_variable = { NP_CON_VAR > 0.8 }
+				}
+		country_event = { id = southafrica_national.44 days = 5 random_days = 30}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Support_Anticommunism_Struggle"
+		unlock_decision_tooltip = SAF_start_uprising_in_MAD
+		set_country_flag = SAF_MEDDLE_IN_MAD
+
+		unlock_decision_tooltip = SAF_request_custodianship_over_lesotho_and_swaziland
+		#Set up limited puppets
+
+		unlock_decision_tooltip = SAF_form_the_saeu
+
+		activate_targeted_decision = {
+			target = POR
+			decision = GENERIC_closer_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = RHD
+			decision = GENERIC_closer_diplomatic_delegation
+		}
+		#Befriend Portugal
+		#Befriend Rhodesia
+	}
+}
+
+shared_focus = {
+	id = SAF_Look_Towards_the_East
+	icon = GFX_GENERIC_Asia
+	cost = 8
+	x = 1
+	y = 1
+	relative_position_id = SAF_National_Support_Anticommunism_Struggle
+	cancel_if_invalid = yes
+	available = {
+	has_country_leader_ideology = authoritarian_democracy
+	}
+	prerequisite = {
+		focus = SAF_National_Support_Anticommunism_Struggle
+	}
+	prerequisite = {
+		focus = SAF_National_Bantu_Development
+	}
+	select_effect = {
+		hidden_effect = {
+		if = {
+		limit = {
+		has_country_leader = {
+    	name = "Eben Dönges"
+    	ruling_only = yes
+				}
+		check_variable = { NP_CON_VAR > 0.8 }
+				}
+		country_event = { id = southafrica_national.44 days = 5 random_days = 30}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Look_Towards_the_East"
+		#Befriend China, does not leave sphere
+		#Generic decision to befriend all the Asian powers, including Israel
+
+		CHI = {
+		country_event = { id = southafrica_national.41 days = 7 }
+		}
+
+		activate_targeted_decision = {
+			target = ISR
+			decision = GENERIC_closer_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = KOR
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = JAP
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = PHI
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = INS
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = PAK
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = SIA
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = MAL
+			decision = GENERIC_diplomatic_delegation
+		}
+
+		custom_effect_tooltip = END_OF_UNIQUE_POLITICAL_CONTENT
+	}
+}
+shared_focus = {
+	id = SAF_The_Road_to_a_Republic
+	icon = GFX_SAF_RepublicQuestion
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_The_German_Model
+	prerequisite = {
+		focus = SAF_National_Reaffirm_the_Sterling_Area
+		focus = SAF_National_The_German_Model
+	}
+	prerequisite = {
+		focus = SAF_National_The_Matter_of_the_OB
+	}
+	available = {
+	OR = {
+	has_country_leader_ideology = technocratic_spartanism
+	AND = {
+	has_country_leader = {
+    name = "Eben Dönges"
+    ruling_only = yes
+	}
+	custom_trigger_tooltip = {
+	tooltip = NP_CON_HIGHER_THAN_MOD
+	check_variable = { NP_CON_VAR > NP_MOD_VAR }
+				}
+			}
+		}
+	}
+	mutually_exclusive = {
+		focus = SAF_Keep_the_Nation_Together
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Road_to_a_Republic"
+		#Verkampt Route
+		country_event = southafrica_national.46
+		custom_effect_tooltip = SAF_further_content_beyond
+	}
+}
+
+###################
+## Republic Tree ##
+###################
+shared_focus = {
+	id = SAF_Republic_The_Republic_Referendum
+	icon = GFX_SAF_RepublicQuestion
+	cost = 10
+	x = 8
+	y = 0
+	select_effect = {
+		country_event = southafrica_national.47
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_The_Republic_Referendum"
+		news_event = southafrica_national.14
+		set_cosmetic_tag = SAF_NP_REPUBLIC_PROTO
+		set_country_flag = PRES_override_GG
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_The_Republic_of_South_Africa
+	icon = GFX_SAF_Orange_Flag
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_The_Republic_Referendum
+	prerequisite = {
+		focus = SAF_Republic_The_Republic_Referendum
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_The_Republic_of_South_Africa"
+		clr_all_alignment = yes
+		remove_ideas = COM_commonwealth_of_nations
+
+		country_event = southafrica_national.49
+
+		unlock_decision_tooltip = GENERIC_combat_foreign_influence
+		set_country_flag = GEN_COMBAT_INFLUENCE_FLAG
+
+		activate_targeted_decision = {
+			target = POR
+			decision = GENERIC_closer_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = RHD
+			decision = GENERIC_closer_diplomatic_delegation
+		}
+
+		#BEFRIEND RHODESIA
+		#BEFRIEND PORTUGAL
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_An_Executive_Presidency
+	icon = GFX_SAF_Executive_President
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = SAF_Republic_The_Republic_of_South_Africa
+	prerequisite = {
+		focus = SAF_Republic_The_Republic_of_South_Africa
+	}
+	mutually_exclusive = {
+		focus = SAF_Republic_A_Ceremonial_Presidency
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_An_Executive_Presidency"
+		add_political_power = -150
+		clear_all_hos = yes
+		add_opinion_modifier = {
+			target = ENG
+			modifier = large_decrease
+		}
+		reverse_add_opinion_modifier = {
+			target = ENG
+			modifier = large_decrease
+		}
+		if = {
+		limit = { has_idea = SAF_Anglo_Ties }
+		remove_ideas = SAF_Anglo_Ties
+		}
+
+		news_event = southafrica_national.55
+		#Event
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_National_Decree
+	icon = GFX_GENERIC_treaty_writing
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_An_Executive_Presidency
+	prerequisite = {
+		focus = SAF_Republic_An_Executive_Presidency
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_National_Decree"
+		unlock_decision_tooltip = SAF_DECREE_industrial_buff
+		unlock_decision_tooltip = SAF_DECREE_science_buff
+		unlock_decision_tooltip = SAF_DECREE_army_buff
+
+		unlock_decision_tooltip = SAF_invade_british_colonies
+		set_country_flag = AGGRESSIVE_ANTI_UK_SAF
+
+		add_stability = -0.05
+
+		#DEADLY COMBO WITH VERWOERD PLAN LATER
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Presidential_Authority
+	icon = GFX_SAF_Tighten_Grip
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_National_Decree
+	prerequisite = {
+		focus = SAF_Republic_National_Decree
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Presidential_Authority"
+		add_political_power = -100
+		add_country_leader_trait = Staatspresident
+		add_ideas = SAF_New_Economic_Model_idea
+		add_ideas = authoritarian_system
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_A_Ceremonial_Presidency
+	icon = GFX_SAF_CerPres
+	cost = 6
+	x = 1
+	y = 1
+	relative_position_id = SAF_Republic_The_Republic_of_South_Africa
+	prerequisite = {
+		focus = SAF_Republic_The_Republic_of_South_Africa
+	}
+	mutually_exclusive = {
+		focus = SAF_Republic_An_Executive_Presidency
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_A_Ceremonial_Presidency"
+		add_political_power = 100
+		country_event = { id = southafrica_national.11 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Electing_the_State_President
+	#State President Roles
+	icon = GFX_GENERIC_Military_Civillian_Transition
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_A_Ceremonial_Presidency
+	prerequisite = {
+		focus = SAF_Republic_A_Ceremonial_Presidency
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Electing_the_State_President"
+		add_political_power = 90
+		unlock_decision_tooltip = SAF_Presidential_Duties
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Checks_and_Balances
+	icon = GFX_GENERIC_debate
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_Electing_the_State_President
+	prerequisite = {
+		focus = SAF_Republic_Electing_the_State_President
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Checks_and_Balances"
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_ideas = SAF_New_Economic_Model_idea
+		if = {
+		limit = { NOT = { has_idea = SAF_saeu_idea } }
+		unlock_decision_tooltip = SAF_form_the_saeu
+		}
+
+		activate_targeted_decision = {
+		target = LES
+		decision = SAF_assert_economic_dependency
+		}
+		activate_targeted_decision = {
+		target = SWA
+		decision = SAF_assert_economic_dependency
+		}
+
+		activate_targeted_decision = {
+		target = LES
+		decision = SAF_strengthen_economic_ties
+		}
+		activate_targeted_decision = {
+		target = SWA
+		decision = SAF_strengthen_economic_ties
+		}
+
+		#COUPING LES AND SWA THROUGH ECONOMIC DOMINATION
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Armed_Forces_and_Intelligence
+	icon = GFX_SAF_Martial_Law
+	cost = 7
+	x = 1
+	y = 1
+	relative_position_id = SAF_Republic_Presidential_Authority
+	prerequisite = {
+		focus = SAF_Republic_Presidential_Authority
+		focus = SAF_Republic_Checks_and_Balances
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Armed_Forces_and_Intelligence"
+
+		unlock_decision_tooltip = SAF_start_uprising_in_MAD
+		set_country_flag = SAF_MEDDLE_IN_MAD
+
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			if = {
+			limit = { has_intelligence_agency = no }
+			create_intelligence_agency = {
+			name = "Republican Intelligence"
+			icon = GFX_intelligence_agency_logo_generic_5
+				}
+			}
+			if = {
+			limit = { has_intelligence_agency = yes }
+			gain_random_agency_upgrade = yes
+			}
+		}
+
+		show_ideas_tooltip = SAF_MoS_Henrik_van_den_Bergh
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Development_of_the_Homelands
+	icon = GFX_GENERIC_destruction
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_Armed_Forces_and_Intelligence
+	prerequisite = {
+		focus = SAF_Republic_Armed_Forces_and_Intelligence
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Development_of_the_Homelands"
+		#Implementing the Report
+		country_event = southafrica_national.52
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Verwoerds_Plan
+	icon = GFX_GENERIC_imprison_opposition
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = SAF_Republic_Development_of_the_Homelands
+	prerequisite = {
+		focus = SAF_Republic_Development_of_the_Homelands
+	}
+	mutually_exclusive = {
+		focus = SAF_Republic_Limited_Autonomy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Verwoerds_Plan"
+		#Unlock laws
+		#Combine with Executive Presidency - Gets fucking dark
+
+		country_event = southafrica_national.54
+
+		set_country_flag = ULTRARACIST_SAF
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Limited_Autonomy
+	icon = GFX_GENERIC_equipment_designing
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_Republic_Development_of_the_Homelands
+	prerequisite = {
+		focus = SAF_Republic_Development_of_the_Homelands
+	}
+	mutually_exclusive = {
+		focus = SAF_Republic_Verwoerds_Plan
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Limited_Autonomy"
+		943 = {
+			add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		country_event = southafrica_national.53
+		set_country_flag = NP_LIMITED_BANTU
+		#Set up limited puppets
+	}
+}
+
+shared_focus = {
+	id = SAF_Republic_Speak_to_the_New_Republic
+	icon = GFX_GENERIC_parliament_2
+	cost = 7
+	x = 1
+	y = 1
+	relative_position_id = SAF_Republic_Verwoerds_Plan
+	prerequisite = {
+		focus = SAF_Republic_Verwoerds_Plan
+		focus = SAF_Republic_Limited_Autonomy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Republic_Speak_to_the_New_Republic"
+		#End of content
+		#Unlocks Diplo stuff
+		#Three Diplo paths - Isolationism (Leave UN and Ally Nazi Germany if they still exist), Approach the TA and Americans again, or Go Asian
+
+		country_event = southafrica_national.60
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Isolationist
+	icon = GFX_GENERIC_Big_Cat
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_Speak_to_the_New_Republic
+	prerequisite = {
+		focus = SAF_Republic_Speak_to_the_New_Republic
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Repair_TA_Relations
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Eastern_Approach
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Isolationist"
+		add_ideas = deterrence
+
+		unlock_decision_tooltip = GENERIC_combat_foreign_influence
+		unlock_decision_tooltip = GENERIC_asserts_independence
+		set_country_flag = GEN_COMBAT_INFLUENCE_FLAG
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Nazi_Partnership
+	icon = GFX_focus_GER_support_the_fuhrer
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_National_Isolationist
+	prerequisite = {
+		focus = SAF_National_Isolationist
+	}
+	available = { country_exists = GRM GRM = { has_war = no } }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Nazi_Partnership"
+		GRM = { country_event = { id = twrgenericdiplo.1 days = 5 } }
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Repair_TA_Relations
+	icon = GFX_GENERIC_TA_Advisor_2
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_Speak_to_the_New_Republic
+	available = {
+	USA = { NOT = { has_government = social_democrat } }
+	is_in_the_un = yes
+	NOT = { has_country_flag = SAF_HORRIBLE }
+	}
+	prerequisite = {
+		focus = SAF_Republic_Speak_to_the_New_Republic
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Isolationist
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Eastern_Approach
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Repair_TA_Relations"
+		USA = { country_event = { id = twrgenericdiplo.1 days = 5 } }
+	}
+}
+
+shared_focus = {
+	id = SAF_National_Eastern_Approach
+	icon = GFX_GENERIC_parliament_2
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Republic_Speak_to_the_New_Republic
+	prerequisite = {
+		focus = SAF_Republic_Speak_to_the_New_Republic
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Isolationist
+	}
+	mutually_exclusive = {
+		focus = SAF_National_Repair_TA_Relations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Eastern_Approach"
+		CHI = {
+		country_event = { id = southafrica_national.41 days = 7 }
+		}
+
+		activate_targeted_decision = {
+			target = ISR
+			decision = GENERIC_closer_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = KOR
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = JAP
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = PHI
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = INS
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = PAK
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = SIA
+			decision = GENERIC_diplomatic_delegation
+		}
+		activate_targeted_decision = {
+			target = MAL
+			decision = GENERIC_diplomatic_delegation
+		}
+	}
+}
+
+##########################
+#### ANC FOCUS TREE ######
+##########################
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Majority_Rule
+	icon = GFX_GENERIC_diplo_dark
+	x = 8
+	y = 0
+	cost = 7
+	available = {
+		always = no
+		#Make this completed by event
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Majority_Rule"
+		hidden_effect = {
+			remove_ideas = {
+			SAF_Afrikaner_Nationalism_idea
+			SAF_Afrikaner_Nationalism_idea_2
+			SAF_Afrikaner_Nationalism_idea_3
+			SAF_Racial_Discrimination_idea
+			SAF_Curbed_Racial_Discrimination_idea
+			}
+		}
+		if = {
+		limit = { tag = ANC }
+		every_state = {
+			limit = { is_core_of = SAF }
+			set_state_flag = SOUTH_AFRICAN_STATES
+			remove_core_of = SAF
+			}
+		}
+		add_stability = 0.05
+		if = {
+		limit = { NOT = { has_idea = facade_democracy } }
+		add_ideas = facade_democracy
+		}
+		set_power_balance = {
+		id = SAF_anc_government_power_balance
+		left_side = SAF_radicals_takeover
+		right_side = SAF_anc_coalition_holds
+		}
+
+		if = {
+		limit = { has_idea = SAF_Apartheid }
+		remove_ideas = SAF_Apartheid
+		}
+
+		if = {
+		limit = { has_idea = SAF_Bantustans }
+		remove_ideas = SAF_Bantustans
+		}
+
+		if = {
+		limit = { has_idea = SAF_Communists_Suppressed }
+		remove_ideas = SAF_Communists_Suppressed
+		}
+		country_event = { id = southafrica_anc.19 days = 5 }
+		#White Flight
+
+		if = {
+		limit = { tag = SAF }
+		set_party_name = {
+		ideology = national_socialist
+		name = ANC_national_socialist_party
+		long_name = ANC_national_socialist_party_long
+		}
+		set_party_name = {
+		ideology = fascist
+		name = ANC_fascist_party
+		long_name = ANC_fascist_party_long
+		}
+		set_party_name = {
+		ideology = social_democrat
+		name = ANC_social_democrat_party
+		long_name = ANC_social_democrat_party_long
+		}
+		set_party_name = {
+		ideology = socialist
+		name = ANC_socialist_party
+		long_name = ANC_socialist_party_long
+		}
+		set_party_name = {
+		ideology = bolshevik_leninist
+		name = ANC_bolshevik_leninist_party
+		long_name = ANC_bolshevik_leninist_party_long
+		}
+		set_party_name = {
+		ideology = marxist_leninist
+		name = ANC_marxist_leninist_party
+		long_name = ANC_marxist_leninist_party_long
+		}
+		if = {
+		limit = { NOT = { has_government = liberal } }
+		set_politics = {
+		ruling_party = social_democrat
+		}
+		add_popularity = {
+    	ideology = social_democrat
+    	popularity = 0.3
+			}
+		}
+		hidden_effect = {
+		country_event = { id = southafrica_anc.27 days = 14 random = 500 }
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Transitional_Coalition
+	icon = GFX_SAF_Transistional_Coalition
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Majority_Rule
+	}
+	mutually_exclusive = {
+		focus = SAF_Radical_Voices
+	}
+	mutually_exclusive = {
+		focus = SAF_ANC_United_Coalition
+	}
+	relative_position_id = SAF_Majority_Rule
+	cost = 7
+	continue_if_invalid = no
+	available = {
+	#IF NORMAL DEMOCRATISATION - THIS IS MIXED VOTING RIGHTS FOR SAF
+		is_communist = no
+		has_war = no
+		OR = {
+		AND = {
+		tag = SAF
+		}
+		tag = ANC
+		}
+
+		NOT = { has_government = liberal }
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Transitional_Coalition"
+		add_political_power = 50
+		if = {
+		limit = { tag = ANC }
+		set_politics = {
+		ruling_party = social_democrat
+		}
+		hidden_effect = {
+		set_popularities = {
+		social_democrat = 61
+		bolshevik_leninist = 12
+		marxist_leninist = 10
+		liberal = 4
+		conservative = 5
+		socialist = 8
+				}
+			}
+		}
+		#BOP
+		country_event = southafrica_anc.17
+	}
+}
+
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_ANC_United_Coalition
+	icon = GFX_SAF_United_Party
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = SAF_Majority_Rule
+	}
+	mutually_exclusive = {
+		focus = SAF_Radical_Voices
+	}
+	mutually_exclusive = {
+		focus = SAF_Transitional_Coalition
+	}
+	relative_position_id = SAF_Majority_Rule
+	cost = 7
+	continue_if_invalid = no
+	available = {
+	tag = SAF
+	has_government = liberal
+	}
+	ai_will_do = {
+		base = 100
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_ANC_United_Coalition"
+		retire_ideology_leader = liberal
+		add_power_balance_value = {
+		id = SAF_anc_government_power_balance
+		value = 0.15
+		tooltip_side = SAF_anc_coalition_holds
+		}
+		add_ideas = {
+			SAF_HoG_Albert_Lutuli
+			SAF_FM_Mangosuthu_Buthelezi
+			SAF_MoS_Colin_Eglin
+			SAF_AM_Alan_Paton
+		}
+		set_temp_variable = { coalition_stability_temp = 0.1 }
+		alter_coalition_stability = yes
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Radical_Voices
+	icon = GFX_SAF_South_Africa_Radical_Voices
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = SAF_Majority_Rule
+	}
+	mutually_exclusive = {
+		focus = SAF_Transitional_Coalition
+	}
+	mutually_exclusive = {
+		focus = SAF_ANC_United_Coalition
+	}
+	continue_if_invalid = no
+	relative_position_id = SAF_Majority_Rule
+	cost = 7
+	available = {
+		#IF NORMAL DEMOCRATISATION - THIS IS FULL EQUAL VOTING RIGHTS
+		has_war = no
+		OR = {
+		AND = {
+		tag = SAF
+			}
+		tag = ANC
+		}
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Radical_Voices"
+		#BOP
+		if = {
+		limit = { is_communist = no }
+		if = {
+		limit = { tag = ANC }
+		set_politics = {
+		ruling_party = social_democrat
+			}
+		hidden_effect = {
+		set_popularities = {
+		social_democrat = 70
+		bolshevik_leninist = 20
+		marxist_leninist = 10
+				}
+			}
+		}
+		#BOP
+		country_event = southafrica_anc.18
+
+		set_temp_variable = { coalition_partner_var = token:marxist_leninist }
+		add_to_coalition = yes
+		set_variable = { coalition_stability = 0.25 tooltip = coalition_stability_tooltip }
+		}
+
+		add_timed_idea = {
+    	idea = SAF_Revolutionary_Justice
+    	days = 365
+		}
+		add_political_power = 100
+
+		#If coup happened during Oranje break away - this is ANC vs SACP
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Flag_Question
+	icon = GFX_GENERIC_flag_waving
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Transitional_Coalition
+		focus = SAF_Radical_Voices
+		focus = SAF_ANC_United_Coalition
+	}
+	relative_position_id = SAF_Transitional_Coalition
+	cost = 3
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Flag_Question"
+		country_event = southafrica_anc.4
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Place_Names
+	icon = GFX_USA_anti_colonialism
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Flag_Question
+	}
+	relative_position_id = SAF_The_Flag_Question
+	cost = 9
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Place_Names"
+		country_event = southafrica_anc.20
+	}
+}
+
+# Cooperation Branch
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Cooperation
+	icon = GFX_SAF_The_Cooperation
+	x = -3
+	y = 1
+	prerequisite = {
+		focus = SAF_Place_Names
+	}
+	relative_position_id = SAF_Place_Names
+	cost = 7
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Cooperation"
+		add_political_power = 150
+		add_timed_idea = {
+			idea = ANC_coalition_government
+			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Constitutional_Reform
+	icon = GFX_GENERIC_Adapt_Constitution
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Cooperation
+	}
+	mutually_exclusive = {
+	focus = SAF_Constitutional_Reform_AFTER_UNITED
+	}
+	relative_position_id = SAF_The_Cooperation
+	cost = 12
+	continue_if_invalid = no
+	available = {
+	NOT = {
+	is_power_balance_in_range = {
+    id = SAF_anc_government_power_balance
+    range = SAF_radicals_high_range
+			}
+	has_country_flag = UNITED_PARTY_DRAFTED_NEW_CONSTITUTION
+		}
+	NOT = { has_completed_focus = SAF_The_Coup }
+	}
+	select_effect = {
+	country_event = southafrica_anc.21
+	}
+	ai_will_do = {
+		base = 100
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Constitutional_Reform"
+		swap_ideas = {
+		remove_idea = ANC_white_flight
+		add_idea = ANC_SAF_reconcile_one
+		}
+		country_event = southafrica_anc.26
+		add_ideas = established_democracy
+		add_power_balance_value = {
+		id = SAF_anc_government_power_balance
+		value = 0.3
+		tooltip_side = SAF_anc_coalition_holds
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Constitutional_Reform_AFTER_UNITED
+	icon = GFX_ENG_Criminal_Reform
+	cancelable = yes
+	x = -1
+	y = 1
+	mutually_exclusive = {
+	focus = SAF_Constitutional_Reform
+	}
+	prerequisite = {
+		focus = SAF_The_Cooperation
+	}
+	relative_position_id = SAF_The_Cooperation
+	cost = 8
+	continue_if_invalid = no
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	NOT = {
+	is_power_balance_in_range = {
+    id = SAF_anc_government_power_balance
+    range = SAF_radicals_high_range
+			}
+		}
+	has_country_flag = UNITED_PARTY_DRAFTED_NEW_CONSTITUTION
+	}
+	select_effect = {
+		#Something special maybe
+		country_event = { id = southafrica_united.26 days = 7 }
+	}
+	ai_will_do = {
+		base = 100
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Constitutional_Reform_AFTER_UNITED"
+		swap_ideas = {
+		remove_idea = ANC_white_flight
+		add_idea = ANC_SAF_reconcile_one
+		}
+		country_event = southafrica_united.25
+		add_ideas = established_democracy
+		add_power_balance_value = {
+		id = SAF_anc_government_power_balance
+		value = 0.15
+		tooltip_side = SAF_anc_coalition_holds
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Repeal_Discriminatory_Legislation #Enshrining Racial Equality
+	icon = GFX_USA_Anti_discrimantive_directives
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Constitutional_Reform
+		focus = SAF_Constitutional_Reform_AFTER_UNITED
+	}
+	relative_position_id = SAF_Constitutional_Reform
+	cost = 7
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	NOT = {
+	is_power_balance_in_range = {
+    id = SAF_anc_government_power_balance
+    range = SAF_radicals_high_range
+			}
+		}
+	NOT = { has_completed_focus = SAF_The_Coup }
+	is_power_balance_in_range = {
+    id = SAF_anc_government_power_balance
+    range = SAF_ANC_government_high_control_range
+		}
+	}
+	ai_will_do = {
+		base = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Repeal_Discriminatory_Legislation"
+		remove_power_balance = {
+			id = SAF_anc_government_power_balance
+		}
+		add_popularity = {
+    	ideology = ROOT
+    	popularity = 0.3
+		}
+		swap_ideas = {
+		remove_idea = ANC_SAF_reconcile_one
+		add_idea = ANC_SAF_reconcile_two
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Integration
+	icon = GFX_GENERIC_socialist_keep_old_guard
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Repeal_Discriminatory_Legislation
+	}
+	relative_position_id = SAF_Repeal_Discriminatory_Legislation
+	cost = 7
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Integration"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+		}
+
+		country_event = southafrica_anc.30
+
+		if = {
+		limit = { country_exists = ZUL ZUL = { NOT = { is_subject_of = ROOT } } }
+		unlock_decision_tooltip = SAF_reunify_with_natal
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Reconciliation
+	icon = GFX_SAF_Reconcile
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Integration
+	}
+	relative_position_id = SAF_Integration
+	cost = 7
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Reconciliation"
+		if = {
+		limit = { has_government = liberal }
+		set_party_name = {
+			ideology = bolshevik_leninist
+			long_name = ANC_bolshevik_leninist_party_alt_long
+			name = ANC_bolshevik_leninist_party_alt
+		}
+		create_country_leader = {
+			name = "Walter Sisulu"
+			desc = "Walter_Sisulu_DESC"
+			picture = "Walter_Sisulu.dds"
+			expire = "1975.1.1"
+			ideology = popular_frontism
+			traits = { }
+		}
+		create_country_leader = {
+			name = "Nelson Mandela"
+			desc = "Nelson_Mandela_DESC"
+			picture = "SAF_Nelson_Rolihlahla_Mandela.dds"
+			expire = "1975.1.1"
+			ideology = liberal_socialism
+			traits = { MoS_Man_Of_The_People }
+		}		
+		set_country_flag = LIBERAL_SAF_MAJORITY
+		}
+		if = {
+		limit = { NOT = { has_government = liberal } }
+		country_event = southafrica_anc.28
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_We_Are_a_Rainbow_Nation
+	icon = GFX_GENERIC_Pan-African_Militants
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Reconciliation
+	}
+	relative_position_id = SAF_Reconciliation
+	cost = 7
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_We_Are_a_Rainbow_Nation"
+		if = {
+		limit = { OR = { tag = ANC is_in_the_un = no } }
+		set_country_flag = ALLOWED_TO_JOIN_UN
+		unlock_decision_tooltip = GENERIC_apply_to_join_un
+		}
+		country_event = southafrica_anc.29
+
+		unlock_decision_tooltip = SAF_form_the_saeu
+
+		activate_targeted_decision = {
+		target = LES
+		decision = SAF_assert_economic_dependency
+		}
+		activate_targeted_decision = {
+		target = SWA
+		decision = SAF_assert_economic_dependency
+		}
+
+		activate_targeted_decision = {
+		target = LES
+		decision = SAF_strengthen_economic_ties
+		}
+		activate_targeted_decision = {
+		target = SWA
+		decision = SAF_strengthen_economic_ties
+		}
+
+		if = {
+		limit = { country_exists = ORJ }
+		unlock_decision_tooltip = GENERIC_liberate_transvaal_and_oranje
+		}
+
+		swap_ideas = {
+		remove_idea = ANC_SAF_reconcile_two
+		add_idea = ANC_SAF_reconcile_final
+		}
+
+		hidden_effect = {
+		#Political entrechment and gradual corruption seeping in
+		country_event = { id = southafrica_anc.64 days = 70 random_days = 20 }
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_A_Steady_Diplomatic_Course
+	icon = GFX_focus_SAF_secure_africa
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = SAF_We_Are_a_Rainbow_Nation
+	}
+	relative_position_id = SAF_We_Are_a_Rainbow_Nation
+	cost = 8
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	has_government = liberal
+	NOT = { country_exists = ORJ }
+	}
+	ai_will_do = {
+		base = 100
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Steady_Diplomatic_Course"
+		add_stability = 0.15
+
+		unlock_decision_tooltip = SAF_application_to_join_TOR
+		unlock_decision_tooltip = SAF_request_custodianship_over_lesotho_and_swaziland
+
+		every_other_country = {
+		limit = { has_idea = COM_commonwealth_of_nations }
+		add_opinion_modifier = {
+			target = SAF
+			modifier = foreign_company_deals
+			}
+		reverse_add_opinion_modifier = {
+			target = SAF
+			modifier = foreign_company_deals
+			}
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = SAF_An_Offer_to_the_Americans
+	icon = GFX_USA_fortress
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_We_Are_a_Rainbow_Nation
+	}
+	mutually_exclusive = {
+		focus = SAF_We_Shall_Go_Alone
+	}
+	relative_position_id = SAF_We_Are_a_Rainbow_Nation
+	cost = 7
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	is_communist = no
+	OR = {
+	is_in_sphere = no
+	has_country_flag = FLAG_TA_ALIGNED
+	}
+	country_exists = USA
+	NOT = { has_government = liberal }
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_An_Offer_to_the_Americans"
+		USA = { country_event = { id = twrgenericdiplo.1 days = 5 } }
+		#Train militants
+
+		unlock_decision_tooltip = GENERIC_SAF_train_freedom_fighters
+		set_country_flag = UNLOCKED_SEND_MILITIAS
+
+		#ABILITY TO SEND VOLUNTEERS TO FREEDOM FIGHTERS
+		unlock_decision_tooltip = GENERIC_send_volunteers_to_friendly_african_countries
+		set_country_flag = UNLOCKED_SEND_VOLUNTEERS_SAF
+
+		if = {
+		limit = { has_country_flag = KIND_TO_BRITISH_ZULU }
+		set_country_flag = UNLOCK_JOIN_COMMONWEALTH_DECISION
+		unlock_decision_tooltip = GENERIC_apply_to_join_commonwealth
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_We_Shall_Go_Alone
+	icon = GFX_GENERIC_Cooperated_Isolation
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_We_Are_a_Rainbow_Nation
+	}
+	mutually_exclusive = {
+		focus = SAF_An_Offer_to_the_Americans
+	}
+	relative_position_id = SAF_We_Are_a_Rainbow_Nation
+	cost = 7
+	available = {
+	NOT = { has_completed_focus = SAF_The_Coup }
+	NOT = { has_government = liberal }
+	NOT = { has_idea = COM_commonwealth_of_nations }
+	is_subject = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_We_Shall_Go_Alone"
+		unlock_decision_tooltip = GENERIC_combat_foreign_influence
+		unlock_decision_tooltip = GENERIC_asserts_independence
+		set_country_flag = GEN_COMBAT_INFLUENCE_FLAG
+		
+		unlock_decision_tooltip = GENERIC_SAF_train_freedom_fighters
+		set_country_flag = UNLOCKED_SEND_MILITIAS
+		#Train militants
+
+		#ABILITY TO SEND VOLUNTEERS TO FREEDOM FIGHTERS
+		unlock_decision_tooltip = GENERIC_send_volunteers_to_friendly_african_countries
+		set_country_flag = UNLOCKED_SEND_VOLUNTEERS_SAF
+
+		if = {
+		limit = { has_country_flag = KIND_TO_BRITISH_ZULU }
+		set_country_flag = UNLOCK_JOIN_COMMONWEALTH_DECISION
+		unlock_decision_tooltip = GENERIC_apply_to_join_commonwealth
+		}
+	}
+}
+
+# The Coup Branch
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Coup
+	icon = GFX_GENERIC_African_Revolutionaries
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = SAF_Place_Names
+	}
+	relative_position_id = SAF_Place_Names
+	cost = 7
+	available = {
+	always = no
+	}
+	bypass = {
+	has_country_flag = RADICALS_TAKEOVER_BYPASS
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Coup"
+		custom_effect_tooltip = SACP_ANC_STRUGGLE
+
+		if = {
+		limit = { NOT = { has_country_flag = SOUTH_AFRICAN_NATIVIST_NAME } }
+		set_country_flag = SOUTH_AFRICAN_NATIVIST_NAME
+		custom_effect_tooltip = GREAT_RENAMING_SOUTH_AFRICA
+		}
+
+		if = {
+		limit = { country_exists = ORJ }
+		unlock_decision_tooltip = GENERIC_liberate_transvaal_and_oranje
+		}
+
+		if = {
+		limit = { NOT = { has_country_flag = SAF_REBRANDED } }
+		country_event = southafrica_anc.4
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Colonists_Out
+	icon = GFX_SAF_Colonists_Out
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Coup
+	}
+	relative_position_id = SAF_The_Coup
+	cost = 7
+	available = {
+	always = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Colonists_Out"
+		custom_effect_tooltip = AFRICANIST_VICTORY
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Defend_What_We_Fought_For
+	icon = GFX_SAF_Defend_What_We_Fought
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Colonists_Out
+	}
+	relative_position_id = SAF_Colonists_Out
+	cost = 8
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Defend_What_We_Fought_For"
+		country_event = southafrica_anc.35
+		every_unit_leader = {
+		limit = { has_trait = communist_sympathizer }
+		retire = yes
+		}
+		if = {
+		limit = { tag = SAF }
+		every_unit_leader = {
+		retire = yes
+		}
+
+		create_corps_commander = {
+			name = "Raymond Mhlaba"
+			portrait_path = "gfx/leaders/ANC/Raymond_Mhlaba.dds"
+			traits = { scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		} 
+
+		create_corps_commander = {
+			name = "Wilton Mkwayi"
+			portrait_path = "gfx/leaders/ANC/Wilton_Mkwayi.dds"
+			traits = { scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Potlako Leballo"
+			portrait_path = "gfx/leaders/ANC/Potlako_Leballo.dds"
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Lucas Majozi"
+			portrait_path = "gfx/leaders/ANC/Lucas_Majozi.dds"
+			traits = { trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Job Maseko"
+			portrait_path = "gfx/leaders/ANC/Job_Maseko.dds"
+			traits = { war_hero trait_reckless }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Berry Gazi"
+			portrait_path = "gfx/leaders/ANC/Berry_Gazi.dds"
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Promote_the_Revolution
+	icon = GFX_GENERIC_African_Flames
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Defend_What_We_Fought_For
+	}
+	relative_position_id = SAF_Defend_What_We_Fought_For
+	cost = 10
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Promote_the_Revolution"
+		country_event = southafrica_anc.36
+
+		#Diplo decisions
+
+		unlock_decision_tooltip = GENERIC_SAF_train_freedom_fighters
+		set_country_flag = UNLOCKED_SEND_MILITIAS
+		#Train militants
+
+		#ABILITY TO SEND VOLUNTEERS TO FREEDOM FIGHTERS
+		unlock_decision_tooltip = GENERIC_send_volunteers_to_friendly_african_countries
+		set_country_flag = UNLOCKED_SEND_VOLUNTEERS_SAF
+
+		if = {
+		limit = { country_exists = ZUL }
+		create_wargoal = {
+		type = civil_war
+		target = ZUL
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Land_Seizures
+	icon = GFX_SAF_Seize_Land
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Colonists_Out
+	}
+	relative_position_id = SAF_Colonists_Out
+	cost = 9
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Land_Seizures"
+		add_offsite_building = { type = industrial_complex level = 3 }
+		random_owned_controlled_state = {
+		add_manpower = -1000
+		damage_building = {
+		type = infrastructure
+		damage = 2
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+		add_manpower = -1000
+		damage_building = {
+		type = infrastructure
+		damage = 2
+		}
+		add_extra_state_shared_building_slots = 2
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_African_Socialism_FOCUS
+	icon = GFX_RAJ_The_Fight_for_Pan-Africanism
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Land_Seizures
+	}
+	relative_position_id = SAF_Land_Seizures
+	cost = 7
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_African_Socialism_FOCUS"
+		swap_ideas = {
+		remove_idea = SAF_Africanist_Spirit_1
+		add_idea = SAF_Africanist_Spirit_2
+		}
+		add_popularity = {
+		ideology = socialist
+		popularity = 0.7
+		}
+		add_popularity = {
+		ideology = bolshevik_leninist
+		popularity = 0.2
+		}
+
+		hidden_effect = {
+		country_event = { id = southafrica_anc.37 days = 14 random = 300 }
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Real_Treason_Trials
+	icon = GFX_GENERIC_Fuck_Marx
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_African_Socialism_FOCUS
+	}
+	prerequisite = {
+		focus = SAF_Promote_the_Revolution
+	}
+	relative_position_id = SAF_African_Socialism_FOCUS
+	cost = 10
+	select_effect = {
+	country_event = southafrica_anc.38
+	}
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Real_Treason_Trials"
+		add_political_power = 150
+		add_ideas = dictatorship
+		country_event = southafrica_anc.39
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Examples_Have_to_be_Made
+	icon = GFX_GENERIC_From_the_depths
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Real_Treason_Trials
+	}
+	mutually_exclusive = {
+		focus = SAF_Imprison_the_Dissidents
+	}
+	relative_position_id = SAF_The_Real_Treason_Trials
+	cost = 8
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Examples_Have_to_be_Made"
+		country_event = southafrica_anc.40
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Imprison_the_Dissidents
+	icon = GFX_GENERIC_Mass_Imprisonment
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Real_Treason_Trials
+	}
+	mutually_exclusive = {
+		focus = SAF_Examples_Have_to_be_Made
+	}
+	relative_position_id = SAF_The_Real_Treason_Trials
+	cost = 5
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Imprison_the_Dissidents"
+		add_stability = 0.05
+		country_event = southafrica_anc.41
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Demolish_the_Voortekker_Monument
+	icon = GFX_SAF_Demolish_the_Voortrekker_Monument
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = SAF_Examples_Have_to_be_Made
+		focus = SAF_Imprison_the_Dissidents
+	}
+	mutually_exclusive = {
+		focus = SAF_A_Reminder_of_Colonist_Oppression
+	}
+	relative_position_id = SAF_Examples_Have_to_be_Made
+	cost = 3
+	available = {
+		has_war = no
+		controls_state = 275
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Demolish_the_Voortekker_Monument"
+		country_event = southafrica_anc.42
+		275 = {
+		add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_A_Reminder_of_Colonist_Oppression
+	icon = GFX_GENERIC_workers_professional
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = SAF_Examples_Have_to_be_Made
+		focus = SAF_Imprison_the_Dissidents
+	}
+	mutually_exclusive = {
+		focus = SAF_Demolish_the_Voortekker_Monument
+	}
+	relative_position_id = SAF_Imprison_the_Dissidents
+	cost = 7
+	available = {
+		has_war = no
+		controls_state = 275
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Reminder_of_Colonist_Oppression"
+		country_event = southafrica_anc.43
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_New_Mzansi
+	icon = GFX_GENERIC_A_New_Steed
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Demolish_the_Voortekker_Monument
+		focus = SAF_A_Reminder_of_Colonist_Oppression
+	}
+	relative_position_id = SAF_Demolish_the_Voortekker_Monument
+	cost = 10
+	available = {
+		has_war = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_New_Mzansi"
+		#Add bunch of claims in Southern Africa stuff
+		country_event = southafrica_anc.44
+
+		add_state_claim = 541
+		add_state_claim = 945
+		add_state_claim = 542
+		add_state_core = 799
+		add_state_core = 800
+
+		#Evict the colonies
+		set_country_flag = AGGRESSIVE_ANTI_UK_SAF
+		unlock_decision_tooltip = SAF_invade_british_colonies
+
+		#Decisions to take control of these cored and claimed lands
+
+		unlock_decision_tooltip = GENERIC_combat_foreign_influence
+		unlock_decision_tooltip = GENERIC_asserts_independence
+		set_country_flag = GEN_COMBAT_INFLUENCE_FLAG
+
+		#Unlocks decisions to lower everyone's influence on SAF and other African countries that border SAF
+
+		set_country_flag = SAF_MEDDLE_IN_MAD
+		unlock_decision_tooltip = SAF_start_uprising_in_MAD
+	}
+}
+
+#Communist Tree
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Provisional_Government_Prevails
+	icon = GFX_SOV_Komsomol_Direction
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Coup
+	}
+	relative_position_id = SAF_The_Coup
+	cost = 7
+	available = {
+	always = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Provisional_Government_Prevails"
+		custom_effect_tooltip = SACP_VICTORY
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Class_War
+	icon = GFX_SOV_Old_Worker
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Provisional_Government_Prevails
+	}
+	relative_position_id = SAF_The_Provisional_Government_Prevails
+	cost = 10
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Class_War"
+		country_event = southafrica_anc.46
+		if = {
+		limit = { tag = SAF }
+		every_unit_leader = {
+		retire = yes
+		}
+		create_corps_commander = {
+			name = "Joe Slovo"
+			picture = "Joe_Slovo.dds"
+			traits = { inflexible_strategist scavenger communist_sympathizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Raymond Mhlaba"
+			portrait_path = "gfx/leaders/ANC/Raymond_Mhlaba.dds"
+			traits = { scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		} 
+
+		create_corps_commander = {
+			name = "Wilton Mkwayi"
+			portrait_path = "gfx/leaders/ANC/Wilton_Mkwayi.dds"
+			traits = { scavenger }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Potlako Leballo"
+			portrait_path = "gfx/leaders/ANC/Potlako_Leballo.dds"
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Lucas Majozi"
+			portrait_path = "gfx/leaders/ANC/Lucas_Majozi.dds"
+			traits = { trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Job Maseko"
+			portrait_path = "gfx/leaders/ANC/Job_Maseko.dds"
+			traits = { war_hero trait_reckless }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Berry Gazi"
+			portrait_path = "gfx/leaders/ANC/Berry_Gazi.dds"
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			}
+		}
+
+		if = {
+		limit = { country_exists = ZUL }
+		create_wargoal = {
+		type = civil_war
+		target = ZUL
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Bureau_of_Public_Safety
+	icon = GFX_SOV_KGB_ensure
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Class_War
+	}
+	relative_position_id = SAF_Class_War
+	cost = 9
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Bureau_of_Public_Safety"
+		country_event = southafrica_anc.47
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Mass_Nationalisation
+	icon = GFX_SOV_Collective_Efforts
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Bureau_of_Public_Safety
+	}
+	relative_position_id = SAF_Bureau_of_Public_Safety
+	cost = 10
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Mass_Nationalisation"
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Declare_a_Unitary_Socialist_Republic
+	icon = GFX_SOV_knights_in_government
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Mass_Nationalisation
+	}
+	relative_position_id = SAF_Mass_Nationalisation
+	cost = 10
+	available = {
+	}
+	mutually_exclusive = {
+		focus = SAF_Declare_a_Socialist_Federation
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Declare_a_Unitary_Socialist_Republic"
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SAF_UNITARY_SOC
+		country_event = southafrica_anc.48
+		#Idea
+
+		unlock_decision_tooltip = SAF_invade_british_colonies
+		set_country_flag = AGGRESSIVE_ANTI_UK_SAF
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Declare_a_Socialist_Federation
+	icon = GFX_SOV_Thaw
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Mass_Nationalisation
+	}
+	relative_position_id = SAF_Mass_Nationalisation
+	cost = 7
+	available = {
+	}
+	mutually_exclusive = {
+		focus = SAF_Declare_a_Unitary_Socialist_Republic
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Declare_a_Socialist_Federation"
+
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SAF_FEDERAL_SOC
+		country_event = southafrica_anc.48
+
+		#Decision to devolution
+		unlock_decision_tooltip = SAF_form_NMB_puppet
+		unlock_decision_tooltip = SAF_form_ZUL_puppet
+		unlock_decision_tooltip = SAF_form_XHO_puppet
+		unlock_decision_tooltip = SAF_form_TSW_puppet
+
+		unlock_decision_tooltip = SAF_invade_british_colonies
+		set_country_flag = AGGRESSIVE_ANTI_UK_SAF
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Denounce_Revisionism
+	icon = GFX_SOV_Dekulak
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = SAF_Declare_a_Socialist_Federation
+		focus = SAF_Declare_a_Unitary_Socialist_Republic
+	}
+	mutually_exclusive = {
+		focus = SAF_Align_with_the_Indian_Line
+	}
+	relative_position_id = SAF_Declare_a_Socialist_Federation
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Denounce_Revisionism"
+		unlock_decision_tooltip = GENERIC_combat_foreign_influence
+		unlock_decision_tooltip = GENERIC_asserts_independence
+		set_country_flag = GEN_COMBAT_INFLUENCE_FLAG
+		add_stability = 0.1
+		add_war_support = 0.15
+
+		#Form your own thing maybe
+		unlock_decision_tooltip = SAF_form_the_afro_comintern
+
+		unlock_decision_tooltip = GENERIC_SAF_train_freedom_fighters
+		set_country_flag = UNLOCKED_SEND_MILITIAS
+		#Train militants
+
+		#ABILITY TO SEND VOLUNTEERS TO FREEDOM FIGHTERS
+		unlock_decision_tooltip = GENERIC_send_volunteers_to_friendly_african_countries
+		set_country_flag = UNLOCKED_SEND_VOLUNTEERS_SAF
+
+		#set_country_flag = BLOCKING_ALL_POSSIBLE_INCREASE
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Align_with_the_Indian_Line
+	icon = GFX_focus_RAJ_seek_help_from_soviet
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Declare_a_Socialist_Federation
+		focus = SAF_Declare_a_Unitary_Socialist_Republic
+	}
+	relative_position_id = SAF_Declare_a_Socialist_Federation
+	cost = 7
+	available = {
+		RAJ = { exists = yes }
+		RAJ = { is_communist = yes }
+	}
+	mutually_exclusive = {
+		focus = SAF_Denounce_Revisionism
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Align_with_the_Indian_Line"
+
+		RAJ = { country_event = { id = twrgenericdiplo.1 days = 5 } }
+		#Join their sphere basically, or their faction if they have one
+		#Oh and their research group thing, decision to allow that
+
+		unlock_decision_tooltip = GENERIC_SAF_train_freedom_fighters
+		set_country_flag = UNLOCKED_SEND_MILITIAS
+		#Train militants
+
+		#ABILITY TO SEND VOLUNTEERS TO FREEDOM FIGHTERS
+		unlock_decision_tooltip = GENERIC_send_volunteers_to_friendly_african_countries
+		set_country_flag = UNLOCKED_SEND_VOLUNTEERS_SAF
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_A_Beacon_Of_African_Communism
+	icon = GFX_SOV_soviet_culture
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Align_with_the_Indian_Line
+		focus = SAF_Denounce_Revisionism
+	}
+	relative_position_id = SAF_Denounce_Revisionism
+	cost = 8
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Beacon_Of_African_Communism"
+		country_event = southafrica_anc.50
+
+		set_country_flag = SAF_MEDDLE_IN_MAD
+		unlock_decision_tooltip = SAF_start_uprising_in_MAD
+	}
+}
+
+##############################
+#### FASCIST FOCUS TREE ######
+##############################
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Van_Resburgs_Coup
+	icon = GFX_SAF_Van_Rensburgs_Coup
+	x = 8
+	y = 0
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Van_Resburgs_Coup"
+		add_ideas = {
+		SAF_HoG_Hans_Von_Rensburg
+		SAF_FM_Louis_Bootha
+		SAF_MoS_Johannes_Vorster
+		SAF_AM_Hendrik_van_den_Bergh
+		}
+		unlock_decision_category_tooltip = SAF_Fascist_category
+		#FOUR FACTIONS
+		#ARMY - Junta - NONE
+		#INTERNATIONALIST - Louw - PATAUT
+		#CONSERVATIVE - Vorster - FASCIST
+		#RADICAL - Leibbrandt - NATSOC
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Emergency_Act
+	icon = GFX_GENERIC_Expand_Act
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = SAF_Van_Resburgs_Coup
+	}
+	relative_position_id = SAF_Van_Resburgs_Coup
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Emergency_Act"
+		country_event = southafrica_fascist.11
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Join_with_the_Nationals
+	icon = GFX_GER_agreement
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Emergency_Act
+	}
+	relative_position_id = SAF_Emergency_Act
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Join_with_the_Nationals"
+		set_temp_variable = { coalition_partner_var = token:paternal_autocrat }
+		add_to_coalition = yes
+		set_variable = { coalition_stability = 1.0 tooltip = coalition_stability_tooltip }
+
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		}
+		add_political_power = 100
+		set_country_flag = NATIONALS_WORK_WITH_NATSOCS
+		unlock_decision_tooltip = SAF_bureaucratic_entrenchment
+		
+		country_event = southafrica_fascist.21
+		#Form new party?
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Anglo_Issue
+	icon = GFX_SAF_Anglo_Issue
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Join_with_the_Nationals
+	}
+	relative_position_id = SAF_Join_with_the_Nationals
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Anglo_Issue"
+		add_offsite_building = { type = industrial_complex level = 1 }
+		add_offsite_building = { type = arms_factory level = 1 }
+		681 = {
+		add_manpower = -2000
+		}
+		940 = {
+		add_manpower = -1000
+		}
+		ENG = { country_event = { id = southafrica_fascist.19 days = 7 } }
+		set_country_flag = Pieter_de_Waal_unavailable
+		set_country_flag = Jimmy_Durrant_unavailable
+
+		#Evict the colonies
+		set_country_flag = AGGRESSIVE_ANTI_UK_SAF
+		unlock_decision_tooltip = SAF_invade_british_colonies
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Operation_Springbok
+	icon = GFX_GENERIC_destruction
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Anglo_Issue
+	}
+	select_effect = {
+	country_event = southafrica_fascist.8
+	hidden_effect = {
+	country_event = { id = southafrica_fascist.10 days = 60 random_days = 10 }
+		}
+	}
+	relative_position_id = SAF_The_Anglo_Issue
+	cost = 12
+	ai_will_do = {
+		base = 10
+	}
+	available = {
+	has_idea = ANC_militant_operations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Operation_Springbok"
+		add_timed_idea = {
+    		idea = SAF_springbok_idea
+    		days = 365
+		}
+		remove_ideas = ANC_militant_operations
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Establish_the_Propaganda_Ministry
+	icon = GFX_goal_generic_propaganda
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Van_Resburgs_Coup
+	}
+	relative_position_id = SAF_Van_Resburgs_Coup
+	cost = 6
+	ai_will_do = {
+		base = 10
+	}
+	available = {
+	NOT = { has_idea = ANC_militant_operations }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Establish_the_Propaganda_Ministry"
+		country_event = { id = southafrica_fascist.13 days = 1 }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Youth_are_our_Future
+	icon = GFX_GENERIC_Family
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Establish_the_Propaganda_Ministry
+	}
+	relative_position_id = SAF_Establish_the_Propaganda_Ministry
+	cost = 10
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Youth_are_our_Future"
+		add_ideas = SAF_Voortrekkers
+		division_template = {
+		name = "Voortrekkers"			# For 1-brigade Military Districts
+		division_names_group = SAF_GAR_01
+		regiments = {
+			milita = { x = 0 y = 0 }
+			milita = { x = 0 y = 1 }
+			milita = { x = 0 y = 2 }
+			milita = { x = 0 y = 3 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+			division = "name = \"1ste Voortrekkers Brigade\" division_template = \"Voortrekkers\" start_experience_factor = 0.5 start_manpower_factor = 0.01 start_equipment_factor = 0.01"
+			owner = ROOT
+			}
+			create_unit = {
+			division = "name = \"2de Voortrekkers Brigade\" division_template = \"Voortrekkers\" start_experience_factor = 0.5 start_manpower_factor = 0.01 start_equipment_factor = 0.01"
+			owner = ROOT
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Afrikaner_Family
+	icon = GFX_SAF_Afrikaner_Farm
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Youth_are_our_Future
+	}
+	relative_position_id = SAF_Youth_are_our_Future
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	available = {
+	NOT = { has_idea = ANC_militant_operations }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Afrikaner_Family"
+		swap_ideas = {
+		remove_idea = SAF_racial_purity
+		add_idea = SAF_racial_purity_1
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Afrikaner_Industry
+	icon = GFX_SAF_Afrikaner_Industry
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Afrikaner_Family
+	}
+	relative_position_id = SAF_The_Afrikaner_Family
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	available = {
+	NOT = { has_idea = ANC_militant_operations }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Afrikaner_Industry"
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	    type = arms_factory
+	    level = 1
+	    instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Empower_the_Stormjaers
+	icon = GFX_GENERIC_militia
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = SAF_Van_Resburgs_Coup
+	}
+	relative_position_id = SAF_Van_Resburgs_Coup
+	cost = 10
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus SAF_Empower_the_Stormjaers"
+	hidden_effect = {
+	division_template = {
+	name = "Stormjaers"			# For 1-brigade Military Districts
+
+	division_names_group = BRENGL_GAR_01
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+		light_infantry = { x = 1 y = 0 }
+	}
+
+	support = {
+       	recon = { x = 0 y = 0 }
+	}
+		}
+	}
+	random_owned_controlled_state = {
+	create_unit = {
+    	division = "name = \"1e Stormjaers Divisie\" division_template = \"Stormjaers\" start_experience_base = 0"
+    	owner = SAF
+	}
+	create_unit = {
+    	division = "name = \"2e Stormjaers Divisie\" division_template = \"Stormjaers\" start_experience_base = 0"
+    	owner = SAF
+	}
+	create_unit = {
+    	division = "name = \"3e Stormjaers Divisie\" division_template = \"Stormjaers\" start_experience_base = 0"
+    	owner = SAF
+			}
+		}
+
+	add_popularity = {
+			ideology = fascist
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Secret_Police
+	icon = GFX_GENERIC_secret_service
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Empower_the_Stormjaers
+	}
+	relative_position_id = SAF_Empower_the_Stormjaers
+	cost = 9
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Secret_Police"
+		add_ideas = SAF_SASS
+
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			if = {
+			limit = { has_intelligence_agency = no }
+			create_intelligence_agency = {
+			name = "B.O.S.S."
+			icon = GFX_intelligence_agency_logo_generic_5
+				}
+			}
+			if = {
+			limit = { has_intelligence_agency = yes }
+			gain_random_agency_upgrade = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_New_Citizenship_Laws
+	icon = GFX_GENERIC_shadow_government
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Secret_Police
+	}
+	available = {
+	has_completed_focus = SAF_The_Afrikaner_Family
+	NOT = { has_idea = ANC_militant_operations }
+	}
+	relative_position_id = SAF_Secret_Police
+	cost = 8
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_New_Citizenship_Laws"
+		swap_ideas = {
+		remove_idea = SAF_racial_purity_1
+		add_idea = SAF_racial_purity_2
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Detention_Camps
+	icon = GFX_GENERIC_railway_tracks
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_New_Citizenship_Laws
+	}
+	available = {
+	NOT = { has_idea = ANC_militant_operations }
+	}
+	relative_position_id = SAF_New_Citizenship_Laws
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Detention_Camps"
+
+		unlock_decision_tooltip = SAF_establish_labour_camp
+		set_country_flag = DETENTION_CAMPS_DECISION
+
+		#Set up more
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_End_the_Union
+	icon = GFX_GENERIC_burn_parliament
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Operation_Springbok
+	}
+	prerequisite = {
+		focus = SAF_Afrikaner_Industry
+	}
+	prerequisite = {
+		focus = SAF_Detention_Camps
+	}
+	available = {
+	has_war = no
+	NOT = { has_idea = ANC_militant_operations }
+	}
+	relative_position_id = SAF_Afrikaner_Industry
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_End_the_Union"
+		country_event = southafrica_fascist.12
+
+		#ANC prolonged resistance event
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Heil_vir_die_Leier
+	icon = GFX_FRA_French_Fascists
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_End_the_Union
+	}
+	relative_position_id = SAF_End_the_Union
+	cost = 10
+	cancel_if_invalid = yes
+	ai_will_do = {
+		base = 10
+	}
+	available = {
+	has_war = no
+	NOT = { has_country_flag = Hans_Von_Rensburg_unavailable }
+	}
+	select_effect = {
+	hidden_effect = {
+		country_event = { id = southafrica_fascist_power_struggle.1 days = 20 random_days = 30 }
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Heil_vir_die_Leier"
+		effect_tooltip = {
+		add_country_leader_trait = nationalist_symbol
+		country_event = southafrica_fascist.16
+		}
+	}
+}
+
+### POST LEIER TREE ####
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Death_of_Hoogste_Leier
+	icon = GFX_SAF_Death_Rensburg
+	x = 8
+	y = 0
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Death_of_Hoogste_Leier"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+## Vorster
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Vorster
+	icon = GFX_SAF_Voter
+	x = -6
+	y = 1
+	prerequisite = {
+		focus = SAF_Death_of_Hoogste_Leier
+	}
+	mutually_exclusive = {
+		focus = SAF_Leibbrandt
+		focus = SAF_Louw
+		focus = SAF_Military_Rule
+	}
+	relative_position_id = SAF_Death_of_Hoogste_Leier
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Vorster"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_National_Socialism_with_Boer_Characteristics
+	icon = GFX_GENERIC_Nazi_Eagle
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Vorster
+	}
+	relative_position_id = SAF_Vorster
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_National_Socialism_with_Boer_Characteristics"
+		add_stability = -0.1
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.1
+		}		
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Honour_the_Fallen_Leier
+	icon = GFX_GER_old_hitler
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_National_Socialism_with_Boer_Characteristics
+	}
+	relative_position_id = SAF_National_Socialism_with_Boer_Characteristics
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Honour_the_Fallen_Leier"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Execute_Leibbrandt
+	icon = GFX_BGR_Execute_The_Witnesses
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Honour_the_Fallen_Leier
+	}
+	mutually_exclusive = {
+		focus = SAF_Keep_an_Eye_on_Him
+	}
+	relative_position_id = SAF_Honour_the_Fallen_Leier
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Execute_Leibbrandt"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Keep_an_Eye_on_Him
+	icon = GFX_GENERIC_investigation
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Honour_the_Fallen_Leier
+	}
+	mutually_exclusive = {
+		focus = SAF_Execute_Leibbrandt
+	}
+	relative_position_id = SAF_Honour_the_Fallen_Leier
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Keep_an_Eye_on_Him"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Stormjaer_State
+	icon = GFX_GENERIC_German_Soldier
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Execute_Leibbrandt
+		focus = SAF_Keep_an_Eye_on_Him
+	}
+	relative_position_id = SAF_Execute_Leibbrandt
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Stormjaer_State"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Promote_Northern_Migration
+	icon = GFX_GENERIC_Deportation
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Stormjaer_State
+	}
+	relative_position_id = SAF_Stormjaer_State
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Promote_Northern_Migration"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Curb_Foreign_Influence
+	icon = GFX_goal_continuous_def_against_influence
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Promote_Northern_Migration
+	}
+	relative_position_id = SAF_Promote_Northern_Migration
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Curb_Foreign_Influence"
+		add_stability = -0.1
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.05
+		}		
+		add_popularity = {
+			ideology = liberal
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.05
+		}		
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = -0.05
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Eagle_in_the_South
+	icon = GFX_GENERIC_Nazi_Eagle
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Curb_Foreign_Influence
+	}
+	relative_position_id = SAF_Curb_Foreign_Influence
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Eagle_in_the_South"
+	}
+}
+
+## Leibbrandt
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Leibbrandt
+	icon = GFX_SAF_Leibbrandt
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = SAF_Death_of_Hoogste_Leier
+	}
+	mutually_exclusive = {
+		focus = SAF_Vorster
+		focus = SAF_Louw
+		focus = SAF_Military_Rule
+	}
+	relative_position_id = SAF_Death_of_Hoogste_Leier
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Leibbrandt"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Lessons_from_Germany
+	icon = GFX_GENERIC_Nazi_Myth
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Leibbrandt
+	}
+	relative_position_id = SAF_Leibbrandt
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Lessons_from_Germany"
+		add_political_power = 100
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.15
+		}	
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Consolidate_Power
+	icon = GFX_GENERIC_authoritarian_fist
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Lessons_from_Germany
+	}
+	relative_position_id = SAF_Lessons_from_Germany
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Consolidate_Power"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_No_Place_for_Traitors
+	icon = GFX_GRE_Torturers_for_the_Tortured
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Consolidate_Power
+	}
+	mutually_exclusive = {
+		focus = SAF_Military_Loyalty
+	}
+	relative_position_id = SAF_Consolidate_Power
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_No_Place_for_Traitors"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Uraanprojekt
+	icon = GFX_GENERIC_Nuclear_Energy_Bill
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_No_Place_for_Traitors
+	}
+	relative_position_id = SAF_No_Place_for_Traitors
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Uraanprojekt"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Encourange_Afrinaker_Birth_Rates
+	icon = GFX_GENERIC_Family
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Uraanprojekt
+	}
+	relative_position_id = SAF_Uraanprojekt
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Encourange_Afrinaker_Birth_Rates"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Military_Loyalty
+	icon = GFX_SAF_Appoint_Military_Leader
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Consolidate_Power
+	}
+	mutually_exclusive = {
+		focus = SAF_No_Place_for_Traitors
+	}
+	relative_position_id = SAF_Consolidate_Power
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Military_Loyalty"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Building_Projects
+	icon = GFX_GENERIC_Housing_Bill
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Military_Loyalty
+	}
+	relative_position_id = SAF_Military_Loyalty
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Building_Projects"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Power_to_the_Northern_Task_Forces
+	icon = GFX_GENERIC_Scouts
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Building_Projects
+	}
+	relative_position_id = SAF_Building_Projects
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Power_to_the_Northern_Task_Forces"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Crush_the_Terrorists
+	icon = GFX_GENERIC_death_to_commuism
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Encourange_Afrinaker_Birth_Rates
+		focus = SAF_Power_to_the_Northern_Task_Forces
+	}
+	relative_position_id = SAF_Encourange_Afrinaker_Birth_Rates
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Crush_the_Terrorists"
+		add_political_power = 100
+		add_manpower = -1000
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.1
+		}	
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = -0.1
+		}	
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = -0.1
+		}	
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Afrikaner_German_Friendship
+	icon = GFX_SAF_Nazi_Saf_Friends
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Crush_the_Terrorists
+	}
+	relative_position_id = SAF_Crush_the_Terrorists
+	cost = 7
+	available = {
+		GRM = { exists = yes is_fascist = yes has_war = no }
+	}
+	bypass = {
+		OR = {
+			NOT = {
+				OR = {
+					country_exists = GER
+					country_exists = HSS
+					country_exists = HGR
+				}
+			}
+			HGR = { is_fascist = no }
+		}
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Afrikaner_German_Friendship"
+		855 = {
+			owner = {
+				country_event = southafrica_fascist.17
+			}
+		}
+		add_political_power = -80
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Our_Land_Our_Volk
+	icon = GFX_GER_Speers_Vision
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Afrikaner_German_Friendship
+	}
+	relative_position_id = SAF_Afrikaner_German_Friendship
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Our_Land_Our_Volk"
+	}
+}
+
+## Louw
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Louw
+	icon = GFX_SAF_Louw
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = SAF_Death_of_Hoogste_Leier
+	}
+	mutually_exclusive = {
+		focus = SAF_Vorster
+		focus = SAF_Leibbrandt
+		focus = SAF_Military_Rule
+	}
+	relative_position_id = SAF_Death_of_Hoogste_Leier
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Leibbrandt"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Reform_the_Party
+	icon = GFX_GER_reform_bill
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Louw
+	}
+	relative_position_id = SAF_Louw
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Reform_the_Party"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Dismiss_the_Extremists
+	icon = GFX_SAF_Empower_Grey_Shirts
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Reform_the_Party
+	}
+	relative_position_id = SAF_Reform_the_Party
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Dismiss_the_Extremists"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Continue_Down_the_Path
+	icon = GFX_GENERIC_Paternal_Autocrat
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Dismiss_the_Extremists
+	}
+	mutually_exclusive = {
+		focus = SAF_A_Moderate_Direction
+	}
+	relative_position_id = SAF_Dismiss_the_Extremists
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Continue_Down_the_Path"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_New_Afrikaner_Nation
+	icon = GFX_SAF_Afrikaner_Farm
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Continue_Down_the_Path
+	}
+	relative_position_id = SAF_Continue_Down_the_Path
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_New_Afrikaner_Nation"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Proud_Propaganda
+	icon = GFX_goal_generic_propaganda
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_The_New_Afrikaner_Nation
+	}
+	relative_position_id = SAF_The_New_Afrikaner_Nation
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Proud_Propaganda"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_A_Moderate_Direction
+	icon = GFX_GENERIC_Freedom
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Dismiss_the_Extremists
+	}
+	mutually_exclusive = {
+		focus = SAF_Continue_Down_the_Path
+	}
+	relative_position_id = SAF_Dismiss_the_Extremists
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Moderate_Direction"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_New_Land_Act
+	icon = GFX_SAF_Afrikaner_Farm
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_A_Moderate_Direction
+	}
+	relative_position_id = SAF_A_Moderate_Direction
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_New_Land_Act"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Boast_our_Strenght
+	icon = GFX_GENERIC_government_power
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_New_Land_Act
+	}
+	relative_position_id = SAF_New_Land_Act
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Boast_our_Strenght"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Legacy_of_Kruger
+	icon = GFX_GENERIC_Whats_The_Plan
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Proud_Propaganda
+		focus = SAF_Boast_our_Strenght
+	}
+	relative_position_id = SAF_Proud_Propaganda
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Legacy_of_Kruger"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Calvinist_Values
+	icon = GFX_GENERIC_Christianity
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Legacy_of_Kruger
+	}
+	relative_position_id = SAF_Legacy_of_Kruger
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Calvinist_Values"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Promote_German_Cooperation
+	icon = GFX_CRO_Deal_With_Germania
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_Calvinist_Values
+	}
+	mutually_exclusive = {
+		focus = SAF_We_are_a_New_Power
+	}
+	relative_position_id = SAF_Calvinist_Values
+	cost = 7
+	available = {
+		855 = {
+			owner = {
+				has_war = no
+				is_fascist = yes
+				tag = GRM
+			}
+		}
+	}
+	ai_will_do = {
+		base = 10
+		modifier = {
+			factor = 50
+			855 = {
+				owner = {
+					is_fascist = yes
+				}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Promote_German_Cooperation"
+		activate_targeted_decision = {
+			target = GRM
+			decision = GENERIC_closer_diplomatic_delegation
+		}
+		GRM = {
+		country_event = { id = twrgenericdiplo.1 days = 5 }
+		}
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_We_are_a_New_Power
+	icon = GFX_GENERIC_flag_waving
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_Calvinist_Values
+	}
+	mutually_exclusive = {
+		focus = SAF_Promote_German_Cooperation
+	}
+	relative_position_id = SAF_Calvinist_Values
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_We_are_a_New_Power"
+		add_political_power = 200
+	}
+}
+
+## Military Rule
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Military_Rule
+	icon = GFX_SAF_Appoint_Military_Leader
+	x = 6
+	y = 1
+	prerequisite = {
+		focus = SAF_Death_of_Hoogste_Leier
+	}
+	mutually_exclusive = {
+		focus = SAF_Vorster
+		focus = SAF_Leibbrandt
+		focus = SAF_Louw
+	}
+	relative_position_id = SAF_Death_of_Hoogste_Leier
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Military_Rule"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_A_New_Direction
+	icon = GFX_SAF_New_Direction
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Military_Rule
+	}
+	relative_position_id = SAF_Military_Rule
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_New_Direction"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_De_Rensburgization
+	icon = GFX_GENERIC_Nazi_Falls
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_A_New_Direction
+	}
+	relative_position_id = SAF_A_New_Direction
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_De_Rensburgization"
+		add_stability = 0.1
+		add_popularity = {
+			ideology = national_socialist
+			popularity = -0.15
+		}	
+		add_popularity = {
+			ideology = fascist
+			popularity = -0.15
+		}	
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Martial_Law
+	icon = GFX_GENERIC_Martial_Law_Ends
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_De_Rensburgization
+	}
+	relative_position_id = SAF_De_Rensburgization
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Martial_Law"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Support_the_Volksraad
+	icon = GFX_SAF_Support_in_the_Volksraad
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Martial_Law
+	}
+	relative_position_id = SAF_Martial_Law
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Support_the_Volksraad"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_The_Racial_Questions
+	icon = GFX_SAF_Race_Question
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Support_the_Volksraad
+	}
+	relative_position_id = SAF_Support_the_Volksraad
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Racial_Questions"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_No_Citizenship_for_Coloureds
+	#icon = GFX_BRY_Central_Command_Meeting
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Racial_Questions
+	}
+	mutually_exclusive = {
+		focus = SAF_Good_Neighbourliness
+	}
+	relative_position_id = SAF_The_Racial_Questions
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_No_Citizenship_for_Coloureds"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Good_Neighbourliness
+	icon = GFX_SAF_Transistional_Coalition
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = SAF_The_Racial_Questions
+	}
+	mutually_exclusive = {
+		focus = SAF_No_Citizenship_for_Coloureds
+	}
+	relative_position_id = SAF_The_Racial_Questions
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Good_Neighbourliness"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Tighten_Our_Grip
+	icon = GFX_SAF_Tighten_Grip
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_No_Citizenship_for_Coloureds
+		focus = SAF_Good_Neighbourliness
+	}
+	mutually_exclusive = {
+		focus = SAF_Democatic_Reform
+	}
+	relative_position_id = SAF_No_Citizenship_for_Coloureds
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Tighten_Our_Grip"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Nominate_a_Permanent_Leader
+	#icon = GFX_BRY_Central_Command_Meeting
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Tighten_Our_Grip
+	}
+	relative_position_id = SAF_Tighten_Our_Grip
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Nominate_a_Permanent_Leader"
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Democatic_Reform
+	icon = GFX_GENERIC_lib_torch
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_No_Citizenship_for_Coloureds
+		focus = SAF_Good_Neighbourliness
+	}
+	mutually_exclusive = {
+		focus = SAF_Tighten_Our_Grip
+	}
+	relative_position_id = SAF_Good_Neighbourliness
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Democatic_Reform"
+		add_ideas = herrenvolk_democracy
+
+		#LEADERS
+		#Pirow - Dies 1956
+		#Louis Weichardt
+		#Verwoerd if he isnt dead
+		#Albert Hertzog if Verwoerd was already dead
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = SAF_Maintain_Afrikaner_Dominance
+	icon = GFX_SAF_Maintain_Afrikaner_Dominance
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAF_Democatic_Reform
+	}
+	relative_position_id = SAF_Democatic_Reform
+	cost = 7
+	available = {
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Maintain_Afrikaner_Dominance"
+	}
+}
+
+####################
+### ECONOMY TREE ###
+####################
+
+shared_focus = {
+	id = SAF_The_Riches_of_South_Africa
+	icon = GFX_GENERIC_Slush_Cash
+	cost = 10
+	x = -1
+	offset = {
+        x = -5
+        trigger = {
+            has_focus_tree = SAF_United_Tree
+        }
+    }
+	offset = {
+        x = -5
+        trigger = {
+            has_focus_tree = SAF_United_Tree_Hofmeyr_RIP
+        }
+    }
+	offset = {
+        x = -5
+        trigger = {
+            has_focus_tree = SAF_Fascist_Tree_2
+        }
+    }
+	available = { has_war = no }
+	bypass = {
+	has_global_flag = COMPLETED_RICHES_FOCUS_SAF
+	}
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Riches_of_South_Africa"
+		every_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		set_global_flag = COMPLETED_RICHES_FOCUS_SAF
+	}
+}
+
+shared_focus = {
+	id = SAF_Expand_Mining_Operations
+	icon = GFX_GENERIC_coal_mine
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_The_Riches_of_South_Africa
+	prerequisite = {
+		focus = SAF_The_Riches_of_South_Africa
+	}
+	available = {
+		owns_state = 541
+	}
+	available = { has_war = no }
+	bypass = {
+	has_global_flag = COMPLETED_EXPAND_MINING_SAF
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Expand_Mining_Operations"
+		541 = {
+			add_resource = {
+				type = tungsten
+				amount = 30
+				state = 940
+			}
+		}
+		set_global_flag = COMPLETED_EXPAND_MINING_SAF
+	}
+}
+
+shared_focus = {
+	id = SAF_Rapid_Industrialization
+	icon = GFX_GENERIC_Industrialization
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = SAF_Expand_Mining_Operations
+	prerequisite = {
+		focus = SAF_Expand_Mining_Operations
+	}
+	bypass = {
+	has_global_flag = COMPLETED_SAF_Rapid_Industrialization
+	}
+	available = { has_war = no }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Rapid_Industrialization"
+		681 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		275 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+		set_global_flag = COMPLETED_SAF_Rapid_Industrialization
+	}
+}
+
+shared_focus = {
+	id = SAF_Funding_Transnet #SAR&H
+	icon = GFX_GENERIC_Railway_Bill
+	cost = 7
+	x = -2
+	y = 1
+	relative_position_id = SAF_Rapid_Industrialization
+	prerequisite = {
+		focus = SAF_Rapid_Industrialization
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Funding_Transnet"
+		#unlock decision for building railways - could do electrification
+
+		#Unlocks decision category
+	}
+}
+
+shared_focus = {
+	id = SAF_South_African_Machining
+	icon = GFX_GENERIC_Cars_Factory
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Rapid_Industrialization
+	prerequisite = {
+		focus = SAF_Rapid_Industrialization
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_South_African_Machining"
+		add_ideas = SAF_machining
+	}
+}
+
+#Changed to Expanding Diamond Exports
+shared_focus = {
+	id = SAF_Diamonds_for_Sale
+	icon = GFX_SAF_Diamonds_For_Sale
+	cost = 10
+	x = -2
+	y = 1
+	relative_position_id = SAF_South_African_Machining
+	prerequisite = {
+		focus = SAF_South_African_Machining
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Diamonds_for_Sale"
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+}
+
+shared_focus = {
+	id = SAF_An_Export_Infrastructure
+	icon = GFX_GENERIC_Export_Economy
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Diamonds_for_Sale
+	prerequisite = {
+		focus = SAF_Diamonds_for_Sale
+	}
+	bypass = {
+		has_global_flag = COMPLETED_SAF_An_Export_Infrastructure
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_An_Export_Infrastructure"
+		940 = {
+			add_building_construction = {
+				type = infrastructure 
+				level = 3
+				instant_build = yes
+			}
+		}
+		set_global_flag = COMPLETED_SAF_An_Export_Infrastructure
+	}
+}
+
+shared_focus = {
+	id = SAF_The_Beauty_of_Capital
+	#Industrial Subsidies
+	icon = GFX_GENERIC_Pile_of_Money
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_An_Export_Infrastructure
+	prerequisite = {
+		focus = SAF_An_Export_Infrastructure
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Beauty_of_Capital"
+		#Timed idea for construction
+	}
+}
+
+shared_focus = {
+	id = SAF_Transvaal_Coal_Mines
+	icon = GFX_GENERIC_coal_mine
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_South_African_Machining
+	prerequisite = {
+		focus = SAF_South_African_Machining
+	}
+	bypass = { has_global_flag = COMPLETED_SAF_Transvaal_Coal_Mines }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Transvaal_Coal_Mines"
+		943 = {
+			add_resource = {
+				type = steel
+				amount = 30
+				state = 943
+			}
+		}
+		set_global_flag = COMPLETED_SAF_Transvaal_Coal_Mines
+	}
+}
+
+shared_focus = {
+	id = SAF_Driving_Chromium_Production
+	icon = GFX_GENERIC_chromium
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Transvaal_Coal_Mines
+	prerequisite = {
+		focus = SAF_Transvaal_Coal_Mines
+	}
+	bypass = {
+		has_global_flag = COMPLETED_SAF_Driving_Chromium_Production
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Driving_Chromium_Production"
+		942 = {
+			add_resource = {
+				type = chromium
+				amount = 25
+				state = 943
+			}
+		}
+		set_global_flag = COMPLETED_SAF_Driving_Chromium_Production
+	}
+}
+
+shared_focus = {
+	id = SAF_Support_Alloy_Production
+	icon = GFX_focus_generic_steel
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Driving_Chromium_Production
+	prerequisite = {
+		focus = SAF_Driving_Chromium_Production
+	}
+	bypass = { has_global_flag = COMPLETED_SAF_Support_Alloy_Production }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Support_Alloy_Production"
+		941 = {
+			add_resource = {
+				type = tungsten
+				amount = 20
+				state = 941
+			}
+		}
+		set_global_flag = COMPLETED_SAF_Support_Alloy_Production
+	}
+}
+
+shared_focus = {
+	id = SAF_Uranium_Fever
+	icon = GFX_GENERIC_Nuclear_Energy_Bill
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_The_Beauty_of_Capital
+	prerequisite = {
+		focus = SAF_The_Beauty_of_Capital
+	}
+	prerequisite = {
+		focus = SAF_Support_Alloy_Production
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Uranium_Fever"
+		add_tech_bonus = {
+		bonus = 0.5
+		uses = 1
+		category = nuclear
+		}
+		unlock_decision_tooltip = WMD_kickstart_nuclear_project
+		set_country_flag = NUCLEAR_ALLOWED
+		# add some extra stuff
+	}
+}
+
+shared_focus = {
+	id = SAF_The_Parastatals
+	icon = GFX_GENERIC_meeting_2
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = SAF_Expand_Mining_Operations
+	prerequisite = {
+		focus = SAF_Expand_Mining_Operations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Parastatals"
+		#event about what parastatals is
+
+		custom_effect_tooltip = UNLOCKS_ARMSCOR
+
+		#Unlocks Armscor
+	}
+}
+
+shared_focus = {
+	id = SAF_Sasol_Synthetic_Oil
+	icon = GFX_GENERIC_Oil_Planning
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_The_Parastatals
+	prerequisite = {
+		focus = SAF_The_Parastatals
+	}
+	bypass = { has_global_flag = COMPLETED_SAF_Sasol_Synthetic_Oil }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Sasol_Synthetic_Oil"
+		275 = {
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_global_flag = COMPLETED_SAF_Sasol_Synthetic_Oil
+	}
+}
+
+shared_focus = {
+	id = SAF_Improving_Liquefaction_Techniques
+	icon = GFX_GENERIC_Oil_Production
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Sasol_Synthetic_Oil
+	prerequisite = {
+		focus = SAF_Sasol_Synthetic_Oil
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Improving_Liquefaction_Techniques"
+		add_ideas = SAF_oil_production
+	}
+}
+
+shared_focus = {
+	id = SAF_The_Three_Universities
+	icon = GFX_GENERIC_Education
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Improving_Liquefaction_Techniques
+	prerequisite = {
+		focus = SAF_Improving_Liquefaction_Techniques
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Three_Universities"
+		add_research_slot = 1
+		# add flavour event
+	}
+}
+
+shared_focus = {
+	id = SAF_South_African_Airways
+	icon = GFX_GEN_good_airport
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_The_Three_Universities
+	prerequisite = {
+		focus = SAF_The_Three_Universities
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_South_African_Airways"
+
+		#Timed idea to build airports and transports
+
+		show_ideas_tooltip = South_African_Airways
+	}
+}
+
+shared_focus = {
+	id = SAF_Vanderbijlpark_Steelworks
+	icon = GFX_GENERIC_Steel_Industry
+	cost = 8
+	x = 2
+	y = 1
+	relative_position_id = SAF_The_Parastatals
+	prerequisite = {
+		focus = SAF_The_Parastatals
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Vanderbijlpark_Steelworks"
+		show_ideas_tooltip = Iscor
+	}
+}
+
+shared_focus = {
+	id = SAF_Migratory_Labour
+	icon = GFX_GENERIC_social_labour
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Vanderbijlpark_Steelworks
+	prerequisite = {
+		focus = SAF_Vanderbijlpark_Steelworks
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Migratory_Labour"
+		add_ideas = SAF_migrant_workers
+		#Give production buffs, resource extraction, and probably some alternative debuff because this is messed up
+	}
+}
+
+shared_focus = {
+	id = SAF_Expanding_Eskom
+	icon = GFX_SPA_electrify
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Migratory_Labour
+	prerequisite = {
+		focus = SAF_Migratory_Labour
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Expanding_Eskom"
+		#event about what eskom is
+
+		show_ideas_tooltip = BETTER_ESKOM
+
+		if = {
+		limit = { has_idea = ESKOM }
+		swap_ideas = {
+		remove_idea = ESKOM
+		add_idea = BETTER_ESKOM
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Plants_and_Dams
+	icon = GFX_GENERIC_dam
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Expanding_Eskom
+	prerequisite = {
+		focus = SAF_Expanding_Eskom
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Plants_and_Dams"
+		#event about construction of dams, maybe decisions?
+		940 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#####################
+### MILITARY TREE ###
+#####################
+
+shared_focus = {
+	id = SAF_SAF_MILITARY
+	icon = GFX_GENERIC_airland_battle
+	cost = 8
+	x = 18
+	offset = {
+        x = 8
+        trigger = {
+            has_focus_tree = SAF_United_Tree_Hofmeyr_RIP
+        }
+    }
+	offset = {
+        x = 2
+        trigger = {
+            has_focus_tree = SAF_ANC_Tree
+        }
+    }
+	offset = {
+        x = 2
+        trigger = {
+            has_focus_tree = SAF_Fascist_Tree
+        }
+    }
+	offset = {
+        x = 6
+        trigger = {
+            has_focus_tree = SAF_Fascist_Tree_2
+        }
+    }
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_SAF_MILITARY"
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10	
+	}
+}
+
+shared_focus = {
+	id = SAF_The_SAAF
+	icon = {
+        trigger = { has_focus_tree = SAF_ANC_Tree }
+        value = GFX_SAF_ANC_air_force
+    }
+	icon = {
+        trigger = { NOT = { has_focus_tree = SAF_ANC_Tree } }
+        value = GFX_SAF_Air_Force
+    }
+	cost = 6
+	x = -5
+	y = 1
+	dynamic = yes
+	relative_position_id = SAF_SAF_MILITARY
+	prerequisite = {
+		focus = SAF_SAF_MILITARY
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_SAAF"
+		air_experience = 10	
+		country_event = { id = southafricaflavour.21 }
+	}
+}
+
+shared_focus = {
+	id = SAF_Learn_from_the_RAF
+	icon = GFX_ENG_royal_airforce
+	cost = 6
+	x = -1
+	y = 1
+	relative_position_id = SAF_The_SAAF
+	prerequisite = {
+		focus = SAF_The_SAAF
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Learn_from_the_RAF"
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.3
+			uses = 2
+			category = air_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Reliable_Aircrafts
+	icon = GFX_USA_air_support
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Learn_from_the_RAF
+	prerequisite = {
+		focus = SAF_Learn_from_the_RAF
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Reliable_Aircrafts"
+		add_ideas = SAF_air_force_1
+		add_tech_bonus = {
+			bonus = 0.35
+			uses = 2
+			category = fighter
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Sponsor_the_SAAF_College
+	icon = GFX_GENERIC_School
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_Reliable_Aircrafts
+	prerequisite = {
+		focus = SAF_Reliable_Aircrafts
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Sponsor_the_SAAF_College"
+		swap_ideas = {
+			remove_idea = SAF_air_force_1
+			add_idea = SAF_air_force_2
+		}
+		country_event = { id = southafricaflavour.23 }
+	}
+}
+
+shared_focus = {
+	id = SAF_Maritime_Patrols
+	icon = GFX_USA_air_navy_cooperation
+	cost = 8
+	x = 1
+	y = 1
+	relative_position_id = SAF_The_SAAF
+	prerequisite = {
+		focus = SAF_The_SAAF
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Maritime_Patrols"
+		add_ideas = SAF_martime_patrols
+		country_event = { id = southafricaflavour.24 }
+	}
+}
+
+shared_focus = {
+	id = SAF_A_Reliable_Airforce
+	icon = GFX_GENERIC_Air_Force_two
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Maritime_Patrols
+	available = { has_completed_focus = SAF_Reliable_Aircrafts }
+	prerequisite = {
+		focus = SAF_Maritime_Patrols
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Reliable_Airforce"
+		swap_ideas = {
+			remove_idea = SAF_air_force_2
+			add_idea = SAF_air_force_3
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Air_Support_for_the_Bushes
+	icon = GFX_GENERIC_air_CAS_german
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = SAF_A_Reliable_Airforce
+	prerequisite = {
+		focus = SAF_A_Reliable_Airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Air_Support_for_the_Bushes"
+		swap_ideas = {
+			remove_idea = SAF_air_force_3
+			add_idea = SAF_air_force_4
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Airborne_Infantry_Training
+	icon = GFX_focus_generic_paratrooper
+	cost = 8
+	x = 1
+	y = 1
+	relative_position_id = SAF_Sponsor_the_SAAF_College
+	prerequisite = {
+		focus = SAF_Sponsor_the_SAAF_College
+	}
+	prerequisite = {
+		focus = SAF_Air_Support_for_the_Bushes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Airborne_Infantry_Training"
+		if = {
+		limit = { NOT = { has_tech = paratroopers } }
+		set_technology = {
+			paratroopers = 1
+			}
+		}
+		division_template = {
+			name = "Parachute Battalion"
+			division_names_group = SAF_PAR_01
+			regiments = {
+			paratrooper = { x = 0 y = 0 }
+			paratrooper = { x = 0 y = 1 }
+			paratrooper = { x = 0 y = 2 }
+			paratrooper = { x = 1 y = 0 }
+			paratrooper = { x = 1 y = 1 }
+			paratrooper = { x = 1 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+				signal_company = { x = 0 y = 2 }
+			}
+		}
+		681 = {
+			create_unit = {
+				division = "name = \"1st Parachute Battalion\" division_template = \"Parachute Battalion\" start_experience_base = 0.5 start_equipment_base = 1.0"
+				owner = ROOT
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_The_SAA
+	icon = {
+        trigger = { has_focus_tree = SAF_ANC_Tree }
+        value = GFX_SAF_ANC_army
+    }
+    icon = {
+		trigger = { NOT = { has_focus_tree = SAF_ANC_Tree } }
+        value = GFX_SAF_Army
+    }
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = SAF_SAF_MILITARY
+	dynamic = yes
+	prerequisite = {
+		focus = SAF_SAF_MILITARY
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_SAA"
+		army_experience = 15
+		country_event = { id = southafricaflavour.20 }
+	}
+}
+
+shared_focus = {
+	id = SAF_A_Conventional_Military
+	icon = GFX_GENERIC_Coalition_Army
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = SAF_The_SAA
+	prerequisite = {
+		focus = SAF_The_SAA
+	}
+	mutually_exclusive = {
+		focus = SAF_Elite_Formation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Conventional_Military"
+		add_ideas = SAF_Conventional_Army
+	}
+}
+
+shared_focus = {
+	id = SAF_Introducing_Conscription
+	icon = GFX_GENERIC_Army_Cooperation
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = SAF_A_Conventional_Military
+	prerequisite = {
+		focus = SAF_A_Conventional_Military
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Introducing_Conscription"
+		if = {
+		limit = {
+		NOT = {
+		OR = {
+		has_idea = limited_conscription
+		has_idea = extensive_conscription
+		has_idea = service_by_requirement
+		has_idea = all_adults_serve
+		has_idea = scraping_the_barrel
+					}	
+				}
+			}
+		add_ideas = limited_conscription
+		}
+		add_manpower = 15000
+		add_war_support = 0.15
+	}
+}
+
+shared_focus = {
+	id = SAF_Expand_the_Forces
+	icon = GFX_GENERIC_massive_army
+	cost = 12
+	x = 0
+	y = 1
+	relative_position_id = SAF_Introducing_Conscription
+	prerequisite = {
+		focus = SAF_Introducing_Conscription
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Expand_the_Forces"
+		275 = {
+			create_unit = {
+				division = "name = \"9. District Force\" division_template = \"District Force\" start_experience_base = 0.5 start_equipment_base = 1.0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"10. District Force\" division_template = \"District Force\" start_experience_base = 0.5 start_equipment_base = 1.0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"11. District Force\" division_template = \"District Force\" start_experience_base = 0.5 start_equipment_base = 1.0"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"12. District Force\" division_template = \"District Force\" start_experience_base = 0.5 start_equipment_base = 1.0"
+				owner = ROOT
+			}
+		}
+
+		swap_ideas = {
+		remove_idea = SAF_Conventional_Army
+		add_idea  = SAF_Conventional_Army_2
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Elite_Formation
+	icon = GFX_GENERIC_new_infantry_tatic
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_The_SAA
+	prerequisite = {
+		focus = SAF_The_SAA
+	}
+	mutually_exclusive = {
+		focus = SAF_A_Conventional_Military
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Elite_Formation"
+		add_ideas = SAF_Elite_Army
+	}
+}
+
+shared_focus = {
+	id = SAF_South_African_Commandos
+	icon = GFX_SAF_army
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_Elite_Formation
+	prerequisite = {
+		focus = SAF_Elite_Formation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_South_African_Commandos"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = mountaineers_tech
+			category = marine_tech
+			category = para_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Relentless_Drilling
+	icon = GFX_GENERIC_training_2
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_South_African_Commandos
+	prerequisite = {
+		focus = SAF_South_African_Commandos
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Relentless_Drilling"
+		swap_ideas = {
+			remove_idea = SAF_Elite_Army
+			add_idea = SAF_Elite_Army_2
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_The_Armaments_Board
+	icon = GFX_GENERIC_Cut_Army_Spending
+	cost = 6
+	x = 1
+	y = 1
+	relative_position_id = SAF_A_Conventional_Military
+	prerequisite = {
+		focus = SAF_A_Conventional_Military
+		focus = SAF_Elite_Formation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Armaments_Board"
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 2
+			category = infantry_tech
+		}
+		add_offsite_building = { type = arms_factory level = 2 }
+	}
+}
+
+shared_focus = {
+	id = SAF_The_Trusty_R1
+	icon = GFX_GENERIC_L1A1
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_The_Armaments_Board
+	prerequisite = {
+		focus = SAF_The_Armaments_Board
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_Trusty_R1"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+			producer = SAF
+		}
+		add_timed_idea = {
+		idea = SAF_armaments_production_drive
+		days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Revolutionary_Tactics
+	icon = GFX_GENERIC_revolutionary
+	cost = 10
+	x = -2
+	y = 1
+	available = {
+		is_communist = yes
+	}
+	relative_position_id = SAF_The_Trusty_R1
+	prerequisite = {
+		focus = SAF_The_Trusty_R1
+	}
+	mutually_exclusive = {
+		focus = SAF_German_Strategies
+		focus = SAF_Commonwealth_Roots
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Revolutionary_Tactics"
+		add_war_support = 0.15
+		add_political_power = 150
+		add_ideas = SAF_revolutionary_tactics
+	}
+}
+
+shared_focus = {
+	id = SAF_Not_a_Step_Back
+	icon = GFX_GENERIC_Volunteer
+	cost = 8
+	x = -1
+	y = 1
+	relative_position_id = SAF_Revolutionary_Tactics
+	prerequisite = {
+		focus = SAF_Revolutionary_Tactics
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Not_a_Step_Back"
+		add_ideas = SAF_No_Step_Back_idea
+	}
+}
+
+shared_focus = {
+	id = SAF_Commonwealth_Roots
+	icon = GFX_GENERIC_TA_Advisor_2
+	cost = 6
+	x = 0
+	y = 1
+	available = {
+		is_democratic = yes
+	}
+	relative_position_id = SAF_The_Trusty_R1
+	prerequisite = {
+		focus = SAF_The_Trusty_R1
+	}
+	mutually_exclusive = {
+		focus = SAF_German_Strategies
+		focus = SAF_Revolutionary_Tactics
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Commonwealth_Roots"
+		add_stability = 0.1
+		add_ideas = deterrence
+		army_experience = 25
+		army_experience = 30
+		# add some other effect?
+	}
+}
+
+shared_focus = {
+	id = SAF_General_Staff_Office
+	icon = GFX_GENERIC_army_agreement
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_Revolutionary_Tactics
+	prerequisite = {
+		focus = SAF_Revolutionary_Tactics
+		focus = SAF_Commonwealth_Roots
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_General_Staff_Office"
+		add_doctrine_cost_reduction = {
+		cost_reduction = 0.35
+		uses = 2
+		category = land_doctrine
+		}
+		army_experience = 50
+		add_ideas = SAF_army_staff_office
+	}
+}
+
+shared_focus = {
+	id = SAF_German_Strategies
+	icon = GFX_GER_Mechanized_Army
+	cost = 10
+	x = 2
+	y = 1
+	available = {
+		tag = SAF
+		has_government = paternal_autocrat
+		is_fascist = yes
+	}
+	relative_position_id = SAF_The_Trusty_R1
+	prerequisite = {
+		focus = SAF_The_Trusty_R1
+	}
+	mutually_exclusive = {
+		focus = SAF_Commonwealth_Roots
+		focus = SAF_Revolutionary_Tactics
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_German_Strategies"
+		add_doctrine_cost_reduction = {
+		cost_reduction = 0.5
+		uses = 2
+		category = land_doctrine
+		}
+		add_stability = -0.1
+	}
+}
+
+shared_focus = {
+	id = SAF_Armoured_Columns
+	icon = GFX_GENERIC_iron_sherman
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_Commonwealth_Roots
+	prerequisite = {
+		focus = SAF_German_Strategies
+		focus = SAF_Commonwealth_Roots
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Armoured_Columns"
+		add_ideas = SAF_armoured_columns_idea
+	}
+}
+
+shared_focus = {
+	id = SAF_Weerligoorlog
+	icon = GFX_GER_Blitzkrieg
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_German_Strategies
+	prerequisite = {
+		focus = SAF_German_Strategies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Weerligoorlog"
+		add_ideas = HUN_our_blitzkrieg
+	}
+}
+
+
+shared_focus = {
+	id = SAF_A_Colourblind_Military
+	icon = GFX_SAF_native_1
+	cost = 10
+	x = 3
+	y = 1
+	relative_position_id = SAF_SAF_MILITARY
+	prerequisite = {
+		focus = SAF_SAF_MILITARY
+	}
+	available = {
+		NOT = {
+			OR = {
+				has_idea = SAF_Apartheid
+				has_government = national_socialist
+				has_government = fascist
+				has_government = paternal_autocrat
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_A_Colourblind_Military"
+		add_ideas = SAF_Colourblind_military
+	}
+}
+
+shared_focus = {
+	id = SAF_The_SAN
+
+	icon = {
+        trigger = { has_focus_tree = SAF_ANC_Tree }
+        value = GFX_SAF_ANC_navy
+    }
+	icon = {
+        trigger = { NOT = { has_focus_tree = SAF_ANC_Tree } }
+        value = GFX_SAF_Navy
+    }
+
+	dynamic = yes
+	cost = 6
+	x = 5
+	y = 1
+	relative_position_id = SAF_SAF_MILITARY
+	prerequisite = {
+		focus = SAF_SAF_MILITARY
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_The_SAN"
+		navy_experience = 10
+		country_event = { id = southafricaflavour.22 }
+	}
+}
+
+shared_focus = {
+	id = SAF_Transfers_from_the_Royal_Navy
+	icon = GFX_ENG_royal_navy
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_The_SAN
+	prerequisite = {
+		focus = SAF_The_SAN
+	}
+	bypass = { tag = ANC }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Transfers_from_the_Royal_Navy"
+		ENG = {
+			country_event = {
+				id = southafrica_national.19
+				days = 3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Simonstown_Agreement
+	icon = GFX_GENERIC_navy_agreement
+	cost = 10
+	x = -1
+	y = 1
+	relative_position_id = SAF_Transfers_from_the_Royal_Navy
+	bypass = { tag = ANC }
+	prerequisite = {
+		focus = SAF_Transfers_from_the_Royal_Navy
+	}
+	available = {
+		has_global_flag = ROYAL_NAVY_AGREED_WITH_SAF
+	}
+	bypass = {
+		has_global_flag = ROYAL_NAVY_REJECTED_SAF
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Simonstown_Agreement"
+		diplomatic_relation = {
+		country = ENG
+		relation = docking_rights
+		active = yes
+		}
+		681 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = dockyard
+			level = 2
+			instant_build = yes
+			}
+		}
+		country_event = { id = southafricaflavour.25 }
+		ENG = {
+			country_event = { id = southafricaflavour.26 }
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Guardians_of_Good_Hope
+	icon = GFX_goal_generic_navy_carrier
+	cost = 7
+	x = 0
+	y = 1
+	relative_position_id = SAF_Simonstown_Agreement
+	prerequisite = {
+		focus = SAF_Simonstown_Agreement
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Guardians_of_Good_Hope"
+		add_ideas = SAF_cape_coastal_defence
+	}
+}
+
+shared_focus = {
+	id = SAF_Support_the_South_African_Naval_College
+	icon = GFX_GENERIC_Admiral
+	cost = 8
+	x = 1
+	y = 1
+	relative_position_id = SAF_Transfers_from_the_Royal_Navy
+	prerequisite = {
+		focus = SAF_Transfers_from_the_Royal_Navy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Support_the_South_African_Naval_College"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = naval_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Corps_of_Marines
+	icon = GFX_GENERIC_Marines_March
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = SAF_Support_the_South_African_Naval_College
+	prerequisite = {
+		focus = SAF_Support_the_South_African_Naval_College
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Corps_of_Marines"
+		division_template = {
+			name = "Marine Division"
+			division_names_group = SAF_MAR_01
+			regiments = {
+			marine = { x = 0 y = 0 }
+			marine = { x = 0 y = 1 }
+			marine = { x = 0 y = 2 }
+			marine = { x = 0 y = 3 }
+			marine = { x = 0 y = 4 }
+			marine = { x = 1 y = 0 }
+			marine = { x = 1 y = 1 }
+			marine = { x = 1 y = 2 }
+			marine = { x = 1 y = 3 }
+			marine = { x = 1 y = 4 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				field_hospital = { x = 0 y = 1 }
+				recon = { x = 0 y = 2 }
+			}
+		}
+		681 = {
+			create_unit = {
+				division = "name = \"1. Marine Division\" division_template = \"Marine Division\" start_experience_base = 0.5 start_equipment_base = 1.0"
+				owner = ROOT
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_Modern_African_Navy
+	icon = GFX_GENERIC_big_ship
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = SAF_Guardians_of_Good_Hope
+	prerequisite = {
+		focus = SAF_Guardians_of_Good_Hope
+	}
+	prerequisite = {
+		focus = SAF_Corps_of_Marines
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_Modern_African_Navy"
+		add_ideas = SAF_modern_navy 
+	}
+}

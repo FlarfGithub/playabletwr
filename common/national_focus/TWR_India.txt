@@ -1,0 +1,12 @@
+focus_tree = {
+	id = RAJ_Main_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RAJ
+		}
+	}
+	shared_focus = RAJ_Main_18th_Session_of_the_INC
+	shared_focus = RAJ_ForPol_Leader_of_the_Unfree_World
+}

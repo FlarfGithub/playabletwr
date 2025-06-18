@@ -1,0 +1,196 @@
+focus_tree = {
+	id = BOS_Draza_Tree
+	country = {
+		factor = 0
+	}
+	default = no
+	shared_focus = BOS_Return_of_the_Ravna_Gora_Movement
+	continuous_focus_position = { x = 50 y = -1000 }
+}
+
+shared_focus = {
+	id = BOS_Return_of_the_Ravna_Gora_Movement
+	icon = GFX_SER_focus_Partisan_Mindset
+	cost = 0
+	x = 7
+	y = 0
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Return_of_the_Ravna_Gora_Movement"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	id = BOS_Call_for_All_Chetniks
+	icon = GFX_SER_focus_for_king_and_fatherland
+	cost = 4
+	x = -2
+	y = 1
+	cancelable = yes
+	relative_position_id = BOS_Return_of_the_Ravna_Gora_Movement
+	prerequisite = {
+		focus = BOS_Return_of_the_Ravna_Gora_Movement
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Call_for_All_Chetniks"
+        random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"5. Četnička Četa'\" division_template = \"Bosanska Četnička Divizija\" start_experience_factor = 0.3" owner = BOS
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"6. Četnička Četa'\" division_template = \"Bosanska Četnička Divizija\" start_experience_factor = 0.3" owner = BOS
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"7. Četnička Četa'\" division_template = \"Bosanska Četnička Divizija\" start_experience_factor = 0.3" owner = BOS
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"8. Četnička Četa'\" division_template = \"Bosanska Četnička Divizija\" start_experience_factor = 0.3" owner = BOS
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"9. Četnička Četa'\" division_template = \"Bosanska Četnička Divizija\" start_experience_factor = 0.3" owner = BOS
+			}
+		}
+		random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"10. Četnička Četa'\" division_template = \"Bosanska Četnička Divizija\" start_experience_factor = 0.3" owner = BOS
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BOS_Stabilize_the_Countryside
+	icon = GFX_GENERIC_gun_skulls
+	cost = 4
+	x = 0
+	y = 1
+	cancelable = yes
+	relative_position_id = BOS_Return_of_the_Ravna_Gora_Movement
+	prerequisite = {
+		focus = BOS_Return_of_the_Ravna_Gora_Movement
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Stabilize_the_Countryside"
+        add_political_power = 50
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = BOS_Suppress_the_Bosnian_Nationalists
+	icon = GFX_GENERIC_NO_MOSQUE
+	cost = 4
+	x = 2
+	y = 1
+	cancelable = yes
+	relative_position_id = BOS_Return_of_the_Ravna_Gora_Movement
+	prerequisite = {
+		focus = BOS_Return_of_the_Ravna_Gora_Movement
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Suppress_the_Bosnian_Nationalists"
+        add_ideas = BOS_Bosniak_Oppression
+	}
+}
+
+shared_focus = {
+	id = BOS_Dream_of_a_Greater_Serbia
+	icon = GFX_SER_focus_consolidate_greater_serbia_2
+	cost = 4
+	x = 1
+	y = 1
+	cancelable = yes
+	relative_position_id = BOS_Call_for_All_Chetniks
+	prerequisite = {
+		focus = BOS_Call_for_All_Chetniks
+	}
+	prerequisite = {
+		focus = BOS_Stabilize_the_Countryside
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Dream_of_a_Greater_Serbia"
+        add_ideas = BOS_Greater_Serbia
+	}
+}
+
+shared_focus = {
+	id = BOS_Confiscate_the_Muslim_weapons
+	icon = GFX_GENERIC_Holding_Gun
+	cost = 4
+	x = 1
+	y = 1
+	cancelable = yes
+	relative_position_id = BOS_Stabilize_the_Countryside
+	prerequisite = {
+		focus = BOS_Suppress_the_Bosnian_Nationalists
+	}
+	prerequisite = {
+		focus = BOS_Stabilize_the_Countryside
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Confiscate_the_Muslim_weapons"
+        add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 800
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_1
+			amount = 100
+		}
+	}
+}
+
+shared_focus = {
+	id = BOS_Za_Kralja_i_Otadzbinu
+	icon = GFX_SER_Serbian_Chetnik_Eagle
+	cost = 4
+	x = 1
+	y = 1
+	cancelable = yes
+	relative_position_id = BOS_Dream_of_a_Greater_Serbia
+	prerequisite = {
+		focus = BOS_Dream_of_a_Greater_Serbia
+	}
+	prerequisite = {
+		focus = BOS_Confiscate_the_Muslim_weapons
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Za_Kralja_i_Otadzbinu"
+        add_ideas = BOS_Reclaming_the_Fatherland
+	}
+}
+
+shared_focus = {
+	id = BOS_Sloboda_ili_Smrt
+	icon = GFX_SER_focus_fight_for_your_freedom_or_die_trying
+	cost = 4
+	x = 0
+	y = 1
+	cancelable = yes
+	relative_position_id = BOS_Za_Kralja_i_Otadzbinu
+	prerequisite = {
+		focus = BOS_Za_Kralja_i_Otadzbinu
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus BOS_Sloboda_ili_Smrt"
+		107 = {
+			owner = {
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+}

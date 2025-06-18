@@ -1,0 +1,498 @@
+	
+shared_focus = {
+	cancelable = yes
+	id = DEN_Germany_in_Chaos
+	icon = GFX_GER_political_rodeo
+	cost = 7
+	x = 39
+	y = 0
+	ai_will_do = {
+		base = 100
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		add_ideas = DEN_uncertainty
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+		
+		hidden_effect = {
+			remove_ideas = {
+			DEN_nazi_regime
+			GER_RK_repression
+			DEN_Aftermath_Telegram
+		    }
+		}
+	}
+}
+
+
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_Announce_Election
+	icon = GFX_GENERIC_Democracy
+	x = 0
+	y = 1
+	available = {
+		has_completed_focus = DEN_Germany_in_Chaos
+	}
+	prerequisite = {
+		focus = DEN_Germany_in_Chaos
+	}
+	relative_position_id = DEN_Germany_in_Chaos
+	ai_will_do = {
+		base = 100
+	}
+	
+	completion_reward = {
+      custom_effect_tooltip = ELECTION_DEN
+	  country_event = twrdenmark.9
+
+	}
+	cost = 7
+}
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_Fortify_Islands
+	icon = GFX_goal_generic_fortify_city
+	x = 2
+	y = 1
+	available = {
+		has_completed_focus = DEN_Announce_Election
+	}
+	prerequisite = {
+		focus = DEN_Announce_Election
+	}
+	relative_position_id = DEN_Announce_Election
+	ai_will_do = {
+		base = 100
+	}
+	
+	completion_reward = {
+		37 = {
+			add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 3325
+			}
+		}
+		804 = {
+			add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 11251
+			}
+		}
+		804 = {
+			add_building_construction = {
+			type = bunker
+			level = 4
+			instant_build = yes
+			province = 332
+			}
+		}
+	}
+	cost = 7
+}
+
+shared_focus = {
+	id = DEN_Join_the_United_Nations
+	icon = GFX_GENERIC_United_Nations
+	x = 0
+	y = 1
+	relative_position_id = DEN_Announce_Election
+	cost = 5
+	cancelable = yes
+	prerequisite = {
+		focus = DEN_Announce_Election
+	}
+	
+	ai_will_do = {
+		base = 100
+	}
+	completion_reward = {
+		set_country_flag = ALLOWED_TO_JOIN_UN
+		unlock_decision_tooltip = GENERIC_apply_to_join_un
+	}
+}
+
+shared_focus = {
+	id = DEN_Nordic_Council
+	icon = GFX_DEN_Nordic_Council
+	x = 2
+	y = 1
+	relative_position_id = DEN_Join_the_United_Nations
+	cost = 5
+	cancelable = yes
+	prerequisite = {
+		focus = DEN_Join_the_United_Nations
+	}
+	
+	ai_will_do = {
+		base = 100
+	}
+	completion_reward = {
+		add_ideas = DEN_Nordic_Council_idea 
+
+		FIN = { country_event = { id = twrdenmark.10 days = 3 } }
+		ICE = { country_event = { id = twrdenmark.10 days = 3 } }
+		SWE = { country_event = { id = twrdenmark.10 days = 3 } }
+		NOR = { country_event = { id = twrdenmark.10 days = 3 } }
+
+		news_event = { id = twrdenmarknews.5  days = 4 }
+			
+			
+			   
+	}
+
+}
+
+shared_focus = {
+	id = DEN_Nordic_Defence_Alliance
+	icon = GFX_goal_generic_major_alliance
+	x = 0
+	y = 1
+	relative_position_id = DEN_Nordic_Council
+	cost = 7
+	cancelable = yes
+	prerequisite = {
+		focus = DEN_Nordic_Council
+	}
+	mutually_exclusive = {
+		focus = DEN_Cooperate_with_the_Accord
+	}
+	
+    ai_will_do = {
+		base = 50
+		modifier = {
+		factor = 200
+		NOR = { has_government = fascist }
+		}
+	}
+	completion_reward = {
+		create_faction = "Nordic Security Treaty"
+		set_country_flag = NORDIC_SECURITY_TREATY_LEADER
+		FIN = { country_event = { id = twrdenmark.17 days = 20 } }
+		ICE = { country_event = { id = twrdenmark.17 days = 20 } }
+		SWE = { country_event = { id = twrdenmark.17 days = 8 } }
+		NOR = { country_event = { id = twrdenmark.17 days = 13 } }
+		news_event = { id = twrnews.202  days = 9 }
+	}
+
+}
+
+
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_Cooperate_with_the_Accord
+	icon = GFX_GENERIC_TA_Government
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = DEN_Join_the_United_Nations
+	}
+	available = {
+      #USA = { has_war = no }
+      has_completed_focus = DEN_Purge_The_Frikorps
+	}
+	mutually_exclusive = {
+		focus = DEN_Nordic_Defence_Alliance
+	}
+	relative_position_id = DEN_Join_the_United_Nations
+	ai_will_do = {
+		base = 100
+	}
+	
+	completion_reward = {
+		if = {
+			limit = {
+				is_subject_of = USA
+		}
+		add_stability = 0.1
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1000
+			producer = USA
+			}	
+		}
+		else_if = {
+			limit = {
+				NOT = {
+				is_subject_of = USA
+				}
+			}
+		TOR_motion_to_join = yes
+		}
+	}
+	cost = 7
+}
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_request_greenland
+	icon = GFX_GENERIC_Greenland
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = DEN_Cooperate_with_the_Accord
+	}
+	
+	relative_position_id = DEN_Cooperate_with_the_Accord
+	ai_will_do = {
+		base = 100
+	}
+	
+	completion_reward = {
+     #US gets event denmark requesting control of Greenland
+	USA = { country_event = { id = twrdenmark.13 days = 2 } }
+	}
+	cost = 7
+}
+
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_prosecute_traitors
+	icon = GFX_GENERIC_Old_Purge
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = DEN_Cooperate_with_the_Accord
+		focus = DEN_Nordic_Defence_Alliance
+	}
+	mutually_exclusive = {
+		focus = DEN_rehabilitate_frikorps
+	}
+	
+	relative_position_id = DEN_Cooperate_with_the_Accord
+	ai_will_do = {
+		base = 100
+	}
+	
+	completion_reward = {
+	add_manpower = -100
+	add_stability = 0.1
+	
+	}
+	cost = 7
+}
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_rehabilitate_frikorps
+	icon = GFX_GER_panzer_parts
+	x = 2
+	y = 1
+
+	mutually_exclusive = {
+		focus = DEN_prosecute_traitors
+	}
+	prerequisite = {
+		focus = DEN_Cooperate_with_the_Accord
+		focus = DEN_Nordic_Defence_Alliance
+	}
+	relative_position_id = DEN_Cooperate_with_the_Accord
+	ai_will_do = {
+		base = 70
+	}
+	
+	completion_reward = {
+
+		division_template = {
+			name = "Panzergrenadier-Division"
+		
+			division_names_group = GER_MEC_01
+			regiments = {
+				APC = { x = 0 y = 0 }
+				APC = { x = 0 y = 1 }
+				APC = { x = 0 y = 2 }
+				APC = { x = 1 y = 0 }
+				APC = { x = 1 y = 1 }
+				APC = { x = 1 y = 2 }
+			}
+			support = {
+				recon = { x = 0 y = 0 }
+				#artillery = { x = 0 y = 1 }
+			}
+		}
+
+	37 = {
+		create_unit = {
+			division = "name = \"1. Panserfrikorp\" division_template = \"Panzergrenadier-Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+			owner = DEN
+		}
+	}
+		add_stability = -0.05
+		add_political_power = -180
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.05
+		}
+
+		create_field_marshal = {
+			name = "Christian Frederik von Schalburg"
+			picture = "Christian_Frederik_von_Schalburg.dds"
+			traits = { media_personality danish_ss }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		
+		create_corps_commander = {
+			name = "Søren Kam"
+			picture = "Soren_Kam.dds"
+			traits = { danish_ss }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Christian Peder Kryssing"
+			picture = "Christian_Peder_Kryssing.dds"
+			traits = { danish_ss }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	
+	}
+	cost = 7
+}
+
+
+
+
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_Danish_Security_Forces
+	icon = GFX_DEN_Closet
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = DEN_Announce_Election
+	}
+	relative_position_id = DEN_Announce_Election
+	ai_will_do = {
+		base = 200
+	}
+	
+	completion_reward = {
+		division_template = {
+			name = "Danish Security Forces"
+
+			division_names_group = DEN_INF_01
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				cavalry = { x = 1 y = 0 }
+				cavalry = { x = 1 y = 1 }
+				cavalry = { x = 1 y = 2 }
+
+			}
+			support = {
+				recon = { x = 0 y = 0 }      # Recon Group ACs comp + cavalry
+			}
+		}
+		random_owned_controlled_state = {
+
+			create_unit = {
+				division = "name = \"Dansk Sikkerhedsafdeling\" division_template = \"Danish Security Forces\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = DEN
+			}
+		}
+
+		country_event = twrdenmark.11
+
+	}
+	cost = 7
+}
+
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_Purge_The_Frikorps
+	icon = GFX_GER_Purge_the_High_Command
+	cost = 7
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 200
+	}
+	prerequisite = {
+		focus = DEN_Danish_Security_Forces
+	}
+	relative_position_id = DEN_Danish_Security_Forces
+	ai_will_do = {
+		base = 100
+	}
+	completion_reward = {
+		every_unit_leader = {
+            limit = { 
+                has_trait = danish_ss 
+            }
+            retire = yes
+        }
+		every_unit_leader = {
+            limit = { 
+                has_trait = ss_general 
+            }
+            retire = yes
+        }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_The_Accords_Occupation
+	icon = GFX_ENG_USA_atlantic_union
+	cost = 7
+	x = 44
+	y = 1
+	ai_will_do = {
+		base = 100
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		custom_effect_tooltip = OCCUPATION_DEN
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = DEN_Restoring_Pre_War_Status
+	icon = GFX_focus_generic_home_defense
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = DEN_The_Accords_Occupation
+	}
+	relative_position_id = DEN_The_Accords_Occupation
+	ai_will_do = {
+		base = 100
+	}
+	
+	completion_reward = {
+		country_event = twrdenmark.51
+		drop_cosmetic_tag = yes
+		USA = {
+			end_puppet = DEN
+		}
+	}
+	cost = 7
+}

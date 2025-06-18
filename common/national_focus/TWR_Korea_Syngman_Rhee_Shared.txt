@@ -1,0 +1,1613 @@
+#Syngman_Rhee Tree
+#!gfx:interface\KR_goals.gfx
+focus_tree = { 
+	id = KOR_Syngman_Rhee_Tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 5
+			tag = KOR
+		}
+	}
+	shared_focus = KOR_the_rhee_syngman_premiership
+	shared_focus = KOR_a_house_divided
+	shared_focus = KOR_reorganize_the_defense_force
+	shared_focus = KOR_our_approach_to_diplomacy
+	shared_focus = KOR_regional_resistance
+}
+
+shared_focus = {
+	id = KOR_the_rhee_syngman_premiership
+	icon = GFX_KOR_Prime_Minister_Lyuh
+	cost = 2
+	x = 15
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_the_rhee_syngman_premiership"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	id = KOR_meet_with_opposition_leaders
+	icon = GFX_KOR_Left_right_coalition
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_meet_with_opposition_leaders"
+	}
+	relative_position_id = KOR_the_rhee_syngman_premiership
+	prerequisite = { focus = KOR_the_rhee_syngman_premiership }
+}
+
+shared_focus = {
+	id = KOR_promises_for_an_enlightened_nation
+	icon = GFX_GENERIC_economic_prosperity
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_promises_for_an_enlightened_nation"
+	}
+	relative_position_id = KOR_the_rhee_syngman_premiership
+	prerequisite = { focus = KOR_the_rhee_syngman_premiership }
+}
+
+shared_focus = {
+	id = KOR_new_wine_in_new_wineskins
+	icon = GFX_GENERIC_Wine_1
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_new_wine_in_new_wineskins"
+	}
+	relative_position_id = KOR_meet_with_opposition_leaders
+	prerequisite = { focus = KOR_meet_with_opposition_leaders }
+	prerequisite = { focus = KOR_promises_for_an_enlightened_nation }
+}
+
+shared_focus = {
+	id = KOR_secure_support_in_the_national_assembly
+	icon = GFX_KOR_Parliament_descends
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_secure_support_in_the_national_assembly"
+	}
+	relative_position_id = KOR_new_wine_in_new_wineskins
+	prerequisite = { focus = KOR_new_wine_in_new_wineskins }
+}
+
+shared_focus = {
+	id = KOR_conversations_with_ahn_jaehong
+	icon = GFX_KOR_ahns_reassurances
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_conversations_with_ahn_jaehong"
+	}
+	relative_position_id = KOR_secure_support_in_the_national_assembly
+	prerequisite = { focus = KOR_secure_support_in_the_national_assembly }
+}
+
+shared_focus = {
+	id = KOR_deals_with_the_rightwing_opposition
+	icon = GFX_KOR_army_cabinet
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_deals_with_the_rightwing_opposition"
+	}
+	relative_position_id = KOR_secure_support_in_the_national_assembly
+	prerequisite = { focus = KOR_secure_support_in_the_national_assembly }
+}
+
+shared_focus = {
+	id = KOR_call_the_constitutional_amendment_committee
+	icon = GFX_GENERIC_constitution_written
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_call_the_constitutional_amendment_committee"
+	}
+	relative_position_id = KOR_conversations_with_ahn_jaehong
+	prerequisite = { focus = KOR_conversations_with_ahn_jaehong }
+	prerequisite = { focus = KOR_deals_with_the_rightwing_opposition }
+}
+
+shared_focus = {
+	id = KOR_listen_to_our_allies
+	icon = GFX_GENERIC_Liberal_Conservatism
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_listen_to_our_allies"
+	}
+	relative_position_id = KOR_call_the_constitutional_amendment_committee
+	prerequisite = { focus = KOR_call_the_constitutional_amendment_committee }
+	mutually_exclusive = { focus = KOR_stick_to_our_guns }
+}
+
+shared_focus = {
+	id = KOR_stick_to_our_guns
+	icon = GFX_GENERIC_Purge_SocDem
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_stick_to_our_guns"
+	}
+	relative_position_id = KOR_call_the_constitutional_amendment_committee
+	prerequisite = { focus = KOR_call_the_constitutional_amendment_committee }
+	mutually_exclusive = { focus = KOR_listen_to_our_allies }
+}
+
+shared_focus = {
+	id = KOR_touching_up_the_amendment
+	icon = GFX_GENERIC_Adapt_Constitution
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_touching_up_the_amendment"
+	}
+	relative_position_id = KOR_listen_to_our_allies
+	prerequisite = { focus = KOR_listen_to_our_allies }
+	prerequisite = { focus = KOR_stick_to_our_guns }
+}
+
+shared_focus = {
+	id = KOR_a_new_fatherland
+	icon = GFX_KOR_slow_and_steady_progress
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_a_new_fatherland"
+	}
+	relative_position_id = KOR_touching_up_the_amendment
+	prerequisite = { focus = KOR_touching_up_the_amendment }
+}
+
+shared_focus = {
+	id = KOR_legacy_of_the_old_regime
+	icon = GFX_KOR_Patching_our_Holes
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_legacy_of_the_old_regime"
+	}
+	relative_position_id = KOR_new_wine_in_new_wineskins
+	prerequisite = { focus = KOR_new_wine_in_new_wineskins }
+}
+
+shared_focus = {
+	id = KOR_cooperate_with_the_elite
+	icon = GFX_GENERIC_elite_party
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_cooperate_with_the_elite"
+	}
+	relative_position_id = KOR_legacy_of_the_old_regime
+	prerequisite = { focus = KOR_legacy_of_the_old_regime }
+}
+
+shared_focus = {
+	id = KOR_the_youth_corps_problem
+	icon = GFX_GENERIC_Coalition_Army
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_the_youth_corps_problem"
+	}
+	relative_position_id = KOR_legacy_of_the_old_regime
+	prerequisite = { focus = KOR_legacy_of_the_old_regime }
+}
+
+shared_focus = {
+	id = KOR_restructure_the_bureaucracy
+	icon = GFX_FRA_National_Regeneration_Bureau
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_restructure_the_bureaucracy"
+	}
+	relative_position_id = KOR_cooperate_with_the_elite
+	prerequisite = { focus = KOR_cooperate_with_the_elite }
+	prerequisite = { focus = KOR_the_youth_corps_problem }
+}
+
+shared_focus = {
+	id = KOR_strengthen_the_core_support_base
+	icon = GFX_GENERIC_Conservative
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_strengthen_the_core_support_base"
+	}
+	relative_position_id = KOR_restructure_the_bureaucracy
+	prerequisite = { focus = KOR_restructure_the_bureaucracy }
+	mutually_exclusive = { focus = KOR_maintain_the_political_solidarity }
+}
+
+shared_focus = {
+	id = KOR_maintain_the_political_solidarity
+	icon = GFX_KOR_Left_right_coalition
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_maintain_the_political_solidarity"
+	}
+	relative_position_id = KOR_restructure_the_bureaucracy
+	prerequisite = { focus = KOR_restructure_the_bureaucracy }
+	mutually_exclusive = { focus = KOR_strengthen_the_core_support_base }
+}
+
+shared_focus = {
+	id = KOR_devise_a_centralization_plan
+	icon = GFX_CRO_Centralization_Of_The_State
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_devise_a_centralization_plan"
+	}
+	relative_position_id = KOR_strengthen_the_core_support_base
+	prerequisite = { focus = KOR_strengthen_the_core_support_base }
+}
+
+shared_focus = {
+	id = KOR_revise_the_local_autonomy_act
+	icon = GFX_CHI_Competent_Local_Officials
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_revise_the_local_autonomy_act"
+	}
+	relative_position_id = KOR_maintain_the_political_solidarity
+	prerequisite = { focus = KOR_maintain_the_political_solidarity }
+}
+
+shared_focus = {
+	id = KOR_support_the_ilmin_club
+	icon = GFX_GENERIC_Office_Desk
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_support_the_ilmin_club"
+	}
+	relative_position_id = KOR_strengthen_the_core_support_base
+	prerequisite = { focus = KOR_strengthen_the_core_support_base }
+}
+
+shared_focus = {
+	id = KOR_police_reform
+	icon = GFX_GENERIC_Police
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_police_reform"
+	}
+	relative_position_id = KOR_maintain_the_political_solidarity
+	prerequisite = { focus = KOR_maintain_the_political_solidarity }
+}
+
+shared_focus = {
+	id = KOR_systematize_the_national_movement
+	icon = GFX_focus_generic_self_management
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_systematize_the_national_movement"
+	}
+	relative_position_id = KOR_devise_a_centralization_plan
+	prerequisite = { focus = KOR_devise_a_centralization_plan }
+	prerequisite = { focus = KOR_support_the_ilmin_club }
+}
+
+shared_focus = {
+	id = KOR_political_arbitrator
+	icon = GFX_ENG_historic_merger
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_political_arbitrator"
+	}
+	relative_position_id = KOR_revise_the_local_autonomy_act
+	prerequisite = { focus = KOR_revise_the_local_autonomy_act }
+	prerequisite = { focus = KOR_police_reform }
+}
+
+shared_focus = {
+	id = KOR_the_road_to_national_renovation
+	icon = GFX_GENERIC_Dirt_Paved_Roads
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_the_road_to_national_renovation"
+	}
+	relative_position_id = KOR_systematize_the_national_movement
+	prerequisite = { focus = KOR_systematize_the_national_movement }
+	prerequisite = { focus = KOR_political_arbitrator }
+}
+
+shared_focus = {
+	id = KOR_strengthen_our_local_party_organizations
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_strengthen_our_local_party_organizations"
+	}
+	relative_position_id = KOR_the_road_to_national_renovation
+	prerequisite = { focus = KOR_the_road_to_national_renovation }
+}
+
+shared_focus = {
+	id = KOR_support_the_agricultural_cooperative
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_support_the_agricultural_cooperative"
+	}
+	relative_position_id = KOR_the_road_to_national_renovation
+	prerequisite = { focus = KOR_the_road_to_national_renovation }
+}
+
+shared_focus = {
+	id = KOR_support_corporatism
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_support_corporatism"
+	}
+	relative_position_id = KOR_the_road_to_national_renovation
+	prerequisite = { focus = KOR_the_road_to_national_renovation }
+}
+
+shared_focus = {
+	id = KOR_turn_our_eyes_back_on_the_economy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_turn_our_eyes_back_on_the_economy"
+	}
+	relative_position_id = KOR_the_road_to_national_renovation
+	prerequisite = { focus = KOR_the_road_to_national_renovation }
+}
+
+shared_focus = {
+	id = KOR_reorganize_the_peoples_committee
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reorganize_the_peoples_committee"
+	}
+	relative_position_id = KOR_strengthen_our_local_party_organizations
+	prerequisite = { focus = KOR_strengthen_our_local_party_organizations }
+	prerequisite = { focus = KOR_support_the_agricultural_cooperative }
+}
+
+shared_focus = {
+	id = KOR_revise_the_labor_union_act
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_revise_the_labor_union_act"
+	}
+	relative_position_id = KOR_support_the_agricultural_cooperative
+	prerequisite = { focus = KOR_support_the_agricultural_cooperative }
+	prerequisite = { focus = KOR_support_corporatism }
+}
+
+shared_focus = {
+	id = KOR_partial_land_reform
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_partial_land_reform"
+	}
+	relative_position_id = KOR_turn_our_eyes_back_on_the_economy
+	prerequisite = { focus = KOR_turn_our_eyes_back_on_the_economy }
+}
+
+shared_focus = {
+	id = KOR_readjustment_of_the_distribution
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_readjustment_of_the_distribution"
+	}
+	relative_position_id = KOR_turn_our_eyes_back_on_the_economy
+	prerequisite = { focus = KOR_turn_our_eyes_back_on_the_economy }
+}
+
+shared_focus = {
+	id = KOR_establish_an_administrative_state
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_establish_an_administrative_state"
+	}
+	relative_position_id = KOR_reorganize_the_peoples_committee
+	prerequisite = { focus = KOR_reorganize_the_peoples_committee }
+}
+
+shared_focus = {
+	id = KOR_stand_by_the_peasants
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_stand_by_the_peasants"
+	}
+	relative_position_id = KOR_partial_land_reform
+	prerequisite = { focus = KOR_partial_land_reform }
+	mutually_exclusive = { focus = KOR_stand_by_the_landlords }
+}
+
+shared_focus = {
+	id = KOR_stand_by_the_landlords
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_stand_by_the_landlords"
+	}
+	relative_position_id = KOR_partial_land_reform
+	prerequisite = { focus = KOR_partial_land_reform }
+	mutually_exclusive = { focus = KOR_stand_by_the_peasants }
+}
+
+shared_focus = {
+	id = KOR_our_own_austerity_plan
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_our_own_austerity_plan"
+	}
+	relative_position_id = KOR_readjustment_of_the_distribution
+	prerequisite = { focus = KOR_readjustment_of_the_distribution }
+}
+
+shared_focus = {
+	id = KOR_american_economic_aid
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_american_economic_aid"
+	}
+	relative_position_id = KOR_our_own_austerity_plan
+	prerequisite = { focus = KOR_our_own_austerity_plan }
+}
+
+shared_focus = {
+	id = KOR_expand_the_support_for_landed_farmers
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_expand_the_support_for_landed_farmers"
+	}
+	relative_position_id = KOR_stand_by_the_peasants
+	prerequisite = { focus = KOR_stand_by_the_peasants }
+}
+
+shared_focus = {
+	id = KOR_mediate_through_rural_committees
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_mediate_through_rural_committees"
+	}
+	relative_position_id = KOR_stand_by_the_landlords
+	prerequisite = { focus = KOR_stand_by_the_landlords }
+}
+
+shared_focus = {
+	id = KOR_initial_economic_adjustment
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_initial_economic_adjustment"
+	}
+	relative_position_id = KOR_american_economic_aid
+	prerequisite = { focus = KOR_american_economic_aid }
+	prerequisite = {
+		focus = KOR_expand_the_support_for_landed_farmers
+		focus = KOR_mediate_through_rural_committees
+	}
+}
+
+shared_focus = {
+	id = KOR_reconstitution_of_the_nation
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reconstitution_of_the_nation"
+	}
+	relative_position_id = KOR_establish_an_administrative_state
+	prerequisite = { focus = KOR_establish_an_administrative_state }
+	prerequisite = { focus = KOR_initial_economic_adjustment }
+}
+
+shared_focus = {
+	id = KOR_patch_up_our_political_relations
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_patch_up_our_political_relations"
+	}
+	relative_position_id = KOR_reconstitution_of_the_nation
+	prerequisite = { focus = KOR_reconstitution_of_the_nation }
+	mutually_exclusive = { 
+		focus = KOR_controlled_liberty 
+		focus = KOR_political_success 
+	}
+}
+
+shared_focus = {
+	id = KOR_controlled_liberty
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_controlled_liberty"
+	}
+	relative_position_id = KOR_reconstitution_of_the_nation
+	prerequisite = { focus = KOR_reconstitution_of_the_nation }
+	mutually_exclusive = { 
+		focus = KOR_patch_up_our_political_relations 
+		focus = KOR_political_success 
+	}
+}
+
+shared_focus = {
+	id = KOR_political_success
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_political_success"
+	}
+	relative_position_id = KOR_reconstitution_of_the_nation
+	prerequisite = { focus = KOR_reconstitution_of_the_nation }
+	mutually_exclusive = { 
+		focus = KOR_controlled_liberty 
+		focus = KOR_patch_up_our_political_relations
+	}
+}
+
+shared_focus = {
+	id = KOR_reward_for_our_allies
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reward_for_our_allies"
+	}
+	relative_position_id = KOR_political_success
+	prerequisite = { focus = KOR_political_success }
+}
+
+shared_focus = {
+	id = KOR_populist_agenda
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_populist_agenda"
+	}
+	relative_position_id = KOR_reward_for_our_allies
+	prerequisite = { focus = KOR_reward_for_our_allies }
+}
+
+shared_focus = {
+	id = KOR_contain_the_opposition
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_contain_the_opposition"
+	}
+	relative_position_id = KOR_reward_for_our_allies
+	prerequisite = { focus = KOR_reward_for_our_allies }
+}
+
+shared_focus = {
+	id = KOR_support_for_the_government
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_support_for_the_government"
+	}
+	relative_position_id = KOR_populist_agenda
+	prerequisite = { focus = KOR_populist_agenda }
+	prerequisite = { focus = KOR_contain_the_opposition }
+}
+
+shared_focus = {
+	id = KOR_lessons_from_failure
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_lessons_from_failure"
+	}
+	relative_position_id = KOR_patch_up_our_political_relations
+	prerequisite = { focus = KOR_patch_up_our_political_relations }
+}
+
+shared_focus = {
+	id = KOR_condemn_the_oppositions_sectarianism
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_condemn_the_oppositions_sectarianism"
+	}
+	relative_position_id = KOR_lessons_from_failure
+	prerequisite = { focus = KOR_lessons_from_failure }
+	prerequisite = { focus = KOR_strengthen_progovernment_groups }
+	mutually_exclusive = { focus = KOR_manage_the_opposition }
+}
+
+shared_focus = {
+	id = KOR_strengthen_progovernment_groups
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_strengthen_progovernment_groups"
+	}
+	relative_position_id = KOR_controlled_liberty
+	prerequisite = { focus = KOR_controlled_liberty }
+}
+
+shared_focus = {
+	id = KOR_manage_the_opposition
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_manage_the_opposition"
+	}
+	relative_position_id = KOR_lessons_from_failure
+	prerequisite = { focus = KOR_lessons_from_failure }
+	prerequisite = { focus = KOR_strengthen_progovernment_groups }
+	mutually_exclusive = { focus = KOR_condemn_the_oppositions_sectarianism }
+}
+
+shared_focus = {
+	id = KOR_unity_for_the_government
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_unity_for_the_government"
+	}
+	relative_position_id = KOR_condemn_the_oppositions_sectarianism
+	prerequisite = {
+		focus = KOR_condemn_the_oppositions_sectarianism
+		focus = KOR_manage_the_opposition
+	}
+}
+
+shared_focus = {
+	id = KOR_the_governments_vision
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_the_governments_vision"
+	}
+	relative_position_id = KOR_support_for_the_government
+	prerequisite = { focus = KOR_support_for_the_government }
+	prerequisite = { focus = KOR_unity_for_the_government }
+}
+
+shared_focus = {
+	id = KOR_the_end_of_the_transition_period
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_the_end_of_the_transition_period"
+	}
+	relative_position_id = KOR_the_governments_vision
+	prerequisite = { focus = KOR_the_governments_vision }
+}
+
+shared_focus = {
+	id = KOR_our_successful_reelection
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_our_successful_reelection"
+	}
+	relative_position_id = KOR_the_end_of_the_transition_period
+	prerequisite = { focus = KOR_the_end_of_the_transition_period }
+}
+
+shared_focus = {
+	id = KOR_to_the_next_step
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_to_the_next_step"
+	}
+	relative_position_id = KOR_our_successful_reelection
+	prerequisite = { focus = KOR_our_successful_reelection }
+}
+
+shared_focus = {
+	id = KOR_a_party_for_the_president
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_a_party_for_the_president"
+	}
+	relative_position_id = KOR_to_the_next_step
+	prerequisite = { focus = KOR_to_the_next_step }
+	mutually_exclusive = { focus = KOR_national_unity }
+}
+
+shared_focus = {
+	id = KOR_national_unity
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_national_unity"
+	}
+	relative_position_id = KOR_to_the_next_step
+	prerequisite = { focus = KOR_to_the_next_step }
+	mutually_exclusive = { focus = KOR_a_party_for_the_president }
+}
+
+shared_focus = {
+	id = KOR_speak_softly
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_speak_softly"
+	}
+	relative_position_id = KOR_regional_resistance
+	prerequisite = { focus = KOR_regional_resistance }
+}
+
+shared_focus = {
+	id = KOR_regional_resistance
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 6
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_regional_resistance"
+	}
+}
+
+shared_focus = {
+	id = KOR_control_and_stability
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_control_and_stability"
+	}
+	relative_position_id = KOR_regional_resistance
+	prerequisite = { focus = KOR_regional_resistance }
+}
+
+shared_focus = {
+	id = KOR_show_them_no_mercy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_show_them_no_mercy"
+	}
+	relative_position_id = KOR_regional_resistance
+	prerequisite = { focus = KOR_regional_resistance }
+}
+
+shared_focus = {
+	id = KOR_deal_with_the_right
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_deal_with_the_right"
+	}
+	relative_position_id = KOR_speak_softly
+	prerequisite = { focus = KOR_speak_softly }
+}
+
+shared_focus = {
+	id = KOR_treatment_towards_the_left
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_treatment_towards_the_left"
+	}
+	relative_position_id = KOR_speak_softly
+	prerequisite = { focus = KOR_speak_softly }
+}
+
+shared_focus = {
+	id = KOR_focus_on_stabilizing_the_regions
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_focus_on_stabilizing_the_regions"
+	}
+	relative_position_id = KOR_control_and_stability
+	prerequisite = { focus = KOR_control_and_stability }
+	mutually_exclusive = { focus = KOR_focus_on_controlling_the_regions }
+}
+
+shared_focus = {
+	id = KOR_focus_on_controlling_the_regions
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_focus_on_controlling_the_regions"
+	}
+	relative_position_id = KOR_control_and_stability
+	prerequisite = { focus = KOR_control_and_stability }
+	mutually_exclusive = { focus = KOR_focus_on_stabilizing_the_regions }
+}
+
+shared_focus = {
+	id = KOR_have_a_multiparty_summit_talk
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_have_a_multiparty_summit_talk"
+	}
+	relative_position_id = KOR_deal_with_the_right
+	prerequisite = {
+		focus = KOR_deal_with_the_right
+		focus = KOR_treatment_towards_the_left
+	}
+}
+
+shared_focus = {
+	id = KOR_redistribute_political_interests
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_redistribute_political_interests"
+	}
+	relative_position_id = KOR_deal_with_the_right
+	prerequisite = {
+		focus = KOR_deal_with_the_right
+		focus = KOR_treatment_towards_the_left
+	}
+}
+
+shared_focus = {
+	id = KOR_mobilize_the_public
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_mobilize_the_public"
+	}
+	relative_position_id = KOR_control_and_stability
+	prerequisite = {
+		focus = KOR_control_and_stability
+		focus = KOR_show_them_no_mercy
+	}
+}
+
+shared_focus = {
+	id = KOR_issue_a_statement_of_censure
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_issue_a_statement_of_censure"
+	}
+	relative_position_id = KOR_show_them_no_mercy
+	prerequisite = { focus = KOR_show_them_no_mercy }
+}
+
+shared_focus = {
+	id = KOR_strengthen_repression_tactics
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_strengthen_repression_tactics"
+	}
+	relative_position_id = KOR_issue_a_statement_of_censure
+	prerequisite = { focus = KOR_issue_a_statement_of_censure }
+}
+
+shared_focus = {
+	id = KOR_strengthen_the_polices_intelligence_capabilities
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_strengthen_the_polices_intelligence_capabilities"
+	}
+	relative_position_id = KOR_issue_a_statement_of_censure
+	prerequisite = { focus = KOR_issue_a_statement_of_censure }
+}
+
+shared_focus = {
+	id = KOR_strengthen_the_local_militias
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_strengthen_the_local_militias"
+	}
+	relative_position_id = KOR_mobilize_the_public
+	prerequisite = { focus = KOR_mobilize_the_public }
+}
+
+shared_focus = {
+	id = KOR_consider_declaring_martial_law
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_consider_declaring_martial_law"
+	}
+	relative_position_id = KOR_strengthen_repression_tactics
+	prerequisite = { focus = KOR_strengthen_repression_tactics }
+	prerequisite = { focus = KOR_strengthen_the_polices_intelligence_capabilities }
+}
+
+shared_focus = {
+	id = KOR_correct_our_policy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_correct_our_policy"
+	}
+	relative_position_id = KOR_focus_on_stabilizing_the_regions
+	prerequisite = {
+		focus = KOR_focus_on_stabilizing_the_regions
+		focus = KOR_focus_on_controlling_the_regions
+	}
+}
+
+shared_focus = {
+	id = KOR_control_the_media
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_control_the_media"
+	}
+	relative_position_id = KOR_strengthen_the_local_militias
+	prerequisite = { focus = KOR_strengthen_the_local_militias }
+	prerequisite = { focus = KOR_correct_our_policy }
+}
+
+shared_focus = {
+	id = KOR_systematic_regional_management
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_systematic_regional_management"
+	}
+	relative_position_id = KOR_strengthen_the_local_militias
+	prerequisite = { focus = KOR_strengthen_the_local_militias }
+	prerequisite = { focus = KOR_correct_our_policy }
+}
+
+shared_focus = {
+	id = KOR_filter_out_the_traitors
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_filter_out_the_traitors"
+	}
+	relative_position_id = KOR_consider_declaring_martial_law
+	prerequisite = { focus = KOR_consider_declaring_martial_law }
+}
+
+shared_focus = {
+	id = KOR_expand_the_intervention_of_public_power
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_expand_the_intervention_of_public_power"
+	}
+	relative_position_id = KOR_control_the_media
+	prerequisite = {
+		focus = KOR_control_the_media
+		focus = KOR_systematic_regional_management
+		focus = KOR_filter_out_the_traitors
+	}
+	mutually_exclusive = { 
+		focus = KOR_expand_our_political_affiliation 
+		focus = KOR_regroup_our_supporters 
+	}
+}
+
+shared_focus = {
+	id = KOR_a_firm_grip_on_the_national_assembly
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_a_firm_grip_on_the_national_assembly"
+	}
+	relative_position_id = KOR_expand_the_intervention_of_public_power
+	prerequisite = { focus = KOR_expand_the_intervention_of_public_power }
+}
+
+shared_focus = {
+	id = KOR_deals_and_promises
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_deals_and_promises"
+	}
+	relative_position_id = KOR_have_a_multiparty_summit_talk
+	prerequisite = { focus = KOR_have_a_multiparty_summit_talk }
+}
+
+shared_focus = {
+	id = KOR_bring_in_cooperative_insiders
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_bring_in_cooperative_insiders"
+	}
+	relative_position_id = KOR_redistribute_political_interests
+	prerequisite = { focus = KOR_redistribute_political_interests }
+}
+
+shared_focus = {
+	id = KOR_national_cooperation
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_national_cooperation"
+	}
+	relative_position_id = KOR_deals_and_promises
+	prerequisite = {
+		focus = KOR_deals_and_promises
+		focus = KOR_bring_in_cooperative_insiders
+	}
+}
+
+shared_focus = {
+	id = KOR_regroup_our_supporters
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_regroup_our_supporters"
+	}
+	relative_position_id = KOR_national_cooperation
+	prerequisite = { focus = KOR_national_cooperation }
+	mutually_exclusive = { 
+		focus = KOR_expand_the_intervention_of_public_power 
+		focus = KOR_expand_our_political_affiliation 
+	}
+}
+
+shared_focus = {
+	id = KOR_expand_our_political_affiliation
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_expand_our_political_affiliation"
+	}
+	relative_position_id = KOR_national_cooperation
+	prerequisite = { focus = KOR_national_cooperation }
+	mutually_exclusive = { 
+		focus = KOR_expand_the_intervention_of_public_power 
+		focus = KOR_regroup_our_supporters 
+	}
+}
+
+shared_focus = {
+	id = KOR_ease_factionalism
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_ease_factionalism"
+	}
+	relative_position_id = KOR_regroup_our_supporters
+	prerequisite = { focus = KOR_regroup_our_supporters }
+}
+
+shared_focus = {
+	id = KOR_suppress_radicalism
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_suppress_radicalism"
+	}
+	relative_position_id = KOR_expand_our_political_affiliation
+	prerequisite = { focus = KOR_expand_our_political_affiliation }
+}
+
+shared_focus = {
+	id = KOR_stabilize_the_parliamentary_politics
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_stabilize_the_parliamentary_politics"
+	}
+	relative_position_id = KOR_ease_factionalism
+	prerequisite = { focus = KOR_ease_factionalism }
+	prerequisite = { focus = KOR_suppress_radicalism }
+}
+
+shared_focus = {
+	id = KOR_a_house_divided
+	icon = GFX_KOR_and_out_comes_the_truth
+	cost = 2
+	x = 27
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_a_house_divided"
+	}
+}
+
+shared_focus = {
+	id = KOR_strengthen_the_influence_of_the_na
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_strengthen_the_influence_of_the_na"
+	}
+	relative_position_id = KOR_a_house_divided
+	prerequisite = { focus = KOR_a_house_divided }
+	mutually_exclusive = { focus = KOR_rise_of_the_kip }
+}
+
+shared_focus = {
+	id = KOR_talks_with_former_kpg_figures
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_talks_with_former_kpg_figures"
+	}
+	relative_position_id = KOR_strengthen_the_influence_of_the_na
+	prerequisite = {
+		focus = KOR_strengthen_the_influence_of_the_na
+		focus = KOR_rise_of_the_kip
+	}
+}
+
+shared_focus = {
+	id = KOR_korean_economic_contributors_association
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_korean_economic_contributors_association"
+	}
+	relative_position_id = KOR_strengthen_the_influence_of_the_na
+	prerequisite = { focus = KOR_strengthen_the_influence_of_the_na }
+}
+
+shared_focus = {
+	id = KOR_regional_tour_of_our_supporters
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_regional_tour_of_our_supporters"
+	}
+	relative_position_id = KOR_korean_economic_contributors_association
+	prerequisite = { focus = KOR_korean_economic_contributors_association }
+}
+
+shared_focus = {
+	id = KOR_denounce_our_rivals
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_denounce_our_rivals"
+	}
+	relative_position_id = KOR_regional_tour_of_our_supporters
+	prerequisite = { focus = KOR_regional_tour_of_our_supporters }
+	prerequisite = { focus = KOR_look_for_another_partner }
+}
+
+shared_focus = {
+	id = KOR_rally_our_factions_in_the_army
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_rally_our_factions_in_the_army"
+	}
+	relative_position_id = KOR_strengthen_the_influence_of_the_na
+	prerequisite = {
+		focus = KOR_strengthen_the_influence_of_the_na
+		focus = KOR_rise_of_the_kip
+	}
+}
+
+shared_focus = {
+	id = KOR_look_for_another_partner
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_look_for_another_partner"
+	}
+	relative_position_id = KOR_talks_with_former_kpg_figures
+	prerequisite = { focus = KOR_talks_with_former_kpg_figures }
+	prerequisite = { focus = KOR_rally_our_factions_in_the_army }
+}
+
+shared_focus = {
+	id = KOR_rise_of_the_kip
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_rise_of_the_kip"
+	}
+	relative_position_id = KOR_a_house_divided
+	prerequisite = { focus = KOR_a_house_divided }
+	mutually_exclusive = { focus = KOR_strengthen_the_influence_of_the_na }
+}
+
+shared_focus = {
+	id = KOR_approach_the_public
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_approach_the_public"
+	}
+	relative_position_id = KOR_rise_of_the_kip
+	prerequisite = { focus = KOR_rise_of_the_kip }
+}
+
+shared_focus = {
+	id = KOR_reassert_the_legitimacy_of_the_kpg
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reassert_the_legitimacy_of_the_kpg"
+	}
+	relative_position_id = KOR_approach_the_public
+	prerequisite = { focus = KOR_approach_the_public }
+}
+
+shared_focus = {
+	id = KOR_retake_the_initiative_of_the_conservatives
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_retake_the_initiative_of_the_conservatives"
+	}
+	relative_position_id = KOR_look_for_another_partner
+	prerequisite = { focus = KOR_look_for_another_partner }
+	prerequisite = { focus = KOR_reassert_the_legitimacy_of_the_kpg }
+}
+
+shared_focus = {
+	id = KOR_our_approach_to_diplomacy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 26
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_our_approach_to_diplomacy"
+	}
+}
+
+shared_focus = {
+	id = KOR_guideline_on_the_policy_toward_japan
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_guideline_on_the_policy_toward_japan"
+	}
+	relative_position_id = KOR_our_approach_to_diplomacy
+	prerequisite = { focus = KOR_our_approach_to_diplomacy }
+}
+
+shared_focus = {
+	id = KOR_reach_out_to_nanjing
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reach_out_to_nanjing"
+	}
+	relative_position_id = KOR_our_approach_to_diplomacy
+	prerequisite = { focus = KOR_our_approach_to_diplomacy }
+}
+
+shared_focus = {
+	id = KOR_continue_interacting_with_the_us_embassy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_continue_interacting_with_the_us_embassy"
+	}
+	relative_position_id = KOR_our_approach_to_diplomacy
+	prerequisite = { focus = KOR_our_approach_to_diplomacy }
+}
+
+shared_focus = {
+	id = KOR_a_state_visit_to_manila
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_a_state_visit_to_manila"
+	}
+	relative_position_id = KOR_reach_out_to_nanjing
+	prerequisite = { focus = KOR_reach_out_to_nanjing }
+}
+
+shared_focus = {
+	id = KOR_cooperate_with_the_us_advisors
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_cooperate_with_the_us_advisors"
+	}
+	relative_position_id = KOR_continue_interacting_with_the_us_embassy
+	prerequisite = { focus = KOR_continue_interacting_with_the_us_embassy }
+}
+
+shared_focus = {
+	id = KOR_reorganize_the_logistic_system
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reorganize_the_logistic_system"
+	}
+	relative_position_id = KOR_reorganize_the_defense_force
+	prerequisite = { focus = KOR_reorganize_the_defense_force }
+	mutually_exclusive = { focus = KOR_intensive_investment_in_infantry }
+}
+
+shared_focus = {
+	id = KOR_intensive_investment_in_infantry
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_intensive_investment_in_infantry"
+	}
+	relative_position_id = KOR_reorganize_the_defense_force
+	prerequisite = { focus = KOR_reorganize_the_defense_force }
+	mutually_exclusive = { focus = KOR_reorganize_the_logistic_system }
+}
+
+shared_focus = {
+	id = KOR_inspect_the_early_munitions_industry
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_inspect_the_early_munitions_industry"
+	}
+	relative_position_id = KOR_reorganize_the_logistic_system
+	prerequisite = { focus = KOR_reorganize_the_logistic_system }
+}
+
+shared_focus = {
+	id = KOR_improve_infantry_tactics
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_improve_infantry_tactics"
+	}
+	relative_position_id = KOR_intensive_investment_in_infantry
+	prerequisite = { focus = KOR_intensive_investment_in_infantry }
+}
+
+shared_focus = {
+	id = KOR_improve_infantry_equipments
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_improve_infantry_equipments"
+	}
+	relative_position_id = KOR_intensive_investment_in_infantry
+	prerequisite = { focus = KOR_intensive_investment_in_infantry }
+}
+
+shared_focus = {
+	id = KOR_reform_plan_for_the_infantry_regiment
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reform_plan_for_the_infantry_regiment"
+	}
+	relative_position_id = KOR_improve_infantry_tactics
+	prerequisite = { focus = KOR_improve_infantry_tactics }
+	prerequisite = { focus = KOR_improve_infantry_equipments }
+}
+
+shared_focus = {
+	id = KOR_reorganize_the_defense_force
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 32
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reorganize_the_defense_force"
+	}
+}
+
+shared_focus = {
+	id = KOR_modernize_the_military
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_modernize_the_military"
+	}
+	relative_position_id = KOR_cooperate_with_the_us_advisors
+	prerequisite = { focus = KOR_cooperate_with_the_us_advisors }
+	prerequisite = { focus = KOR_inspect_the_early_munitions_industry }
+}

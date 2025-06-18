@@ -1,0 +1,6 @@
+twr_propaganda_specialist = {
+  traits = { propaganda_affinity }
+  modifier = {
+    TWR_garrison_ideology_multiplier = 0.30
+  }
+}

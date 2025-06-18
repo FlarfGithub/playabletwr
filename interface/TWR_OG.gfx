@@ -1,0 +1,258 @@
+spriteTypes = {
+    spriteType = {
+	    name = "GFX_news_event_mexico_communist_victory"
+	    texturefile = "gfx/event_pictures/News_Events/news_event_mexico_communist_victory.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_BRA_Cafe"
+	    texturefile = "gfx/interface/cabinet/BRA/BRA_Cafe.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_BRA_Aranha"
+	    texturefile = "gfx/interface/cabinet/BRA/BRA_Oswaldo_Aranha.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_BRA_Dutra"
+	    texturefile = "gfx/interface/cabinet/BRA/BRA_Eurico_Gaspar_Dutra.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Hayato_Ikeda"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Ikeda_Hayato.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Hisato_Ichimada"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Ichimada_Hisato.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Takeru_Inukai"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Inukai_Takeru.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Nishio_Suehiro"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Nishio_Suehiro.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Kozo_Sasaki"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Sasaki_Kozo.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Yoshida_Shigeru"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Yoshida_Shigeru.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Inejiro_Asanuma"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Asanuma_Inejiro.dds"
+	}
+	spriteType = {
+	    name = "GFX_idea_JAP_Taketora_Ogata"
+	    texturefile = "gfx/interface/cabinet/JAP/JAP_Ogata_Taketora.dds"
+	}
+	SpriteType = {
+        name = "GFX_USA_Navy"
+        texturefile = "gfx/interface/goals/USA_Navy.tga"
+    }
+	SpriteType = {
+		name = "GFX_USA_Navy_shine"
+		texturefile = "gfx/interface/goals/USA_Navy.tga"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coup"
+		texturefile = "gfx/interface/goals/KOR_coup.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_coup_shine"
+		texturefile = "gfx/interface/goals/KOR_coup.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improve_training"
+		texturefile = "gfx/interface/goals/KOR_improve_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improve_training_shine"
+		texturefile = "gfx/interface/goals/KOR_improve_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_strong_army"
+		texturefile = "gfx/interface/goals/KOR_strong_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_strong_army_shine"
+		texturefile = "gfx/interface/goals/KOR_strong_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_no_coup"
+		texturefile = "gfx/interface/goals/KOR_no_coup.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_no_coup_shine"
+		texturefile = "gfx/interface/goals/KOR_no_coup.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_juche"
+		texturefile = "gfx/interface/goals/KOR_juche.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_juche_shine"
+		texturefile = "gfx/interface/goals/KOR_juche.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_purge"
+		texturefile = "gfx/interface/goals/KOR_purge.tga"
+	}
+	SpriteType = {
+		name = "GFX_KOR_purge_shine"
+		texturefile = "gfx/interface/goals/KOR_purge.tga"
+	}
+	SpriteType = {
+		name = "GFX_KOR_elections"
+		texturefile = "gfx/interface/goals/KOR_elections.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_elections_shine"
+		texturefile = "gfx/interface/goals/KOR_elections.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_protests"
+		texturefile = "gfx/interface/goals/KOR_protests.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_protests_shine"
+		texturefile = "gfx/interface/goals/KOR_protests.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_resign"
+		texturefile = "gfx/interface/goals/KOR_resign.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_resign_shine"
+		texturefile = "gfx/interface/goals/KOR_resign.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_protests_suppressed"
+		texturefile = "gfx/interface/goals/KOR_protests_suppressed.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_protests_suppressed_shine"
+		texturefile = "gfx/interface/goals/KOR_protests_suppressed.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_con_lib_victory"
+		texturefile = "gfx/interface/goals/KOR_con_lib_victory.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_con_lib_victory_shine"
+		texturefile = "gfx/interface/goals/KOR_con_lib_victory.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_true_republic"
+		texturefile = "gfx/interface/goals/KOR_true_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_true_republic_shine"
+		texturefile = "gfx/interface/goals/KOR_true_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_parliament"
+		texturefile = "gfx/interface/goals/KOR_parliament.tga"
+	}
+	SpriteType = {
+		name = "GFX_KOR_parliament_shine"
+		texturefile = "gfx/interface/goals/KOR_parliament.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_HoG_yi_si_yeong"
+		textureFile = "gfx/interface/cabinet/KOR/HoG_yi_si_yeong.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_bong"
+		textureFile = "gfx/interface/cabinet/KOR/minister_bong.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_chang"
+		textureFile = "gfx/interface/cabinet/KOR/minister_chang.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_ham"
+		textureFile = "gfx/interface/cabinet/KOR/minister_ham.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_heo"
+		textureFile = "gfx/interface/cabinet/KOR/minister_heo.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_hyung"
+		textureFile = "gfx/interface/cabinet/KOR/minister_hyung.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_sik"
+		textureFile = "gfx/interface/cabinet/KOR/minister_sik.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_byeon"
+		textureFile = "gfx/interface/cabinet/KOR/minister_byeon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_hong"
+		textureFile = "gfx/interface/cabinet/KOR/minister_hong.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_nam"
+		textureFile = "gfx/interface/cabinet/KOR/minister_nam.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_chaek"
+		textureFile = "gfx/interface/cabinet/KOR/minister_chaek.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_poong"
+		textureFile = "gfx/interface/cabinet/KOR/minister_poong.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_seok"
+		textureFile = "gfx/interface/cabinet/KOR/minister_seok.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_baek"
+		textureFile = "gfx/interface/cabinet/KOR/minister_baek.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_pak"
+		textureFile = "gfx/interface/cabinet/KOR/minister_pak.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_keun"
+		textureFile = "gfx/interface/cabinet/KOR/minister_keun.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_choe"
+		textureFile = "gfx/interface/cabinet/KOR/minister_choe.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_oh"
+		textureFile = "gfx/interface/cabinet/KOR/minister_oh.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_yup"
+		textureFile = "gfx/interface/cabinet/KOR/minister_yup.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_kwon"
+		textureFile = "gfx/interface/cabinet/KOR/minister_kwon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_chong"
+		textureFile = "gfx/interface/cabinet/KOR/minister_chong.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_sohn"
+		textureFile = "gfx/interface/cabinet/KOR/minister_sohn.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_choi"
+		textureFile = "gfx/interface/cabinet/KOR/minister_choi.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_minister_kim"
+		textureFile = "gfx/interface/cabinet/KOR/minister_kim.tga"
+	}
+}

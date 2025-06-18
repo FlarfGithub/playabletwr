@@ -1,0 +1,711 @@
+ideas = {
+    country = {
+        # FASCIST SPIRITS
+        TWR_fascist_movement_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.05
+                political_power_factor = 0.03
+                stability_factor = -0.02
+            }
+        }
+        
+        TWR_fascist_propaganda_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.10
+                political_power_factor = 0.05
+                stability_factor = -0.05
+            }
+        }
+        
+        TWR_fascist_mobilization_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.15
+                political_power_factor = 0.07
+                stability_factor = -0.07
+                recruitable_population_factor = 0.02
+            }
+        }
+        
+        TWR_fascist_permanent_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.20
+                political_power_factor = 0.10
+                stability_factor = 0.05
+                recruitable_population_factor = 0.05
+                division_attack_factor = 0.05
+            }
+        }
+        
+        TWR_fascist_victory_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.25
+                political_power_factor = 0.15
+                stability_factor = 0.10
+                recruitable_population_factor = 0.10
+                division_attack_factor = 0.10
+                division_defense_factor = 0.05
+            }
+        }
+        
+        TWR_fascist_coup_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.30
+                political_power_factor = 0.20
+                stability_factor = -0.10
+                recruitable_population_factor = 0.15
+                division_attack_factor = 0.15
+                division_defense_factor = 0.10
+            }
+        }
+        
+        # COMMUNIST SPIRITS
+        TWR_communist_movement_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.02
+                political_power_factor = 0.03
+                stability_factor = -0.02
+            }
+        }
+        
+        TWR_communist_propaganda_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.05
+                political_power_factor = 0.05
+                stability_factor = -0.05
+                consumer_goods_factor = -0.02
+            }
+        }
+        
+        TWR_communist_mobilization_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.08
+                political_power_factor = 0.07
+                stability_factor = -0.07
+                consumer_goods_factor = -0.05
+                construction_speed_factor = 0.02
+            }
+        }
+        
+        TWR_communist_permanent_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.10
+                political_power_factor = 0.10
+                stability_factor = 0.05
+                consumer_goods_factor = -0.08
+                construction_speed_factor = 0.05
+                resistance_target = -0.05
+            }
+        }
+        
+        TWR_communist_victory_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.15
+                political_power_factor = 0.15
+                stability_factor = 0.10
+                consumer_goods_factor = -0.10
+                construction_speed_factor = 0.10
+                resistance_target = -0.10
+            }
+        }
+        
+        TWR_communist_coup_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.20
+                political_power_factor = 0.20
+                stability_factor = -0.10
+                consumer_goods_factor = -0.15
+                construction_speed_factor = 0.15
+                resistance_target = -0.15
+            }
+        }
+        
+        # DEMOCRATIC SPIRITS
+        TWR_democratic_movement_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.03
+                political_power_factor = 0.02
+                trade_opinion_factor = 0.05
+            }
+        }
+        
+        TWR_democratic_propaganda_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.03
+                trade_opinion_factor = 0.10
+                consumer_goods_factor = 0.02
+            }
+        }
+        
+        TWR_democratic_mobilization_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.07
+                political_power_factor = 0.05
+                trade_opinion_factor = 0.15
+                consumer_goods_factor = 0.05
+                mobilization_speed = -0.02
+            }
+        }
+        
+        TWR_democratic_permanent_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                political_power_factor = 0.07
+                trade_opinion_factor = 0.20
+                consumer_goods_factor = 0.08
+                mobilization_speed = -0.05
+                defensive_war_stability_factor = 0.05
+            }
+        }
+        
+        TWR_democratic_victory_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.15
+                political_power_factor = 0.10
+                trade_opinion_factor = 0.25
+                consumer_goods_factor = 0.10
+                mobilization_speed = -0.08
+                defensive_war_stability_factor = 0.10
+            }
+        }
+        
+        TWR_democratic_coup_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.05
+                political_power_factor = 0.15
+                trade_opinion_factor = 0.30
+                consumer_goods_factor = 0.15
+                mobilization_speed = -0.10
+                defensive_war_stability_factor = 0.15
+            }
+        }
+        
+        # MONARCHIST SPIRITS
+        TWR_monarchist_movement_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.02
+                political_power_factor = 0.03
+                army_morale_factor = 0.02
+            }
+        }
+        
+        TWR_monarchist_propaganda_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.05
+                army_morale_factor = 0.05
+                conservative_acceptance = 5
+            }
+        }
+        
+        TWR_monarchist_mobilization_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.08
+                political_power_factor = 0.07
+                army_morale_factor = 0.08
+                conservative_acceptance = 10
+                army_org_factor = 0.02
+            }
+        }
+        
+        TWR_monarchist_permanent_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                political_power_factor = 0.10
+                army_morale_factor = 0.10
+                conservative_acceptance = 15
+                army_org_factor = 0.05
+                division_defense_factor = 0.02
+            }
+        }
+        
+        TWR_monarchist_victory_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.15
+                political_power_factor = 0.15
+                army_morale_factor = 0.15
+                conservative_acceptance = 20
+                army_org_factor = 0.08
+                division_defense_factor = 0.05
+            }
+        }
+        
+        TWR_monarchist_coup_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.20
+                political_power_factor = 0.20
+                army_morale_factor = 0.20
+                conservative_acceptance = 25
+                army_org_factor = 0.10
+                division_defense_factor = 0.08
+            }
+        }
+        
+        # AUTHORITARIAN SPIRITS
+        TWR_authoritarian_movement_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = 0.02
+                army_org_factor = 0.02
+            }
+        }
+        
+        TWR_authoritarian_propaganda_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.08
+                stability_factor = 0.05
+                army_org_factor = 0.05
+                fascist_acceptance = 5
+            }
+        }
+        
+        TWR_authoritarian_mobilization_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.12
+                stability_factor = 0.08
+                army_org_factor = 0.08
+                fascist_acceptance = 10
+                mobilization_speed = 0.02
+            }
+        }
+        
+        TWR_authoritarian_permanent_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.15
+                stability_factor = 0.10
+                army_org_factor = 0.10
+                fascist_acceptance = 15
+                mobilization_speed = 0.05
+                division_attack_factor = 0.02
+            }
+        }
+        
+        TWR_authoritarian_victory_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.20
+                stability_factor = 0.15
+                army_org_factor = 0.15
+                fascist_acceptance = 20
+                mobilization_speed = 0.08
+                division_attack_factor = 0.05
+            }
+        }
+        
+        TWR_authoritarian_coup_spirit = {
+            picture = GFX_idea_generic_fascist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.25
+                stability_factor = 0.20
+                army_org_factor = 0.20
+                fascist_acceptance = 25
+                mobilization_speed = 0.10
+                division_attack_factor = 0.08
+            }
+        }
+        
+        # LIBERAL SPIRITS
+        TWR_liberal_movement_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.03
+                political_power_factor = 0.02
+                consumer_goods_factor = 0.02
+            }
+        }
+        
+        TWR_liberal_propaganda_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.03
+                consumer_goods_factor = 0.05
+                liberal_acceptance = 5
+            }
+        }
+        
+        TWR_liberal_mobilization_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.08
+                political_power_factor = 0.05
+                consumer_goods_factor = 0.08
+                liberal_acceptance = 10
+                trade_opinion_factor = 0.02
+            }
+        }
+        
+        TWR_liberal_permanent_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                political_power_factor = 0.07
+                consumer_goods_factor = 0.10
+                liberal_acceptance = 15
+                trade_opinion_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.02
+            }
+        }
+        
+        TWR_liberal_victory_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.15
+                political_power_factor = 0.10
+                consumer_goods_factor = 0.15
+                liberal_acceptance = 20
+                trade_opinion_factor = 0.08
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+        
+        TWR_liberal_coup_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.20
+                political_power_factor = 0.15
+                consumer_goods_factor = 0.20
+                liberal_acceptance = 25
+                trade_opinion_factor = 0.10
+                production_factory_efficiency_gain_factor = 0.08
+            }
+        }
+        
+        # CONSERVATIVE SPIRITS
+        TWR_conservative_movement_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.02
+                political_power_factor = 0.03
+                army_morale_factor = 0.02
+            }
+        }
+        
+        TWR_conservative_propaganda_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.05
+                army_morale_factor = 0.05
+                conservative_acceptance = 5
+            }
+        }
+        
+        TWR_conservative_mobilization_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.08
+                political_power_factor = 0.07
+                army_morale_factor = 0.08
+                conservative_acceptance = 10
+                division_defense_factor = 0.02
+            }
+        }
+        
+        TWR_conservative_permanent_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                political_power_factor = 0.10
+                army_morale_factor = 0.10
+                conservative_acceptance = 15
+                division_defense_factor = 0.05
+                army_org_factor = 0.02
+            }
+        }
+        
+        TWR_conservative_victory_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.15
+                political_power_factor = 0.15
+                army_morale_factor = 0.15
+                conservative_acceptance = 20
+                division_defense_factor = 0.08
+                army_org_factor = 0.05
+            }
+        }
+        
+        TWR_conservative_coup_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.20
+                political_power_factor = 0.20
+                army_morale_factor = 0.20
+                conservative_acceptance = 25
+                division_defense_factor = 0.10
+                army_org_factor = 0.08
+            }
+        }
+        
+        # SOCIALIST SPIRITS
+        TWR_socialist_movement_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.02
+                political_power_factor = 0.02
+                stability_factor = 0.02
+            }
+        }
+        
+        TWR_socialist_propaganda_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.05
+                political_power_factor = 0.03
+                stability_factor = 0.05
+                socialist_acceptance = 5
+            }
+        }
+        
+        TWR_socialist_mobilization_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.08
+                political_power_factor = 0.05
+                stability_factor = 0.08
+                socialist_acceptance = 10
+                consumer_goods_factor = -0.02
+            }
+        }
+        
+        TWR_socialist_permanent_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.10
+                political_power_factor = 0.07
+                stability_factor = 0.10
+                socialist_acceptance = 15
+                consumer_goods_factor = -0.05
+                construction_speed_factor = 0.02
+            }
+        }
+        
+        TWR_socialist_victory_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.15
+                political_power_factor = 0.10
+                stability_factor = 0.15
+                socialist_acceptance = 20
+                consumer_goods_factor = -0.08
+                construction_speed_factor = 0.05
+            }
+        }
+        
+        TWR_socialist_coup_spirit = {
+            picture = GFX_idea_generic_communist_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.20
+                political_power_factor = 0.15
+                stability_factor = 0.20
+                socialist_acceptance = 25
+                consumer_goods_factor = -0.10
+                construction_speed_factor = 0.08
+            }
+        }
+        
+        # TECHNOCRAT SPIRITS
+        TWR_technocrat_movement_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.02
+                political_power_factor = 0.02
+                stability_factor = 0.02
+            }
+        }
+        
+        TWR_technocrat_propaganda_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.05
+                political_power_factor = 0.03
+                stability_factor = 0.05
+                democratic_acceptance = 5
+            }
+        }
+        
+        TWR_technocrat_mobilization_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.08
+                political_power_factor = 0.05
+                stability_factor = 0.08
+                democratic_acceptance = 10
+                production_factory_efficiency_gain_factor = 0.02
+            }
+        }
+        
+        TWR_technocrat_permanent_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.10
+                political_power_factor = 0.07
+                stability_factor = 0.10
+                democratic_acceptance = 15
+                production_factory_efficiency_gain_factor = 0.05
+                construction_speed_factor = 0.02
+            }
+        }
+        
+        TWR_technocrat_victory_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.15
+                political_power_factor = 0.10
+                stability_factor = 0.15
+                democratic_acceptance = 20
+                production_factory_efficiency_gain_factor = 0.08
+                construction_speed_factor = 0.05
+            }
+        }
+        
+        TWR_technocrat_coup_spirit = {
+            picture = GFX_idea_generic_democratic_ideology
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.20
+                political_power_factor = 0.15
+                stability_factor = 0.20
+                democratic_acceptance = 25
+                production_factory_efficiency_gain_factor = 0.10
+                construction_speed_factor = 0.08
+            }
+        }
+    }
+} 

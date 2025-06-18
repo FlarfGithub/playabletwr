@@ -1,0 +1,88 @@
+ideas = {
+    # Fascistic Ideologies
+    generic_national_socialist_advisor = {
+        picture = GFX_idea_generic_fascist_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { national_socialist_reformer }
+        modifier = {
+            national_socialism_drift = 0.1
+        }
+    }
+    generic_fascist_advisor = {
+        picture = GFX_idea_generic_fascist_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { fascist_reformer }
+        modifier = {
+            fascism_drift = 0.1
+        }
+    }
+    generic_falangist_advisor = {
+        picture = GFX_idea_generic_fascist_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { falangist_reformer }
+        modifier = {
+            falangism_drift = 0.1
+        }
+    }
+
+    # Democratic Ideologies
+    generic_social_democrat_advisor = {
+        picture = GFX_idea_generic_democratic_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { social_democrat_reformer }
+        modifier = {
+            social_democracy_drift = 0.1
+        }
+    }
+    generic_liberal_advisor = {
+        picture = GFX_idea_generic_democratic_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { liberal_reformer }
+        modifier = {
+            liberalism_drift = 0.1
+        }
+    }
+    generic_conservative_advisor = {
+        picture = GFX_idea_generic_democratic_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { conservative_reformer }
+        modifier = {
+            conservatism_drift = 0.1
+        }
+    }
+
+    # Communist Ideologies
+    generic_marxist_advisor = {
+        picture = GFX_idea_generic_communist_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { marxist_reformer }
+        modifier = {
+            marxism_drift = 0.1
+        }
+    }
+    generic_stalinist_advisor = {
+        picture = GFX_idea_generic_communist_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { stalinist_reformer }
+        modifier = {
+            stalinism_drift = 0.1
+        }
+    }
+    generic_anarchist_advisor = {
+        picture = GFX_idea_generic_communist_drift
+        allowed = { has_government = neutrality }
+        cost = 150
+        traits = { anarchist_reformer }
+        modifier = {
+            anarchism_drift = 0.1
+        }
+    }
+} 

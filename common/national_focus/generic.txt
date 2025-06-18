@@ -1,0 +1,78 @@
+focus_tree = {
+    id = generic_focus
+    country = {
+        factor = 1
+    }
+    default = yes
+    reset_on_civilwar = no
+    shared_focus = GEN_New_Arms_Age
+    shared_focus = GEN_Aviation_Efforts
+    shared_focus = GEN_Naval_Age
+    shared_focus = GEN_Industrial_Efforts
+    shared_focus = GEN_Politics_And_Diplomacy
+    
+    # Main ideology paths
+    shared_focus = PTWR_Fascist_Path
+    shared_focus = PTWR_Communist_Path
+    shared_focus = PTWR_Monarchist_Path
+    shared_focus = PTWR_Democratic_Path
+    shared_focus = PTWR_Authoritarian_Path
+    shared_focus = PTWR_Liberal_Path
+    shared_focus = PTWR_Conservative_Path
+    shared_focus = PTWR_Socialist_Path
+    shared_focus = PTWR_Technocrat_Path
+    
+    # Fascist sub-focuses
+    shared_focus = PTWR_fascist_propaganda
+    shared_focus = PTWR_fascist_mobilization
+    shared_focus = PTWR_fascist_victory
+    shared_focus = PTWR_fascist_coup
+    
+    # Communist sub-focuses
+    shared_focus = PTWR_communist_propaganda
+    shared_focus = PTWR_communist_mobilization
+    shared_focus = PTWR_communist_victory
+    shared_focus = PTWR_communist_coup
+    
+    # Monarchist sub-focuses
+    shared_focus = PTWR_monarchist_propaganda
+    shared_focus = PTWR_monarchist_mobilization
+    shared_focus = PTWR_monarchist_victory
+    shared_focus = PTWR_monarchist_coup
+    
+    # Democratic sub-focuses
+    shared_focus = PTWR_democratic_propaganda
+    shared_focus = PTWR_democratic_mobilization
+    shared_focus = PTWR_democratic_victory
+    shared_focus = PTWR_democratic_coup
+    
+    # Authoritarian sub-focuses
+    shared_focus = PTWR_authoritarian_propaganda
+    shared_focus = PTWR_authoritarian_mobilization
+    shared_focus = PTWR_authoritarian_victory
+    shared_focus = PTWR_authoritarian_coup
+    
+    # Liberal sub-focuses
+    shared_focus = PTWR_liberal_propaganda
+    shared_focus = PTWR_liberal_mobilization
+    shared_focus = PTWR_liberal_victory
+    shared_focus = PTWR_liberal_coup
+    
+    # Conservative sub-focuses
+    shared_focus = PTWR_conservative_propaganda
+    shared_focus = PTWR_conservative_mobilization
+    shared_focus = PTWR_conservative_victory
+    shared_focus = PTWR_conservative_coup
+    
+    # Socialist sub-focuses
+    shared_focus = PTWR_socialist_propaganda
+    shared_focus = PTWR_socialist_mobilization
+    shared_focus = PTWR_socialist_victory
+    shared_focus = PTWR_socialist_coup
+    
+    # Technocrat sub-focuses
+    shared_focus = PTWR_technocrat_propaganda
+    shared_focus = PTWR_technocrat_mobilization
+    shared_focus = PTWR_technocrat_victory
+    shared_focus = PTWR_technocrat_coup
+} 

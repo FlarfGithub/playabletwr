@@ -1,0 +1,1643 @@
+	shared_focus = {
+	cancelable = yes
+		id = FFR_A_Decade_and_Counting
+		icon = GFX_FFR_a_decade_counting
+		cost = 2.00
+		x = 5
+		y = 0
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 100
+		}
+		available = {
+			always = yes
+		}
+		bypass = {
+			has_country_flag = controls_french_proper
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_A_Decade_and_Counting"
+			custom_effect_tooltip = FFR_DECADE_OF_EXILE
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Contacts_Within_the_French_Military
+		icon = GFX_FRA_infiltration_strike
+		cost = 5.00
+		available = {
+			always = yes
+		}	
+		bypass = {
+			has_country_flag = controls_french_proper
+		}	
+		#prerequisite = {
+		#	focus = FFR_Question_of_The_Authority
+		#}
+		relative_position_id = FFR_A_Decade_and_Counting
+		x = 2
+		y = 0
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Introduce_Limited_Democracy"
+			custom_effect_tooltip = FFR_CONTACTS_WITHIN_FRENCH_ARMED_FORCES
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Second_Phase_of_the_Eboue_Strategy
+		icon = GFX_FRA_watching
+		cost = 5.00
+		available = {
+		NOT = {
+		has_country_flag = controls_french_proper
+			}
+		}
+		prerequisite = {
+			focus = FFR_A_Decade_and_Counting
+		}
+		prerequisite = {
+			focus = FFR_Contacts_Within_the_French_Military
+		}
+		bypass = {
+			has_country_flag = controls_french_proper
+		}
+		relative_position_id = FFR_A_Decade_and_Counting
+		x = 1
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Second_Phase_of_the_Eboue_Strategy"
+			unlock_decision_category_tooltip = FFR_Struggle_For_France
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Our_War_of_Liberation
+		icon = GFX_FRA_War_of_Lighting
+		cost = 4.00
+		available = {
+		NOT = {
+		has_country_flag = controls_french_proper
+			}
+		}
+		prerequisite = {
+			focus = FFR_Second_Phase_of_the_Eboue_Strategy
+		}
+		bypass = {
+			has_country_flag = controls_french_proper
+		}
+		relative_position_id = FFR_Second_Phase_of_the_Eboue_Strategy
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 160
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Our_War_of_Liberation"
+			unlock_decision_tooltip = request_american_support
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Sending_Catayee
+		icon = GFX_FFR_African_Majority
+		cost = 6.00
+		available = {
+		NOT = {
+		has_country_flag = controls_french_proper
+			}
+		}
+		prerequisite = {
+			focus = FFR_Our_War_of_Liberation
+		}
+		relative_position_id = FFR_Our_War_of_Liberation
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 160
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Sending_Catayee"
+			FRA = { country_event = twrNewFrance.15 }
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Liberation_of_the_Kerguelen_Islands
+		icon = GFX_FFR_Liberation_Kerguelen
+		cost = 3.00
+		available = {
+		has_country_flag = FFR_USA_SUPPORT
+		NOT = {
+		has_country_flag = controls_french_proper
+			}
+		}
+		bypass = {
+			owns_state = 713
+		}
+		prerequisite = {
+			focus = FFR_Our_War_of_Liberation
+		}
+		relative_position_id = FFR_Our_War_of_Liberation
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 160
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Liberation_of_the_Kerguelen_Islands"
+			FFR = {
+			transfer_state = 713 
+			country_event = twrNewFrance.16
+			set_global_flag = KERGUELEN_WAS_FFR
+			}
+			FRA = { country_event = twrNewFrance.17 }
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_The_Francophile_Summit
+		icon = GFX_FRA_deal_with
+		cost = 8.00
+		available = {
+		has_country_flag = controls_french_proper
+		has_war = no
+		}
+		prerequisite = {
+			focus = FFR_Second_Phase_of_the_Eboue_Strategy
+		}
+		relative_position_id = FFR_Second_Phase_of_the_Eboue_Strategy
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_The_Francophile_Summit"
+			if = {
+			limit = {
+			is_communist = no
+				}
+			every_country = {
+			limit = {
+			is_francophile_country = yes
+			is_communist = no
+					}
+			country_event = twrNewFrance.29
+				}
+			}
+			else_if = {
+			limit = {
+			is_communist = yes
+				}
+			every_country = {
+			limit = {
+			is_francophile_country = yes
+					}
+			country_event = twrNewFrance.29
+				}
+			}
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Fate_of_Empire
+		icon = GFX_FFR_fate_of_africa
+		cost = 7.00
+		available = {
+		NOT = { has_cosmetic_tag = FFR_Provisional_GOV }	
+		has_country_flag = controls_french_proper
+		has_war = no
+		OR = {
+		has_completed_focus = FFR_De_Gaulles_France
+		has_completed_focus = FFR_Primacy_of_the_Left
+		has_completed_focus = FFR_Maintaining_the_CNF
+		has_completed_focus = FFR_Coup_France
+			}
+		}
+		prerequisite = {
+			focus = FFR_The_Francophile_Summit
+		}
+		relative_position_id = FFR_The_Francophile_Summit
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 35
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Fate_of_Empire"
+			add_stability = 0.05
+			remove_ideas = FFR_Brazzaville_Conference_Aftermath
+
+			if = {
+			limit = { country_exists = GDL }
+			puppet = GDL
+			hidden_effect = {
+			GDL = {
+			set_politics = {	
+			ruling_party = socialist
+			last_election = "1933.3.5"
+			election_frequency = 48
+			elections_allowed = no
+			}
+
+			set_popularities = {
+			national_socialist = 0
+			fascist = 0
+			paternal_autocrat = 0
+			conservative = 0
+			liberal = 0
+			social_democrat = 0
+			socialist = 100
+			bolshevik_leninist = 0
+			marxist_leninist = 0
+			}
+					}
+				}
+			}
+			
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Neocolonialism
+		icon = GFX_GENERIC_Colonial_Expeditions
+		cost = 8.00
+		available = {
+		has_country_flag = controls_french_proper
+		has_war = no
+		}
+		prerequisite = {
+			focus = FFR_Fate_of_Empire
+		}
+		relative_position_id = FFR_Fate_of_Empire
+		x = 1
+		y = 1
+		available_if_capitulated = no
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Neocolonialism"
+			give_resource_rights = { receiver = FFR state = 660 }
+			give_resource_rights = { receiver = FFR state = 927 }
+			give_resource_rights = { receiver = FFR state = 925 }
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 459
+					}
+				}
+			give_resource_rights = { receiver = FFR state = 459 }
+			}
+		}
+	}
+	shared_focus = {
+		cancelable = yes
+			id = FFR_Fate_West_Africa
+			icon = GFX_GENERIC_African_Flames
+			cost = 8.00
+			available = {
+			has_country_flag = controls_french_proper
+			has_war = no
+			}
+			prerequisite = {
+				focus = FFR_Neocolonialism
+			}
+			relative_position_id = FFR_Neocolonialism
+			x = 0
+			y = 1
+			available_if_capitulated = no
+			ai_will_do = {
+			base = 30
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus FFR_Fate_West_Africa"
+				country_event = twrNewFrance.35
+			}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Indochinese_Rapprochement
+		icon = GFX_GENERIC_vietnam
+		cost = 8.00
+		available = {
+		has_country_flag = controls_french_proper
+		has_war = no
+		}
+		prerequisite = {
+			focus = FFR_Fate_of_Empire
+		}
+		relative_position_id = FFR_Fate_of_Empire
+		x = -1
+		y = 1
+		available_if_capitulated = no
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Indochinese_Rapprochement"
+			LAO = { country_event = twrNewFrance.58 }
+			VIN = { country_event = twrNewFrance.58 }
+			KMV = { country_event = twrNewFrance.58 }
+			CAM = { country_event = twrNewFrance.58 }
+
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Great_Power_Diplomacy
+		icon = GFX_FRA_celebrate
+		cost = 8.00
+		available = {
+		has_country_flag = controls_french_proper
+		has_war = no
+		}
+		prerequisite = {
+			focus = FFR_Fate_of_Empire
+		}
+		relative_position_id = FFR_Fate_of_Empire
+		x = -3
+		y = 1
+		available_if_capitulated = no
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Great_Power_Diplomacy"
+			add_political_power = 100
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_European_Trade_Community
+		icon = GFX_RUS_Embrace_Europeanism
+		cost = 9.00
+		available = {
+		has_country_flag = controls_french_proper
+		has_war = no
+		}
+		prerequisite = {
+			focus = FFR_Great_Power_Diplomacy
+		}
+		relative_position_id = FFR_Great_Power_Diplomacy
+		x = 0
+		y = 1
+		available_if_capitulated = no
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_European_Trade_Community"
+			set_global_flag = ETC_ALREADY_FORMED
+			news_event = twrddr.61
+			country_event = twrETC.2
+			clr_global_flag = ONGOING_ETC_APPLICATION_GLOBAL
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Contact_Algires
+		icon = GFX_GENERIC_Phone
+		cost = 6.00
+		available = {
+		has_country_flag = controls_french_proper
+		has_war = no
+		NOT = { ALG = { owns_state = 459 } }
+		}
+		prerequisite = {
+			focus = FFR_Fate_of_Empire
+		}
+		bypass = { 
+		ALG = { owns_state = 459 }
+		}
+		relative_position_id = FFR_Fate_of_Empire
+		x = 4
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Contact_Algires"
+			country_event = twrNewFrance.27
+			set_global_flag = contact_algiers
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Algeria_France_4ever
+		icon = GFX_FFR_Algeria_is_France
+		cost = 6.00
+		available = {
+         always = no
+		}
+		prerequisite = {
+			focus = FFR_Contact_Algires
+		}
+		mutually_exclusive = { focus = FFR_Algerian_Independence }
+		relative_position_id = FFR_Contact_Algires
+		x = 1
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_The_Equatorial_Congress"
+			add_stability = -0.15
+			hidden_effect = {
+				country_event = {
+					id = twrNewFrance.61
+					days = 20
+				}
+			}
+
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Algerian_Independence
+		icon = GFX_FFR_algerian_independence
+		cost = 6.00
+		available = {
+         always = no
+		}
+		prerequisite = {
+			focus = FFR_Contact_Algires
+		}
+		mutually_exclusive = { focus = FFR_Algeria_France_4ever }
+		relative_position_id = FFR_Contact_Algires
+		x = -1
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_Algerian_Independence"
+		#ALG = {
+		#transfer_state = 842
+		#transfer_state = 459
+		#transfer_state = 460
+		#transfer_state = 513
+		#transfer_state = 514
+		#}
+		reverse_add_opinion_modifier = {
+			target = USA
+			modifier = medium_increase 
+		}
+		add_stability = 0.1
+
+		
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_The_Propaganda_Offensive
+		icon = GFX_FRA_celebrate
+		cost = 7.00
+		available = {
+		NOT = {
+		has_country_flag = controls_french_proper
+			}
+		}
+		prerequisite = {
+			focus = FFR_Second_Phase_of_the_Eboue_Strategy
+		}
+		relative_position_id = FFR_Second_Phase_of_the_Eboue_Strategy
+		x = 2
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 100
+		}
+		completion_reward = {
+		custom_effect_tooltip = FFR_Propaganda
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_The_Propaganda_Offensive"
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_The_Third_BelgianFrench_Exercise
+		icon = GFX_BEL_authority
+		cost = 7.00
+		available = {
+		NOT = { has_country_flag = controls_french_proper }
+		BEL = { has_war = no }
+		country_exists = BEL
+		}
+		prerequisite = {
+			focus = FFR_The_Propaganda_Offensive
+		}
+		relative_position_id = FFR_The_Propaganda_Offensive
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 100
+		}
+		completion_reward = {
+		custom_effect_tooltip = FFR_Army_Drills
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_The_Third_BelgianFrench_Exercise"
+			BEL = { country_event = twrNewFrance.18 } 
+			FFR = { country_event = twrNewFrance.18 } 
+
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Strengthen_the_CNF
+		icon = GFX_FRA_National_Concord
+		cost = 5.00
+		available = {
+		NOT = {
+		has_country_flag = controls_french_proper
+			}
+		}
+		prerequisite = {
+			focus = FFR_The_Propaganda_Offensive
+		}
+		relative_position_id = FFR_The_Propaganda_Offensive
+		x = 2
+		y = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 50
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Strengthen_the_CNF"
+			add_political_power = 80
+			add_stability = 0.05
+		    add_popularity = {
+    	     ideology = paternal_autocrat
+    	     popularity = 0.05		    
+			 }
+		}
+	}
+
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Vive_la_France
+		icon = GFX_FRA_Crossed_Flags
+		cost = 5.00
+		x = 15
+		y = 0
+		available_if_capitulated = yes
+		ai_will_do = {
+		base = 100
+		}
+		available = {
+			has_war_with = FRA
+		}
+		bypass = {
+			OR = {
+				has_war_with = FRA
+				has_country_flag = controls_french_proper
+			}
+	    }
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Vive_la_France"
+			custom_effect_tooltip = Focus_be_Bypassed_tt
+		}
+	}
+	shared_focus = { #TA_PROPOSAL
+	cancelable = yes
+		id = FFR_Requesting_Accord_Intervention
+		icon = GFX_GENERIC_TA_Government
+		cost = 1.00
+		x = -1
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Vive_la_France
+		}
+		relative_position_id = FFR_Vive_la_France
+		mutually_exclusive = { focus = FFR_Pivoting_to_Domestic_Organisations }
+		ai_will_do = {
+		base = 100
+		}
+		available = {
+		has_war_with = FRA
+		}
+		bypass = {
+			has_country_flag = controls_french_proper
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Requesting_Accord_Intervention"
+			USA = {
+			country_event = twrNewFrance.5
+			}
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Security_Treaty
+		icon = GFX_TA_Big_Four
+		cost = 7.00
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		available = {
+		has_global_flag = INTERVENTION_INTO_FRANCE_CALLED
+		}
+		prerequisite = {
+			focus = FFR_Requesting_Accord_Intervention
+		}
+		relative_position_id = FFR_Requesting_Accord_Intervention
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Security_Treaty"
+			news_event = { id = twrNewFrance.19 days = 1 }
+			army_experience = 20
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = ENG
+		  }
+		  add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 200
+			producer = USA
+		  }
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Pivoting_to_Domestic_Organisations
+		icon = GFX_FRA_Subsidise_Land_Reclaimation
+		cost = 4.00
+		x = 1
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Vive_la_France
+		}
+		bypass = {
+		NOT = { has_completed_focus = FFR_Requesting_Accord_Intervention }
+		has_country_flag = controls_french_proper
+		}
+		relative_position_id = FFR_Vive_la_France
+		mutually_exclusive = { focus = FFR_Requesting_Accord_Intervention }
+		ai_will_do = {
+		base = 30
+		}
+		available = {
+		has_war_with = FRA
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_Pivoting_to_Domestic_Organisations"
+		add_popularity = {
+    	ideology = marxist_leninist
+    	popularity = 0.08
+		}
+		add_manpower = 16000
+		add_war_support = 0.06
+		create_field_marshal = {
+			name = "Henri Rol-Tanguy"
+			picture = "Henri_Rol-Tanguy.dds"
+			traits = { communist_sympathizer inspirational_leader infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			}
+		create_corps_commander = {
+			name = "Pierre Georges"
+			picture = "Pierre_Georges.dds"
+			traits = { communist_sympathizer ambusher }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			}
+		create_corps_commander = {
+			name = "Louis Blésy"
+			picture = "Louis_Blesy.dds"
+			traits = { communist_sympathizer trickster }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			}
+		create_corps_commander = {
+			name = "Boris Guimpel"
+			picture = "Boris_Guimpel.dds"
+			traits = { communist_sympathizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			}
+		create_corps_commander = {
+			name = "Albert Ouzoulias"
+			picture = "Albert_Ouzoulias.dds"
+			traits = { communist_sympathizer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			}
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Students_Labourers_Soldiers
+		icon = GFX_FRA_specialists
+		cost = 7.00
+		x = 2
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Pivoting_to_Domestic_Organisations
+		}
+		relative_position_id = FFR_Pivoting_to_Domestic_Organisations
+		ai_will_do = {
+		base = 30
+		}
+		available = {
+		has_war_with = FRA
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Students_Labourers_Soldiers"
+			add_popularity = {
+	    	ideology = marxist_leninist
+	    	popularity = 0.1
+			}
+			22 = {
+			create_unit = {
+		    division = "name = \"1. bataillon ouvrier de Montpellier\" division_template = \"Brigade de Milice\" start_experience_factor = 0.2 start_equipment_factor = 0.9"
+		    owner = FFR
+				}
+			create_unit = {
+		    division = "name = \"2. bataillon ouvrier de Montpellier\" division_template = \"Brigade de Milice\" start_experience_factor = 0.2 start_equipment_factor = 0.9"
+		    owner = FFR
+				}
+
+		    }
+			
+			24 = {
+			create_unit = {
+		    division = "name = \"1. bataillon ouvrier de Orleans\" division_template = \"Brigade de Milice\" start_experience_factor = 0.2 start_equipment_factor = 0.9"
+		    owner = FFR
+				}
+			create_unit = {
+		    division = "name = \"2. bataillon ouvrier de Orleans\" division_template = \"Brigade de Milice\" start_experience_factor = 0.2 start_equipment_factor = 0.9"
+		    owner = FFR
+				}
+
+		    }
+			
+			15 = {
+			create_unit = {
+		    division = "name = \"1. bataillon ouvrier de Normandie\" division_template = \"Brigade de Milice\" start_experience_factor = 0.2 start_equipment_factor = 0.9"
+		    owner = FFR
+				}
+			create_unit = {
+		    division = "name = \"2. bataillon ouvrier de Normandie\" division_template = \"Brigade de Milice\" start_experience_factor = 0.2 start_equipment_factor = 0.9"
+		    owner = FFR
+				}
+
+		    }
+			
+			
+			
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Forming_the_Provisional_Government
+		icon = GFX_FRA_The_Assembly_of_the_Peoples_Delegates
+		cost = 7
+		x = 0
+		y = 2
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Requesting_Accord_Intervention
+			focus = FFR_Pivoting_to_Domestic_Organisations
+		}
+		available = {
+		has_war = no
+		controls_state = 16
+		}
+		relative_position_id = FFR_Vive_la_France
+		ai_will_do = {
+		base = 30
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Forming_the_Provisional_Government"
+			FFR = { set_cosmetic_tag = FFR_Provisional_GOV }
+			retire_ideology_leader = paternal_autocrat
+			create_country_leader = {
+			name = "René Mayer"
+			desc = "Rene_Mayer_DESC"
+			picture = "Rene_Mayer.dds"
+			expire = "1965.1.1"
+			ideology = social_liberalism
+			traits = {}
+			}
+			create_country_leader = {
+			name = "Guy Mollet"
+			desc = "Guy_Mollet_DESC"
+			picture = "Guy_Mollet.dds"
+			expire = "1965.1.1"
+			ideology = liberal_socialism
+			traits = {}
+			}
+			create_country_leader = {
+			name = "Daniel Mayer"
+			desc = "Daniel_Mayer_DESC"
+			picture = "Daniel_Mayer.dds"
+			expire = "1965.1.1"
+			ideology = democratic_socialism
+			traits = {}
+			}
+			create_country_leader = {
+			name = "Charles Tillon"
+			desc = "Charles_Tillon_DESC"
+			picture = "Charles_Tillon.dds"
+			expire = "1965.1.1"
+			ideology = bordigism
+			traits = {}
+			}
+			create_country_leader = {
+			name = "Jacques Duclos"
+			desc = "Jacques_Duclos_DESC"
+			picture = "Jacques_Duclos.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {}
+			}
+			hidden_effect = { remove_ideas = FFR_Extreme_Unrest }
+
+			remove_ideas = FFR_french_limbo
+			remove_ideas = FFR_minority_state
+			if = {
+				limit = {
+					has_idea = FFR_revolutionary_spirit
+				}
+				remove_ideas = FFR_revolutionary_spirit
+			}
+			if = {
+				limit = {
+					has_idea = FFR_revolutionary_spirit_2
+				}
+				remove_ideas = FFR_revolutionary_spirit_2
+			}
+			add_political_power = 50
+			set_capital = { state = 16 }
+			if = {
+				limit = {
+					OR = {
+						is_subject_of = USA
+						is_subject_of = ENG	
+					}
+				}
+				OVERLORD = {
+					set_autonomy = {
+						target = FFR
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Maintaining_the_CNF
+		icon = GFX_FRA_Negotiate_with_RFL
+		cost = 8
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Forming_the_Provisional_Government
+		}
+		mutually_exclusive = { focus = FFR_Preemptive_Purges }
+		relative_position_id = FFR_Forming_the_Provisional_Government
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_Maintaining_the_CNF"
+		add_popularity = {
+    	ideology = social_democrat
+    	popularity = 0.08
+			}
+		add_popularity = {
+    	ideology = liberal
+    	popularity = 0.06
+			}
+		add_popularity = {
+    	ideology = conservative
+    	popularity = 0.04
+			}
+		add_stability = 0.1	
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Preemptive_Purges
+		icon = GFX_FFR_Premitive_Purges
+		cost = 7
+		x = 2
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Forming_the_Provisional_Government
+		}
+		mutually_exclusive = { focus = FFR_Maintaining_the_CNF }
+		relative_position_id = FFR_Forming_the_Provisional_Government
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Preemptive_Purges"
+			add_ideas = FFR_premitive_purges
+			remove_ideas = FFR_democratic_chaos
+			FFR = { country_event = twrNewFrance.26 }
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Coup_France
+		icon = GFX_FRA_The_France_of_Tommorow
+		cost = 7
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Preemptive_Purges
+		}
+		available = {
+		always = no
+		}
+		mutually_exclusive = { focus = FFR_De_Gaulles_France }
+		mutually_exclusive = { focus = FFR_Primacy_of_the_Left }
+		relative_position_id = FFR_Preemptive_Purges
+		ai_will_do = {
+		base = 15
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Primacy_of_the_Left"
+			
+			news_event = { id = twrNewFrance.32 days = 1 }
+			
+			remove_ideas = FFR_premitive_purges
+			
+			add_stability = -0.05
+
+			retire_country_leader = yes
+			# Paternal Autocracy
+			create_country_leader = {
+				name = "Raoul Salan"
+				desc = "Raoul_Salan_DESC"
+				picture = "Raoul_Salan.dds"
+				expire = "1965.1.1"
+				ideology = military_dictatorshipz
+				traits = {}
+			}
+			every_unit_leader = {
+			limit = { has_trait = communist_sympathizer }
+			retire = yes
+			}
+			add_timed_idea = {
+              idea = FFR_end_of_purges
+               days = 120
+            }
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Primacy_of_the_Left
+		icon = GFX_FRA_National_and_Popular_Revolution
+		cost = 7
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Preemptive_Purges
+		}
+		available = {
+		always = no
+		}
+		mutually_exclusive = { focus = FFR_De_Gaulles_France }
+		mutually_exclusive = { focus = FFR_Coup_France }
+		relative_position_id = FFR_Preemptive_Purges
+		ai_will_do = {
+		base = 12
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Primacy_of_the_Left"
+
+			news_event = { id = twrNewFrance.21 days = 1 }
+			
+			remove_ideas = FFR_premitive_purges
+			add_political_power = -100
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = FFR_Commie
+			
+			add_popularity = {
+    	      ideology = marxist_leninist
+    	      popularity = 0.65
+			}
+			add_timed_idea = {
+              idea = FFR_end_of_purges
+               days = 120
+            }
+			set_politics = {
+	        ruling_party = marxist_leninist
+            elections_allowed = no
+            }
+			
+			every_unit_leader = {
+			limit = { NOT = { has_trait = communist_sympathizer } }
+			retire = yes
+			}
+
+			every_navy_leader = {
+			retire = yes
+			}
+		}
+	}
+	
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Proleteriat_Unite
+		icon = GFX_GENERIC_Workers_Right
+		cost = 8
+		x = 22
+		y = 0
+		available_if_capitulated = yes
+		available = {
+		has_completed_focus = FFR_Primacy_of_the_Left
+
+		}
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Proleteriat_Unite"
+			add_ideas = FFR_international_vanguard
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_United_Front_Work
+		icon = GFX_GENERIC_Workers_Paradise
+		cost = 8
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Proleteriat_Unite
+		}
+		relative_position_id = FFR_Proleteriat_Unite
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_United_Front_Work"
+			add_stability = 0.05
+		    add_political_power = 150
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_All_Power_Assembly
+		icon = GFX_SOV_traditionalist_socialism
+		cost = 8
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_United_Front_Work
+		}
+		mutually_exclusive = {
+		focus = FFR_Fourth_Republic
+        focus = FFR_President_Republic
+		}
+		relative_position_id = FFR_United_Front_Work
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_All_Power_Assembly"
+		add_ideas = SOV_Refined_Stalinism
+		country_event = twrNewFrance.33
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Popular_Dictatorship
+		icon = GFX_SOV_expand_nkvd
+		cost = 8
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_All_Power_Assembly
+		}
+		relative_position_id = FFR_All_Power_Assembly
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Popular_Dictatorship"
+
+			add_popularity = {
+    	    ideology = marxist_leninist
+    	    popularity = 1.0
+			}
+		}
+	}
+	
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Free_Beautiful
+		icon = GFX_FFR_Free_French
+		cost = 8
+		x = 2
+		y = 0
+		available_if_capitulated = yes
+		available = {
+		OR = {
+		has_completed_focus = FFR_Maintaining_the_CNF
+		has_completed_focus = FFR_Coup_France
+			}
+		}
+		relative_position_id = FFR_Proleteriat_Unite
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Free_Beautiful"
+			if = {
+				limit = {
+					has_idea = FFR_revolutionary_spirit
+				}
+				remove_ideas = FFR_revolutionary_spirit
+			}
+			if = {
+				limit = {
+					has_idea = FFR_revolutionary_spirit_2
+				}
+				remove_ideas = FFR_revolutionary_spirit_2
+			}
+			add_ideas = industrialised_nation
+			add_ideas = TWR_mixed_economy
+		}
+	}
+	
+	shared_focus = {
+	cancelable = yes
+		id = FFR_De_Gaulles_France
+		icon = GFX_FFR_De_Gaulles_France
+		cost = 7
+		x = 2
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Preemptive_Purges
+		}
+		available = {
+		always = no
+		}
+		mutually_exclusive = { focus = FFR_Primacy_of_the_Left }
+		mutually_exclusive = { focus = FFR_Coup_France }
+		relative_position_id = FFR_Preemptive_Purges
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_De_Gaulles_France"
+		news_event = { id = twrNewFrance.20 days = 1 }
+		remove_ideas = FFR_premitive_purges
+		create_country_leader = {
+		name = "Charles de Gaulle"
+		desc = "Gaulle_2_DESC"
+		picture = "Charles_De_Gaulle_2.dds"
+		expire = "1965.1.1"
+		ideology = duumvirist_federalism
+		traits = {}
+		}
+		add_timed_idea = {
+              idea = FFR_end_of_purges
+              days = 120
+        }
+		add_popularity = {
+    	     ideology = paternal_autocrat
+    	     popularity = 1.0
+			}
+		}
+	}
+	
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Begin_Reconstruction
+		icon = GFX_GENERIC_Construction_Engineering
+		cost = 8
+		x = 2
+		y = 0
+		available_if_capitulated = yes
+		available = {
+		has_completed_focus = FFR_De_Gaulles_France
+		}
+		relative_position_id = FFR_Free_Beautiful
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_Begin_Reconstruction"
+		add_ideas = cs_generic_construction_speed
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Father_Gaulle
+		icon = GFX_FRA_Meeting_with_De_Gaulle
+		cost = 7
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Begin_Reconstruction
+		}
+		available = {
+		
+		}
+		relative_position_id = FFR_Begin_Reconstruction
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Father_Gaulle"
+		    add_country_leader_trait = staunch_constitutionalist
+		    add_stability = 0.05
+		    add_political_power = 150
+		}
+	}
+	
+	shared_focus = {
+	cancelable = yes
+		id = FFR_President_Republic
+		icon = GFX_GENERIC_constitution_written
+		cost = 7
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Father_Gaulle
+		}
+		mutually_exclusive = {
+		focus = FFR_Fourth_Republic
+        focus = FFR_All_Power_Assembly
+		}
+		available = {
+		
+		}
+		relative_position_id = FFR_Father_Gaulle
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_President_Republic"
+			country_event = twrNewFrance.34  
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Salut_The_Chef
+		icon = GFX_GENERIC_Caesar
+		cost = 7
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_President_Republic
+		}
+		available = {
+		
+		}
+		relative_position_id = FFR_President_Republic
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FFR_President_Republic"
+		add_country_leader_trait = eternal_president
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Equration_Legale
+		icon = GFX_GENERIC_judicial_writing
+		cost = 8
+		x = -2
+		y = 0
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Proleteriat_Unite
+			focus = FFR_Free_Beautiful
+			focus = FFR_Begin_Reconstruction
+		
+		}
+		available = {
+		
+		}
+		relative_position_id = FFR_Father_Gaulle
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Free_Beautiful"
+			FFR = { country_event = twrNewFrance.25 }
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Fourth_Republic
+		icon = GFX_FFR_Fourth_Republic
+		cost = 8
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Equration_Legale
+		}
+		mutually_exclusive = {
+		focus = FFR_All_Power_Assembly
+        focus = FFR_President_Republic
+		}
+
+		available = {
+		has_completed_focus = FFR_Free_Beautiful
+		}
+		relative_position_id = FFR_Equration_Legale
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Fourth_Republic"
+			FFR = { country_event = twrNewFrance.24 }
+			remove_ideas = facade_democracy
+			add_ideas = established_democracy
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Join_UN
+		icon = GFX_GENERIC_United_Nations
+		cost = 8
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_President_Republic
+			focus = FFR_Fourth_Republic
+			focus = FFR_All_Power_Assembly
+		}
+
+		available = {
+		
+		}
+		relative_position_id = FFR_Fourth_Republic
+		ai_will_do = {
+		base = 30
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Join_UN"
+			set_country_flag = ALLOWED_TO_JOIN_UN
+			unlock_decision_tooltip = GENERIC_apply_to_join_un
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_Join_Accord
+		icon = GFX_GENERIC_TA_Government
+		cost = 9
+		x = 1
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Join_UN
+		}
+		mutually_exclusive = { focus = FFR_New_International }
+
+		available = {
+		
+		}
+		relative_position_id = FFR_Join_UN
+		ai_will_do = {
+			base = 5
+			modifier = {
+			add = 100
+			is_democratic = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Join_Accord"
+			TOR_motion_to_join = yes
+		}
+	}
+	shared_focus = {
+	cancelable = yes
+		id = FFR_New_International
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 9
+		x = -1
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Join_UN
+		}
+		mutually_exclusive = { focus = FFR_Join_Accord }
+		ai_will_do = {
+			base = 14
+		}
+
+		available = {
+		has_completed_focus = FFR_Proleteriat_Unite
+		OR = {
+			has_government = marxist_leninist
+			has_government = socialist
+		   }
+		}
+		
+		relative_position_id = FFR_Join_UN
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_Join_Accord"
+			custom_effect_tooltip = FFR_new_international
+			clr_ta_alignment = yes
+			country_event = twrNewFrance.38
+		}
+	}
+
+	shared_focus = {
+		cancelable = yes
+			id = FFR_Soviet_Aid
+			icon = GFX_SOV_kalashnikov_rifle
+			cost = 6
+			x = 1
+			y = 1
+			available_if_capitulated = yes
+			prerequisite = {
+				focus = FFR_New_International
+			}
+			available = {
+			has_completed_focus = FFR_New_International
+			OR = {
+				country_exists = SOV
+				country_exists = NOV
+				country_exists = KAZ
+			}
+			}
+			bypass = {
+				NOT = {
+					OR = {
+						country_exists = SOV
+						country_exists = NOV
+						country_exists = KAZ
+					}
+				}
+
+			}
+			
+			relative_position_id = FFR_New_International
+			
+		   ai_will_do = {
+			base = 20
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus FFR_Soviet_Aid"
+				#country_event = twrNewFrance.36
+				set_country_flag = time_to_send_commies_guns
+				unlock_decision_tooltip = FFR_Send_Soviet_aid
+
+			}
+	}
+	shared_focus = {
+		cancelable = yes
+			id = FFR_Rebel_Against_Fascisme
+			icon = GFX_SER_focus_death_to_fascism
+			cost = 6
+			x = 2
+			y = 0
+			available_if_capitulated = yes
+			prerequisite = {
+				focus = FFR_New_International
+				focus = FFR_Join_Accord
+			}
+			available = {
+			RUZ = { has_war_with = GRM }
+			}
+			relative_position_id = FFR_Soviet_Aid
+			
+		   ai_will_do = {
+			   base = 0
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus FFR_Rebel_Against_Fascisme"
+				create_wargoal = {
+					type = take_state_focus
+					target = GRM
+					generator = { 28 762 }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = ITA
+					generator = { 735 764 }
+				}
+
+			}
+	}
+	shared_focus = {
+		cancelable = yes
+			id = FFR_French_Soviet_Legion
+			icon = GFX_SOV_Oath_of_Reclamation
+			cost = 6
+			x = -1
+			y = 1
+			available_if_capitulated = yes
+			prerequisite = {
+				focus = FFR_New_International
+			}
+			available = {
+			has_completed_focus = FFR_New_International
+			
+			}
+
+			
+			relative_position_id = FFR_New_International
+			
+		   ai_will_do = {
+			  base = 20
+
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus FFR_French_Soviet_Legion"
+				unlock_decision_tooltip = FFR_International_legions
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = SOV
+					value = 500
+				}
+
+			}
+	}
+	
+	shared_focus = {
+	cancelable = yes
+		id = FFR_French_Liberation_Army
+		icon = GFX_FRA_french_military
+		cost = 5.00
+		x = 3
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = FFR_Vive_la_France
+		}
+		relative_position_id = FFR_Vive_la_France
+		ai_will_do = {
+		base = 30
+		}
+		available = {
+		has_war_with = FRA
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FFR_French_Liberation_Army"
+			
+		add_ideas = FFR_army_liberation	
+		capital_scope = {
+			create_unit = {
+				division = "name = \"1ère Division d'Infanterie\" division_template = \"Infanterie-Division-FFR\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+				owner = ROOT
+			}
+		}
+		
+			
+		}
+	}

@@ -1,0 +1,202 @@
+TWR_political_decisions = {
+    
+    # Political Power Decisions
+    TWR_hold_election = {
+        icon = generic_election
+        
+        fire_only_once = no
+        days_remove = 70
+        
+        cost = 150
+        
+        remove_effect = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
+            add_stability = 0.05
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_war = no
+            has_stability < 0.8
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+            has_war = no
+        }
+    }
+    
+    TWR_political_pressure = {
+        icon = generic_political_pressure
+        
+        fire_only_once = no
+        days_remove = 30
+        
+        cost = 50
+        
+        remove_effect = {
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.05
+            }
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_war = no
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+            has_war = no
+        }
+    }
+    
+    # Stability Decisions
+    TWR_improve_relations = {
+        icon = generic_improve_relations
+        
+        fire_only_once = no
+        days_remove = 30
+        
+        cost = 25
+        
+        remove_effect = {
+            add_stability = 0.02
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_stability < 0.8
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+        }
+    }
+    
+    TWR_anti_corruption_campaign = {
+        icon = generic_anti_corruption
+        
+        fire_only_once = no
+        days_remove = 90
+        
+        cost = 100
+        
+        remove_effect = {
+            add_stability = 0.05
+            add_war_support = 0.02
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_stability < 0.8
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+        }
+    }
+    
+    # War Support Decisions
+    TWR_propaganda_campaign = {
+        icon = generic_propaganda
+        
+        fire_only_once = no
+        days_remove = 30
+        
+        cost = 50
+        
+        remove_effect = {
+            add_war_support = 0.05
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_war_support < 0.8
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+        }
+    }
+    
+    TWR_military_parade = {
+        icon = generic_military_parade
+        
+        fire_only_once = no
+        days_remove = 30
+        
+        cost = 25
+        
+        remove_effect = {
+            add_war_support = 0.02
+            add_stability = 0.01
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_war_support < 0.8
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+        }
+    }
+    
+    # Ideology Decisions
+    TWR_ideological_campaign = {
+        icon = generic_ideological_campaign
+        
+        fire_only_once = no
+        days_remove = 30
+        
+        cost = 50
+        
+        remove_effect = {
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.05
+            }
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_war = no
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+            has_war = no
+        }
+    }
+    
+    TWR_political_reform = {
+        icon = generic_political_reform
+        
+        fire_only_once = no
+        days_remove = 90
+        
+        cost = 100
+        
+        remove_effect = {
+            add_stability = 0.05
+            add_popularity = {
+                ideology = ROOT
+                popularity = 0.05
+            }
+        }
+        
+        available = {
+            has_idea = generic_ideas
+            has_stability < 0.8
+        }
+        
+        visible = {
+            has_idea = generic_ideas
+        }
+    }
+} 

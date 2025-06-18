@@ -1,0 +1,145 @@
+ai_strategy_plan = {
+    id = generic_ideology_ns
+    enable = { has_country_flag = generic_ideology_ns }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_NS_Political_Reform
+        focus = GEN_NS_Support_Movement
+        focus = GEN_NS_Unite_Nation
+        focus = GEN_NS_Strengthen_State
+        focus = GEN_NS_Reform_Government
+        focus = GEN_NS_Establish_Order
+        focus = GEN_NS_New_Leadership
+        focus = GEN_NS_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_fas
+    enable = { has_country_flag = generic_ideology_fas }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_FAS_Political_Reform
+        focus = GEN_FAS_Support_Movement
+        focus = GEN_FAS_Unite_Nation
+        focus = GEN_FAS_Strengthen_State
+        focus = GEN_FAS_Reform_Government
+        focus = GEN_FAS_Establish_Order
+        focus = GEN_FAS_New_Leadership
+        focus = GEN_FAS_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_fal
+    enable = { has_country_flag = generic_ideology_fal }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_FAL_Political_Reform
+        focus = GEN_FAL_Support_Movement
+        focus = GEN_FAL_Religious_Unity
+        focus = GEN_FAL_Strengthen_State
+        focus = GEN_FAL_Reform_Government
+        focus = GEN_FAL_Establish_Order
+        focus = GEN_FAL_New_Leadership
+        focus = GEN_FAL_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_soc
+    enable = { has_country_flag = generic_ideology_soc }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_SOC_Political_Reform
+        focus = GEN_SOC_Support_Movement
+        focus = GEN_SOC_Welfare_Reforms
+        focus = GEN_SOC_Strengthen_State
+        focus = GEN_SOC_Reform_Government
+        focus = GEN_SOC_Establish_Order
+        focus = GEN_SOC_New_Leadership
+        focus = GEN_SOC_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_lib
+    enable = { has_country_flag = generic_ideology_lib }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_LIB_Political_Reform
+        focus = GEN_LIB_Support_Movement
+        focus = GEN_LIB_Economic_Reforms
+        focus = GEN_LIB_Strengthen_State
+        focus = GEN_LIB_Reform_Government
+        focus = GEN_LIB_Establish_Order
+        focus = GEN_LIB_New_Leadership
+        focus = GEN_LIB_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_con
+    enable = { has_country_flag = generic_ideology_con }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_CON_Political_Reform
+        focus = GEN_CON_Support_Movement
+        focus = GEN_CON_Tradition_and_Order
+        focus = GEN_CON_Strengthen_State
+        focus = GEN_CON_Reform_Government
+        focus = GEN_CON_Establish_Order
+        focus = GEN_CON_New_Leadership
+        focus = GEN_CON_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_mar
+    enable = { has_country_flag = generic_ideology_mar }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_MAR_Political_Reform
+        focus = GEN_MAR_Support_Movement
+        focus = GEN_MAR_Workers_Councils
+        focus = GEN_MAR_Strengthen_State
+        focus = GEN_MAR_Reform_Government
+        focus = GEN_MAR_Establish_Order
+        focus = GEN_MAR_New_Leadership
+        focus = GEN_MAR_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_sta
+    enable = { has_country_flag = generic_ideology_sta }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_STA_Political_Reform
+        focus = GEN_STA_Support_Movement
+        focus = GEN_STA_Industrialization
+        focus = GEN_STA_Strengthen_State
+        focus = GEN_STA_Reform_Government
+        focus = GEN_STA_Establish_Order
+        focus = GEN_STA_New_Leadership
+        focus = GEN_STA_Revolution
+    }
+}
+ai_strategy_plan = {
+    id = generic_ideology_ana
+    enable = { has_country_flag = generic_ideology_ana }
+    ai_strategy = {
+        id = focus_tree
+        value = 200
+        focus = GEN_ANA_Political_Reform
+        focus = GEN_ANA_Support_Movement
+        focus = GEN_ANA_Direct_Democracy
+        focus = GEN_ANA_Strengthen_State
+        focus = GEN_ANA_Reform_Government
+        focus = GEN_ANA_Establish_Order
+        focus = GEN_ANA_New_Leadership
+        focus = GEN_ANA_Revolution
+    }
+}
+# Random path: AI will pick a random ideology path if the random flag is set (optional, can be expanded for more variety) 

@@ -1,0 +1,14 @@
+focus_tree = {
+	id = TWR_LOL
+	country = {
+		factor = 0 
+		modifier = {
+			add = 10
+			tag = LOL
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+
+ 	continuous_focus_position = { x = 50 y = -1000 }

@@ -1,0 +1,23 @@
+focus_tree = {
+	id = PHI_starting_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PHI
+		}
+	}
+	shared_focus = PHI_Quirinos_Third_Year
+	shared_focus = PHI_The_Huk_Insurrection
+}
+focus_tree = {
+	id = HUK_starting_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HUK
+		}
+	}
+	shared_focus = HUK_eleven_years_of_resistance
+}

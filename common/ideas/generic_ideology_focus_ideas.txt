@@ -1,0 +1,156 @@
+ideas = {
+    country = {
+        # National Socialist
+        ns_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = 0.02
+            }
+        }
+        ns_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.03
+                war_support_factor = 0.02
+            }
+        }
+        # Falangist
+        fal_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                compliance_gain = 0.01
+                stability_factor = 0.02
+            }
+        }
+        fal_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                resistance_target = -0.02
+                stability_factor = 0.02
+            }
+        }
+        # Social Democrat
+        soc_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.01
+                stability_factor = 0.02
+            }
+        }
+        soc_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.01
+                stability_factor = 0.02
+            }
+        }
+        # Liberal
+        lib_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                trade_opinion_factor = 0.02
+                stability_factor = 0.01
+            }
+        }
+        lib_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                production_efficiency_cap_factor = 0.01
+                stability_factor = 0.01
+            }
+        }
+        # Conservative
+        con_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.03
+                stability_factor = 0.02
+            }
+        }
+        con_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                division_defense_factor = 0.02
+                stability_factor = 0.02
+            }
+        }
+        # Marxist
+        mar_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                factory_output = 0.01
+                stability_factor = 0.01
+            }
+        }
+        mar_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                resource_gain_efficiency = 0.01
+                stability_factor = 0.01
+            }
+        }
+        # Stalinist
+        sta_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                construction_speed_factor = 0.01
+                stability_factor = 0.01
+            }
+        }
+        sta_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                fortification_factor = 0.01
+                stability_factor = 0.01
+            }
+        }
+        # Anarchist
+        ana_political_reform_idea = {
+            picture = GFX_idea_generic_political_reform
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                resistance = 0.01
+                stability_factor = 0.01
+            }
+        }
+        ana_establish_order_idea = {
+            picture = GFX_idea_generic_establish_order
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.01
+                stability_factor = 0.01
+            }
+        }
+    }
+} 

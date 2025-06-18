@@ -1,0 +1,1619 @@
+######Philipino Navigation
+#Philipino Starting tree
+#Philipino HULK tree
+#Hukbalahad Starting tree
+#######
+
+####Philipino Starting tree
+shared_focus = {
+	cancelable = yes
+	id = PHI_Quirinos_Third_Year
+	icon = GFX_PHI_Quirinos_Secon_Term
+	x = 2
+	y = 0
+	cost = 1
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Quirinos_Third_Year"
+		country_event = { hours = 2 id = twrphilipines.1 }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_The_1952_SONA
+	icon = GFX_PHI_The_1952_SONA
+	prerequisite = { focus = PHI_Quirinos_Third_Year }
+	relative_position_id = PHI_Quirinos_Third_Year
+	x = 0
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_The_1952_SONA"
+		country_event = { hours = 2 id = twrphilipines.3 }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_Establish_the_Commission_of_Volcanology
+	icon = GFX_PHI_The_Commission_of_Volcanology
+	prerequisite = { focus = PHI_The_1952_SONA }
+	available = { 
+		custom_trigger_tooltip = {
+		tooltip = PHI_Huk_Insurrection_Addressed
+		has_completed_focus = PHI_The_Huk_Insurrection
+			}
+	}
+	relative_position_id = PHI_The_1952_SONA
+	x = -5
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Establish_the_Commission_of_Volcanology"
+		add_to_variable = {
+            var = PHI_IDEA2_research_speed_factor
+			tooltip = PHI_IDEA2_research_speed_factor_tt
+            value = 0.01
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Establish_the_Rural_Bank_of_the_Philipines
+	icon = GFX_PHI_Establish_the_Rural_Bank_of_the_Philippines
+	prerequisite = { focus = PHI_Establish_the_Commission_of_Volcanology }
+	relative_position_id = PHI_Establish_the_Commission_of_Volcanology
+	x = -1
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Establish_the_Rural_Bank_of_the_Philipines"
+		add_to_variable = {
+            var = PHI_IDEA2_global_building_slots
+			tooltip = PHI_IDEA2_global_building_slots_tt
+            value = 0.02
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Insurence_programs
+	icon = GFX_GENERIC_Healthcare_Bill
+	prerequisite = { focus = PHI_Establish_the_Commission_of_Volcanology }
+	relative_position_id = PHI_Establish_the_Commission_of_Volcanology
+	x = 1
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Insurence_programs"
+		add_to_variable = {
+            var = PHI_IDEA2_monthly_population
+			tooltip = PHI_IDEA2_monthly_population_tt
+            value = 0.50
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Matters_of_Quezoon
+	icon = GFX_RAJ_Bose
+	prerequisite = { focus = PHI_Establish_the_Rural_Bank_of_the_Philipines }
+	relative_position_id = PHI_Establish_the_Commission_of_Volcanology
+	x = -1
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Matters_of_Quezoon"
+		327 = {
+		   	add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 1
+			    instant_build = yes
+			}
+	    }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Union_Strethening
+	icon = GFX_SPA_Union
+	prerequisite = { focus = PHI_Insurence_programs }
+	relative_position_id = PHI_Establish_the_Commission_of_Volcanology
+	x = 1
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {#LOC
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Union_Strethening"
+		add_to_variable = {
+            var = PHI_IDEA3_production_speed_buildings_factor
+            value = -0.05
+			tooltip = PHI_IDEA3_production_speed_buildings_factor_tt
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_For_better_tomorow
+	icon = GFX_ENG_National_Housing_Service
+	prerequisite = { focus = PHI_Union_Strethening }
+	prerequisite = { focus = PHI_Matters_of_Quezoon }
+	relative_position_id = PHI_Establish_the_Commission_of_Volcanology
+	x = 0
+	y = 3
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_For_better_tomorow"
+	    add_political_power = 50
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Continue_the_Fireside_Chats
+	icon = GFX_PHI_Continue_the_Fireside_Chats
+	prerequisite = { focus = PHI_The_1952_SONA }
+	available = { 
+		custom_trigger_tooltip = {
+		tooltip = PHI_Huk_Insurrection_Addressed
+		has_completed_focus = PHI_The_Huk_Insurrection
+			}
+	}
+	relative_position_id = PHI_The_1952_SONA
+	x = 0
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+	log = "[GetDateText]: [Root.GetName]: Focus PHI_Continue_the_Fireside_Chats"
+	add_stability = 0.02
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Fate_of_the_PSFJ
+	icon = GFX_PHI_The_Fate_of_the_PSFFE
+	prerequisite = { focus = PHI_Continue_the_Fireside_Chats }
+	relative_position_id = PHI_Continue_the_Fireside_Chats
+	x = 0
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Fate_of_the_PSFJ"
+		country_event = { hours = 12 id = twrphilipines.7 }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Meeting_with_the_Industrialists
+	icon = GFX_GENERIC_Room_Meeting
+	prerequisite = { focus = PHI_Fate_of_the_PSFJ }
+	relative_position_id = PHI_Continue_the_Fireside_Chats
+	x = -1
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Meeting_with_the_Industrialists"
+		country_event = { hours = 12 id = twrphilipines.5 }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Meeting_with_the_JUSMAG_PHIL
+	icon = GFX_PHI_A_Meeting_with_the_JUSMAG
+	prerequisite = { focus = PHI_Fate_of_the_PSFJ }
+	relative_position_id = PHI_Continue_the_Fireside_Chats
+	x = 1
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Meeting_with_the_JUSMAG_PHIL"
+		country_event = { hours = 12 id = twrphilipines.6 }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Question_Of_forgeain_military_bases
+	icon = GFX_RAJ_Bose
+	prerequisite = { focus = PHI_Meeting_with_the_JUSMAG_PHIL }
+	prerequisite = { focus = PHI_Meeting_with_the_Industrialists }
+	relative_position_id = PHI_Continue_the_Fireside_Chats
+	x = 0
+	y = 3
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus Meeting With The JUSMAG-PHIL"
+		country_event = { hours = 12 id = twrphilipines.6 }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_The_Romulo_International_Missions
+	icon = GFX_PHI_The_Romulo_Plan
+	prerequisite = { focus = PHI_The_1952_SONA }
+	available = { 
+		custom_trigger_tooltip = {
+		tooltip = PHI_Huk_Insurrection_Addressed
+		has_completed_focus = PHI_The_Huk_Insurrection
+			}
+	}	
+	relative_position_id = PHI_The_1952_SONA
+	x = 5
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_The_Romulo_International_Missions"
+		country_event = { hours = 12 id = twrphilipines.4 }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_Diplomatic_Ventures_to_Korea
+	icon = GFX_PHI_Diplomatic_Ventures_to_Korea
+	prerequisite = { focus = PHI_The_Romulo_International_Missions }
+	relative_position_id = PHI_The_Romulo_International_Missions
+	x = -1
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Diplomatic_Ventures_to_Korea"
+		add_opinion_modifier = {
+            target = KOR
+            modifier = opening_up
+        }
+	add_political_power = 25
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_China_visit
+	icon = GFX_CHI_Party_Labour_Activism
+	prerequisite = { focus = PHI_The_Romulo_International_Missions }
+	relative_position_id = PHI_The_Romulo_International_Missions
+	x = 1
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_China_visit"
+		add_opinion_modifier = {
+            target = CHI
+            modifier = opening_up
+        }
+	add_political_power = 25
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Russia_Forgeain_meating
+	icon = GFX_RUS_The_White_Hawks_Doctrine
+	prerequisite = { focus = PHI_Diplomatic_Ventures_to_Korea }
+	relative_position_id = PHI_The_Romulo_International_Missions
+	x = -1
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Russia_Forgeain_meating"
+		add_opinion_modifier = {
+            target = RUS
+            modifier = opening_up
+        }
+	add_political_power = 25
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_The_Rain_Forest_Of_Indonesia
+	icon = GFX_RAJ_Bose
+	prerequisite = { focus = PHI_China_visit }
+	relative_position_id = PHI_The_Romulo_International_Missions
+	x = 1
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_The_Rain_Forest_Of_Indonesia"
+		add_opinion_modifier = {
+            target = INS
+            modifier = opening_up
+        }
+	add_political_power = 25
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Giant_of_in_the_East
+	icon = GFX_USA_Establish_the_Committee_on_American_Values
+	prerequisite = { focus = PHI_Russia_Forgeain_meating }
+	prerequisite = { focus = PHI_The_Rain_Forest_Of_Indonesia }
+	relative_position_id = PHI_The_Romulo_International_Missions
+	x = 0
+	y = 3
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Giant_of_in_the_East"
+		add_opinion_modifier = {
+            target = USA
+            modifier = opening_up
+        }
+	add_political_power = 25
+	}
+}
+
+###############################
+#### Philipino HULK tree ######
+###############################
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_The_Huk_Insurrection
+	icon = GFX_PHI_The_Huk_Insurrection
+	x = 16
+	y = 0
+	cost = 1
+	available = {
+		always = no
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_The_Huk_Insurrection"
+		add_political_power = 50
+		effect_tooltip = {
+			unlock_decision_category_tooltip = PHI_The_HMB_Insurrection
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Continue_the_PSYOP_Campaign
+	icon = GFX_PHI_Introduce_Psychological_Warfare
+	relative_position_id = PHI_The_Huk_Insurrection
+	prerequisite = { focus = PHI_The_Huk_Insurrection }
+	x = -4
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Continue_the_PSYOP_Campaign"
+		unlock_decision_tooltip = commence_force_x_operation
+				IF = {
+				limit = { has_dlc = "La Resistance" }
+				create_intelligence_agency = {
+                    name = "National Intelligence Coordinating Agency"
+                    icon = GFX_intelligence_agency_logo_generic_8
+                }
+				add_ideas = PHI_National_Intelligence_Coordinating_Agency_Rich
+			}
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+				}
+				add_ideas = PHI_National_Intelligence_Coordinating_Agency_Broke
+			}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Continue_the_EDCOR_Project
+	icon = GFX_PHI_Continue_EDCOR
+	prerequisite = { focus = PHI_The_Huk_Insurrection }
+	relative_position_id = PHI_The_Huk_Insurrection
+	x = 0
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Continue_the_EDCOR_Project"
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Pleading_for_guns
+	icon = GFX_USA_firepower_doctrine
+	prerequisite = { focus = PHI_The_Huk_Insurrection }
+	relative_position_id = PHI_The_Huk_Insurrection
+	x = 4
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Pleading_for_guns"
+		USA = { country_event = { id = twrhuk_insurgency.1401 } }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Try_to_know_what_they_want
+	icon = GFX_PHI_Listen_to_their_Pleas
+	prerequisite = { focus = PHI_Continue_the_PSYOP_Campaign }
+	relative_position_id = PHI_Continue_the_PSYOP_Campaign
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Try_to_know_what_they_want"
+		country_event = { id = twrhuk_insurgency.11}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Promote_Valeriano_tacticks
+	icon = GFX_PHI_promote_valeriano_tactics
+	prerequisite = { focus = PHI_Continue_the_EDCOR_Project }
+	relative_position_id = PHI_Continue_the_EDCOR_Project
+	x = 0
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Promote_Valeriano_tacticks"
+		custom_effect_tooltip = PHI_Valeriano_tacticks
+		add_to_variable = {
+            var = PHI_width_var
+            value = 2
+        }
+		clamp_temp_variable = {
+            var = PHI_width_var
+            min = 1
+			max = 12
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Emegrency_traning_protocol
+	icon = GFX_GENERIC_Holding_Gun
+	prerequisite = { focus = PHI_Pleading_for_guns }
+	relative_position_id = PHI_Pleading_for_guns
+	x = 0
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Emegrency_traning_protocol"
+		add_timed_idea = {
+            idea = PHI_More_Trops_Traning
+            days = 270
+        }
+		add_to_variable = {
+            var = PHI_Expirience_var
+            value = 1
+            tooltip = PHI_traning_increase_by_one
+        }
+	    clamp_temp_variable = {
+            var = PHI_Expirience_var
+            min = 0
+		    max = 1                        
+		}
+	}
+}
+	
+shared_focus = {
+	cancelable = yes
+	id = PHI_Offer_a_hand
+	icon = GFX_PHI_A_Temporary_Ceasefire
+	prerequisite = { focus = PHI_Try_to_know_what_they_want }
+	mutually_exclusive = { focus = PHI_Continue_the_Mailed_Fist_Policy }
+	relative_position_id = PHI_Continue_the_PSYOP_Campaign
+	x = 0
+	y = 2
+	cost = 2
+	available = {
+		NOT = {
+			has_war_with = HUK
+		}
+		HUK = {
+			has_completed_focus = HUK_Tarucs_realism
+		}
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Offer_a_hand"
+		country_event = { id = twrhuk_insurgency.12 days = 12 }
+	    add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.10
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Grant_War_Veteran_Benifits
+	icon = GFX_GENERIC_Asia_Army_Bill
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { focus = PHI_Offer_a_hand }
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_draw_a_middle_line }
+	x = -1
+	y = 1
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Grant_War_Veterans_Benifits"
+	    add_popularity = {
+            ideology = liberal
+            popularity = 0.05
+        }
+	    add_popularity = {
+            ideology = conservative
+            popularity = 0.05
+        }
+	    add_popularity = {
+            ideology = bolshevik_leninist
+            popularity = 0.05
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_draw_a_middle_line
+	icon = GFX_GENERIC_Adapt_Constitution
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { focus = PHI_Offer_a_hand }
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_Grant_War_Veteran_Benifits }	
+	x = 1
+	y = 1
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_draw_a_middle_line"
+		add_popularity = {
+            ideology = liberal
+            popularity = 0.05
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Promise_Hulk_directed_rual_reforms
+	icon = GFX_GENERIC_land_redistribution
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { 
+	focus = PHI_draw_a_middle_line
+	focus = PHI_Grant_War_Veteran_Benifits	
+	}
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_The_Peasants_advisors }
+	mutually_exclusive = { focus = PHI_Goverment_line }	
+	x = -2
+	y = 2
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Promise_Hulk_directed_rual_reforms"
+		add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.10
+        }
+		add_popularity = {
+            ideology = conservative
+            popularity = 0.05
+        }
+		add_popularity = {
+            ideology = bolshevik_leninist
+            popularity = -0.05
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_The_Peasants_advisors
+	icon = GFX_SER_focus_agagrariaism
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { 
+	focus = PHI_draw_a_middle_line
+	focus = PHI_Grant_War_Veteran_Benifits	
+	}
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_Promise_Hulk_directed_rual_reforms }
+	mutually_exclusive = { focus = PHI_Goverment_line }	
+	x = 0
+	y = 2
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_The_Peasants_advisors"
+		add_popularity = {
+            ideology = bolshevik_leninist
+            popularity = 0.05
+        }
+		add_popularity = {
+            ideology = liberal
+            popularity = -0.05
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Goverment_line
+	icon = GFX_GENERIC_Government
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { 
+	focus = PHI_draw_a_middle_line
+	focus = PHI_Grant_War_Veteran_Benifits	
+	}
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_Promise_Hulk_directed_rual_reforms }
+	mutually_exclusive = { focus = PHI_The_Peasants_advisors }
+	x = 2
+	y = 2
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Goverment_line"
+		add_popularity = {
+            ideology = liberal
+            popularity = 0.10
+        }
+		add_popularity = {
+            ideology = conservative
+            popularity = 0.05
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Reainstate_the_Socalist_party
+	icon = GFX_ITA_Approach_the_Socialists
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { 
+	focus = PHI_Promise_Hulk_directed_rual_reforms
+	focus = PHI_The_Peasants_advisors
+	focus = PHI_Goverment_line	
+	}
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_Aceptem_into_politicks }
+	mutually_exclusive = { focus = PHI_Let_The_Trails_Begin }	
+	x = -2
+	y = 3
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Reainstate_the_Socalist_party"
+		add_popularity = {
+            ideology = socialist
+            popularity = 0.20
+        }
+		add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.15
+        }
+		add_popularity = {
+            ideology = conservative
+            popularity = 0.10
+        }
+		add_popularity = {
+            ideology = social_democrat
+            popularity = 0.05
+        }
+	    hidden_effect = {
+		    add_popularity = {
+                ideology = bolshevik_leninist
+                popularity = -0.15
+            }
+		    add_popularity = {
+                ideology = marxist_leninist
+                popularity = -0.15
+            }
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Aceptem_into_politicks
+	icon = GFX_USA_coalition
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { 
+	focus = PHI_Promise_Hulk_directed_rual_reforms
+	focus = PHI_The_Peasants_advisors
+	focus = PHI_Goverment_line	
+	}
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_Reainstate_the_Socalist_party }
+	mutually_exclusive = { focus = PHI_Let_The_Trails_Begin }	
+	x = 0
+	y = 3
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Aceptem_into_politicks"
+	    add_popularity = {
+            ideology = social_democrat
+            popularity = 0.20
+        }
+		add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+		add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.05
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Let_The_Trails_Begin
+	icon = GFX_GENERIC_secret_service
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { 
+	focus = PHI_Promise_Hulk_directed_rual_reforms
+	focus = PHI_The_Peasants_advisors
+	focus = PHI_Goverment_line	
+	}
+	relative_position_id = PHI_Offer_a_hand
+	mutually_exclusive = { focus = PHI_Reainstate_the_Socalist_party }
+	mutually_exclusive = { focus = PHI_Aceptem_into_politicks }
+	x = 2
+	y = 3
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Let_The_Trails_Begin"
+		add_popularity = {
+            ideology = liberal
+            popularity = 0.15
+        }
+		add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.05
+        }
+		add_popularity = {
+            ideology = socialist
+            popularity = -0.15
+        }
+		add_popularity = {
+            ideology = bolshevik_leninist
+            popularity = -0.15
+        }
+		add_popularity = {
+            ideology = marxist_leninist
+            popularity = -0.15
+        }
+	}
+}	
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_The_Pampanga_Accords
+	icon = GFX_PHI_The_Pampanga_Accords
+	available = {
+		NOT = {
+			has_war_with = HUK
+		    custom_trigger_tooltip = {
+			    tooltip = PHI_we_were_not_forced_to_chose_oither_path
+			    has_country_flag = PHI_War_invetable
+		    }
+		}
+	}
+	prerequisite = { 
+	focus = PHI_Reainstate_the_Socalist_party
+	focus = PHI_Aceptem_into_politicks
+	focus = PHI_Let_The_Trails_Begin	
+	}
+	prerequisite = { 
+	focus = PHI_Showing_a_good_face
+	}
+	relative_position_id = PHI_Offer_a_hand
+	available = {
+	}
+	x = 0
+	y = 4
+	cost = 6
+	ai_will_do = {
+		base = 10
+	}
+	select_effect = {
+		country_event = { days = 2 id = twrhuk_insurgency.13 }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_The_Pampanga_Accords"
+		custom_effect_tooltip = PHI_Pampanga_Accords_tt
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Establish_ACCFAA
+	icon = GFX_PHI_Establish_ACCFA_Better
+	prerequisite = { focus = PHI_Promote_Valeriano_tacticks }
+	relative_position_id = PHI_Promote_Valeriano_tacticks
+	x = 0
+	y = 3
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Establish_ACCFAA"
+		add_stability = 0.10
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Showing_a_good_face
+	icon = GFX_PHI_showing_a_good_face
+	prerequisite = { focus = PHI_Establish_ACCFAA }
+	relative_position_id = PHI_Promote_Valeriano_tacticks
+	x = 0
+	y = 4
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Showing_a_good_face"
+		add_timed_idea = {
+		    idea = PHI_Show_For_Pesants
+			days = 180
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Continue_the_Mailed_Fist_Policy
+	icon = GFX_PHI_Strengthe_the_Mailed_Fist_Policy
+	prerequisite = { focus = PHI_Emegrency_traning_protocol }
+	mutually_exclusive = { focus = PHI_Offer_a_hand }
+	relative_position_id = PHI_Pleading_for_guns
+	x = 0
+	y = 2
+	cost = 3
+	available = {
+	}
+	bypass = {
+		has_war_with = HUK
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Continue_the_Mailed_Fist_Policy"
+		add_war_support = 0.1
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Crushing_the_movment
+	icon = GFX_OST_German_Military
+	prerequisite = { focus = PHI_Continue_the_Mailed_Fist_Policy }
+	relative_position_id = PHI_Continue_the_Mailed_Fist_Policy
+	x = 0
+	y = 1
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Crushing_the_movment"
+	    add_war_support = 0.05
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Strenghten_the_Constabulary
+	icon = GFX_PHI_Expand_the_Constabulary
+	prerequisite = { focus = PHI_Crushing_the_movment }
+	relative_position_id = PHI_Continue_the_Mailed_Fist_Policy
+	x = -2
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Strenghten_the_Constabulary"
+		custom_effect_tooltip = PHI_Constabulary_spawn
+		hidden_effect = {
+		    division_template = {
+			    name = "Constabulary"
+			    division_names_group = PHI_POL_01
+			    regiments = {
+				    militia = { x = 0 y = 0 }
+				    militia = { x = 0 y = 1 }
+				    militia = { x = 1 y = 0 }
+				    militia = { x = 1 y = 1 }
+				    militia = { x = 2 y = 0 }
+				    militia = { x = 2 y = 1 }
+			    }
+		        support = {
+                    military_police = { x = 0 y = 0 }
+                }
+		    }
+		    random_owned_state = {
+			    create_unit = {
+			        division = "name = \"1st Constabulary Regiment\" division_template = \"Constabulary\" start_experience_factor = 1 start_equipment_factor = 0.3  start_manpower_factor = 1.0" owner = ROOT
+			    }
+				create_unit = {
+			        division = "name = \"2nd Constabulary Regiment\" division_template = \"Constabulary\" start_experience_factor = 1 start_equipment_factor = 0.3  start_manpower_factor = 1.0" owner = ROOT
+			    }
+			}
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Operation_Raining_Inferno
+	icon = GFX_PHI_Operation_Raining_Inferno
+	prerequisite = { focus = PHI_Crushing_the_movment }
+	relative_position_id = PHI_Continue_the_Mailed_Fist_Policy
+	x = 0
+	y = 2
+	cost = 3
+	available = {
+		has_country_flag = PHI_Operation_Inferno_Greenlit
+		has_country_flag = PHI_National_act_completed
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Operation_Raining_Inferno"
+		country_event = { days = 1 id = twrhuk_insurgency.7 }
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_Operation_Lightning_Thunder
+	icon = GFX_PHI_The_Final_Push
+	prerequisite = { focus = PHI_Crushing_the_movment }
+	relative_position_id = PHI_Continue_the_Mailed_Fist_Policy
+	x = 2
+	y = 2
+	cost = 3
+	available = {
+		has_country_flag = PHI_National_act_completed
+	}
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Operation_Lightning_Thunder"
+		effect_tooltip = {
+			unlock_decision_tooltip = commence_for_operation_thunder_lightning
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Final_plans
+	icon = GFX_GENERIC_Report
+	prerequisite = { 
+	focus = PHI_Strenghten_the_Constabulary
+	focus = PHI_Operation_Raining_Inferno
+	focus = PHI_Operation_Lightning_Thunder
+	}
+	relative_position_id = PHI_Continue_the_Mailed_Fist_Policy
+	x = 0
+	y = 3
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Final_plans"
+		add_timed_idea = {
+		    idea = PHI_Final_Plans
+		    days = 360
+		}
+		add_to_variable = {
+            var = PHI_width_var
+            value = 1
+        }
+		clamp_temp_variable = {
+            var = PHI_width_var
+            min = 1
+			max = 12
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Strike_the_heart
+	icon = GFX_PHI_Strike_The_Heart
+	prerequisite = { focus = PHI_Final_plans}
+	prerequisite = { focus = PHI_Showing_a_good_face}
+	relative_position_id = PHI_Continue_the_Mailed_Fist_Policy
+	bypass = {
+		has_war_with = HUK
+	}
+	x = 0
+	y = 4
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Strike_the_heart"
+		custom_effect_tooltip = PHI_start_the_war
+		hidden_effect = {
+		    declare_war_on = {
+                target = HUK
+                type = annex_everything
+            }
+		    PHI_Start_War = yes
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = PHI_Leassons_From_the_Huk_Insurrection
+	icon = GFX_PHI_The_Lessons_from_the_Insurrection
+	prerequisite = { 
+	focus = PHI_Strike_the_heart
+    focus = PHI_The_Pampanga_Accords
+	}
+	relative_position_id = PHI_Strike_the_heart
+	x = -4
+	y = 1
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_Leassons_From_the_Huk_Insurrection"
+		army_experience = 50
+	}
+}
+
+shared_focus = {
+	cancelable = yes
+	id = PHI_The_End_of_the_Fire
+	available = {
+		NOT = {
+			country_exists = HUK
+		}
+	}
+	icon = GFX_PHI_The_End_of_the_Fire
+	prerequisite = { focus = PHI_Leassons_From_the_Huk_Insurrection }
+	relative_position_id = PHI_Strike_the_heart
+	x = -4
+	y = 2
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PHI_The_End_of_the_Fire"
+		add_political_power = 150
+		add_stability = 0.2
+		custom_effect_tooltip = END_OF_CONTENT_PHI
+	}
+}
+##########Hukbalahad Starting tree
+shared_focus = {
+	cancelable = yes
+	id = HUK_eleven_years_of_resistance
+	icon = GFX_PHI_The_Huk_Insurrection
+	x = 10
+	y = 0
+	cost = 3
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		add_political_power = 15
+		country_event = { days = 1 id = twrhuks.1}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_old_diviade
+	prerequisite = { focus = HUK_eleven_years_of_resistance }
+	icon = GFX_PHI_Old_diviade
+	x = 8
+	y = 1
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		add_stability = -0.05
+		country_event = { days = 1 id = twrhuks.2}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_burning_jungle
+	prerequisite = { focus = HUK_eleven_years_of_resistance }
+	icon = GFX_GEN_Burn_the_Jungle
+	x = 10
+	y = 1
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		unlock_decision_category_tooltip = HUK_The_HMB_Insurrection
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_a_call_for_liberation
+	prerequisite = { focus = HUK_eleven_years_of_resistance }
+	icon = GFX_HUK_Call_for_liberation
+	x = 12
+	y = 1
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		country_event = { days = 1 id = twrhuks.3 }
+		unlock_decision_tooltip = HUK_village_volunteer_force
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_looming_eagle
+	prerequisite = { focus = HUK_old_diviade }
+	prerequisite = { focus = HUK_burning_jungle }
+	icon = GFX_PHI_Loming_eagel
+	x = 9
+	y = 2
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		add_opinion_modifier = {
+            target = USA
+            modifier = americas_foreign_policy
+        }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_shadow_Indiustry
+	prerequisite = { focus = HUK_burning_jungle }
+	prerequisite = { focus = HUK_a_call_for_liberation }
+	icon = GFX_HUK_Shadow_Industry
+	x = 11
+	y = 2
+	cost = 5
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		country_event = twrhuks.4
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_call_the_emergency_conference
+	prerequisite = { focus = HUK_shadow_Indiustry }
+	prerequisite = { focus = HUK_looming_eagle }
+	icon = GFX_PHI_Call_An_Emergency_Conference
+	x = 10
+	y = 3
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		country_event = { days = 1 id = twrhuks.5}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_Tarucs_realism
+	prerequisite = { focus = HUK_call_the_emergency_conference }
+	icon = GFX_PHI_Tarucs_realism
+	mutually_exclusive {focus = HUK_Lavas_idealism }
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = always_available_no
+			has_country_flag = Huk_chose_Taruc
+		}
+	}
+	x = 7
+	y = 4
+	cost = 0
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_Lavas_idealism
+	prerequisite = { focus = HUK_call_the_emergency_conference }
+	mutually_exclusive {focus = HUK_Tarucs_realism}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = always_available_no
+			has_country_flag = Huk_chose_lava
+		}
+	}
+	icon = GFX_PHI_Lavas_idealism
+	x = 13
+	y = 4
+	cost = 0
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_hint_at_peace
+	prerequisite = { focus = HUK_Tarucs_realism }
+	icon = GFX_CHI_Urging_Calm_in_Vietnam
+	x = 8
+	y = 5
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+	add_stability = 0.05
+	1034 = {
+		add_building_construction = {
+		type = bunker
+		level = 1
+		instant_build = yes
+		province = {
+			all_provinces = yes
+				}
+			}
+		}
+	1037 = {
+		add_building_construction = {
+		type = bunker
+		level = 1
+		instant_build = yes
+		province = {
+			all_provinces = yes
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_enforce_discipline
+	prerequisite = { 
+	focus = HUK_Tarucs_realism	 
+	focus = HUK_Lavas_idealism
+	}
+	icon = GFX_SOV_Party_Rules
+	x = 10
+	y = 5
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		swap_ideas = {
+		    remove_idea = HUK_Hukbalahap
+            add_idea = HUK_Hukbalahap2
+       }
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_intensify_huk_operations #Political Warfare
+	prerequisite = { focus = HUK_Lavas_idealism }
+	icon = GFX_GENERIC_Commissars_Red
+	x = 12
+	y = 5
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		unlock_decision_tooltip = HUK_political_training
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_anti_imperialist_alliance
+	prerequisite = { focus = HUK_hint_at_peace }
+	prerequisite = { focus = HUK_Tarucs_realism }
+	icon = GFX_GENERIC_Anti_US
+	x = 7
+	y = 6
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		add_manpower = 10000
+		add_political_power = 90
+		unlock_decision_tooltip = HUK_send_fighters_to_dagupan
+		unlock_decision_tooltip = HUK_send_fighters_to_northern_luzon
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_duel_of_fates #Nerd
+	prerequisite = { focus = HUK_enforce_discipline }
+	icon = GFX_GENERIC_Red_Thick_Book
+	x = 9
+	y = 6
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		army_experience = 25
+		add_command_power = 50
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_securing_our_benefactor
+	prerequisite = { focus = HUK_enforce_discipline	}
+	icon = GFX_PHI_securing_our_benefactor
+	x = 11
+	y = 6
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		RAJ = {
+	    country_event = twrhuks.6
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_Urban_Front
+	prerequisite = { focus = HUK_Lavas_idealism }
+	prerequisite = { focus = HUK_intensify_huk_operations }
+	icon = GFX_GENERIC_City_1
+	x = 13
+	y = 6
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		unlock_decision_tooltip = HUK_send_fighters_to_manila
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_oppose_reactionary_government
+	prerequisite = { focus = HUK_anti_imperialist_alliance }
+	prerequisite = { focus = HUK_duel_of_fates }
+	prerequisite = { focus = HUK_securing_our_benefactor }
+	icon = GFX_PHI_Oppose_reactionary_government
+	x = 8
+	y = 7
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		custom_effect_tooltip = HUK_peace_is_an_option
+		add_war_support = 0.1
+		add_political_power = 50
+		remove_ideas = HUK_Rifts_in_the_Committee
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_increase_supply_raids
+	prerequisite = { focus = HUK_duel_of_fates}
+	prerequisite = { focus = HUK_securing_our_benefactor}
+	icon = GFX_GENERIC_German_Style_Soldiers
+	x = 10
+	y = 7
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+	    custom_effect_tooltip = HUK_Effects_will_be_better
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_fanatical_resistance
+	prerequisite = { focus = HUK_Urban_Front }
+	icon = GFX_SOV_kruglov_worker_soldier
+	x = 12
+	y = 7
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		add_ideas = HUK_Fanatical_Resistance_idea
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = HUK_All_or_nothing
+	prerequisite = { 
+	focus = HUK_increase_supply_raids
+	}
+	prerequisite = { 
+	focus = HUK_fanatical_resistance
+	focus = HUK_oppose_reactionary_government
+	}
+	bypass = {
+		has_war_with = PHI
+	}
+	icon = GFX_PHI_all_or_nothing
+	x = 10
+	y = 8
+	cost = 7
+	ai_will_do = {
+		base = 10
+	}
+	completion_reward = {
+		custom_effect_tooltip = HUK_start_the_war
+		hidden_effect = {
+		    declare_war_on = {
+                target = PHI
+                type = annex_everything
+            }
+		    PHI_Start_War = yes
+	        add_timed_idea = {
+                idea = HUK_All_or_Nothing_idea
+                days = 180
+			}
+        }
+	}
+}

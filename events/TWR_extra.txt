@@ -1,0 +1,444 @@
+add_namespace = extra
+add_namespace = twrextra
+
+country_event = {
+    id = extra.1 #Anti-imperialism time
+    immediate = {log = "[GetDateText]: [Root.GetName]: event extra.1"}
+    title = extra.1.t
+    desc = extra.1.d
+    picture = GFX_news_event_corn_ho
+    
+    hidden = yes
+	fire_only_once = yes
+    
+     trigger = {
+            tag=BEL
+			owns_state=6
+			owns_state = 8
+        }
+		
+	immediate = {
+	BEL={
+			set_capital = { state = 6 }
+			}
+			ENG = {
+			end_puppet = BEL
+			}
+			LUX = {
+				remove_state_core = 6
+				remove_state_core = 34
+				remove_state_core = 802
+				remove_state_core = 36
+				remove_state_core = 35
+				remove_state_core = 7
+				remove_ideas = {
+					BEN_internal_conflict
+					bonus_for_revolts
+				}
+			}
+			BEL = {
+			remove_ideas = { BEL_government_in_exile } 
+			}
+	}
+    
+    option = {
+        name = extra.1.a
+            
+        }
+	option = {
+		name = extra.1.b
+			release_puppet = LUX
+			BEL = {
+			end_puppet = LUX
+			}
+			LUX = {
+			drop_cosmetic_tag = yes
+			}
+	}
+}
+country_event = {
+    id = extra.2 #Anti-imperialism time
+    immediate = {log = "[GetDateText]: [Root.GetName]: event extra.2"}
+    title = extra.2.t
+    desc = extra.2.d
+    picture = GFX_news_event_corn_ho
+    
+    hidden = yes
+    
+     trigger = {
+            tag=HOL
+			owns_state=7
+        }
+		
+	immediate = {
+	HOL={
+			set_capital = { state = 7 }
+			}
+			ENG = {
+			end_puppet = HOL
+			}
+			HOL = {
+			remove_ideas = {
+				HOL_government_in_exile
+				HOL_indonesian_war
+			}
+			}
+	}
+    
+    option = {
+        name = extra.2.a
+            
+        }
+}
+country_event = {
+    id = extra.3 #Anti-imperialism time
+    immediate = {log = "[GetDateText]: [Root.GetName]: event extra.3"}
+    title = extra.3.t
+    desc = extra.3.d
+    picture = GFX_news_event_corn_ho
+    
+    hidden = yes
+    
+     trigger = {
+			OR = {
+            tag=UKR
+			tag=SUK
+			tag=UKW
+			}
+			owns_state=202
+			202 = {
+				is_capital = no
+			}
+        }
+		
+	immediate = {
+	ROOT={
+			set_capital = { state = 202 }
+			}
+	}
+    
+    option = {
+        name = extra.3.a
+            
+        }
+}
+country_event = {
+    id = extra.4 #Anti-imperialism time
+    immediate = {log = "[GetDateText]: [Root.GetName]: event extra.4"}
+    title = extra.4.t
+    desc = extra.4.d
+    picture = GFX_news_event_corn_ho
+    
+    hidden = yes
+    
+     trigger = {
+            tag=AZR
+			owns_state=854
+			854 = {
+				is_capital = no
+			}
+        }
+    
+	immediate = {
+	ROOT={
+			set_capital = { state = 854 }
+			}
+	}
+	
+    option = {
+        name = extra.4.a
+            
+        }
+}
+
+country_event = {
+    id = extra.5 #Anti-imperialism time
+    immediate = {log = "[GetDateText]: [Root.GetName]: event extra.5"}
+    title = extra.5.t
+    desc = extra.5.d
+    picture = GFX_news_event_corn_ho
+    
+    hidden = yes
+    
+     trigger = {
+			OR = {
+            tag=FRA
+			tag = VIC
+			tag= FFR
+			}
+			owns_state=16
+			16 = {
+				is_capital = no
+			}
+        }
+		
+	immediate = {
+		ROOT={
+			set_capital = { state = 16 }
+			}
+	}
+    
+    option = {
+        name = extra.5.a
+            
+        }
+}
+country_event = {
+    id = extra.6 #Anti-imperialism time
+    immediate = {log = "[GetDateText]: [Root.GetName]: event extra.6"}
+    title = extra.6.t
+    desc = extra.6.d
+    picture = GFX_news_event_corn_ho
+    
+    hidden = yes
+    
+     trigger = {
+			tag = SSB
+			is_puppet_of = GER
+			NOT = {
+				has_global_flag = SSB_FIX
+			}
+				NOT = {
+					owns_state = 17
+				}
+				
+			}
+		
+	immediate = {
+		ROOT={
+			transfer_state = 17
+			}
+		set_global_flag = SSB_FIX
+	}
+    
+    option = {
+        name = extra.6.a
+            
+        }
+}
+country_event = { #Military Reboot
+	id = twrextra.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.1.t
+ 	desc = twrextra.1.d
+ 	picture = GFX_report_event_bonhoeffer
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			OR = { 
+			tag = PGR
+			tag = DDR
+			}
+			has_war = no
+		}
+	}
+ 	
+ 	option = { 
+ 		name = twrextra.1.a 
+		
+ 	}
+}
+country_event = { #Military Reboot
+	id = twrextra.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.2.t
+ 	desc = twrextra.2.d
+	
+	fire_only_once = yes
+	trigger = {
+		tag = KRA
+		is_ai = no
+	}
+ 	
+ 	option = { 
+ 		name = twrextra.2.a 
+		set_country_flag = KRA_Nice
+ 	}
+	option = { 
+ 		name = twrextra.2.b 
+		
+ 	}
+	option = {
+		name = twrextra.2.c
+		set_country_flag = KRA_GUAR
+	}
+}
+country_event = { #Military Reboot
+	id = twrextra.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.3.t
+ 	desc = twrextra.3.d
+
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = SBR
+			tag = KRA
+			tag = NOV
+			tag = RFP
+			tag = RUS
+		}
+		is_ai = no
+	}
+ 	
+ 	option = { 
+ 		name = twrextra.3.a 
+		set_country_flag = Greater_Revolt
+ 	}
+	option = { 
+ 		name = twrextra.3.b 
+		set_country_flag = Greater_Revolt2
+ 	}
+	option = {
+		name = twrextra.3.c
+	}
+}
+country_event = { #Military Reboot
+	id = twrextra.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.4.t
+ 	desc = twrextra.4.d
+ 	picture = GFX_news_event_new_german_army
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		is_ai = no
+	}
+ 	
+ 	option = { 
+ 		name = twrextra.4.a 
+		set_global_flag = SOV_YES
+ 	}
+	option = { 
+ 		name = twrextra.4.b 
+		
+ 	}
+}
+country_event = { #Military Reboot
+	id = twrextra.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.5.t
+ 	desc = twrextra.5.d
+ 	picture = GFX_news_event_new_german_army
+	fire_only_once = yes
+	trigger = {
+		tag = KAZ
+		owns_state = 993
+		has_war_with = TAJ
+	}
+	hidden = yes
+ 	
+ 	option = { 
+ 		name = twrextra.5.a 
+		TAJ = {
+				white_peace_with_ROOT = yes
+			}
+ 	}
+}
+country_event = { #Military Reboot
+	id = twrextra.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.6.t
+ 	desc = twrextra.6.d
+ 	picture = GFX_news_event_new_german_army
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		is_ai = no
+	}
+	
+ 	option = { 
+ 		name = twrextra.6.a 
+		set_global_flag = SOV_TROOPS
+ 	}
+	option = {
+		name = twrextra.6.b 
+	}
+}
+country_event = { #Military Reboot
+	id = twrextra.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.7.t
+ 	desc = twrextra.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+ 	option = { 
+ 		name = twrextra.7.a 
+		add_research_slot = 1
+ 	}
+}
+country_event = { #Military Reboot
+	id = twrextra.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.8.t
+ 	desc = twrextra.8.d
+ 	picture = GFX_news_event_new_german_army
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = SOV
+			tag = KAZ
+			tag = TRV
+			tag = NOV
+			tag = KRA
+			tag = RUS
+			tag = SBR
+			tag = RFP
+			tag = RMA
+		}
+		is_ai = no
+	}
+	
+ 	option = { 
+ 		name = twrextra.8.a 
+		set_global_flag = SOV_troops_annex
+ 	}
+	option = {
+		name = twrextra.8.b 
+	}
+}
+
+country_event = { #Military Reboot
+	id = twrextra.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.9.t
+ 	desc = twrextra.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = { 
+ 		name = twrextra.9.a 
+		GER = {
+		transfer_navy = {
+			target = DDR
+		}
+		}
+		HGR = {
+		transfer_navy = {
+			target = DDR
+		}
+		}
+ 	}
+}
+country_event = { #Military Reboot
+	id = twrextra.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrddr.52"}
+ 	title = twrextra.10.t
+ 	desc = twrextra.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = NOV
+		is_ai = no
+	}
+	
+	option = { 
+ 		name = twrextra.10.a 
+		set_global_flag = NOV_REUNITE
+ 	}
+	option = {
+		name = twrextra.10.b 
+	}
+}

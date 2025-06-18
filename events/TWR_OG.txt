@@ -1,0 +1,139 @@
+﻿add_namespace = twrog
+
+country_event = {
+	id = twrog.1
+	title = twrog.1.t
+	desc = twrog.1.d
+	
+	hidden = yes
+
+	trigger = { country_exists = SSB }
+	
+	fire_only_once = yes
+
+	option = {
+		name = twrog.1.a
+        SSB = { transfer_state = 763 }
+		SSB = { transfer_state = 17 }
+		SSB = { transfer_state = 3 }
+		763 = { add_core_of = SSB }
+		17 = { add_core_of = SSB }
+		762 = { add_core_of = SSB }
+		34 = { add_core_of = SSB }
+		6 = { add_core_of = SSB }
+	}
+}
+
+country_event = {
+	id = twrog.2
+	title = twrog.2.t
+	desc = twrog.2.d
+	
+	hidden = yes
+
+	trigger = {
+        tag = GER
+		has_country_flag = german_old_borders
+	    RKN = { is_subject_of = GER }
+        RKB = { is_subject_of = GER }
+	}
+
+	option = {
+	    name = twrog.2.a
+		GER = {
+		    annex_country = {
+	        target = RKN
+	        transfer_troops = no
+		    }
+		}
+	    GER = {
+		    annex_country = {
+	        target = RKB
+	        transfer_troops = no
+		    }
+		}
+	}
+}
+
+country_event = {
+	id = twrog.3
+	title = twrog.3.t
+	desc = twrog.3.d
+	picture = GFX_report_event_jonas_lie_coup
+	
+	trigger = {
+		tag = NOR
+		has_completed_focus = NOR_Hirden_Coup
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = twrnorway.12.a
+		complete_national_focus = NOR_ss_path
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = national_socialist
+		}
+		drop_cosmetic_tag = yes
+	}
+	option = {
+		name = twrog.3.b
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = twrog.4
+	title = twrog.4.t
+	desc = twrog.4.d
+	
+	hidden = yes
+
+	trigger = {
+        tag = HGR
+		has_country_flag = german_old_borders
+	    RKN = { is_subject_of = HGR }
+        RKB = { is_subject_of = HGR }
+	}
+
+	option = {
+	    name = twrog.2.a
+		HGR = {
+		    annex_country = {
+	        target = RKN
+	        transfer_troops = no
+		    }
+		}
+	    HGR = {
+		    annex_country = {
+	        target = RKB
+	        transfer_troops = no
+		    }
+		}
+	}
+}
+
+country_event = {
+	id = twrog.5
+	title = twrog.5.t
+	desc = twrog.5.d
+	
+	hidden = yes
+
+	trigger = {
+        tag = GER
+	    has_idea = GER_grand_power_struggles
+	}
+	
+	fire_only_once = yes
+
+	option = {
+	    name = twrog.2.a
+		17 = { set_demilitarized_zone = yes }
+		763 = { set_demilitarized_zone = yes }
+	}
+}

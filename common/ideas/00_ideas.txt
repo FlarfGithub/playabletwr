@@ -1,0 +1,42 @@
+country = {
+	political_advisor = {
+		cost = 150
+
+		TWR_ideology_drift_boost = {
+			allowed = {
+				has_dlc = "La Resistance"
+				OR = {
+					has_government = fascism
+					has_government = nationalism
+					has_government = despotism
+				}
+			}
+			idea_cost = 150
+			modifier = {
+				ideology_drift_defense = 0.15
+				ideology_drift = 0.15
+				democratic_drift = -0.10
+				fascism_drift = 0.10
+				twr_authoritarian_influence = 0.05
+			}
+		}
+
+		TWR_ideology_drift_reduction = {
+			allowed = {
+				has_dlc = "La Resistance"
+				OR = {
+					has_government = democracy
+					has_government = communism
+				}
+			}
+			idea_cost = 150
+			modifier = {
+				ideology_drift_defense = -0.10
+				ideology_drift = -0.10
+				stability_factor = 0.05
+				fascism_drift = -0.15
+				twr_resistance_support = 0.1
+			}
+		}
+	}
+}

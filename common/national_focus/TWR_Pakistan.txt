@@ -1,0 +1,27 @@
+focus_tree = {
+	id = PAK_Main_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PAK
+		}
+	}
+	shared_focus = PAK_Main_Pakistan_Zindabad
+}
+
+focus_tree = {
+	id = PAK_Socialist_tree
+	country = {
+		factor = 0
+	}
+	shared_focus = PAK_Soc_The_Revolution_is_Here
+}
+
+focus_tree = {
+	id = PAK_Islamist_tree
+	country = {
+		factor = 0
+	}
+	shared_focus = PAK_Islam_Allah_is_Great
+}

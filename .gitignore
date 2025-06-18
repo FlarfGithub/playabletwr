@@ -1,0 +1,46 @@
+# HOI4 Mod Gitignore
+# Exclude unnecessary files from version control
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log files
+*.log
+logs/
+
+# Cache files
+cache/
+*.cache
+
+# Compiled files
+*.pyc
+__pycache__/
+
+# Large binary files (if any)
+*.zip
+*.rar
+*.7z
+
+# Keep all mod files
+!*.txt
+!*.yml
+!*.mod
+!*.png
+!*.tga
+!*.dds
+!*.gui
+!*.gfx 

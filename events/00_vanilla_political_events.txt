@@ -1,0 +1,40 @@
+namespace = vanilla_political_events
+
+# Democratic Election Event
+country_event = {
+    id = vanilla_political_events.1
+    title = "Democratic Election!"
+    desc = "A new election is being held."
+    picture = GFX_report_event_democracy
+    trigger = { has_government = democratic }
+    option = {
+        name = "Let the people decide!"
+        set_politics = { ruling_party = democratic elections_allowed = yes }
+    }
+}
+
+# Civil War Event
+country_event = {
+    id = vanilla_political_events.2
+    title = "Civil War!"
+    desc = "A civil war has broken out."
+    picture = GFX_report_event_civil_war
+    trigger = { NOT = { has_government = democratic } }
+    option = {
+        name = "To arms!"
+        start_civil_war = { ideology = democratic size = 0.3 }
+    }
+}
+
+# Government Change Event
+country_event = {
+    id = vanilla_political_events.3
+    title = "Government Change!"
+    desc = "A new government has taken power."
+    picture = GFX_report_event_political
+    trigger = { }
+    option = {
+        name = "A new era begins."
+        set_politics = { ruling_party = ROOT }
+    }
+} 

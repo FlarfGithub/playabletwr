@@ -1,0 +1,8 @@
+random_faction_name = {
+	random_list = {
+		# Regional-based names
+		10 = { name = "[ROOT.GetRegion] Defense Pact" }
+		10 = { name = "[ROOT.GetContinent] Unity League" }
+		10 = { name = "[ROOT.GetArea] Cooperative" }
+	}
+}

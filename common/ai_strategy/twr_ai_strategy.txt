@@ -1,0 +1,46 @@
+operatives = {
+  weight = {
+    base = 1
+    modifier = {
+      factor = 3.0
+      has_idea = TWR_ideology_drift_boost
+      has_operative_trait = twr_propaganda_specialist
+    }
+  }
+}
+
+advisor_weights = {
+	weight = {
+		factor = 2.0
+		has_game_rule = {
+			rule = TWR_ai_ideology_advisors
+			option = TWR_ai_ideology_advisors_generic
+		}
+	}
+}
+
+    TWR_Burgundian_containment = {
+        factor = 3.0
+        modifier = {
+            factor = 2.0
+            has_government = burgundian_system
+            has_game_rule = { TWR_ai_ideology_advisors = all_countries }
+        }
+    }
+    
+    TWR_ideology_advisors_strategy = {
+        enable = { has_game_rule = TWR_ai_ideology_advisors }
+        
+        # Burgundian System Priority
+        if = {
+            limit = { has_government = burgundian_system }
+            factor = 2.0
+        }
+        
+        # General Government Weight
+        if = {
+            limit = { has_idea = TWR_General_Government_advisors }
+            factor = 1.5
+        }
+    }
+}

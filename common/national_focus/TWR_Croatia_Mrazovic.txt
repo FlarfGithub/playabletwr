@@ -1,0 +1,466 @@
+###############################################
+## SOCIALIST CROATIA TREE - Coded by Spyeter###
+###############################################
+shared_focus = {
+	id = CRO_The_People_Triumphant
+	icon = GFX_CRO_Mrazovic_Bust
+	cost = 5
+	x = 12
+	y = 0
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_People_Triumphant"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+		news_event = { id = croatianews.34 }
+		add_ideas = authoritarian_system
+		hidden_effect = {
+			retire_country_leader = yes
+			retire_ideology_leader = marxist_leninist
+			retire_ideology_leader = bolshevik_leninist
+			cro_commie_leaders = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Ending_Nationalism
+	icon = GFX_SER_focus_death_to_fascism
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_The_People_Triumphant
+	prerequisite = {
+		focus = CRO_The_People_Triumphant
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Ending_Nationalism"
+		add_timed_idea = {
+			days = 100
+			idea = CRO_Ending_Nationalism_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Secularize_The_Nation
+	icon = GFX_SER_focus_reluctant_secularism
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_People_Triumphant
+	prerequisite = {
+		focus = CRO_The_People_Triumphant
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Secularize_The_Nation"
+		add_political_power = 50
+        add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+        add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = 0.10
+		}
+        add_popularity = {
+			ideology = Marxist_leninist
+			popularity = 0.07
+		} 
+	}
+}
+
+shared_focus = {
+	id = CRO_Destroy_the_Ustase
+	icon = GFX_SER_focus_end_the_ustase
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_The_People_Triumphant
+	prerequisite = {
+		focus = CRO_The_People_Triumphant
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Destroy_the_Ustase"
+        remove_ideas = CRO_Ustashe_Resistance_idea
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = CRO_A_Call_To_The_Masses
+	icon = GFX_GENERIC_socialist_unity
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Destroy_the_Ustase
+	prerequisite = {
+		focus = CRO_Secularize_The_Nation
+	}
+	prerequisite = {
+		focus = CRO_Ending_Nationalism
+	}
+	prerequisite = {
+		focus = CRO_Destroy_the_Ustase
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_A_Call_To_The_Masses"
+		add_political_power = -100
+		add_manpower = 2000
+		add_war_support = 0.1
+		add_stability = -0.1
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Democratic_Planning
+	icon = GFX_GENERIC_modern_socialist_construction
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_A_Call_To_The_Masses
+	prerequisite = {
+		focus = CRO_A_Call_To_The_Masses
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Democratic_Planning"
+		add_ideas = CRO_Bottom_Up_Planning 
+		IF = {
+			limit = {
+				NOT = { has_idea = CRO_AM_Branko_Horvat }
+			}
+			add_ideas = CRO_AM_Branko_Horvat 
+		}
+		country_event = { hours = 2 id = twr_cro_flavour.17 }
+	}
+}
+
+shared_focus = {
+	id = CRO_Worker_Deatomization
+	icon = GFX_GENERIC_workers_professional
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Democratic_Planning
+	prerequisite = {
+		focus = CRO_Democratic_Planning
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Worker_Deatomization"
+		add_ideas = CRO_Worker_Detomization_idea		
+	}
+}
+
+shared_focus = {
+	id = CRO_Eradication_Of_Commodification
+	icon = GFX_GENERIC_socialist_production
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Worker_Deatomization
+	prerequisite = {
+		focus = CRO_Worker_Deatomization
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Eradication_Of_Commodification"
+		add_ideas = CRO_Eradication_Of_Commodification_idea
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Subsume_The_Hardliners
+	icon = GFX_focus_CDA_end_bourg_nationalism
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_A_Call_To_The_Masses
+	prerequisite = {
+		focus = CRO_A_Call_To_The_Masses
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Subsume_The_Hardliners"
+		swap_ideas = {
+			remove_idea = CRO_Unstable_Government_idea
+			add_idea = CRO_Unstable_Government_1_idea
+		}
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			cro_create_intelligence_agency = yes
+		}	
+		create_country_leader = {
+			name = "Collective Leadership"
+			desc = ""
+			picture = "ML_Collective_Leadership.dds"
+			expire = "1965.1.1"
+			ideology = marxism_leninism 
+			traits = {}
+		}	
+        add_popularity = {
+			ideology = marxist_leninist
+			popularity = -0.15
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Rearm_the_Republic
+	icon = GFX_GENERIC_Worker_Police
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Subsume_The_Hardliners
+	prerequisite = {
+		focus = CRO_Subsume_The_Hardliners
+	}
+    available = {
+        has_completed_focus = CRO_The_Worst_is_Behind_Us
+    }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Rearm_the_Republic"
+		add_timed_idea = {
+			idea = CRO_Rearming_the_Republic_idea 
+			days = 730
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Local_Autonomy
+	icon = GFX_SER_focus_sideline_republics
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Rearm_the_Republic
+	prerequisite = {
+		focus = CRO_Rearm_the_Republic
+	}
+	available = {
+        owns_state = 104
+        owns_state = 981
+        owns_state = 982
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Local_Autonomy"
+		hidden_effect = {
+			cro_remove_bosnia_modifiers = yes
+		}
+		104 = { add_core_of = CRO }
+		981 = { add_core_of = CRO }
+		982 = { add_core_of = CRO }
+		103 = { add_core_of = CRO }
+		819 = { add_core_of = CRO }
+		104 = { add_core_of = CRO }
+		163 = { add_core_of = CRO }
+		815 = { add_core_of = CRO }
+		813 = { add_core_of = CRO }
+		45 = { add_core_of = CRO }
+	}
+}
+
+shared_focus = {
+	id = CRO_Relax_State_Censorship
+	icon = GFX_GENERIC_Press_Censorship
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_A_Call_To_The_Masses
+	prerequisite = {
+		focus = CRO_A_Call_To_The_Masses
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Relax_State_Censorship"
+		add_timed_idea = {
+			idea = SER_Relaxing_state_censorship 
+			days = 730
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Attract_immigration
+	icon = GFX_GENERIC_Soviet_Partisans
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Relax_State_Censorship
+	prerequisite = {
+		focus = CRO_Relax_State_Censorship
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Attract_immigration"
+		add_timed_idea = {
+			idea = QUE_Relax_Immigration
+			days = 1000
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Deal_With_Church
+	icon = GFX_GENERIC_Catholic_Secular
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Attract_immigration
+	prerequisite = {
+		focus = CRO_Attract_immigration
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Deal_With_Church"
+		country_event = {
+			id = twrcroatia.144
+			hours = 2
+		}
+		add_timed_idea = {
+			idea = CRO_catholic_church_intimidated
+			days = 800
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Dawn_Of_A_Social_Revolution
+	icon = GFX_focus_prc_agrarian_socialism
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Deal_With_Church
+	prerequisite = {
+		focus = CRO_Eradication_Of_Commodification
+	}
+	prerequisite = {
+		focus = CRO_Local_Autonomy
+	}
+	prerequisite = {
+		focus = CRO_Deal_With_Church
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Dawn_Of_A_Social_Revolution"
+		IF = {
+			limit = {
+				has_idea = CRO_Unstable_Government_idea
+			}
+			remove_ideas = CRO_Unstable_Government_idea
+		}
+		else = {
+			remove_ideas = CRO_Unstable_Government_1_idea
+		}
+        add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = CRO_The_Liberation
+	icon = GFX_GENERIC_internationalism_Socialist
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = CRO_Dawn_Of_A_Social_Revolution
+	prerequisite = {
+		focus = CRO_Eradication_Of_Commodification
+	}
+	cancelable = yes
+	available = {
+		has_completed_focus = CRO_Dawn_Of_A_Social_Revolution
+		has_completed_focus = CRO_The_Worst_is_Behind_Us
+		has_completed_focus = CRO_Mediterranean_Navy_Expansion
+		has_completed_focus = CRO_Modernise_Our_Land_Forces
+		has_completed_focus = CRO_Improving_The_Airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Liberation"
+		complete_national_Focus = CRO_Yugo_Liberation
+                custom_effect_tooltip = CRO_balkan_socialist_liberation_decisions_tt
+                set_country_flag = CRO_socialist_puppets_decisions_flag
+	}
+}
+
+shared_focus = { 
+	id = CRO_Continuation_Of_Radicalism
+	icon = GFX_SOV_Young_Radicals
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_The_Liberation
+	prerequisite = {
+		focus = CRO_The_Liberation
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Continuation_Of_Radicalism"
+        country_event = { hours = 1 id = twrcroatia.86 }
+	}
+}
+
+shared_focus = { 
+	id = CRO_Mrazovics_Ascendance
+	icon = GFX_CRO_Mrazovics_Ascendance
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_The_Liberation
+	prerequisite = {
+		focus = CRO_The_Liberation
+	}
+	available = {
+		has_completed_focus = CRO_Yugo_Consolidate_Socialist_Yugoslavia
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Mrazovics_Ascendance"
+		country_event = { hours = 1 id = twrcroatia.85 }
+	}
+}
+
+shared_focus = { 
+	id = CRO_A_Peninsula_For_The_Worker
+	icon = GFX_GENERIC_Socialist_Unions
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = CRO_The_Liberation
+	prerequisite = {
+		focus = CRO_Continuation_Of_Radicalism
+	}
+	prerequisite = {
+		focus = CRO_Mrazovics_Ascendance
+	}
+	available = { is_faction_leader = yes }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_A_Peninsula_For_The_Worker"
+        country_event = { id = cro_endings.1 hours = 4 }
+	}
+}

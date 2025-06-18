@@ -1,0 +1,719 @@
+# FASCIST PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Fascist_Path
+  icon = GFX_GER_gray_swastika_government
+  x = 50
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Communist_Path focus = PTWR_Monarchist_Path focus = PTWR_Democratic_Path focus = PTWR_Authoritarian_Path focus = PTWR_Liberal_Path focus = PTWR_Conservative_Path focus = PTWR_Socialist_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = fascist popularity = 0.10 }
+    add_ideas = TWR_fascist_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_fascist_propaganda
+  icon = GFX_GER_Nazi_Diplomacy
+  relative_position_id = PTWR_Fascist_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Fascist_Path }
+  completion_reward = {
+    add_popularity = { ideology = fascist popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_fascist_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_fascist_mobilization
+  icon = GFX_GER_Fanatic_Germany
+  relative_position_id = PTWR_fascist_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_fascist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = fascist popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_fascist_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_fascist_victory
+  icon = GFX_GER_Germany_Once_More
+  relative_position_id = PTWR_fascist_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_fascist_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_fascist_movement_spirit
+    remove_ideas = TWR_fascist_propaganda_spirit
+    remove_ideas = TWR_fascist_mobilization_spirit
+    add_ideas = TWR_fascist_permanent_spirit
+    set_politics = { ruling_party = fascist elections_allowed = no }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_fascist_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_fascist_coup
+  icon = GFX_GER_Theatre_of_Death
+  relative_position_id = PTWR_fascist_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_fascist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = fascist popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_fascist_coup_spirit
+  }
+}
+
+# COMMUNIST PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Communist_Path
+  icon = GFX_SOV_communist_government
+  x = 75
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Monarchist_Path focus = PTWR_Democratic_Path focus = PTWR_Authoritarian_Path focus = PTWR_Liberal_Path focus = PTWR_Conservative_Path focus = PTWR_Socialist_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.10 }
+    add_ideas = TWR_communist_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_communist_propaganda
+  icon = GFX_SOV_NEP_Reports
+  relative_position_id = PTWR_Communist_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Communist_Path }
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_communist_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_communist_mobilization
+  icon = GFX_SOV_Politburo_Meeting
+  relative_position_id = PTWR_communist_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_communist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_communist_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_communist_victory
+  icon = GFX_SOV_Beria_Holding_On
+  relative_position_id = PTWR_communist_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_communist_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_communist_movement_spirit
+    remove_ideas = TWR_communist_propaganda_spirit
+    remove_ideas = TWR_communist_mobilization_spirit
+    add_ideas = TWR_communist_permanent_spirit
+    set_politics = { ruling_party = communist elections_allowed = no }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_communist_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_communist_coup
+  icon = GFX_SOV_Charge_Revisionists
+  relative_position_id = PTWR_communist_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_communist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_communist_coup_spirit
+  }
+}
+
+# MONARCHIST PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Monarchist_Path
+  icon = GFX_ENG_monarchist_government
+  x = 100
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Communist_Path focus = PTWR_Democratic_Path focus = PTWR_Authoritarian_Path focus = PTWR_Liberal_Path focus = PTWR_Conservative_Path focus = PTWR_Socialist_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = despotism popularity = 0.10 }
+    add_ideas = TWR_monarchist_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_monarchist_propaganda
+  icon = GFX_SER_focus_royal_yugoslavic_supremacy
+  relative_position_id = PTWR_Monarchist_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Monarchist_Path }
+  completion_reward = {
+    add_popularity = { ideology = despotism popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_monarchist_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_monarchist_mobilization
+  icon = GFX_SAR_The_Kingdom_of_the_White_Rajah
+  relative_position_id = PTWR_monarchist_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_monarchist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = despotism popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_monarchist_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_monarchist_victory
+  icon = GFX_SER_focus_challenge_royal_navy
+  relative_position_id = PTWR_monarchist_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_monarchist_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_monarchist_movement_spirit
+    remove_ideas = TWR_monarchist_propaganda_spirit
+    remove_ideas = TWR_monarchist_mobilization_spirit
+    add_ideas = TWR_monarchist_permanent_spirit
+    set_politics = { ruling_party = despotism elections_allowed = no }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_monarchist_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_monarchist_coup
+  icon = GFX_SER_focus_march_through_obrenovac
+  relative_position_id = PTWR_monarchist_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_monarchist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = despotism popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_monarchist_coup_spirit
+  }
+}
+
+# DEMOCRATIC PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Democratic_Path
+  icon = GFX_USA_secure_democracy
+  x = 125
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Communist_Path focus = PTWR_Monarchist_Path focus = PTWR_Authoritarian_Path focus = PTWR_Liberal_Path focus = PTWR_Conservative_Path focus = PTWR_Socialist_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.10 }
+    add_ideas = TWR_democratic_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_democratic_propaganda
+  icon = GFX_USA_bastion_of_democracy
+  relative_position_id = PTWR_Democratic_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Democratic_Path }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_democratic_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_democratic_mobilization
+  icon = GFX_USA_carrying_tafts_torch
+  relative_position_id = PTWR_democratic_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_democratic_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_democratic_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_democratic_victory
+  icon = GFX_USA_american_steel
+  relative_position_id = PTWR_democratic_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_democratic_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_democratic_movement_spirit
+    remove_ideas = TWR_democratic_propaganda_spirit
+    remove_ideas = TWR_democratic_mobilization_spirit
+    add_ideas = TWR_democratic_permanent_spirit
+    set_politics = { ruling_party = democratic elections_allowed = yes }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_democratic_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_democratic_coup
+  icon = GFX_USA_say_no_to_fascism
+  relative_position_id = PTWR_democratic_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_democratic_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_democratic_coup_spirit
+  }
+}
+
+# AUTHORITARIAN PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Authoritarian_Path
+  icon = GFX_TRV_The_Provisional_Military_Government
+  x = 150
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Communist_Path focus = PTWR_Monarchist_Path focus = PTWR_Democratic_Path focus = PTWR_Liberal_Path focus = PTWR_Conservative_Path focus = PTWR_Socialist_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.10 }
+    add_ideas = TWR_authoritarian_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_authoritarian_propaganda
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_Authoritarian_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Authoritarian_Path }
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_authoritarian_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_authoritarian_mobilization
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_authoritarian_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_authoritarian_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_authoritarian_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_authoritarian_victory
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_authoritarian_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_authoritarian_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_authoritarian_movement_spirit
+    remove_ideas = TWR_authoritarian_propaganda_spirit
+    remove_ideas = TWR_authoritarian_mobilization_spirit
+    add_ideas = TWR_authoritarian_permanent_spirit
+    set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_authoritarian_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_authoritarian_coup
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_authoritarian_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_authoritarian_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_authoritarian_coup_spirit
+  }
+}
+
+# LIBERAL PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Liberal_Path
+  icon = GFX_USA_secure_democracy
+  x = 175
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Communist_Path focus = PTWR_Monarchist_Path focus = PTWR_Democratic_Path focus = PTWR_Authoritarian_Path focus = PTWR_Conservative_Path focus = PTWR_Socialist_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.10 }
+    add_ideas = TWR_liberal_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_liberal_propaganda
+  icon = GFX_USA_bastion_of_democracy
+  relative_position_id = PTWR_Liberal_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Liberal_Path }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_liberal_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_liberal_mobilization
+  icon = GFX_USA_carrying_tafts_torch
+  relative_position_id = PTWR_liberal_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_liberal_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_liberal_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_liberal_victory
+  icon = GFX_USA_american_steel
+  relative_position_id = PTWR_liberal_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_liberal_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_liberal_movement_spirit
+    remove_ideas = TWR_liberal_propaganda_spirit
+    remove_ideas = TWR_liberal_mobilization_spirit
+    add_ideas = TWR_liberal_permanent_spirit
+    set_politics = { ruling_party = democratic elections_allowed = yes }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_liberal_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_liberal_coup
+  icon = GFX_USA_secure_democracy
+  relative_position_id = PTWR_liberal_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_liberal_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_liberal_coup_spirit
+  }
+}
+
+# CONSERVATIVE PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Conservative_Path
+  icon = GFX_ENG_monarchist_government
+  x = 200
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Communist_Path focus = PTWR_Monarchist_Path focus = PTWR_Democratic_Path focus = PTWR_Authoritarian_Path focus = PTWR_Liberal_Path focus = PTWR_Socialist_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.10 }
+    add_ideas = TWR_conservative_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_conservative_propaganda
+  icon = GFX_SER_focus_royal_yugoslavic_supremacy
+  relative_position_id = PTWR_Conservative_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Conservative_Path }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_conservative_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_conservative_mobilization
+  icon = GFX_SAR_The_Kingdom_of_the_White_Rajah
+  relative_position_id = PTWR_conservative_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_conservative_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_conservative_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_conservative_victory
+  icon = GFX_SER_focus_challenge_royal_navy
+  relative_position_id = PTWR_conservative_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_conservative_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_conservative_movement_spirit
+    remove_ideas = TWR_conservative_propaganda_spirit
+    remove_ideas = TWR_conservative_mobilization_spirit
+    add_ideas = TWR_conservative_permanent_spirit
+    set_politics = { ruling_party = democratic elections_allowed = yes }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_conservative_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_conservative_coup
+  icon = GFX_SER_focus_march_through_obrenovac
+  relative_position_id = PTWR_conservative_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_conservative_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = democratic popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_conservative_coup_spirit
+  }
+}
+
+# SOCIALIST PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Socialist_Path
+  icon = GFX_SOV_communist_government
+  x = 225
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Communist_Path focus = PTWR_Monarchist_Path focus = PTWR_Democratic_Path focus = PTWR_Authoritarian_Path focus = PTWR_Liberal_Path focus = PTWR_Conservative_Path focus = PTWR_Technocrat_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.10 }
+    add_ideas = TWR_socialist_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_socialist_propaganda
+  icon = GFX_SOV_NEP_Reports
+  relative_position_id = PTWR_Socialist_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Socialist_Path }
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_socialist_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_socialist_mobilization
+  icon = GFX_SOV_Politburo_Meeting
+  relative_position_id = PTWR_socialist_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_socialist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_socialist_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_socialist_victory
+  icon = GFX_SOV_Beria_Holding_On
+  relative_position_id = PTWR_socialist_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_socialist_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_socialist_movement_spirit
+    remove_ideas = TWR_socialist_propaganda_spirit
+    remove_ideas = TWR_socialist_mobilization_spirit
+    add_ideas = TWR_socialist_permanent_spirit
+    set_politics = { ruling_party = communist elections_allowed = no }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_socialist_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_socialist_coup
+  icon = GFX_SOV_Charge_Revisionists
+  relative_position_id = PTWR_socialist_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_socialist_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = communist popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_socialist_coup_spirit
+  }
+}
+
+# TECHNOCRAT PATH (TWR-style, comprehensive, dramatic, dynamic)
+shared_focus = {
+  id = PTWR_Technocrat_Path
+  icon = GFX_TRV_The_Provisional_Military_Government
+  x = 250
+  y = 0
+  cost = 10
+  prerequisite = { focus = GEN_Politics_And_Diplomacy }
+  mutually_exclusive = { focus = PTWR_Fascist_Path focus = PTWR_Communist_Path focus = PTWR_Monarchist_Path focus = PTWR_Democratic_Path focus = PTWR_Authoritarian_Path focus = PTWR_Liberal_Path focus = PTWR_Conservative_Path focus = PTWR_Socialist_Path }
+  available_if_capitulated = no
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.10 }
+    add_ideas = TWR_technocrat_movement_spirit
+    add_political_power = 25
+  }
+}
+shared_focus = {
+  id = PTWR_technocrat_propaganda
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_Technocrat_Path
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_Technocrat_Path }
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_technocrat_propaganda_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_technocrat_mobilization
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_technocrat_propaganda
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_technocrat_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.20 }
+    add_stability = -0.05
+    add_political_power = 50
+    add_ideas = TWR_technocrat_mobilization_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_technocrat_victory
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_technocrat_mobilization
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_technocrat_mobilization }
+  completion_reward = {
+    remove_ideas = TWR_technocrat_movement_spirit
+    remove_ideas = TWR_technocrat_propaganda_spirit
+    remove_ideas = TWR_technocrat_mobilization_spirit
+    add_ideas = TWR_technocrat_permanent_spirit
+    set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
+    add_stability = 0.10
+    add_political_power = 100
+    add_ideas = TWR_technocrat_victory_spirit
+  }
+}
+shared_focus = {
+  id = PTWR_technocrat_coup
+  icon = GFX_TRV_The_Provisional_Military_Government
+  relative_position_id = PTWR_technocrat_propaganda
+  x = 1
+  y = 1
+  cost = 10
+  prerequisite = { focus = PTWR_technocrat_propaganda }
+  completion_reward = {
+    add_popularity = { ideology = paternal_autocrat popularity = 0.40 }
+    add_stability = -0.20
+    add_ideas = TWR_technocrat_coup_spirit
+  }
+} 

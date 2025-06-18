@@ -1,0 +1,388 @@
+﻿l_english:
+
+ # Generic Ideology Focus Tree
+ TWR_generic_democratic_path:0 'Democratic Path'
+ TWR_generic_democratic_path_desc:0 'Our nation must embrace the principles of democracy and freedom.'
+ TWR_generic_democratic_reforms:0 'Democratic Reforms'
+ TWR_generic_democratic_reforms_desc:0 'Implement reforms to strengthen our democratic institutions.'
+ TWR_generic_democratic_consolidation:0 'Democratic Consolidation'
+ TWR_generic_democratic_consolidation_desc:0 'Consolidate our democratic system and ensure its stability.'
+
+ TWR_generic_fascist_path:0 'Fascist Path'
+ TWR_generic_fascist_path_desc:0 'Our nation needs strong leadership and national unity.'
+ TWR_generic_fascist_reforms:0 'Fascist Reforms'
+ TWR_generic_fascist_reforms_desc:0 'Implement reforms to strengthen our fascist institutions.'
+ TWR_generic_fascist_consolidation:0 'Fascist Consolidation'
+ TWR_generic_fascist_consolidation_desc:0 'Consolidate our fascist system and ensure its stability.'
+
+ TWR_generic_communist_path:0 'Communist Path'
+ TWR_generic_communist_path_desc:0 'The workers must unite and seize control of the means of production.'
+ TWR_generic_communist_reforms:0 'Communist Reforms'
+ TWR_generic_communist_reforms_desc:0 'Implement reforms to strengthen our communist institutions.'
+ TWR_generic_communist_consolidation:0 'Communist Consolidation'
+ TWR_generic_communist_consolidation_desc:0 'Consolidate our communist system and ensure its stability.'
+
+ TWR_generic_non_aligned_path:0 'Non-Aligned Path'
+ TWR_generic_non_aligned_path_desc:0 'We must maintain our independence and neutrality.'
+ TWR_generic_non_aligned_reforms:0 'Non-Aligned Reforms'
+ TWR_generic_non_aligned_reforms_desc:0 'Implement reforms to strengthen our non-aligned institutions.'
+ TWR_generic_non_aligned_consolidation:0 'Non-Aligned Consolidation'
+ TWR_generic_non_aligned_consolidation_desc:0 'Consolidate our non-aligned system and ensure its stability.'
+
+ TWR_generic_burgundian_path:0 'Burgundian Path'
+ TWR_generic_burgundian_path_desc:0 'We must embrace the Burgundian system for our nation's future.'
+ TWR_generic_burgundian_reforms:0 'Burgundian Reforms'
+ TWR_generic_burgundian_reforms_desc:0 'Implement reforms to strengthen our Burgundian institutions.'
+ TWR_generic_burgundian_consolidation:0 'Burgundian Consolidation'
+ TWR_generic_burgundian_consolidation_desc:0 'Consolidate our Burgundian system and ensure its stability.'
+
+ TWR_generic_despotism_path:0 'Despotism Path'
+ TWR_generic_despotism_path_desc:0 'A strong ruler is needed to guide our nation.'
+ TWR_generic_despotism_reforms:0 'Despotism Reforms'
+ TWR_generic_despotism_reforms_desc:0 'Implement reforms to strengthen our despotic institutions.'
+ TWR_generic_despotism_consolidation:0 'Despotism Consolidation'
+ TWR_generic_despotism_consolidation_desc:0 'Consolidate our despotic system and ensure its stability.'
+
+ TWR_generic_corporatist_path:0 'Corporatist Path'
+ TWR_generic_corporatist_path_desc:0 'The state and corporations must work together for national prosperity.'
+ TWR_generic_corporatist_reforms:0 'Corporatist Reforms'
+ TWR_generic_corporatist_reforms_desc:0 'Implement reforms to strengthen our corporatist institutions.'
+ TWR_generic_corporatist_consolidation:0 'Corporatist Consolidation'
+ TWR_generic_corporatist_consolidation_desc:0 'Consolidate our corporatist system and ensure its stability.'
+
+ TWR_generic_monarchist_path:0 'Monarchist Path'
+ TWR_generic_monarchist_path_desc:0 'The monarchy must be restored to its rightful place.'
+ TWR_generic_monarchist_reforms:0 'Monarchist Reforms'
+ TWR_generic_monarchist_reforms_desc:0 'Implement reforms to strengthen our monarchist institutions.'
+ TWR_generic_monarchist_consolidation:0 'Monarchist Consolidation'
+ TWR_generic_monarchist_consolidation_desc:0 'Consolidate our monarchist system and ensure its stability.'
+
+ TWR_generic_liberal_path:0 'Liberal Path'
+ TWR_generic_liberal_path_desc:0 'Individual freedom and free markets must be our guiding principles.'
+ TWR_generic_liberal_reforms:0 'Liberal Reforms'
+ TWR_generic_liberal_reforms_desc:0 'Implement reforms to strengthen our liberal institutions.'
+ TWR_generic_liberal_consolidation:0 'Liberal Consolidation'
+ TWR_generic_liberal_consolidation_desc:0 'Consolidate our liberal system and ensure its stability.'
+
+ # Military Branch
+ TWR_generic_military_reform:0 'Military Reform'
+ TWR_generic_military_reform_desc:0 'Our armed forces need modernization and reform to meet the challenges of modern warfare.'
+
+ TWR_generic_army_modernization:0 'Army Modernization'
+ TWR_generic_army_modernization_desc:0 'Our land forces must be equipped and trained to the highest standards.'
+
+ TWR_generic_navy_modernization:0 'Navy Modernization'
+ TWR_generic_navy_modernization_desc:0 'Our naval forces need new ships and better training to protect our interests at sea.'
+
+ TWR_generic_air_modernization:0 'Air Force Modernization'
+ TWR_generic_air_modernization_desc:0 'Our air force must be expanded and modernized to achieve air superiority.'
+
+ # Industrial Branch
+ TWR_generic_industrial_development:0 'Industrial Development'
+ TWR_generic_industrial_development_desc:0 'Our industry must be expanded to support our military and economic needs.'
+
+ TWR_generic_heavy_industry:0 'Heavy Industry'
+ TWR_generic_heavy_industry_desc:0 'Focus on developing heavy industry to support military production.'
+
+ TWR_generic_light_industry:0 'Light Industry'
+ TWR_generic_light_industry_desc:0 'Develop light industry to improve our economic efficiency.'
+
+ TWR_generic_consumer_industry:0 'Consumer Industry'
+ TWR_generic_consumer_industry_desc:0 'Expand consumer goods production to improve living standards.'
+
+ # Diplomatic Branch
+ TWR_generic_diplomatic_development:0 'Diplomatic Development'
+ TWR_generic_diplomatic_development_desc:0 'Strengthen our diplomatic corps and international relations.'
+
+ TWR_generic_alliance_building:0 'Alliance Building'
+ TWR_generic_alliance_building_desc:0 'Seek out potential allies and strengthen existing partnerships.'
+
+ TWR_generic_trade_agreements:0 'Trade Agreements'
+ TWR_generic_trade_agreements_desc:0 'Negotiate beneficial trade deals with other nations.'
+
+ TWR_generic_international_cooperation:0 'International Cooperation'
+ TWR_generic_international_cooperation_desc:0 'Work with other nations to achieve common goals.'
+
+ # Focuses
+ GEN_Political_Reform:0 'Political Reform'
+ GEN_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+
+ # Fascistic Ideologies
+ GEN_Support_National_Socialism:0 'Support National Socialism'
+ GEN_Support_National_Socialism_desc:0 'The National Socialist movement offers a strong, unified vision for our nation's future.'
+ GEN_Support_Fascism:0 'Support Fascism'
+ GEN_Support_Fascism_desc:0 'Fascism provides the strength and order our nation needs in these troubled times.'
+ GEN_Support_Falangism:0 'Support Falangism'
+ GEN_Support_Falangism_desc:0 'The Falangist movement offers a unique blend of traditional values and modern governance.'
+
+ # Democratic Ideologies
+ GEN_Support_Social_Democracy:0 'Support Social Democracy'
+ GEN_Support_Social_Democracy_desc:0 'Social Democracy offers a balanced approach to progress and social welfare.'
+ GEN_Support_Liberalism:0 'Support Liberalism'
+ GEN_Support_Liberalism_desc:0 'Liberalism champions individual freedoms and democratic values.'
+ GEN_Support_Conservatism:0 'Support Conservatism'
+ GEN_Support_Conservatism_desc:0 'Conservatism provides stability and respect for traditional values.'
+
+ # Communist Ideologies
+ GEN_Support_Marxism:0 'Support Marxism'
+ GEN_Support_Marxism_desc:0 'Marxism offers a scientific approach to social and economic progress.'
+ GEN_Support_Stalinism:0 'Support Stalinism'
+ GEN_Support_Stalinism_desc:0 'Stalinism provides a strong, centralized approach to building socialism.'
+ GEN_Support_Anarchism:0 'Support Anarchism'
+ GEN_Support_Anarchism_desc:0 'Anarchism offers a vision of society free from oppressive hierarchies.'
+
+ # Advisors
+ generic_national_socialist_advisor:0 'National Socialist Reformer'
+ generic_national_socialist_advisor_desc:0 'A dedicated National Socialist who works to spread the ideology.'
+ generic_fascist_advisor:0 'Fascist Reformer'
+ generic_fascist_advisor_desc:0 'A committed Fascist who promotes the ideology's ideals.'
+ generic_falangist_advisor:0 'Falangist Reformer'
+ generic_falangist_advisor_desc:0 'A Falangist activist working to spread the movement's message.'
+
+ generic_social_democrat_advisor:0 'Social Democratic Reformer'
+ generic_social_democrat_advisor_desc:0 'A Social Democrat working to promote progressive policies.'
+ generic_liberal_advisor:0 'Liberal Reformer'
+ generic_liberal_advisor_desc:0 'A Liberal activist promoting democratic values and individual freedoms.'
+ generic_conservative_advisor:0 'Conservative Reformer'
+ generic_conservative_advisor_desc:0 'A Conservative working to maintain traditional values and stability.'
+
+ generic_marxist_advisor:0 'Marxist Reformer'
+ generic_marxist_advisor_desc:0 'A Marxist theorist promoting scientific socialism.'
+ generic_stalinist_advisor:0 'Stalinist Reformer'
+ generic_stalinist_advisor_desc:0 'A Stalinist working to build a strong, centralized socialist state.'
+ generic_anarchist_advisor:0 'Anarchist Reformer'
+ generic_anarchist_advisor_desc:0 'An Anarchist activist working to dismantle oppressive hierarchies.'
+
+ # National Socialist Path
+ GEN_NS_Political_Reform:0 'National Socialist Political Reform'
+ GEN_NS_Political_Reform_desc:0 'Begin the process of National Socialist reform.'
+
+ GEN_NS_Support_Movement:0 'Support the Movement'
+ GEN_NS_Support_Movement_desc:0 'Increase support for the National Socialist movement.'
+
+ GEN_NS_Unite_Nation:0 'Unite the Nation'
+ GEN_NS_Unite_Nation_desc:0 'We must bring our people together under a single banner, united in purpose and vision.'
+
+ GEN_NS_Strengthen_State:0 'Strengthen the State'
+ GEN_NS_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+
+ GEN_NS_Reform_Government:0 'Reform the Government'
+ GEN_NS_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+
+ GEN_NS_Establish_Order:0 'Establish Order'
+ GEN_NS_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+
+ GEN_NS_New_Leadership:0 'New Leadership'
+ GEN_NS_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+
+ GEN_NS_Revolution:0 'National Socialist Revolution'
+ GEN_NS_Revolution_desc:0 'The revolution will bring about a new era of national unity and strength.'
+
+ # Fascist Path
+ GEN_FAS_Political_Reform:0 'Political Reform'
+ GEN_FAS_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+
+ GEN_FAS_Support_Movement:0 'Support the Movement'
+ GEN_FAS_Support_Movement_desc:0 'Increase support for the Fascist movement.'
+
+ GEN_FAS_Unite_Nation:0 'Unite the Nation'
+ GEN_FAS_Unite_Nation_desc:0 'We must bring our people together under a single banner, united in purpose and vision.'
+
+ GEN_FAS_Strengthen_State:0 'Strengthen the State'
+ GEN_FAS_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+
+ GEN_FAS_Reform_Government:0 'Reform the Government'
+ GEN_FAS_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+
+ GEN_FAS_Establish_Order:0 'Establish Order'
+ GEN_FAS_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+
+ GEN_FAS_New_Leadership:0 'New Leadership'
+ GEN_FAS_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+
+ GEN_FAS_Revolution:0 'Fascist Revolution'
+ GEN_FAS_Revolution_desc:0 'The revolution will bring about a new era of national unity and strength.'
+
+ # National Spirits
+ GEN_NS_Revolution_Spirit:0 'National Socialist Revolution'
+ GEN_NS_Revolution_Spirit_desc:0 'Our nation has embraced the National Socialist revolution, bringing about a new era of unity and strength.'
+
+ GEN_FAS_Revolution_Spirit:0 'Fascist Revolution'
+ GEN_FAS_Revolution_Spirit_desc:0 'Our nation has embraced the Fascist revolution, bringing about a new era of unity and strength.'
+
+ # Falangist Path
+ GEN_FAL_Political_Reform:0 'Political Reform'
+ GEN_FAL_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+
+ GEN_FAL_Support_Movement:0 'Support the Movement'
+ GEN_FAL_Support_Movement_desc:0 'Increase support for the Falangist movement.'
+
+ GEN_FAL_Religious_Unity:0 'Religious Unity'
+ GEN_FAL_Religious_Unity_desc:0 'We must unite our people under a common religious and national identity.'
+
+ GEN_FAL_Strengthen_State:0 'Strengthen the State'
+ GEN_FAL_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+
+ GEN_FAL_Reform_Government:0 'Reform the Government'
+ GEN_FAL_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+
+ GEN_FAL_Establish_Order:0 'Establish Order'
+ GEN_FAL_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+
+ GEN_FAL_New_Leadership:0 'New Leadership'
+ GEN_FAL_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+
+ GEN_FAL_Revolution:0 'Falangist Revolution'
+ GEN_FAL_Revolution_desc:0 'The revolution will bring about a new era of national and religious unity.'
+
+ # Social Democrat Path
+ GEN_SOC_Political_Reform:0 'Political Reform'
+ GEN_SOC_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+
+ GEN_SOC_Support_Movement:0 'Support the Movement'
+ GEN_SOC_Support_Movement_desc:0 'Increase support for the Social Democratic movement.'
+
+ GEN_SOC_Welfare_Reforms:0 'Welfare Reforms'
+ GEN_SOC_Welfare_Reforms_desc:0 'We must ensure the well-being of all our citizens through comprehensive social programs.'
+
+ GEN_SOC_Strengthen_State:0 'Strengthen the State'
+ GEN_SOC_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+
+ GEN_SOC_Reform_Government:0 'Reform the Government'
+ GEN_SOC_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+
+ GEN_SOC_Establish_Order:0 'Establish Order'
+ GEN_SOC_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+
+ GEN_SOC_New_Leadership:0 'New Leadership'
+ GEN_SOC_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+
+ GEN_SOC_Revolution:0 'Social Democratic Revolution'
+ GEN_SOC_Revolution_desc:0 'The revolution will bring about a new era of social progress and stability.'
+
+ # Liberal Path
+ GEN_LIB_Political_Reform:0 'Political Reform'
+ GEN_LIB_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+
+ GEN_LIB_Support_Movement:0 'Support the Movement'
+ GEN_LIB_Support_Movement_desc:0 'Increase support for the Liberal movement.'
+
+ GEN_LIB_Economic_Reforms:0 'Economic Reforms'
+ GEN_LIB_Economic_Reforms_desc:0 'We must modernize our economy to ensure prosperity for all citizens.'
+
+ GEN_LIB_Strengthen_State:0 'Strengthen the State'
+ GEN_LIB_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+
+ GEN_LIB_Reform_Government:0 'Reform the Government'
+ GEN_LIB_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+
+ GEN_LIB_Establish_Order:0 'Establish Order'
+ GEN_LIB_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+
+ GEN_LIB_New_Leadership:0 'New Leadership'
+ GEN_LIB_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+
+ GEN_LIB_Revolution:0 'Liberal Revolution'
+ GEN_LIB_Revolution_desc:0 'The revolution will bring about a new era of freedom and prosperity.'
+
+ # National Spirits
+ GEN_FAL_Revolution_Spirit:0 'Falangist Revolution'
+ GEN_FAL_Revolution_Spirit_desc:0 'Our nation has embraced the Falangist revolution, bringing about a new era of national and religious unity.'
+
+ GEN_SOC_Revolution_Spirit:0 'Social Democratic Revolution'
+ GEN_SOC_Revolution_Spirit_desc:0 'Our nation has embraced the Social Democratic revolution, bringing about a new era of social progress and stability.'
+
+ GEN_LIB_Revolution_Spirit:0 'Liberal Revolution'
+ GEN_LIB_Revolution_Spirit_desc:0 'Our nation has embraced the Liberal revolution, bringing about a new era of freedom and prosperity.'
+
+ # Conservative Path
+ GEN_CON_Political_Reform:0 'Political Reform'
+ GEN_CON_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+ GEN_CON_Support_Movement:0 'Support the Movement'
+ GEN_CON_Support_Movement_desc:0 'Increase support for the Conservative movement.'
+ GEN_CON_Tradition_and_Order:0 'Tradition and Order'
+ GEN_CON_Tradition_and_Order_desc:0 'We must uphold our traditions and maintain order in society.'
+ GEN_CON_Strengthen_State:0 'Strengthen the State'
+ GEN_CON_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+ GEN_CON_Reform_Government:0 'Reform the Government'
+ GEN_CON_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+ GEN_CON_Establish_Order:0 'Establish Order'
+ GEN_CON_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+ GEN_CON_New_Leadership:0 'New Leadership'
+ GEN_CON_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+ GEN_CON_Revolution:0 'Conservative Revolution'
+ GEN_CON_Revolution_desc:0 'The revolution will bring about a new era of stability and tradition.'
+ GEN_CON_Revolution_Spirit:0 'Conservative Revolution'
+ GEN_CON_Revolution_Spirit_desc:0 'Our nation has embraced the Conservative revolution, bringing about a new era of stability and tradition.'
+
+ # Marxist Path
+ GEN_MAR_Political_Reform:0 'Political Reform'
+ GEN_MAR_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+ GEN_MAR_Support_Movement:0 'Support the Movement'
+ GEN_MAR_Support_Movement_desc:0 'Increase support for the Marxist movement.'
+ GEN_MAR_Workers_Councils:0 'Workers' Councils'
+ GEN_MAR_Workers_Councils_desc:0 'We must establish workers' councils to give power to the proletariat.'
+ GEN_MAR_Strengthen_State:0 'Strengthen the State'
+ GEN_MAR_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+ GEN_MAR_Reform_Government:0 'Reform the Government'
+ GEN_MAR_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+ GEN_MAR_Establish_Order:0 'Establish Order'
+ GEN_MAR_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+ GEN_MAR_New_Leadership:0 'New Leadership'
+ GEN_MAR_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+ GEN_MAR_Revolution:0 'Marxist Revolution'
+ GEN_MAR_Revolution_desc:0 'The revolution will bring about a new era of worker empowerment and class equality.'
+ GEN_MAR_Revolution_Spirit:0 'Marxist Revolution'
+ GEN_MAR_Revolution_Spirit_desc:0 'Our nation has embraced the Marxist revolution, bringing about a new era of worker empowerment and class equality.'
+
+ # Stalinist Path
+ GEN_STA_Political_Reform:0 'Political Reform'
+ GEN_STA_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+ GEN_STA_Support_Movement:0 'Support the Movement'
+ GEN_STA_Support_Movement_desc:0 'Increase support for the Stalinist movement.'
+ GEN_STA_Industrialization:0 'Industrialization'
+ GEN_STA_Industrialization_desc:0 'We must rapidly industrialize to strengthen our nation.'
+ GEN_STA_Strengthen_State:0 'Strengthen the State'
+ GEN_STA_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+ GEN_STA_Reform_Government:0 'Reform the Government'
+ GEN_STA_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+ GEN_STA_Establish_Order:0 'Establish Order'
+ GEN_STA_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+ GEN_STA_New_Leadership:0 'New Leadership'
+ GEN_STA_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+ GEN_STA_Revolution:0 'Stalinist Revolution'
+ GEN_STA_Revolution_desc:0 'The revolution will bring about a new era of industrialization and state control.'
+ GEN_STA_Revolution_Spirit:0 'Stalinist Revolution'
+ GEN_STA_Revolution_Spirit_desc:0 'Our nation has embraced the Stalinist revolution, bringing about a new era of industrialization and state control.'
+
+ # Anarchist Path
+ GEN_ANA_Political_Reform:0 'Political Reform'
+ GEN_ANA_Political_Reform_desc:0 'The time has come for political change in our nation. We must reform our government to better serve the people.'
+ GEN_ANA_Support_Movement:0 'Support the Movement'
+ GEN_ANA_Support_Movement_desc:0 'Increase support for the Anarchist movement.'
+ GEN_ANA_Direct_Democracy:0 'Direct Democracy'
+ GEN_ANA_Direct_Democracy_desc:0 'We must empower the people through direct democratic institutions.'
+ GEN_ANA_Strengthen_State:0 'Strengthen the State'
+ GEN_ANA_Strengthen_State_desc:0 'A strong state requires strong institutions and unwavering leadership.'
+ GEN_ANA_Reform_Government:0 'Reform the Government'
+ GEN_ANA_Reform_Government_desc:0 'Our government must be restructured to better serve the national interest.'
+ GEN_ANA_Establish_Order:0 'Establish Order'
+ GEN_ANA_Establish_Order_desc:0 'Order and discipline must be maintained for the good of the nation.'
+ GEN_ANA_New_Leadership:0 'New Leadership'
+ GEN_ANA_New_Leadership_desc:0 'The time has come for new leadership to guide our nation forward.'
+ GEN_ANA_Revolution:0 'Anarchist Revolution'
+ GEN_ANA_Revolution_desc:0 'The revolution will bring about a new era of decentralization and direct democracy.'
+ GEN_ANA_Revolution_Spirit:0 'Anarchist Revolution'
+ GEN_ANA_Revolution_Spirit_desc:0 'Our nation has embraced the Anarchist revolution, bringing about a new era of decentralization and direct democracy.'
+
+ generic_ideology_rule:0 'Generic Ideology Path'
+ generic_ideology_rule_desc:0 'Choose which generic ideology path is available.'
+ generic_ideology_rule_option_national_socialist:0 'National Socialist'
+ generic_ideology_rule_option_fascist:0 'Fascist'
+ generic_ideology_rule_option_paternal_autocrat:0 'Paternal Autocrat'
+ generic_ideology_rule_option_conservative:0 'Conservative'
+ generic_ideology_rule_option_liberal:0 'Liberal'
+ generic_ideology_rule_option_social_democrat:0 'Social Democrat'
+ generic_ideology_rule_option_socialist:0 'Socialist'
+ generic_ideology_rule_option_bolshevik_leninist:0 'Revolutionary Communist'
+ generic_ideology_rule_option_marxist_leninist:0 'Marxist-Leninist' 

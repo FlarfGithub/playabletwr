@@ -1,0 +1,318 @@
+country_path_GER_BORDERS = {
+	name = "COUNTRY_PATH_GER_BORDERS"
+	desc = "COUNTRY_PATH_GER_BORDERS_DESC"
+	group = "COUNTRY_PATHS_EUROPE"
+	default = {
+		name = GER_OLD
+		text = "COUNTRY_PATH_GER_OLD"
+		desc = "COUNTRY_PATH_GER_OLD_DESC"
+	}
+	option = {
+		name = GER_NEW
+		text = "COUNTRY_PATH_GER_NEW"
+		desc = "COUNTRY_PATH_GER_NEW_DESC"
+	}
+}
+
+country_path_FRA = {
+	name = "COUNTRY_PATH_FRA"
+	#desc = "COUNTRY_PATH_FRA_DESC"
+	group = "COUNTRY_PATHS_EUROPE"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_FRA_DESC"
+	}
+	option = {
+		name = PCF
+		text = "COUNTRY_PATH_FRA_PCF"
+		desc = "COUNTRY_PATH_FRA_PCF_DESC"
+	}
+	option = {
+		name = OCM
+		text = "COUNTRY_PATH_FRA_OCM"
+		desc = "COUNTRY_PATH_FRA_OCM_DESC"
+	}
+	option = {
+		name = RFL_SOC
+		text = "COUNTRY_PATH_FRA_RFL_SOC"
+		desc = "COUNTRY_PATH_FRA_RFL_SOC_DESC"
+	}
+	option = {
+		name = RFL_LIB
+		text = "COUNTRY_PATH_FRA_RFL_LIB"
+		desc = "COUNTRY_PATH_FRA_RFL_LIB_DESC"
+	}
+	option = {
+		name = RFL_CON
+		text = "COUNTRY_PATH_FRA_RFL_CON"
+		desc = "COUNTRY_PATH_FRA_RFL_CON_DESC"
+	}
+	option = {
+		name = DARLAN
+		text = "COUNTRY_PATH_FRA_DARLAN"
+		desc = "COUNTRY_PATH_FRA_DARLAN_DESC"
+	}
+	option = {
+		name = NOUGES
+		text = "COUNTRY_PATH_FRA_NOUGES"
+		desc = "COUNTRY_PATH_FRA_NOUGES_DESC"
+	}
+	option = {
+		name = DORIOT
+		text = "COUNTRY_PATH_FRA_DORIOT"
+		desc = "COUNTRY_PATH_FRA_DORIOT_DESC"
+	}
+}
+
+country_path_FIN = {
+	name = "COUNTRY_PATH_FIN"
+	#desc = "COUNTRY_PATH_FIN_DESC"
+	group = "COUNTRY_PATHS_EUROPE"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_FIN_DESC"
+	}
+	option = {
+		name = SOCDEM
+		text = "COUNTRY_PATH_FIN_SOCDEM"
+		desc = "COUNTRY_PATH_FIN_SOCDEM_DESC"
+	}
+	option = {
+		name = LIB
+		text = "COUNTRY_PATH_FIN_LIB"
+		desc = "COUNTRY_PATH_FIN_LIB_DESC"
+	}
+	option = {
+		name = CON
+		text = "COUNTRY_PATH_FIN_CON"
+		desc = "COUNTRY_PATH_FIN_CON_DESC"
+	}
+	option = {
+		name = CONCOUP
+		text = "COUNTRY_PATH_FIN_CONCOUP"
+		desc = "COUNTRY_PATH_FIN_CONCOUP_DESC"
+	}
+	option = {
+		name = FASCIST
+		text = "COUNTRY_PATH_FIN_FASCIST"
+		desc = "COUNTRY_PATH_FIN_FASCIST_DESC"
+	}
+}
+
+country_path_ICE = {
+	name = "COUNTRY_PATH_ICE"
+	#desc = "COUNTRY_PATH_ICE_DESC"
+	group = "COUNTRY_PATHS_EUROPE"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_ICE_DESC"
+	}
+	option = {
+		name = NEUTRALITY
+		text = "COUNTRY_PATH_ICE_NEUTRALITY"
+		desc = "COUNTRY_PATH_ICE_NEUTRALITY_DESC"
+	}
+	option = {
+		name = DEMOCRACY
+		text = "COUNTRY_PATH_ICE_DEMOCRACY"
+		desc = "COUNTRY_PATH_ICE_DEMOCRACY_DESC"
+	}
+	option = {
+		name = OCCUPATION
+		text = "COUNTRY_PATH_ICE_OCCUPATION"
+		desc = "COUNTRY_PATH_ICE_OCCUPATION_DESC"
+	}
+}
+
+country_path_CAN = {
+	name = "COUNTRY_PATH_CAN"
+	#desc = "COUNTRY_PATH_CAN_DESC"
+	group = "COUNTRY_PATHS_AMERICAS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_CAN_DESC"
+	}
+	option = {
+		name = CCF_SOC
+		text = "COUNTRY_PATH_CAN_CCF_SOC"
+		desc = "COUNTRY_PATH_CAN_CCF_SOC_DESC"
+	}
+	option = {
+		name = CCF_SDM
+		text = "COUNTRY_PATH_CAN_CCF_SDM"
+		desc = "COUNTRY_PATH_CAN_CCF_SDM_DESC"
+	}
+	option = {
+		name = LIBERAL
+		text = "COUNTRY_PATH_CAN_LIBERAL"
+		desc = "COUNTRY_PATH_CAN_LIBERAL_DESC"
+	}
+	option = {
+		name = TORY
+		text = "COUNTRY_PATH_CAN_TORY"
+		desc = "COUNTRY_PATH_CAN_TORY_DESC"
+	}
+	option = {
+		name = COUP
+		text = "COUNTRY_PATH_CAN_COUP"
+		desc = "COUNTRY_PATH_CAN_COUP_DESC"
+	}
+}
+
+country_path_BRA = {
+	name = "COUNTRY_PATH_BRA"
+	#desc = "COUNTRY_PATH_BRA_DESC"
+	group = "COUNTRY_PATHS_AMERICAS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_BRA_DESC"
+	}
+	option = {
+		name = DEMOCRACY
+		text = "COUNTRY_PATH_BRA_DEMOCRACY"
+		desc = "COUNTRY_PATH_BRA_DEMOCRACY_DESC"
+	}
+	option = {
+		name = GOMES
+		text = "COUNTRY_PATH_BRA_GOMES"
+		desc = "COUNTRY_PATH_BRA_GOMES_DESC"
+	}
+	option = {
+		name = COMETOBRAZIL
+		text = "COUNTRY_PATH_BRA_COMETOBRAZIL"
+		desc = "COUNTRY_PATH_BRA_COMETOBRAZIL_DESC"
+	}
+}
+
+country_path_MEX = {
+	name = "COUNTRY_PATH_MEX"
+	#desc = "COUNTRY_PATH_MEX_DESC"
+	group = "COUNTRY_PATHS_AMERICAS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_MEX_DESC"
+	}
+	option = {
+		name = MARXIST
+		text = "COUNTRY_PATH_MEX_MARXIST"
+		desc = "COUNTRY_PATH_MEX_MARXIST_DESC"
+	}
+	option = {
+		name = LIBERAL
+		text = "COUNTRY_PATH_MEX_LIBERAL"
+		desc = "COUNTRY_PATH_MEX_LIBERAL_DESC"
+	}
+	option = {
+		name = CONSERVATIVE
+		text = "COUNTRY_PATH_MEX_CONSERVATIVE"
+		desc = "COUNTRY_PATH_MEX_CONSERVATIVE_DESC"
+	}
+}
+
+country_path_KOR = {
+	name = "COUNTRY_PATH_KOR"
+	#desc = "COUNTRY_PATH_KOR_DESC"
+	group = "COUNTRY_PATHS_ASIA"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_KOR_DESC"
+	}
+	option = {
+		name = JUCHE_GANG
+		text = "COUNTRY_PATH_KOR_JUCHE_GANG"
+		desc = "COUNTRY_PATH_KOR_JUCHE_GANG_DESC"
+	}
+	option = {
+		name = ANARCHIST
+		text = "COUNTRY_PATH_KOR_ANARCHIST"
+		desc = "COUNTRY_PATH_KOR_ANARCHIST_DESC"
+	}
+	option = {
+		name = MODSOC
+		text = "COUNTRY_PATH_KOR_MODSOC"
+		desc = "COUNTRY_PATH_KOR_MODSOC_DESC"
+	}
+	option = {
+		name = CONLIB
+		text = "COUNTRY_PATH_KOR_CONLIB"
+		desc = "COUNTRY_PATH_KOR_CONLIB_DESC"
+	}
+	option = {
+		name = RHEE
+		text = "COUNTRY_PATH_KOR_RHEE"
+		desc = "COUNTRY_PATH_KOR_RHEE_DESC"
+	}
+	option = {
+		name = COUP
+		text = "COUNTRY_PATH_KOR_COUP"
+		desc = "COUNTRY_PATH_KOR_COUP_DESC"
+	}
+}
+
+country_path_JAP = {
+	name = "COUNTRY_PATH_JAP"
+	#desc = "COUNTRY_PATH_JAP_DESC"
+	group = "COUNTRY_PATHS_ASIA"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "COUNTRY_PATH_JAP_DESC"
+	}
+	option = {
+		name = NS
+		text = "COUNTRY_PATH_JAP_NS"
+		desc = "COUNTRY_PATH_JAP_NS_DESC"
+	}
+	option = {
+		name = JCP
+		text = "COUNTRY_PATH_JAP_JCP"
+		desc = "COUNTRY_PATH_JAP_JCP_DESC"
+	}
+	option = {
+		name = ANCRAZY
+		text = "COUNTRY_PATH_JAP_ANCRAZY"
+		desc = "COUNTRY_PATH_JAP_ANCRAZY_DESC"
+	}
+	option = {
+		name = ANMOD
+		text = "COUNTRY_PATH_JAP_ANMOD"
+		desc = "COUNTRY_PATH_JAP_ANMOD_DESC"
+	}
+	option = {
+		name = SDLEFT
+		text = "COUNTRY_PATH_JAP_SDLEFT"
+		desc = "COUNTRY_PATH_JAP_SDLEFT_DESC"
+	}
+	option = {
+		name = SDRIGHT
+		text = "COUNTRY_PATH_JAP_SDRIGHT"
+		desc = "COUNTRY_PATH_JAP_SDRIGHT_DESC"
+	}
+	option = {
+		name = CONSERVATIVE
+		text = "COUNTRY_PATH_JAP_CONSERVATIVE"
+		desc = "COUNTRY_PATH_JAP_CONSERVATIVE_DESC"
+	}
+	option = {
+		name = POLICE
+		text = "COUNTRY_PATH_JAP_POLICE"
+		desc = "COUNTRY_PATH_JAP_POLICE_DESC"
+	}
+	option = {
+		name = EMPIRE
+		text = "COUNTRY_PATH_JAP_EMPIRE"
+		desc = "COUNTRY_PATH_JAP_EMPIRE_DESC"
+	}
+	option = {
+		name = FASCIST
+		text = "COUNTRY_PATH_JAP_FASCIST"
+		desc = "COUNTRY_PATH_JAP_FASCIST_DESC"
+	}
+}

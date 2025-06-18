@@ -1,0 +1,154 @@
+namespace = generic_ideology_revolution
+
+# National Socialist Revolution Event
+country_event = {
+    id = generic_ideology_revolution.1
+    title = generic_ideology_revolution.1.t
+    desc = generic_ideology_revolution.1.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_NS_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.1.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Fascist Revolution Event
+country_event = {
+    id = generic_ideology_revolution.2
+    title = generic_ideology_revolution.2.t
+    desc = generic_ideology_revolution.2.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_FAS_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.2.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Falangist Revolution Event
+country_event = {
+    id = generic_ideology_revolution.3
+    title = generic_ideology_revolution.3.t
+    desc = generic_ideology_revolution.3.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_FAL_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.3.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Social Democrat Revolution Event
+country_event = {
+    id = generic_ideology_revolution.4
+    title = generic_ideology_revolution.4.t
+    desc = generic_ideology_revolution.4.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_SOC_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.4.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Liberal Revolution Event
+country_event = {
+    id = generic_ideology_revolution.5
+    title = generic_ideology_revolution.5.t
+    desc = generic_ideology_revolution.5.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_LIB_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.5.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Conservative Revolution Event
+country_event = {
+    id = generic_ideology_revolution.6
+    title = generic_ideology_revolution.6.t
+    desc = generic_ideology_revolution.6.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_CON_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.6.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Marxist Revolution Event
+country_event = {
+    id = generic_ideology_revolution.7
+    title = generic_ideology_revolution.7.t
+    desc = generic_ideology_revolution.7.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_MAR_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.7.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Stalinist Revolution Event
+country_event = {
+    id = generic_ideology_revolution.8
+    title = generic_ideology_revolution.8.t
+    desc = generic_ideology_revolution.8.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_STA_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.8.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+}
+
+# Anarchist Revolution Event
+country_event = {
+    id = generic_ideology_revolution.9
+    title = generic_ideology_revolution.9.t
+    desc = generic_ideology_revolution.9.d
+    picture = GFX_report_event_generic_political
+    trigger = {
+        has_completed_focus = GEN_ANA_Revolution
+    }
+    mean_time_to_happen = { days = 1 }
+    option = {
+        name = generic_ideology_revolution.9.a
+        add_political_power = 50
+        add_stability = 0.05
+    }
+} 

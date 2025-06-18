@@ -1,0 +1,653 @@
+#####################
+##Coded by Spyeter###
+#####################
+
+shared_focus = {
+	id = CRO_Bakaric_Victory
+	icon = GFX_CRO_Bakaric_Bust
+	cost = 5
+	x = 13
+	y = 0
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Victory"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+		news_event = { id = croatianews.35 }
+                add_ideas = authoritarian_regime
+		hidden_effect = {
+			retire_country_leader = yes
+			retire_ideology_leader = marxist_leninist
+			retire_ideology_leader = bolshevik_leninist
+			cro_commie_leaders = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Bakaric_Liberate_Serbia
+	icon = GFX_SER_focus_freedom_to_the_people
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Bakaric_Victory
+	prerequisite = {
+		focus = CRO_Bakaric_Victory
+	}
+	bypass = {
+        owns_state = 107 	
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Liberate_Serbia"
+		IF = {
+			limit = {
+				SER = {
+					OR = {
+						has_government = socialist
+						has_government = bolshevik_leninist
+					}
+				}
+			}
+			SER = { country_event = twrcroatia.94 }
+		}
+		else = {
+            declare_war_on = { type = annex_everything  target = SER }   			
+		}                
+	}
+}
+
+shared_focus = {
+	id = CRO_Bakaric_Serbia_Liberated
+	icon = GFX_CRO_yugoslav_unification
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Bakaric_Liberate_Serbia
+	prerequisite = {
+		focus = CRO_Bakaric_Liberate_Serbia
+	}
+    available = {
+        owns_state = 107 
+    }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Serbia_Liberated"
+        set_country_flag = YUGO_Formed
+		set_cosmetic_tag = Serb_Croat_Provisional
+		every_state = {
+			limit = {
+				is_core_of = SER
+			}
+			add_core_of = CRO
+		}
+		add_research_slot = 1
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Bakaric_Call_Upon_Tito
+	icon = GFX_SER_focus_tito_victory
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Bakaric_Serbia_Liberated
+	prerequisite = {
+		focus = CRO_Bakaric_Serbia_Liberated
+	}
+    available = {
+        NOT = { has_global_flag = Tito_killed }
+    }
+	offset = {
+		x = 2
+		y = 0
+		trigger = {
+			has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+		}
+	}
+	mutually_exclusive = { focus = CRO_Bakaric_Stays }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Call_Upon_Tito"
+		custom_effect_tooltip = cro_expand_focus_tree_tt
+		mark_focus_tree_layout_dirty = yes		
+		hidden_effect = {
+			clear_all_hos = yes
+			set_country_flag = has_symbolic_figurehead 
+			add_ideas = secretary_of_the_party_bakaric
+			add_ideas = hos_mediocre
+		}
+		clr_country_flag = CRO_Bakaric_Cabinet_Flag
+		set_country_flag = CRO_Tito_Cabinet_flag
+		add_ideas = CRO_HoG_Josip_Broz
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Josip Broz"
+			desc = "Josip_Broz_desc"
+			picture = "CRO_Josip_Broz.dds"
+			expire = "1965.1.1"
+			ideology = titoism
+			traits = {
+				#
+			}
+		}
+	}
+}
+shared_focus = {
+	cancelable = yes
+	id = CRO_Bakaric_Theory_of_Associated_Labour
+	icon = GFX_GENERIC_Clogs_Socialist
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Bakaric_Reconstruction_Initiative
+	prerequisite = { 
+		focus = CRO_Bakaric_Reconstruction_Initiative 
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CRO_Bakaric_Theory_of_Associated_Labour"
+		add_ideas = SER_Associated_Labour
+	}
+}
+
+shared_focus = {
+	id = CRO_Bakaric_Stays
+	icon = GFX_GENERIC_socialist_keep_old_guard
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Bakaric_Serbia_Liberated
+	prerequisite = {
+		focus = CRO_Bakaric_Serbia_Liberated
+	}
+	offset = {
+		x = -2
+		y = 0
+		trigger = {
+			has_completed_focus = CRO_Bakaric_Stays
+		}
+	}
+	mutually_exclusive = { focus = CRO_Bakaric_Call_Upon_Tito }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Stays"
+		custom_effect_tooltip = cro_expand_focus_tree_tt
+		mark_focus_tree_layout_dirty = yes			
+	}
+}
+
+shared_focus = {
+	id = CRO_Bakaric_Death_Of_Tito
+	icon = GFX_SER_focus_matters_of_terrorism
+	cost = 5
+	x = -3
+	y = 1
+	relative_position_id = CRO_Bakaric_Stays
+	prerequisite = {
+		focus = CRO_Bakaric_Stays
+	}
+	allow_branch = {
+		has_global_flag = Tito_killed
+		has_completed_focus = CRO_Bakaric_Stays
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Death_Of_Tito"
+		country_event = { id = twr_croatia_communist.12 hours = 2 }
+			}
+     }
+
+shared_focus = {
+	id = CRO_Bakaric_Fulfill_The_Marshals_Will
+	icon = GFX_GENERIC_peaceful_socialism
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Bakaric_Death_Of_Tito
+	prerequisite = {
+		focus = CRO_Bakaric_Death_Of_Tito
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Fulfill_The_Marshals_Will"
+		swap_ideas = {
+			remove_idea = CRO_After_Tito_Tito
+			add_idea = CRO_After_Tito_Tito_1
+		}
+			}
+     }
+
+shared_focus = {
+	id = CRO_Bakaric_Enshrine_Minority_Rights
+	icon = GFX_SER_focus_promise_minority_rights
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Bakaric_Stays
+	prerequisite = {
+		focus = CRO_Bakaric_Stays
+		focus = CRO_Bakaric_Call_Upon_Tito
+	}
+	allow_branch = {
+		OR = {
+			has_completed_focus = CRO_Bakaric_Stays
+			has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+		}
+	}
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+		}
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Enshrine_Minority_Rights"
+		add_ideas = SER_minority_enshrining 
+		swap_ideas = {
+			remove_idea = CRO_Unstable_Government_idea
+			add_idea = CRO_Unstable_Government_1_idea
+		}
+			}
+     }
+
+shared_focus = {
+	id = CRO_Bakaric_Reconstruction_Initiative
+	icon = GFX_SER_focus_the_yugoslavian_reconstruction_initiative
+	cost = 5
+	x = 3
+	y = 1
+	relative_position_id = CRO_Bakaric_Stays
+	prerequisite = {
+		focus = CRO_Bakaric_Stays
+		focus = CRO_Bakaric_Call_Upon_Tito
+	}
+	available = {
+		has_completed_focus = CRO_A_New_Four_Year_Plan
+	}
+	allow_branch = {
+		OR = {
+			has_completed_focus = CRO_Bakaric_Stays
+			has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+		}
+	}
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+		}
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Reconstruction_Initiative"
+		add_ideas = SER_yugoslavian_reconstruction_initiative  
+		swap_ideas = {
+			remove_idea = CRO_Four_Year_Plan_idea 
+			add_idea = SER_yugo_five_year_plan
+		}
+		hidden_effect = {
+			remove_ideas = SER_yugo_five_year_plan
+			add_timed_idea = {
+				idea = SER_yugo_five_year_plan
+				days = 1825
+			}
+		}
+			}
+     }
+
+shared_focus = {
+	id = CRO_Bakaric_Introduce_Market_Socialism
+	icon = GFX_GENERIC_socialist_market
+	cost = 5
+	x = 3
+	y = 1
+	relative_position_id = CRO_Bakaric_Enshrine_Minority_Rights
+	prerequisite = {
+		focus = CRO_Bakaric_Reconstruction_Initiative
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Enshrine_Minority_Rights
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Introduce_Market_Socialism"
+		add_ideas = SER_illyrian_market_socialism_idea 
+			}
+     }
+
+shared_focus = {
+	id = CRO_Bakaric_Found_The_Territorial_Defense
+	icon = GFX_GENERIC_militia
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Bakaric_Enshrine_Minority_Rights
+	prerequisite = {
+		focus = CRO_Bakaric_Reconstruction_Initiative
+	}
+	available = { has_completed_focus = CRO_Bakaric_Introduce_Market_Socialism }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Found_The_Territorial_Defense"
+		add_ideas = CRO_Territorial_Defense_idea
+    }
+}
+
+shared_focus = {
+	id = CRO_Bakaric_Purge_Stalinists
+	icon = GFX_focus_CDA_end_bourg_nationalism
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Bakaric_Enshrine_Minority_Rights
+	prerequisite = {
+		focus = CRO_Bakaric_Reconstruction_Initiative
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Enshrine_Minority_Rights
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Purge_Stalinists"
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			cro_create_intelligence_agency = yes
+		}	
+		retire_ideology_leader = marxist_leninist
+		create_country_leader = {
+			name = "Collective Leadership"
+			desc = ""
+			picture = "ML_Collective_Leadership.dds"
+			expire = "1965.1.1"
+			ideology = marxism_leninism 
+			traits = {}
+		}
+		add_stability = 0.05	
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = -0.05
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Bakaric_Reopen_Local_Elections
+	icon = GFX_GENERIC_elections
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Bakaric_Purge_Stalinists
+	prerequisite = {
+		focus = CRO_Bakaric_Purge_Stalinists
+	}
+	available = { has_completed_focus = CRO_Bakaric_Introduce_Market_Socialism }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Reopen_Local_Elections"
+		add_ideas = facade_democracy
+       	add_popularity = {
+			ideology = socialist
+			popularity = 0.1
+		}
+        add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_The_Youth_Volunteers
+	icon = GFX_SER_focus_youth_volunteers
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Bakaric_Found_The_Territorial_Defense
+	prerequisite = {
+		focus = CRO_Bakaric_Found_The_Territorial_Defense
+		focus = CRO_Bakaric_Theory_of_Associated_Labour
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Youth_Volunteers"
+		add_timed_idea = {
+			days = 730
+			idea = SER_The_Youth_Volunteers
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = twrserbiaflavour.32 }
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Bakaric_Reluctant_Secularization
+	icon = GFX_SER_focus_reluctant_secularism
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Bakaric_Introduce_Market_Socialism
+	prerequisite = {
+		focus = CRO_Bakaric_Purge_Stalinists
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Introduce_Market_Socialism
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Found_The_Territorial_Defense
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Reluctant_Secularization"
+			country_event = {
+				id = twrcroatia.144
+				hours = 2
+			}
+			add_political_power = 50
+			add_popularity = {
+				ideology = socialist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = bolshevik_leninist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = Marxist_leninist
+				popularity = 0.02
+			}
+		}
+    }
+
+shared_focus = {
+	id = CRO_Bakaric_Purge_Rankovicites
+	icon = GFX_GENERIC_Communist_Discourse
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Bakaric_Purge_Stalinists
+	prerequisite = {
+		focus = CRO_Bakaric_Purge_Stalinists
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Introduce_Market_Socialism
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Found_The_Territorial_Defense
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Purge_Rankovicites"
+		remove_ideas = CRO_Ustashe_Resistance_idea
+        add_popularity = {
+			ideology = marxist_leninist
+			popularity = -0.15
+		}
+        add_popularity = {
+			ideology = national_socialist
+			popularity = -0.15
+		}
+        add_popularity = {
+			ideology = fascist
+			popularity = -0.15
+		}
+     }
+}
+
+shared_focus = {
+	id = CRO_Bakaric_The_Peoples_Government
+	icon = GFX_YUG_Socialism_time
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Bakaric_Purge_Rankovicites
+	prerequisite = {
+		focus = CRO_Bakaric_Purge_Rankovicites
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Reluctant_Secularization
+	}
+	prerequisite = {
+		focus = CRO_The_Youth_Volunteers
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Reopen_Local_Elections
+	}
+	allow_branch = {
+		has_completed_focus = CRO_Bakaric_Stays
+	}
+	available = {
+		IF = {
+			limit = {
+				has_global_flag = Tito_killed
+			}
+			has_completed_focus = CRO_Bakaric_Fulfill_The_Marshals_Will
+		}
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_The_Peoples_Government"
+		complete_national_focus = CRO_Yugo_Liberation
+		swap_ruler_traits = {
+			remove = liberal_titoist
+			add = guardian_of_yugoslavia
+		}
+		IF = {
+			limit = {
+				has_idea = CRO_Unstable_Government_idea
+			}
+			remove_ideas = CRO_Unstable_Government_idea
+		}
+		else = {
+			remove_ideas = CRO_Unstable_Government_1_idea
+		}
+		IF = {
+			limit = {
+				has_global_flag = Tito_killed
+			}
+			country_event = { id = twr_croatia_communist.13 hours = 2 }
+		}
+		hidden_effect = { country_event = { id = twr_croatia_communist.14 days = 30 } }
+     }
+}
+
+shared_focus = {
+	cancelable = yes
+	id = CRO_Enshrine_Marshal_Tito
+	icon = GFX_SER_focus_enshrine_marshal_tito
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Bakaric_Purge_Rankovicites
+	prerequisite = {
+		focus = CRO_Bakaric_Purge_Rankovicites
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Reluctant_Secularization
+	}
+	prerequisite = {
+		focus = CRO_The_Youth_Volunteers
+	}
+	prerequisite = {
+		focus = CRO_Bakaric_Reopen_Local_Elections
+	}
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+		}
+	}
+	allow_branch = {
+		has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CRO_Enshrine_Marshal_Tito"
+		complete_national_focus = CRO_Yugo_Liberation
+		add_country_leader_trait = marshal
+		hidden_effect = {
+			set_country_leader_portrait = {
+				ideology = bolshevik_leninist
+				portrait = GFX_portrait_Josip_Broz_Tito_1960
+			}
+		}
+		IF = {
+			limit = {
+				has_idea = CRO_Unstable_Government_idea
+			}
+			remove_ideas = CRO_Unstable_Government_idea
+		}
+		else = {
+			remove_ideas = CRO_Unstable_Government_1_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Bakaric_Nation_Brotherhood_And_Unity
+	icon = GFX_YUG_Socialist_Republic
+	cost = 3
+	x = 0
+	y = 1
+	relative_position_id = CRO_Bakaric_The_Peoples_Government
+	prerequisite = {
+        focus = CRO_Bakaric_The_Peoples_Government
+		focus = CRO_Enshrine_Marshal_Tito
+	}
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+		}
+	}
+	available = { has_completed_focus = CRO_Yugo_Consolidate_Socialist_Yugoslavia }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bakaric_Nation_Brotherhood_And_Unity"
+		IF = {
+			limit = {
+				has_completed_focus = CRO_Bakaric_Stays
+			}
+			country_event = { id = cro_endings.10 hours = 2 } 
+		}
+		else_IF = {
+			limit = {
+				has_completed_focus = CRO_Bakaric_Call_Upon_Tito
+			}
+			country_event = { id = cro_endings.12 hours = 2 } 
+		}
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,149 @@
+###########################
+## RUKAVINA Revolt TREE ###
+###########################
+shared_focus = {
+	id = CRO_Crusader_Revolt
+	icon = GFX_CRO_Crusader_Revolt
+	cost = 5
+	x = 8
+	y = 0
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Crusader_Revolt"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+	}
+}
+
+shared_focus = {
+	id = CRO_Crusader_A_Burn_Through_Bosnia
+	icon = GFX_CRO_enough_of_this_bosnian_nonsense
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Crusader_Revolt
+	prerequisite = {
+		focus = CRO_Crusader_Revolt
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Crusader_A_Burn_Through_Bosnia"
+		add_manpower = -2000
+		add_timed_idea = {
+			idea = CRO_Slash_and_Burn_idea
+			days = 75
+		}	
+	}
+}
+
+shared_focus = {
+	id = CRO_Crusader_Contact_Other_Groups
+	icon = GFX_GER_agreement
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Crusader_Revolt
+	prerequisite = {
+		focus = CRO_Crusader_Revolt
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Crusader_Contact_Other_Groups"
+			random_owned_controlled_state = {
+				create_unit = { 
+					division = "name = \"1. Križarska Pomoćna Divizija'\" division_template = \"Križari\" start_experience_factor = 0.3" owner = HER
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = { 
+					division = "name = \"2. Križarska Pomoćna Divizija'\" division_template = \"Križari\" start_experience_factor = 0.3" owner = HER
+				}
+			}		
+	}
+}
+
+shared_focus = {
+	id = CRO_Crusader_Get_German_Backing
+	icon = GFX_CRO_Deal_With_Germania
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Crusader_Revolt
+	prerequisite = {
+		focus = CRO_Crusader_Revolt
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Crusader_Get_German_Backing"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = GER
+	   		amount = 500
+		}		
+	}
+}
+
+shared_focus = {
+	id = CRO_Crusader_Lessons_From_The_Velebit_Uprising
+	icon = GFX_GENERIC_Mountain_Warfare
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Crusader_Contact_Other_Groups
+	prerequisite = {
+		focus = CRO_Crusader_A_Burn_Through_Bosnia
+	}
+	prerequisite = {
+		focus = CRO_Crusader_Contact_Other_Groups
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Crusader_Get_German_Backing"
+		army_experience = 15
+	}
+}
+
+shared_focus = {
+	id = CRO_Crusader_Pacify_The_Countryside
+	icon = GFX_GENERIC_Village_Raid_and_Arrests
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Crusader_Contact_Other_Groups
+	prerequisite = {
+		focus = CRO_Crusader_Contact_Other_Groups
+	}
+	prerequisite = {
+		focus = CRO_Crusader_Get_German_Backing
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Crusader_Pacify_The_Countryside"
+		add_timed_idea = {
+			idea = CRO_Roaming_Pacification_Battalions_idea
+			days = 75
+		}		
+	}
+}
+
+shared_focus = {
+	id = CRO_Crusader_Victory_At_All_Costs
+	icon = GFX_CRO_Croatia_Marches_On
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Crusader_Pacify_The_Countryside
+	prerequisite = {
+		focus = CRO_Crusader_Lessons_From_The_Velebit_Uprising
+	}
+	prerequisite = {
+		focus = CRO_Crusader_Pacify_The_Countryside
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Crusader_Victory_At_All_Costs"
+		add_timed_idea = {
+			idea = CRO_One_Last_Offensive_idea
+			days = 80
+		}		
+	}
+}

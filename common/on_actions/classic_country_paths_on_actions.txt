@@ -1,0 +1,423 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		    if = {
+				limit = {
+					has_game_rule = {
+						rule = country_path_GER_BORDERS
+						option = GER_OLD
+					}
+				}
+				GER = { set_country_flag = german_old_borders }
+				HGR = { set_country_flag = german_old_borders }
+		        every_state = {
+			        limit = {
+				        is_core_of = RKN
+			        }
+			        add_core_of = GER
+		        }
+                every_state = {
+			        limit = {
+				        is_core_of = RKB
+			        }
+			        add_core_of = GER
+		        }
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = PCF
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_PCF
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = OCM
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_OCM
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = RFL_SOC
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_RFL
+				set_global_flag = COUNTRY_PATH_FRA_RFL_SOC
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = RFL_LIB
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_RFL
+				set_global_flag = COUNTRY_PATH_FRA_RFL_LIB
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = RFL_CON
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_RFL
+				set_global_flag = COUNTRY_PATH_FRA_RFL_CON
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = NOUGES
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_NOUGES
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = DARLAN
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_DARLAN
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FRA
+						option = DORIOT
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FRA_DORIOT
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FIN
+						option = SOCDEM
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FIN_SOCDEM
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FIN
+						option = LIB
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FIN_LIB
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FIN
+						option = CON
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FIN_CON
+				set_global_flag = COUNTRY_PATH_FIN_CON_NOCOUP
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FIN
+						option = CONCOUP
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FIN_CON
+				set_global_flag = COUNTRY_PATH_FIN_CON_COUP
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_FIN
+						option = FASCIST
+					}
+				}
+				set_global_flag = COUNTRY_PATH_FIN_FASCIST
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_ICE
+						option = NEUTRALITY
+					}
+				}
+				set_global_flag = COUNTRY_PATH_ICE_NEUTRALITY
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_ICE
+						option = DEMOCRACY
+					}
+				}
+				set_global_flag = COUNTRY_PATH_ICE_DEMOCRACY
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_ICE
+						option = OCCUPATION
+					}
+				}
+				set_global_flag = COUNTRY_PATH_ICE_OCCUPATION
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_CAN
+						option = CCF_SOC
+					}
+				}
+				set_global_flag = COUNTRY_PATH_CAN_CCF_SOC
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_CAN
+						option = CCF_SDM
+					}
+				}
+				set_global_flag = COUNTRY_PATH_CAN_CCF_SDM
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_CAN
+						option = LIBERAL
+					}
+				}
+				set_global_flag = COUNTRY_PATH_CAN_LIBERAL
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_CAN
+						option = TORY
+					}
+				}
+				set_global_flag = COUNTRY_PATH_CAN_TORY
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_CAN
+						option = COUP
+					}
+				}
+				set_global_flag = COUNTRY_PATH_CAN_COUP
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_BRA
+						option = DEMOCRACY
+					}
+				}
+				set_global_flag = COUNTRY_PATH_BRA_DEMOCRACY
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_BRA
+						option = GOMES
+					}
+				}
+				set_global_flag = COUNTRY_PATH_BRA_GOMES
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_BRA
+						option = COMETOBRAZIL
+					}
+				}
+				set_global_flag = COUNTRY_PATH_BRA_COMETOBRAZIL
+			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_MEX
+						option = CONSERVATIVE
+					}
+				}
+				set_global_flag = COUNTRY_PATH_MEX_CONSERVATIVE
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_MEX
+						option = MARXIST
+					}
+				}
+				set_global_flag = COUNTRY_PATH_MEX_MARXIST
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_MEX
+						option = LIBERAL
+					}
+				}
+				set_global_flag = COUNTRY_PATH_MEX_LIBERAL
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_KOR
+						option = JUCHE_GANG
+					}
+				}
+				set_global_flag = COUNTRY_PATH_KOR_JUCHE_GANG
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_KOR
+						option = ANARCHIST
+					}
+				}
+				set_global_flag = COUNTRY_PATH_KOR_ANARCHIST
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_KOR
+						option = MODSOC
+					}
+				}
+				set_global_flag = COUNTRY_PATH_KOR_MODSOC
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_KOR
+						option = CONLIB
+					}
+				}
+				set_global_flag = COUNTRY_PATH_KOR_CONLIB
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_KOR
+						option = RHEE
+					}
+				}
+				set_global_flag = COUNTRY_PATH_KOR_RHEE
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_KOR
+						option = COUP
+					}
+				}
+				set_global_flag = COUNTRY_PATH_KOR_COUP
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = NS
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_NS
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = JCP
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_JCP
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = ANCRAZY
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_ANCRAZY
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = ANMOD
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_ANMOD
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = SDLEFT
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_SDLEFT
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = SDRIGHT
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_SDRIGHT
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = CONSERVATIVE
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_CONSERVATIVE
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = POLICE
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_POLICE
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = EMPIRE
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_EMPIRE
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = COUNTRY_PATH_JAP
+						option = FASCIST
+					}
+				}
+				set_global_flag = COUNTRY_PATH_JAP_FASCIST
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+inherit_technology_new = {
+	for_each_loop = {
+    array = prev.researched_techs
+    value = cur_tech
+    if = {
+        limit = {
+            meta_trigger = {
+                text = {
+                    NOT = { has_tech = [TECH_NAME] }
+                }
+                TECH_NAME = "[?cur_tech.GetTokenKey]"
+            }
+        }
+        meta_effect = {
+            text = {
+                set_technology = {
+                    [TECH_NAME] = 1
+                }
+            }
+            TECH_NAME = "[?cur_tech.GetTokenKey]"
+        }
+    }
+}
+}
+inherit_technology_new2 = {
+	for_each_loop = {
+    array = prev.researched_techs
+    value = cur_tech
+    if = {
+        limit = {
+            meta_trigger = {
+                text = {
+                    NOT = { has_tech = [TECH_NAME] }
+                }
+                TECH_NAME = "[?cur_tech.GetTokenKey]"
+            }
+        }
+        meta_effect = {
+            text = {
+                set_technology = {
+                    [TECH_NAME] = 1
+                    popup = no #here
+                }
+            }
+            TECH_NAME = "[?cur_tech.GetTokenKey]"
+        }
+    }
+}
+}

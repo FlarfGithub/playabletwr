@@ -1,0 +1,107 @@
+game_rule = {
+    name = allow_political_revolutions
+    group = "political_rules"
+    option = {
+        name = allow_political_revolutions_yes
+        text = "Allow Political Revolutions"
+        allow = yes
+    }
+    option = {
+        name = allow_political_revolutions_no
+        text = "Disallow Political Revolutions"
+        allow = no
+    }
+}
+
+game_rule = {
+    name = allow_elections
+    group = "political_rules"
+    option = {
+        name = allow_elections_yes
+        text = "Allow Elections"
+        allow = yes
+    }
+    option = {
+        name = allow_elections_no
+        text = "Disallow Elections"
+        allow = no
+    }
+}
+
+# TWR options as toggles
+TWR_generic_ideology_focuses = {
+    name = "TWR_GENERIC_IDEOLOGY_FOCUSES"
+    group = "TWR_GENERIC_IDEOLOGY_GROUP"
+    option = {
+        name = "TWR_GENERIC_IDEOLOGY_FOCUSES_ON"
+        text = "Enable TWR Ideology Focuses"
+    }
+    option = {
+        name = "TWR_GENERIC_IDEOLOGY_FOCUSES_OFF"
+        text = "Disable TWR Ideology Focuses"
+    }
+}
+
+allow_wargoals = {
+    name = "RULE_ALLOW_WARGOALS"
+    group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+    icon = "GFX_wargoals"
+    default = {
+        name = "ALWAYS_FREE"
+        text = RULE_OPTION_ALWAYS_FREE
+        desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
+    }
+    option = {
+        name = "FOCUSES_ONLY"
+        text = RULE_OPTION_FOCUSES_ONLY
+        desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC"
+    }
+}
+
+allow_guarantees = {
+    name = "RULE_ALLOW_GUARANTEES"
+    group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+    icon = "GFX_guarantee_independence"
+    default = {
+        name = "FREE"
+        text = "RULE_OPTION_FREE"
+        desc = "RULE_ALLOW_GUARANTEES_FREE_DESC"
+    }
+    option = {
+        name = "BLOCKED"
+        text = "RULE_OPTION_BLOCKED"
+        desc = "RULE_ALLOW_GUARANTEES_BLOCKED_DESC"
+    }
+}
+
+allow_party_boosting = {
+    name = "RULE_ALLOW_PARTY_BOOSTING"
+    group = "RULE_GROUP_COVERT_ACTIONS"
+    icon = "GFX_boosting_party_popularity"
+    default = {
+        name = "yes"
+        text = "RULE_OPTION_ALLOWED"
+        desc = "RULE_ALLOW_PARTY_BOOSTING_ALLOWED_DESC"
+    }
+    option = {
+        name = "BLOCKED"
+        text = "RULE_OPTION_BLOCKED"
+        desc = "RULE_ALLOW_PARTY_BOOSTING_BLOCKED_DESC"
+    }
+}
+
+allow_coups = {
+    name = "RULE_ALLOW_COUPS"
+    group = "RULE_GROUP_COVERT_ACTIONS"
+    icon = "GFX_coups"
+    default = {
+        name = "yes"
+        text = "RULE_OPTION_ALLOWED"
+        desc = "RULE_ALLOW_COUPS_ALLOWED_DESC"
+    }
+    option = {
+        name = "BLOCKED"
+        text = "RULE_OPTION_BLOCKED"
+        desc = "RULE_ALLOW_COUPS_BLOCKED_DESC"
+    }
+} 

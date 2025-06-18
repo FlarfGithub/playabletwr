@@ -1,0 +1,402 @@
+#Starting Tree
+focus_tree = { 
+	id = KOR_Starting_Tree
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	shared_focus = KOR_Prime_Minister_Lyuh
+}
+
+focus_tree = { 
+	id = KOR_Starting_Tree_2
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	shared_focus = KOR_Votes_Came_Short
+}
+
+shared_focus = {
+	id = KOR_Prime_Minister_Lyuh
+	icon = GFX_KOR_Prime_Minister_Lyuh
+	x = 8
+	y = 0
+	cost = 4
+
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Prime_Minister_Lyuh"
+	}
+}
+shared_focus = {
+	id = KOR_Patch_The_Holes
+	icon = GFX_KOR_Patching_our_Holes
+	relative_position_id = KOR_Prime_Minister_Lyuh
+	x = 0
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Prime_Minister_Lyuh
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Patch_The_Holes"
+		add_stability = 0.025
+		country_event = { id = korea.1 }
+	}
+}
+shared_focus = {
+	id = KOR_Parks_Demands
+	icon = GFX_KOR_Parks_Demands
+	relative_position_id = KOR_Patch_The_Holes
+	x = -2
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Patch_The_Holes
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Parks_Demands"
+		add_political_power = -50
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = 0.03
+		}
+		country_event = { id = korea.2 }
+	}
+}
+shared_focus = {
+	id = KOR_A_Revised_Land_Reform_Bill
+	icon = GFX_KOR_a_revised_bill
+	relative_position_id = KOR_Parks_Demands
+	x = 0
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Parks_Demands
+	}
+	mutually_exclusive = {
+		focus = KOR_Cannot_Go_Overboard
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_A_Revised_Land_Reform_Bill"
+		swap_ideas = {
+			remove_idea = KOR_Promising_Land_Reform
+			add_idea = KOR_Promising_Land_Reform_Semi_Collectivized
+		}
+	}
+}
+shared_focus = {
+	id = KOR_Beginning_Of_Collectivised_Agriculture
+	icon = GFX_KOR_Collectivised_Agri
+	relative_position_id = KOR_A_Revised_Land_Reform_Bill
+	x = 0
+	y = 1
+	cost = 4
+
+	prerequisite = {
+		focus = KOR_A_Revised_Land_Reform_Bill
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Beginning_Of_Collectivised_Agriculture"
+		swap_ideas = {
+			remove_idea = KOR_Promising_Land_Reform_Semi_Collectivized
+			add_idea = KOR_Promising_Land_Reform_Semi_Collectivized_2
+		}
+		country_event = { id = korea.3 }
+	}
+}
+shared_focus = {
+	id = KOR_Cannot_Go_Overboard
+	icon = GFX_KOR_cannot_afford_to_go_overboard
+	relative_position_id = KOR_Parks_Demands
+	x = -2
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Parks_Demands
+	}
+	mutually_exclusive = {
+		focus = KOR_A_Revised_Land_Reform_Bill
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Cannot_Go_Overboard"
+		add_political_power = -50
+	}
+}
+shared_focus = {
+	id = KOR_Weather_The_Fallout
+	icon = GFX_KOR_Weather_the_Fallout
+	relative_position_id = KOR_Cannot_Go_Overboard
+	x = 0
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Cannot_Go_Overboard
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Weather_The_Fallout"
+		add_stability = -0.075
+		country_event = { id = korea.4 }
+	}
+}
+shared_focus = {
+	id = KOR_Ahns_Reassurances
+	icon = GFX_KOR_ahns_reassurances
+	relative_position_id = KOR_Patch_The_Holes
+	x = 2
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Patch_The_Holes
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Ahns_Reassurances"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.03
+		}
+	}
+}
+shared_focus = {
+	id = KOR_A_Right_Centre_Union
+	icon = GFX_KOR_Left_right_coalition
+	relative_position_id = KOR_Ahns_Reassurances
+	x = 0
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Ahns_Reassurances
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_A_Right_Centre_Union"
+		add_political_power = 50
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.05
+		}
+	}
+}
+shared_focus = {
+	id = KOR_Slow_And_Steady_Progress
+	icon = GFX_KOR_slow_and_steady_progress
+	relative_position_id = KOR_A_Right_Centre_Union
+	x = 0
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_A_Right_Centre_Union
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Slow_And_Steady_Progress"
+		country_event = { id = korea.5 }
+	}
+}
+shared_focus = {
+	id = KOR_The_Military_Land_Question
+	icon =  GFX_KOR_military_land_question
+	relative_position_id = KOR_A_Right_Centre_Union
+	x = 2
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_A_Right_Centre_Union
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_The_Military_Land_Question"
+		country_event = { id = korea.6 }
+	}
+}
+shared_focus = {
+	id = KOR_Parliament_Descends
+	icon = GFX_KOR_Parliament_descends
+	relative_position_id = KOR_Slow_And_Steady_Progress
+	x = -2
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_The_Military_Land_Question
+	}
+	prerequisite = {
+		focus = KOR_Slow_And_Steady_Progress
+	}
+	prerequisite = {
+		focus = KOR_Beginning_Of_Collectivised_Agriculture
+		focus = KOR_Weather_The_Fallout
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Parliament_Descends"
+		add_political_power = -100
+		add_stability = -0.05
+	}
+}
+shared_focus = {
+	id = KOR_And_Out_Comes_The_Truth
+	icon = GFX_KOR_and_out_comes_the_truth
+	relative_position_id = KOR_Parliament_Descends
+	x = 0
+	y = 1
+	cost = 6
+
+	prerequisite = {
+		focus = KOR_Parliament_Descends
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_And_Out_Comes_The_Truth"
+		custom_effect_tooltip = COALITION_SHITTING_ITSELF
+		hidden_effect = {
+			country_event = { id = korea.8 }
+		}
+	}
+}
+
+shared_focus = {
+	id = KOR_Votes_Came_Short
+	#icon = 
+	x = 8
+	y = 0
+	cost = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Votes_Came_Short"
+	}
+}
+
+shared_focus = {
+	id = KOR_Crisis_Mode
+	#icon = 
+	x = 0
+	y = 1
+	cost = 6
+	relative_position_id = KOR_Votes_Came_Short
+
+	prerequisite = {
+		focus = KOR_Votes_Came_Short
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Crisis_Mode"
+	}
+}
+
+shared_focus = {
+	id = KOR_Reassess_CPK_Relations
+	#icon = 
+	x = -1
+	y = 1
+	cost = 6
+	relative_position_id = KOR_Crisis_Mode
+
+	prerequisite = {
+		focus = KOR_Crisis_Mode
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Reassess_CPK_Relations"
+	}
+}
+
+shared_focus = {
+	id = KOR_Was_The_Right_Right
+	#icon = 
+	x = 1
+	y = 1
+	cost = 6
+	relative_position_id = KOR_Crisis_Mode
+
+	prerequisite = {
+		focus = KOR_Crisis_Mode
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Was_The_Right_Right"
+	}
+}
+
+shared_focus = {
+	id = KOR_The_Two_Make_Moves
+	#icon = 
+	x = 1
+	y = 1
+	cost = 6
+	relative_position_id = KOR_Reassess_CPK_Relations
+
+	prerequisite = {
+		focus = KOR_Reassess_CPK_Relations
+	}
+
+	prerequisite = {
+		focus = KOR_Was_The_Right_Right
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_The_Two_Make_Moves"
+	}
+}
+
+shared_focus = {
+	id = KOR_Decide_Our_Lot
+	#icon = 
+	x = 0
+	y = 1
+	cost = 6
+	relative_position_id = KOR_The_Two_Make_Moves
+
+	prerequisite = {
+		focus = KOR_The_Two_Make_Moves
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_Decide_Our_Lot"
+	}
+}
+
+shared_focus = {
+	id = KOR_All_Eyez_On_Ballots
+	#icon = 
+	x = 0
+	y = 1
+	cost = 6
+	relative_position_id = KOR_Decide_Our_Lot
+
+	prerequisite = {
+		focus = KOR_Decide_Our_Lot
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_All_Eyez_On_Ballots"
+	}
+}

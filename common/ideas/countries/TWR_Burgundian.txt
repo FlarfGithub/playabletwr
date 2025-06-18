@@ -1,0 +1,19 @@
+TWR_Burgundian_advisors = {
+	allowed = {
+		has_government = burgundian_system
+		has_completed_focus = TWR_Burgundian_Structure
+	}
+	ideas = {
+		TWR_Burgundian_containment = {
+			allowed = {
+				has_government = burgundian_system
+				has_completed_focus = TWR_Burgundian_Structure
+			}
+			modifier = {
+				ideology_drift_defense = 0.30
+				twr_authoritarian_influence = 0.25
+			}
+			cost = 250
+		}
+	}
+}

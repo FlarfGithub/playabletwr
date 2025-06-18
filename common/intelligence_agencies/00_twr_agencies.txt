@@ -1,0 +1,20 @@
+intelligence_agency = {
+	name = "TWR_ESPIONAGE_NETWORK"
+	
+	upgrade = {
+		name = "twr_spy_network_construction"
+		duration = 180
+		modifier = {
+			spy_network_construction_speed = 0.25
+		}
+	}
+	
+	upgrade = {
+		name = "twr_ideological_defectors"
+		allowed = { has_dlc = "La Resistance" }
+		duration = 90
+		modifier = {
+			operative_ideology_defection_chance = 0.15
+		}
+	}
+}

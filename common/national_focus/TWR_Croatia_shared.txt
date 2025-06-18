@@ -1,0 +1,6946 @@
+﻿shared_focus = {
+	id = CRO_The_Croatian_Armed_Forces
+	icon = GFX_CRO_Croatian_Military
+	cost = 5
+	x = 33
+	y = 0
+	offset = {
+		x = -7
+		trigger = {
+			OR = {
+				has_focus_tree = croatia_generic_puppet_tree
+				has_focus_tree = CRO_Generic_Tree
+			}
+		}
+	}
+	offset = {
+		x = -1
+		trigger = {
+			has_focus_tree = CRO_Artukovic_Tree
+		}
+	}
+	offset = {
+		x = -4
+		trigger = {
+			has_focus_tree = CRO_Kingdom_Tree
+		}
+	}
+	offset = {
+		x = -7
+		trigger = {
+			has_focus_tree = CRO_Duumvirate_Tree
+		}
+	}
+	offset = {
+		x = -3
+		trigger = {
+			has_focus_tree = CRO_Crusader_Croatia_Tree
+		}
+	}
+	allow_branch = {
+		is_communist = no
+	}
+	cancelable = yes
+	available = {
+		NOT = {
+			has_idea = CRO_Divided_Home_Guard_idea
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Croatian_Armed_Forces"
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+	}
+}
+
+shared_focus = {
+	id = CRO_Founding_The_Revolutionary_Armed_Forces
+	icon = GFX_GENERIC_revolutionary
+	cost = 5
+	x = 33
+	y = 0
+	offset = {
+		x = -7
+		trigger = {
+			OR = {
+				has_focus_tree = croatia_generic_puppet_tree
+				has_focus_tree = CRO_Generic_Tree
+			}
+		}
+	}
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	allow_branch = {
+		is_communist = yes
+	}
+	cancelable = yes
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Founding_The_Revolutionary_Armed_Forces"
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+	}
+}
+
+
+shared_focus = {
+	id = CRO_The_Peoples_Army
+	icon = GFX_SER_focus_matters_of_the_army_jna
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Founding_The_Revolutionary_Armed_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Founding_The_Revolutionary_Armed_Forces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Peoples_Army"
+		army_experience = 10
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Founding_The_Peoples_Navy
+	icon = GFX_SER_focus_found_a_navy
+	cost = 5
+	x = -7
+	y = 1
+	relative_position_id = CRO_Founding_The_Revolutionary_Armed_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Founding_The_Revolutionary_Armed_Forces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Founding_The_Peoples_Navy"
+        navy_experience = 10
+	}
+}
+
+shared_focus = {
+	id = CRO_Founding_The_Peoples_Airforce
+	icon = GFX_SER_focus_own_the_skies
+	cost = 5
+	x = 6
+	y = 1
+	relative_position_id = CRO_Founding_The_Revolutionary_Armed_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Founding_The_Revolutionary_Armed_Forces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Founding_The_Peoples_Airforce"
+		air_experience = 10
+		add_ideas = CRO_Battlefield_support
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Improving_The_Navy
+	icon = GFX_HOL_Dutch_Navy
+	cost = 5
+	x = -7
+	y = 1
+	relative_position_id = CRO_The_Croatian_Armed_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Croatian_Armed_Forces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Improving_The_Navy"
+        navy_experience = 10
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Mediterranean_Navy_Expansion
+	icon = GFX_goal_generic_navy_battleship
+	cost = 5
+	x = 0
+	y = 1
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	relative_position_id = CRO_Improving_The_Navy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Founding_The_Peoples_Navy
+		focus = CRO_Improving_The_Navy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Mediterranean_Navy_Expansion"
+        navy_experience = 10
+	}
+}
+
+shared_focus = {
+	id = CRO_Improve_Our_Dalmatian_Dockyards
+	icon = GFX_goal_generic_construct_naval_dockyard
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Mediterranean_Navy_Expansion
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Mediterranean_Navy_Expansion
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Mediterranean_Navy_Expansion"
+		103 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		103 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Mass_Produce_Destroyers
+	icon = GFX_focus_generic_destroyer
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Improve_Our_Dalmatian_Dockyards
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Improve_Our_Dalmatian_Dockyards
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Mass_Produce_Destroyers"
+		add_ideas = CRO_Mass_Produced_Navy
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Expand_The_Submarines
+	icon = GFX_goal_generic_navy_submarine
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Improve_Our_Dalmatian_Dockyards
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Improve_Our_Dalmatian_Dockyards
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_The_Submarines"
+		add_ideas = CRO_Croatian_Submarines_idea
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Begin_the_Battleship_Programme
+	icon = GFX_USA_destroyer_leaders
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Improve_Our_Dalmatian_Dockyards
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Improve_Our_Dalmatian_Dockyards
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Begin_the_Battleship_Programme"
+		add_ideas = CRO_Battleships_Never_Age
+                set_technology = { naval_development = 1 }
+	}
+}
+
+shared_focus = {
+	id = CRO_Expand_Naval_Doctrines
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Expand_The_Submarines
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Mass_Produce_Destroyers
+	}
+	prerequisite = {
+		focus = CRO_Expand_The_Submarines
+	}
+	prerequisite = {
+		focus = CRO_Begin_the_Battleship_Programme
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Naval_Doctrines"
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = naval_doctrine
+			}
+	}
+}
+
+shared_focus = {
+	id = CRO_Compete_Against_The_Italians
+	icon = GFX_USA_attack_italy
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Expand_Naval_Doctrines
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Expand_Naval_Doctrines
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Compete_Against_The_Italians"
+		add_ideas = CRO_Italian_Competition
+	}
+}
+
+shared_focus = {
+	id = CRO_The_Croatian_Army
+	icon = GFX_CRO_submission
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_Croatian_Armed_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Croatian_Armed_Forces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Croatian_Army"
+		army_experience = 10
+	}
+}
+
+shared_focus = {
+	id = CRO_Modernise_Our_Land_Forces
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 5
+	x = 0
+	y = 1
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	relative_position_id = CRO_The_Croatian_Army
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Peoples_Army
+		focus = CRO_The_Croatian_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Modernise_Our_Land_Forces"
+		add_tech_bonus = {
+			name = infantry_bonus
+			bonus = 0.25
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Learn_from_the_Invasion_of_Greece
+	icon = GFX_ITA_Greek_Problems
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Modernise_Our_Land_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Modernise_Our_Land_Forces
+	}
+	mutually_exclusive = {
+		focus = CRO_Look_to_Yugoslavias_Demise
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Learn_from_the_Invasion_of_Greece"
+		add_tech_bonus = {
+			name = artillery_bonus
+			bonus = 0.5
+			uses = 1
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Shell_Them_to_the_End
+	icon = GFX_GENERIC_crowd_war
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Learn_from_the_Invasion_of_Greece
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Learn_from_the_Invasion_of_Greece
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Shell_Them_to_the_End"
+			add_doctrine_cost_reduction = {
+				name = doctrine_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_combined_operations
+			}
+	}
+}
+
+shared_focus = {
+	id = CRO_Expand_Artillery_Production
+	icon = GFX_GENERIC_artillery
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Shell_Them_to_the_End
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Shell_Them_to_the_End
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Artillery_Production"
+		add_ideas = CRO_Shells_for_Victory
+	}
+}
+
+shared_focus = {
+	id = CRO_Less_Men_More_Experience
+	icon = GFX_GENERIC_Soldiers_Defense
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Learn_from_the_Invasion_of_Greece
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Learn_from_the_Invasion_of_Greece
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Less_Men_More_Experience"
+		add_ideas = CRO_Experienced_Soldiers
+	}
+}
+
+shared_focus = {
+	id = CRO_The_Special_Ground_Forces
+	icon = GFX_goal_generic_special_forces
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Less_Men_More_Experience
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Less_Men_More_Experience
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Special_Ground_Forces"
+		add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 0.25
+			uses = 1
+			category = mountaineers_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Expand_Our_Military_Companies
+	icon = GFX_GENERIC_Army_Cooperation
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_The_Special_Ground_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Expand_Artillery_Production
+	}
+	prerequisite = {
+		focus = CRO_The_Special_Ground_Forces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Our_Military_Companies"
+		army_experience = 25
+	}
+}
+
+shared_focus = {
+	id = CRO_Look_to_Yugoslavias_Demise
+	icon = GFX_goal_generic_major_war
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Modernise_Our_Land_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Modernise_Our_Land_Forces
+	}
+	mutually_exclusive = {
+		focus = CRO_Learn_from_the_Invasion_of_Greece
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Look_to_Yugoslavias_Demise"
+		add_tech_bonus = {
+			name = motorised_bonus
+			bonus = 0.25
+			uses = 1
+			category = motorized_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Lightning_War_Doctrine
+	icon = GFX_goal_generic_army_motorized
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Look_to_Yugoslavias_Demise
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Look_to_Yugoslavias_Demise
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Lightning_War_Doctrine"
+			add_doctrine_cost_reduction = {
+				name = doctrine_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_strategic_theorem
+			}
+	}
+}
+
+shared_focus = {
+	id = CRO_Expand_Tank_Research
+	icon = GFX_goal_generic_army_tanks
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Lightning_War_Doctrine
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Lightning_War_Doctrine
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Tank_Research"
+		add_tech_bonus = {
+			name = doctrine_bonus
+			bonus = 0.25
+			uses = 1
+			category = armor
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Motorise_Our_Forces
+	icon = GFX_GENERIC_mechanisation
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Look_to_Yugoslavias_Demise
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Look_to_Yugoslavias_Demise
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Motorise_Our_Forces"
+		add_ideas = CRO_Wheels_for_Victory
+	}
+}
+
+shared_focus = {
+	id = CRO_Import_German_Motorised_Equipment
+	icon = GFX_GER_Mechanized_Army
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Motorise_Our_Forces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Motorise_Our_Forces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Import_German_Motorised_Equipment"
+		IF = {
+			limit = {
+				is_fascist = yes
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				amount = 250
+				producer = GER
+			}
+		}
+		IF = {
+			limit = {
+				is_communist = yes
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				amount = 250
+				producer = SOV
+			}
+		}
+		IF = {
+			limit = {
+				is_democratic = yes
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				amount = 250
+				producer = USA
+			}
+		}
+		IF = {
+			limit = {
+				has_government = paternal_autocrat
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_0
+				amount = 250
+				producer = CHI
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Mechanisation_of_the_Army
+	icon = GFX_GENERIC_MECH
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Import_German_Motorised_Equipment
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Expand_Tank_Research
+	}
+	prerequisite = {
+		focus = CRO_Import_German_Motorised_Equipment
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Mechanisation_of_the_Army"
+		add_tech_bonus = {
+			name = mechanised_bonus
+			bonus = 0.5
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Land_Doctrine
+	icon = GFX_goal_generic_army_doctrines
+	cost = 5
+	x = 0
+	y = 5
+	relative_position_id = CRO_The_Croatian_Army
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Special_Ground_Forces
+		focus = CRO_Expand_Tank_Research
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Land_Doctrine"
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+	}
+}
+
+shared_focus = {
+	id = CRO_Croatian_Air_Force 
+	icon = GFX_CRO_Airforce
+	cost = 5
+	x = 6
+	y = 1
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Croatian_Armed_Forces
+	}
+	relative_position_id = CRO_The_Croatian_Armed_Forces
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Croatian_Air_Force"
+		air_experience = 10
+		add_ideas = CRO_Battlefield_support
+	}
+}
+
+shared_focus = {
+	id = CRO_Improving_The_Airforce
+	icon = GFX_goal_generic_air_production 
+	cost = 5
+	x = 0
+	y = 1
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	relative_position_id = CRO_Croatian_Air_Force
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Founding_The_Peoples_Airforce
+		focus = CRO_Croatian_Air_Force
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Croatian_Air_Force"	
+		air_experience = 10
+		swap_ideas = {
+			remove_idea = CRO_Battlefield_support
+			add_idea = CRO_Battlefield_support2
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Construct_New_Airfields
+	icon = GFX_GENERIC_air_construction
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Improving_The_Airforce
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Improving_The_Airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Construct_New_Airfields"
+		random_owned_state = { 
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Bomber_Programme
+	icon = GFX_GENERIC_Dropping_Bombs
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Construct_New_Airfields
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Construct_New_Airfields
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bomber_Programme"
+		add_tech_bonus = {
+			name = bomber_bonus
+			bonus = 0.25
+			uses = 2
+			category = cas_bomber
+			category = tactical_bomber
+			category = cat_strategic_bomber
+			category = naval_bomber
+		}
+		IF = {
+			limit = {
+				has_idea = CRO_Battlefield_support2
+			}
+		swap_ideas = {
+			remove_idea = CRO_Battlefield_support2
+			add_idea = CRO_Battlefield_support3
+			}
+		else = {
+		swap_ideas = {
+			remove_idea = CRO_Battlefield_support3
+			add_idea = CRO_Battlefield_support4
+		}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Improve_Our_Old_Fighters
+	icon = GFX_goal_generic_air_fighter2
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Construct_New_Airfields
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Construct_New_Airfields
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Improve_Our_Old_Fighters"
+		add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 0.25
+			uses = 2
+			category = light_fighter
+			category = cat_heavy_fighter
+		}
+		IF = {
+			limit = {
+				has_idea = CRO_Battlefield_support2
+			}
+		swap_ideas = {
+			remove_idea = CRO_Battlefield_support2
+			add_idea = CRO_Battlefield_support3
+			}
+		else = {
+		swap_ideas = {
+			remove_idea = CRO_Battlefield_support3
+			add_idea = CRO_Battlefield_support4
+		}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_New_Air_Doctrines
+	icon = GFX_goal_generic_air_doctrine
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Improve_Our_Old_Fighters
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Bomber_Programme
+	}
+	prerequisite = {
+		focus = CRO_Improve_Our_Old_Fighters
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_New_Air_Doctrines"
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+	}
+}
+
+shared_focus = {
+	id = Research_for_the_Age_of_Jets
+	icon = GFX_GENERIC_Jet_Fighters
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_New_Air_Doctrines
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_New_Air_Doctrines
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Research_for_the_Age_of_Jets"
+		custom_effect_tooltip = cro_airforce_company_tt
+		add_tech_bonus = {
+			name = jet_bonus
+			bonus = 0.25
+			uses = 2
+			category = jet_technology
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_The_New_Military
+	icon = GFX_GENERIC_Military_Equipment
+	cost = 5
+	x = 0
+	y = 1
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	relative_position_id = CRO_Land_Doctrine
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Mechanisation_of_the_Army
+		focus = CRO_Expand_Our_Military_Companies 
+	}
+	prerequisite = {
+		focus = CRO_Land_Doctrine
+	}
+	prerequisite = {
+		focus = Research_for_the_Age_of_Jets
+	}
+	prerequisite = {
+		focus = CRO_Compete_Against_The_Italians
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_New_Military"
+		custom_effect_tooltip = CRO_combining_ideas_military_tt
+		hidden_effect = {
+			remove_ideas = { CRO_Battlefield_support4 CRO_Battlefield_support3 CRO_Battlefield_support2 CRO_Battlefield_support CRO_Mass_Produced_Navy CRO_Croatian_Submarines_idea CRO_Battleships_Never_Age CRO_Italian_Competition CRO_Shells_for_Victory CRO_Experienced_Soldiers CRO_Wheels_for_Victory }
+			if = { 
+				limit = { 
+					has_completed_focus = CRO_Look_to_Yugoslavias_Demise 
+				} 
+				add_ideas = CRO_A_New_Military_idea_1 
+			}
+			if = { 
+				limit = { 
+					has_completed_focus = CRO_Learn_from_the_Invasion_of_Greece 
+				} 
+				add_ideas = CRO_A_New_Military_idea_2 
+			}
+		}
+	} 
+}
+
+
+###################
+## INDUSTRY TREE ##
+###################
+shared_focus = {
+	id = CRO_Ending_the_Depression
+	icon = GFX_GENERIC_Fix_Depression
+	cost = 5
+	x = 2
+	y = 0
+	offset = {
+		x = 10
+		trigger = {
+			OR = {
+				has_focus_tree = croatia_generic_puppet_tree
+				has_focus_tree = CRO_Generic_Tree
+			}
+		}
+	}
+	offset = {
+		x = 2
+		trigger = {
+			has_focus_tree = CRO_Artukovic_Tree
+		}
+	}
+	offset = {
+		x = 5
+		trigger = {
+			has_focus_tree = CRO_Kingdom_Tree
+		}
+	}
+	offset = {
+		x = 1
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	offset = {
+		x = 2
+		trigger = {
+			has_focus_tree = CRO_Nikola_Car_Tree
+		}
+	}
+	offset = {
+		x = 1
+		trigger = {
+			has_focus_tree = CRO_Francetic_Tree
+		}
+	}
+	offset = {
+		x = 1
+		trigger = {
+			has_focus_tree = CRO_Democratic_Tree
+		}
+	}
+	offset = {
+		x = 1
+		trigger = {
+			has_focus_tree = CRO_Duumvirate_Tree
+		}
+	}
+	offset = {
+		x = 1
+		trigger = {
+			has_focus_tree = CRO_Military_Junta_Tree
+		}
+	}
+	offset = {
+		x = 1
+		trigger = {
+			has_focus_tree = CRO_Crusader_Croatia_Tree
+		}
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Ending_the_Depression"
+                add_stability = 0.05
+                add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id = CRO_Empower_the_Alliance_of_Syndicates
+	icon = GFX_GENERIC_meet_trade_unions
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Ending_the_Depression
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Ending_the_Depression
+	}
+        bypass = { 
+                   CRO = {
+                            NOT = {
+                              has_idea = CRO_Economic_Depression_idea
+                              has_idea = CRO_Economic_Depression_1_idea
+                              has_idea = CRO_Economic_Depression_2_idea
+                              has_idea = CRO_Economic_Depression_3_idea
+                              has_idea = CRO_Economic_Depression_4_idea
+                              has_idea = CRO_Economic_Depression_5_idea
+                                   }
+                            }
+                  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Empower_the_Alliance_of_Syndicates"
+		IF = {
+			limit = {
+				has_idea = CRO_Economic_Depression_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_idea
+				add_idea = CRO_Economic_Depression_1_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_1_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_1_idea
+				add_idea = CRO_Economic_Depression_2_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_2_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_2_idea
+				add_idea = CRO_Economic_Depression_3_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_3_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_3_idea
+				add_idea = CRO_Economic_Depression_4_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_4_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_4_idea
+				add_idea = CRO_Economic_Depression_5_idea
+			}
+		}
+		else = {
+			custom_effect_tooltip = CRO_no_more_depression_focus_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Fix_the_Food_Prices
+	icon = GFX_GENERIC_Food_Price
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Ending_the_Depression
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Ending_the_Depression
+	}
+        bypass = { 
+                   CRO = {
+                            NOT = {
+                              has_idea = CRO_Economic_Depression_idea
+                              has_idea = CRO_Economic_Depression_1_idea
+                              has_idea = CRO_Economic_Depression_2_idea
+                              has_idea = CRO_Economic_Depression_3_idea
+                              has_idea = CRO_Economic_Depression_4_idea
+                              has_idea = CRO_Economic_Depression_5_idea
+                                   }
+                            }
+                  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Fix_the_Food_Prices"
+		IF = {
+			limit = {
+				has_idea = CRO_Economic_Depression_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_idea
+				add_idea = CRO_Economic_Depression_1_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_1_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_1_idea
+				add_idea = CRO_Economic_Depression_2_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_2_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_2_idea
+				add_idea = CRO_Economic_Depression_3_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_3_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_3_idea
+				add_idea = CRO_Economic_Depression_4_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_4_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_4_idea
+				add_idea = CRO_Economic_Depression_5_idea
+			}
+		}
+		else = {
+			custom_effect_tooltip = CRO_no_more_depression_focus_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Redistribution_to_the_Poor
+	icon = GFX_USA_expand_welfare
+	cost = 5
+	x = -2
+	y = 2
+	relative_position_id = CRO_Ending_the_Depression
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Empower_the_Alliance_of_Syndicates
+	}
+	prerequisite = {
+		focus = CRO_Fix_the_Food_Prices
+	}
+        bypass = { 
+                   CRO = {
+                            NOT = {
+                              has_idea = CRO_Economic_Depression_idea
+                              has_idea = CRO_Economic_Depression_1_idea
+                              has_idea = CRO_Economic_Depression_2_idea
+                              has_idea = CRO_Economic_Depression_3_idea
+                              has_idea = CRO_Economic_Depression_4_idea
+                              has_idea = CRO_Economic_Depression_5_idea
+                                   }
+                            }
+                  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Redistribution_to_the_Poor"
+		IF = {
+			limit = {
+				has_idea = CRO_Economic_Depression_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_idea
+				add_idea = CRO_Economic_Depression_1_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_1_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_1_idea
+				add_idea = CRO_Economic_Depression_2_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_2_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_2_idea
+				add_idea = CRO_Economic_Depression_3_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_3_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_3_idea
+				add_idea = CRO_Economic_Depression_4_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_4_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_4_idea
+				add_idea = CRO_Economic_Depression_5_idea
+			}
+		}
+		else = {
+			custom_effect_tooltip = CRO_no_more_depression_focus_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Find_New_Trade_Partners
+	icon = GFX_GENERIC_gold_trade
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = CRO_Ending_the_Depression
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Empower_the_Alliance_of_Syndicates
+	}
+	prerequisite = {
+		focus = CRO_Fix_the_Food_Prices
+	}
+        bypass = { 
+                   CRO = {
+                            NOT = {
+                              has_idea = CRO_Economic_Depression_idea
+                              has_idea = CRO_Economic_Depression_1_idea
+                              has_idea = CRO_Economic_Depression_2_idea
+                              has_idea = CRO_Economic_Depression_3_idea
+                              has_idea = CRO_Economic_Depression_4_idea
+                              has_idea = CRO_Economic_Depression_5_idea
+                                   }
+                            }
+                  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Find_New_Trade_Partners"
+		IF = {
+			limit = {
+				has_idea = CRO_Economic_Depression_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_idea
+				add_idea = CRO_Economic_Depression_1_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_1_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_1_idea
+				add_idea = CRO_Economic_Depression_2_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_2_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_2_idea
+				add_idea = CRO_Economic_Depression_3_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_3_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_3_idea
+				add_idea = CRO_Economic_Depression_4_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_4_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_4_idea
+				add_idea = CRO_Economic_Depression_5_idea
+			}
+		}
+		else = {
+			custom_effect_tooltip = CRO_no_more_depression_focus_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Strengthen_the_Lumber_Industry
+	icon = GFX_GENERIC_lumber_industry
+	cost = 5
+	x = 2
+	y = 2
+	relative_position_id = CRO_Ending_the_Depression
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Empower_the_Alliance_of_Syndicates
+	}
+	prerequisite = {
+		focus = CRO_Fix_the_Food_Prices
+	}
+        bypass = { 
+                   CRO = {
+                            NOT = {
+                              has_idea = CRO_Economic_Depression_idea
+                              has_idea = CRO_Economic_Depression_1_idea
+                              has_idea = CRO_Economic_Depression_2_idea
+                              has_idea = CRO_Economic_Depression_3_idea
+                              has_idea = CRO_Economic_Depression_4_idea
+                              has_idea = CRO_Economic_Depression_5_idea
+                                   }
+                            }
+                  }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Strengthen_the_Lumber_Industry"
+		IF = {
+			limit = {
+				has_idea = CRO_Economic_Depression_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_idea
+				add_idea = CRO_Economic_Depression_1_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_1_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_1_idea
+				add_idea = CRO_Economic_Depression_2_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_2_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_2_idea
+				add_idea = CRO_Economic_Depression_3_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_3_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_3_idea
+				add_idea = CRO_Economic_Depression_4_idea
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = CRO_Economic_Depression_4_idea
+			}
+			swap_ideas = {
+				remove_idea = CRO_Economic_Depression_4_idea
+				add_idea = CRO_Economic_Depression_5_idea
+			}
+		}
+		else = {
+			custom_effect_tooltip = CRO_no_more_depression_focus_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_The_Worst_is_Behind_Us
+	icon = GFX_GENERIC_Pile_of_Money
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Find_New_Trade_Partners
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Strengthen_the_Lumber_Industry
+	}
+	prerequisite = {
+		focus = CRO_Redistribution_to_the_Poor
+	}
+	prerequisite = {
+		focus = CRO_Find_New_Trade_Partners
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CRO_has_economic_depression_5_tt
+			has_idea = CRO_Economic_Depression_5_idea
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Worst_is_Behind_Us"
+		remove_ideas = CRO_Economic_Depression_5_idea
+		add_research_slot = 1
+		}
+	}
+
+shared_focus = {
+	id = CRO_Our_First_Step_to_Greatness
+	icon = GFX_CRO_Hrvatska_Hrvatom
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_Worst_is_Behind_Us
+	prerequisite = {
+		focus = CRO_The_Worst_is_Behind_Us
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Our_First_Step_to_Greatness"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_A_New_Four_Year_Plan
+	icon = GFX_GENERIC_Factory_Planning
+	cost = 6
+	x = 0
+	y = 1
+	relative_position_id = CRO_Our_First_Step_to_Greatness
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Our_First_Step_to_Greatness
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_A_New_Four_Year_Plan"
+		unlock_decision_category_tooltip = cro_resource_exploitation_category
+		add_timed_idea = {
+			idea = CRO_Four_Year_Plan_idea
+			days = 1460
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Reduce_Reliance_on_Germany
+	icon = GFX_GENERIC_gold_trade
+	cost = 5
+	x = 5
+	y = 1
+	relative_position_id = CRO_A_New_Four_Year_Plan
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_A_New_Four_Year_Plan
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Reduce_Reliance_on_Germany"
+		add_timed_idea = {
+			idea = CRO_Reduced_Reliance_on_Germany_idea
+			days = 100
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Farming_Subsidies
+	icon = GFX_SER_focus_farming_subsidies
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = CRO_Reduce_Reliance_on_Germany
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Reduce_Reliance_on_Germany
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Farming_Subsidies"
+		add_timed_idea = {
+			idea = CRO_Farming_Subsidies_idea
+			days = 200
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Subsidise_Croatian_Industry_in_Bosnia
+	icon = GFX_GENERIC_money
+	cost = 5
+	x = 1
+	y = 2
+	relative_position_id = CRO_Power_Our_War_Machine
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Zagreb_Industrial_Centre
+	}
+	prerequisite = {
+		focus = CRO_Industrialise_Herzegovina
+	}
+	available = {
+		983 = {
+			is_fully_controlled_by = CRO
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Subsidise_Croatian_Industry_in_Bosnia"
+		983 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_The_Zagreb_Industrial_Centre
+	icon = GFX_focus_generic_industry_2
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Power_Our_War_Machine
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Power_Our_War_Machine
+	}
+	available = {
+		109 = {
+			is_fully_controlled_by = CRO
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Zagreb_Industrial_Centre"
+		109 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Infrastructure_for_the_Metropolis
+	icon = GFX_GENERIC_highway
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Connecting_Our_Country
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Connecting_Our_Country
+	}
+	bypass = {
+		109 = {
+			infrastructure > 8
+			is_fully_controlled_by = CRO
+		}		
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Infrastructure_for_the_Metropolis"
+		109 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Mine_the_Steel_of_Zagreb
+	icon = GFX_focus_generic_steel
+	cost = 5
+	x = -2
+	y = 2
+	relative_position_id = CRO_Reduce_Reliance_on_Germany
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Exploit_Our_Steel_Industry
+	}
+	available = {
+		109 = {
+			is_fully_controlled_by = CRO
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Mine_the_Steel_of_Zagreb"
+		add_resource = {
+			type = steel
+			amount = 5
+			state = 109
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Connecting_Our_Country
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 5
+	x = -4
+	y = 1
+	relative_position_id = CRO_A_New_Four_Year_Plan
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_A_New_Four_Year_Plan
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Connecting_Our_Country"
+		add_timed_idea = {
+			idea = CRO_Infrastructure_Push_idea
+			days = 150
+		}
+		build_railway = {
+		level = 1
+		start_province = 3924 
+		target_province = 6889 
+		}
+		build_railway = {
+		level = 1
+		start_province = 3924 
+		target_province = 9591 
+		}
+		build_railway = {
+		level = 1
+		start_province = 3601 
+		target_province = 591 
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Integrate_Sarajevo_Infrastructure
+	icon = GFX_goal_generic_construction
+	cost = 5
+	x = 1
+	y = 2
+	relative_position_id = CRO_Connecting_Our_Country
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Infrastructure_for_the_Metropolis
+	}
+	prerequisite = {
+		focus = CRO_Industrialise_the_Bosnian_Countryside
+	}
+	available = {
+		104 = {
+			OR = {
+			is_fully_controlled_by = CRO
+			AND = {
+			is_fully_controlled_by = BOS 
+			BOS = { is_subject_of = CRO }
+				}
+			}
+		}
+	}
+	bypass = {
+		104 = {
+			infrastructure > 9
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Integrate_Sarajevo_Infrastructure"
+		104 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Industrialise_the_Bosnian_Countryside
+	icon = GFX_GENERIC_Factory_Complex_Green
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Power_Our_War_Machine
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Power_Our_War_Machine
+	}
+	cancelable = yes
+	available = {
+		982 = {
+			OR = {
+			is_fully_controlled_by = CRO
+			AND = {
+			is_fully_controlled_by = BOS 
+			BOS = { is_subject_of = CRO }
+				}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Industrialise_the_Bosnian_Countryside"
+		982 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Industrialise_Herzegovina
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 6
+	x = 2
+	y = 1
+	relative_position_id = CRO_Power_Our_War_Machine
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Power_Our_War_Machine
+	}
+	available = {
+		983 = {
+			is_fully_controlled_by = CRO
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Industrialise_Herzegovina"
+		983 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Expand_Srem_Roads
+	icon = GFX_goal_generic_construction2
+	cost = 5
+	x = -1
+	y = 2
+	relative_position_id = CRO_Connecting_Our_Country
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Infrastructure_for_the_Metropolis
+	}
+	available = {
+		819 = {
+			infrastructure < 10
+			is_fully_controlled_by = CRO
+		}
+	}
+	bypass = {
+		NOT = {
+			AND = {
+				1060 = {
+					infrastructure > 9
+				}
+				1016 = {
+					infrastructure > 9
+				}
+				103 = {
+					infrastructure > 9
+				}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Srem_Roads"
+		1060 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		IF = {
+			limit = {
+				owns_state = 819
+				819 = {
+					infrastructure < 9
+				}
+			}
+			819 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		1016 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		103 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Power_Our_War_Machine
+	icon = GFX_GENERIC_arms_industry
+	cost = 8
+	x = 0
+	y = 1
+	relative_position_id = CRO_A_New_Four_Year_Plan
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_A_New_Four_Year_Plan
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Power_Our_War_Machine"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Exploit_Our_Steel_Industry
+	icon = GFX_GENERIC_Steel_Industry
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Reduce_Reliance_on_Germany
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Power_Our_War_Machine
+	}
+	prerequisite = {
+		focus = CRO_Reduce_Reliance_on_Germany
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Exploit_Our_Steel_Industry"
+		add_resource = {
+			type = steel
+			amount = 3
+			state = 109
+		}
+		add_resource = {
+			type = steel
+			amount = 4
+			state = 981
+		}
+       }
+}
+
+shared_focus = {
+	id = CRO_Our_Black_Gold
+	icon = GFX_focus_CDA_our_oil
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Reduce_Reliance_on_Germany
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Reduce_Reliance_on_Germany
+	}
+	available = {
+		103 = {
+			is_fully_controlled_by = CRO
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Our_Black_Gold"
+		103 = {
+			add_resource = {
+				type = oil
+				amount = 5
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Armament_Effort_for_Split
+	icon = GFX_GENERIC_military_industry_produce
+	cost = 5
+	x = -1
+	y = 2
+	relative_position_id = CRO_Power_Our_War_Machine
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Industrialise_the_Bosnian_Countryside
+	}
+	prerequisite = {
+		focus = CRO_The_Zagreb_Industrial_Centre
+	}
+	available = {
+		103 = {
+			is_fully_controlled_by = CRO
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Armament_Effort_for_Split"
+		103 = {
+			add_extra_state_shared_building_slots = 1 
+			add_building_construction = {    
+				type = arms_factory
+				level = 1    
+				instant_build = yes
+			}
+			add_building_construction = {    
+				type = arms_factory
+				level = 1    
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_The_New_Croatian_Industry
+	icon = GFX_GENERIC_central_industry
+	cost = 5
+	x = 0
+	y = 4
+	relative_position_id = CRO_A_New_Four_Year_Plan
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Expand_Srem_Roads
+	}
+	prerequisite = {
+		focus = CRO_Integrate_Sarajevo_Infrastructure
+	}
+	prerequisite = {
+		focus = CRO_Armament_Effort_for_Split
+	}
+	prerequisite = {
+		focus = CRO_Subsidise_Croatian_Industry_in_Bosnia
+	}
+	prerequisite = {
+		focus = CRO_Mine_the_Steel_of_Zagreb
+	}
+	prerequisite = {
+		focus = CRO_Farming_Subsidies
+	}
+	prerequisite = {
+		focus = CRO_Our_Black_Gold
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_New_Croatian_Industry"
+        add_ideas = CRO_The_New_Croatian_Industry_idea
+		add_ideas = TWR_mixed_economy
+	}
+}
+
+shared_focus = {
+	id = CRO_Nuclear_Energy
+	icon = GFX_CRO_Nuclear_Energy
+	cost = 7
+	x = 0
+	y = 7
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Workers_Republic
+		focus = CRO_The_Adriatic_Partnership
+		focus = CRO_Military_Industrial_Complex
+		focus = CRO_A_Totalitarian_Economy
+		focus = CRO_Free_Market_Free_People
+		focus = CRO_Glorious_Son_of_the_Croatian_People
+		focus = CRO_For_The_Common_Man
+	}
+    available = {
+		num_of_factories > 50
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Nuclear_Energy"
+        set_technology = { nuclear_capabilities = 1 }
+		add_research_slot = 1
+		109 = {
+			add_building_construction = {
+			type = nuclear_facility
+			level = 1
+			instant_build = yes
+			province = 11581
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Formulating_An_Actual_Economic_Policy
+	icon = GFX_CRO_What_Direction
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		OR = {
+			has_focus_tree = CRO_Artukovic_Tree
+			AND = {
+				has_focus_tree = CRO_Crusader_Croatia_Tree
+				has_idea = CRO_corporatism_idea
+			}
+		}
+	}
+    available = {
+		has_idea = CRO_corporatism_idea
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Formulating_An_Actual_Economic_Policy"
+		custom_effect_tooltip = CRO_Formulating_An_Actual_Economic_Policy_tt
+		add_political_power = -50
+		add_stability = -0.05
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_The_Croatian_Class
+	icon = GFX_CRO_A_Terrible_Swarm_of_Avengers
+	cost = 5
+	x = -3
+	y = 1
+	relative_position_id = CRO_Formulating_An_Actual_Economic_Policy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Formulating_An_Actual_Economic_Policy
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Officially_Adopting_Seitzonomics"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_stability = 0.05
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Uphold_The_Croatian_Farmer
+	icon = GFX_GENERIC_FARMER
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_The_Croatian_Class
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Croatian_Class
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Uphold_The_Croatian_Farmer"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_manpower = -200
+		add_political_power = -50
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.02
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Extol_The_Croatian_Soldier
+	icon = GFX_GENERIC_German_Style_Soldiers
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_Croatian_Class
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Croatian_Class
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Extol_The_Croatian_Soldier"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_manpower = -200
+		army_experience = -10
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.02
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Help_The_Croatian_Worker
+	icon = GFX_GENERIC_worker
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_The_Croatian_Class
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Croatian_Class
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Help_The_Croatian_Worker"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_manpower = -200
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.02
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Preserve_Farmer_Interests
+	icon = GFX_SER_focus_farmer_battalions
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Extol_The_Croatian_Soldier
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Extol_The_Croatian_Soldier
+		focus = CRO_Uphold_The_Croatian_Farmer
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Preserve_Farmer_Interests"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Expand_Arms_Industry
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Help_The_Croatian_Worker
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Extol_The_Croatian_Soldier
+		focus = CRO_Help_The_Croatian_Worker
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Arms_Industry"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Officialize_Nonmarxist_Socialism
+	icon = GFX_GENERIC_Fuxk_Marx_2
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Formulating_An_Actual_Economic_Policy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Formulating_An_Actual_Economic_Policy
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Nonmarxist_Socialism"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_political_power = 50
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = -0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Puppet_Trade_Unions
+	icon = GFX_GENERIC_Control_Banks
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Officialize_Nonmarxist_Socialism
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Officialize_Nonmarxist_Socialism
+		focus = CRO_Officially_Adopting_Seitzonomics
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Puppet_Trade_Unions"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_political_power = 50
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Officially_Adopting_Seitzonomics
+	icon = GFX_CRO_Crusader_Revolt
+	cost = 5
+	x = 3
+	y = 1
+	relative_position_id = CRO_Formulating_An_Actual_Economic_Policy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Formulating_An_Actual_Economic_Policy
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Officially_Adopting_Seitzonomics"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		add_political_power = 50
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.02
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Further_Centralise_Economic_Planning
+	icon = GFX_GENERIC_Factory_Planning
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Officially_Adopting_Seitzonomics
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Officialize_Nonmarxist_Socialism
+		focus = CRO_Officially_Adopting_Seitzonomics
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Officially_Adopting_Seitzonomics"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Construction_Push
+	icon = GFX_GENERIC_Construction_Engineering
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Further_Centralise_Economic_Planning
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Puppet_Trade_Unions
+		focus = CRO_Further_Centralise_Economic_Planning
+	}
+	available = {
+		NOT = {
+			has_completed_focus = CRO_A_Sensible_Economic_System
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Puppet_Trade_Unions"
+		add_to_variable = { CRO_ustasa_economic_reform_count = 1 }	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+
+
+shared_focus = {
+	id = CRO_A_Sensible_Economic_System
+	icon = GFX_GENERIC_Crisis_Thumbs_Up
+	cost = 5
+	x = 1
+	y = 2
+	relative_position_id = CRO_Help_The_Croatian_Worker
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Preserve_Farmer_Interests
+		focus = CRO_Expand_Arms_Industry
+		focus = CRO_Construction_Push
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_A_Sensible_Economic_System"
+		custom_effect_tooltip = cro_lock_economic_branch_tt
+		effect_tooltip = {
+			country_event = {
+				id = twrcroatia.262
+				hours = 12
+			}
+		}
+		hidden_effect = {
+			IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 11
+					}
+				}
+				random_list = {
+					90 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					10 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 10
+					}
+				}
+				random_list = {
+					80 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					20 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 9
+					}
+				}
+				random_list = {
+					70 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					30 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}	
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 8
+					}
+				}
+				random_list = {
+					60 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					40 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 7
+					}
+				}
+				random_list = {
+					50 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					50 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}	
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 6
+					}
+				}
+				random_list = {
+					40 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					60 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}	
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 5
+					}
+				}
+				random_list = {
+					30 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					70 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count = 4
+					}
+				}
+				random_list = {
+					20 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					80 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}	
+			else_IF = {
+				limit = {
+					check_variable = {
+						CRO_ustasa_economic_reform_count < 4
+					}
+				}
+				random_list = {
+					10 = {
+						country_event = {
+							id = twrcroatia.262
+							hours = 12
+						}
+					}
+					90 = {
+						country_event = {
+							id = twrcroatia.263
+							hours = 12
+						}
+					}
+				}	
+			}		
+		}
+		add_political_power = 50
+		add_popularity = {
+			ideology = national_socialist
+			popularity = 0.02
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Bolster_The_Bureaucracy
+	icon = GFX_GENERIC_bureaucracy_issues
+	cost = 5
+	x = -4
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		OR = {
+			has_focus_tree = CRO_Socialist_Tree
+			has_focus_tree = CRO_Hebrang_Tree
+			has_focus_tree = CRO_Bakaric_Tree
+			has_focus_tree = CRO_Nikola_Car_Tree
+		}
+	}
+	mutually_exclusive = {
+		focus = CRO_The_Illyrian_Model
+	}
+    available = {
+		OR = {
+			has_idea = CRO_Planned_Economy
+			has_idea = CRO_Bottom_Up_Planning 
+		}
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Bolster_The_Bureaucracy"
+		add_political_power = -50
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Ramp_Up_Social_Housing
+	icon = GFX_GENERIC_Urban_Road
+	cost = 5
+	x = 4
+	y = 1
+	relative_position_id = CRO_Bolster_The_Bureaucracy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Bolster_The_Bureaucracy
+		focus = CRO_The_Illyrian_Model
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Ramp_Up_Social_Housing"
+		add_political_power = -150
+		add_stability = 0.05
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}	
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}	
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}			
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Expand_Heavy_Industry
+	icon = GFX_GENERIC_Cogs_For_Factory
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Ramp_Up_Social_Housing
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Decentralize_Planning
+		focus = CRO_Workplace_Democracy
+		focus = CRO_Centralize_Economic_Planning
+	}
+	prerequisite = {
+		focus = CRO_Ramp_Up_Social_Housing
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Heavy_Industry"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}			
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Focus_On_Heavy_Industry
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Expand_Heavy_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Expand_Heavy_Industry
+		focus = CRO_Expand_Light_Industry
+	}
+	prerequisite = {
+		focus = CRO_Centralize_Economic_Planning
+	}
+	mutually_exclusive = {
+		focus = CRO_Focus_On_Light_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Heavy_Industry"
+		add_stability = -0.05
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}				
+	}
+}
+
+shared_focus = {
+	id = CRO_Focus_On_Light_Industry
+	icon = GFX_focus_generic_industry_3
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Expand_Heavy_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Expand_Heavy_Industry
+		focus = CRO_Expand_Light_Industry
+	}
+	prerequisite = {
+		focus = CRO_Decentralize_Planning
+		focus = CRO_The_Illyrian_Model
+	}
+	mutually_exclusive = {
+		focus = CRO_Focus_On_Heavy_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Heavy_Industry"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}				
+	}
+}
+
+shared_focus = {
+	id = CRO_Expand_Light_Industry
+	icon = GFX_focus_generic_industry_2
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Ramp_Up_Social_Housing
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Decentralize_Planning
+		focus = CRO_Workplace_Democracy
+		focus = CRO_Centralize_Economic_Planning
+	}
+	prerequisite = {
+		focus = CRO_Ramp_Up_Social_Housing
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_Light_Industry"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}				
+	}
+}
+
+
+shared_focus = {
+	id = CRO_More_Autonomy_To_Invidividual_Republics
+	icon = GFX_SER_focus_sideline_republics
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Focus_On_Light_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Focus_On_Light_Industry
+		focus = CRO_Brotherhood_And_Unity_Highway
+	}
+	mutually_exclusive = {
+		focus = CRO_Retain_Current_Course
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_More_Autonomy_To_Invidividual_Republics"
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = 0.05
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = SLV
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			limit = {
+				is_core_of = BOS
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+				is_core_of = MNT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+				NOT = {
+					is_core_of = MNT
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}					
+	}
+}
+
+shared_focus = {
+	id = CRO_Retain_Current_Course
+	icon = GFX_SER_focus_an_idealistic_union
+	cost = 5
+	x = 4
+	y = 1
+	relative_position_id = CRO_Focus_On_Light_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Focus_On_Light_Industry
+		focus = CRO_Brotherhood_And_Unity_Highway
+	}
+	mutually_exclusive = {
+		focus = CRO_More_Autonomy_To_Invidividual_Republics
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Retain_Current_Course"
+		add_political_power = -50
+		add_stability = -0.05
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = -0.05
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}					
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Workers_Republic
+	icon = GFX_SOV_Old_Worker
+	cost = 5
+	x = 1
+	y = 3
+	relative_position_id = CRO_Expand_Heavy_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Refine_Activity_Price_And_Production_Proposals
+		focus = CRO_Peoples_Rearmament_Programme
+		focus = CRO_More_Autonomy_To_Invidividual_Republics
+		focus = CRO_Retain_Current_Course
+	}
+	prerequisite = {
+		focus = CRO_Focus_On_Heavy_Industry
+		focus = CRO_Focus_On_Light_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Workers_Republic"
+		add_political_power = 50
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}		
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = 0.05
+		}	
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+shared_focus = {
+	id = CRO_Centralize_Economic_Planning
+	icon = GFX_GENERIC_planned_economy
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Bolster_The_Bureaucracy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Bolster_The_Bureaucracy
+	}
+	mutually_exclusive = {
+		focus = CRO_Decentralize_Planning
+	}
+    available = {
+		has_idea = CRO_Planned_Economy
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Centralize_Economic_Planning"
+		swap_ideas = {
+			remove_idea = CRO_Planned_Economy
+			add_idea = CRO_Planned_Economy_1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+shared_focus = {
+	id = CRO_Decentralize_Planning
+	icon = GFX_GENERIC_Clogs_Socialist
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Bolster_The_Bureaucracy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Bolster_The_Bureaucracy
+	}
+	mutually_exclusive = {
+		focus = CRO_Centralize_Economic_Planning
+	}
+    available = {
+		has_idea = CRO_Planned_Economy
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Decentralize_Planning"
+		swap_ideas = {
+			remove_idea = CRO_Bottom_Up_Planning
+			add_idea = CRO_Bottom_Up_Planning_1
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Worker_Managed_Workplaces
+	icon = GFX_GENERIC_worker
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Decentralize_Planning
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Decentralize_Planning
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Worker_Managed_Workplaces"
+		add_political_power = 50
+		add_stability = 0.05
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Found_Consumer_Councils
+	icon = GFX_GENERIC_SOV_To_Get_Rich
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Worker_Managed_Workplaces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Worker_Managed_Workplaces
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Found_Consumer_Councils"
+		add_political_power = 50
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Form_Regional_Council_Federations
+	icon = GFX_GENERIC_Communist_Congress_TWO
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Worker_Managed_Workplaces
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Worker_Managed_Workplaces
+	}
+	prerequisite = {
+		focus = CRO_Readjust_Quotas
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Form_Regional_Council_Federations"
+		add_political_power = -50
+		add_stability = 0.05
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Refine_Activity_Price_And_Production_Proposals
+	icon = GFX_GENERIC_Communist_Discourse
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Form_Regional_Council_Federations
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Found_Consumer_Councils
+	}
+	prerequisite = {
+		focus = CRO_Form_Regional_Council_Federations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Form_Regional_Council_Federations"
+		swap_ideas = {
+			remove_idea = CRO_Bottom_Up_Planning_1
+			add_idea = CRO_Bottom_Up_Planning_2
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Readjust_Quotas
+	icon = GFX_GENERIC_industrial_quota
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Decentralize_Planning
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Decentralize_Planning
+		focus = CRO_Centralize_Economic_Planning
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Decentralize_Planning"
+		add_political_power = -100
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Fire_Incompetent_Bureaucrats
+	icon = GFX_GER_internal_politics
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Readjust_Quotas
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Worker_Managed_Workplaces
+	}
+	prerequisite = {
+		focus = CRO_Readjust_Quotas
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Fire_Incompetent_Bureaucrats"
+		add_political_power = -50
+		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = CRO_Planned_Economy_1
+			add_idea = CRO_Planned_Economy_2
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Peoples_Rearmament_Programme
+	icon = GFX_SOV_mil_sector
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Fire_Incompetent_Bureaucrats
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Fire_Incompetent_Bureaucrats
+	}
+	prerequisite = {
+		focus = CRO_Focus_On_Heavy_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Peoples_Rearmament_Programme"
+		add_popularity = {
+			ideology = marxist_leninist
+			popularity = 0.05
+		}
+		add_timed_idea = {
+			idea = CRO_Peoples_Rearmament_Programme_idea
+			days = 200
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_The_Illyrian_Model
+	icon = GFX_SER_focus_illyrian_model
+	cost = 5
+	x = 4
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		OR = {
+			has_focus_tree = CRO_Socialist_Tree
+			has_focus_tree = CRO_Hebrang_Tree
+			has_focus_tree = CRO_Bakaric_Tree
+			has_focus_tree = CRO_Nikola_Car_Tree
+		}
+	}
+	mutually_exclusive = {
+		focus = CRO_Bolster_The_Bureaucracy
+	}
+    available = {
+		OR = {
+			has_idea = CRO_Planned_Economy
+			has_idea = CRO_Bottom_Up_Planning 
+		}
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Illyrian_Model"
+		swap_ideas = {
+			add_idea = SER_illyrian_market_socialism_idea_2
+			remove_idea = SER_illyrian_market_socialism_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Workplace_Democracy
+	icon = GFX_GENERIC_Workers_Paradise
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_The_Illyrian_Model
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Illyrian_Model
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Workplace_Democracy"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		IF = {
+			limit = {
+				has_idea = SER_illyrian_market_socialism_idea_3
+			}
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_4
+				remove_idea = SER_illyrian_market_socialism_idea_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_illyrian_market_socialism_idea_2
+			}
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_3
+				remove_idea = SER_illyrian_market_socialism_idea_2
+			}			
+		}
+		else = {
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_2
+				remove_idea = SER_illyrian_market_socialism_idea
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Ideological_Profit_Sharing
+	icon = GFX_GENERIC_financial_assistance
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_Illyrian_Model
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Illyrian_Model
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Ideological_Profit_Sharing"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		IF = {
+			limit = {
+				has_idea = SER_illyrian_market_socialism_idea_3
+			}
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_4
+				remove_idea = SER_illyrian_market_socialism_idea_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_illyrian_market_socialism_idea_2
+			}
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_3
+				remove_idea = SER_illyrian_market_socialism_idea_2
+			}			
+		}
+		else = {
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_2
+				remove_idea = SER_illyrian_market_socialism_idea
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Limit_The_Market_To_Consumer_Goods
+	icon = GFX_GENERIC_Minimize_Commodity_Production
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_The_Illyrian_Model
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_Illyrian_Model
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Ideological_Profit_Sharing"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		IF = {
+			limit = {
+				has_idea = SER_illyrian_market_socialism_idea_3
+			}
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_4
+				remove_idea = SER_illyrian_market_socialism_idea_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SER_illyrian_market_socialism_idea_2
+			}
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_3
+				remove_idea = SER_illyrian_market_socialism_idea_2
+			}			
+		}
+		else = {
+			swap_ideas = {
+				add_idea = SER_illyrian_market_socialism_idea_2
+				remove_idea = SER_illyrian_market_socialism_idea
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Youth_Action_Infrastructure
+	icon = GFX_GENERIC_Dirt_Paved_Roads
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Workplace_Democracy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Workplace_Democracy
+	}
+	prerequisite = {
+		focus = CRO_Ideological_Profit_Sharing
+	}
+	available = {
+		has_completed_focus = CRO_The_Youth_Volunteers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Youth_Action_Infrastructure"
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}	
+	}
+}
+
+shared_focus = {
+	id = CRO_Empower_Worker_Councils
+	icon = GFX_focus_generic_soviet_politics
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Ideological_Profit_Sharing
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Ideological_Profit_Sharing
+	}
+	prerequisite = {
+		focus = CRO_Limit_The_Market_To_Consumer_Goods
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Empower_Worker_Councils"
+		add_political_power = 50
+		add_popularity = {
+			ideology = bolshevik_leninist
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Brotherhood_And_Unity_Highway
+	icon = GFX_GENERIC_road_works
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Empower_Worker_Councils
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Youth_Action_Infrastructure
+	}
+	prerequisite = {
+		focus = CRO_Empower_Worker_Councils
+	}
+	available = {
+		owns_state = 765
+		owns_state = 109
+		owns_state = 1060
+		owns_state = 819
+		owns_state = 107
+		owns_state = 108
+		owns_state = 979
+		owns_state = 106
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Brotherhood_And_Unity_Highway"
+		IF = {
+			limit = {
+				765 = {
+					infrastructure < 10
+				}
+			}
+			765 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				109 = {
+					infrastructure < 10
+				}
+			}
+			109 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				1060 = {
+					infrastructure < 10
+				}
+			}
+			1060 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				819 = {
+					infrastructure < 10
+				}
+			}
+			819 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				107 = {
+					infrastructure < 10
+				}
+			}
+			107 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				108 = {
+					infrastructure < 10
+				}
+			}
+			108 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				979 = {
+					infrastructure < 10
+				}
+			}
+			979 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				106 = {
+					infrastructure < 10
+				}
+			}
+			106 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Aristocratic_Investments
+	icon = GFX_GENERIC_Crown_Money
+	cost = 5
+	x = -4
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		OR = {
+			has_focus_tree = CRO_Military_Junta_Tree
+			has_focus_tree = CRO_Francetic_Tree
+			has_focus_tree = CRO_Duumvirate_Tree
+			AND = {
+				has_focus_tree = CRO_Crusader_Croatia_Tree
+				NOT = {
+					has_idea = CRO_corporatism_idea
+				}
+			}
+		}
+	}
+	mutually_exclusive = {
+		focus = CRO_Militarization_of_the_Economy
+		focus = CRO_Unity_Between_Corporation_And_State
+	}
+    available = {
+		has_completed_focus = CRO_Kingdom_Give_Aimone_the_Crown
+		has_completed_focus = CRO_Kingdom_Il_Duces_State_Visit_to_Split
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Aristocratic_Investments"
+		add_political_power = 50
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Italian_Expertise
+	icon = GFX_CRO_Italian_Trade
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Aristocratic_Investments
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Aristocratic_Investments
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Italian_Expertise"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Italian_Lessons
+	icon = GFX_CRO_ITA_Bistate
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Aristocratic_Investments
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Aristocratic_Investments
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Italian_Lessons"
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Italian_Investment_Area_Dalmatia
+	icon = GFX_ITA_Italianise_Dalmatia
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Italian_Lessons
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Italian_Expertise
+	}
+	prerequisite = {
+		focus = CRO_Italian_Lessons
+	}
+	available = {
+		owns_state = 103
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Italian_Investment_Area_Dalmatia"
+		103 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Italo_Croatian_Customs_Union
+	icon = GFX_ITA_Italian_Empire
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Italian_Investment_Area_Dalmatia
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Italian_Investment_Area_Dalmatia
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Italo_Croatian_Customs_Union"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+		swap_ideas = {
+			remove_idea = CRO_Illyrian_Trade_1_idea
+			add_idea = CRO_Illyrian_Trade_2_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Retain_Sovereignty
+	icon = GFX_CRO_Self_Reliance
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Italian_Investment_Area_Dalmatia
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Italian_Investment_Area_Dalmatia
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Retain_Sovereignty"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+shared_focus = {
+	id = CRO_Spy_On_The_Neighbours
+	icon = GFX_GENERIC_Secret_Meeting
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Italian_Investment_Area_Dalmatia
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Italian_Investment_Area_Dalmatia
+		focus = CRO_Subordinate_The_Economy_To_The_Military
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Spy_On_The_Neighbours"
+		IF = {
+			limit = {
+				has_completed_focus = CRO_Militarization_of_the_Economy
+			}
+			swap_ideas = {
+				remove_idea = CRO_The_New_State_idea
+				add_idea = CRO_The_New_State_idea_1
+			}
+		}
+		else = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Intelligence_Sharing
+	icon = GFX_GENERIC_ITA_Diplomat
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Retain_Sovereignty
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Retain_Sovereignty
+	}
+	prerequisite = {
+		focus = CRO_Spy_On_The_Neighbours
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Intelligence_Sharing"
+		add_to_tech_sharing_group = CRO_ITA_Intelligence_Sharing_Group
+		ITA = {
+			add_to_tech_sharing_group = CRO_ITA_Intelligence_Sharing_Group
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Use_The_Med_Union
+	icon = GFX_ITA_Med_Pact
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Italo_Croatian_Customs_Union
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Italo_Croatian_Customs_Union
+	}
+	prerequisite = {
+		focus = CRO_Spy_On_The_Neighbours
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Use_The_Med_Union"
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_The_Adriatic_Partnership
+	icon = GFX_GENERIC_Trading
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Use_The_Med_Union
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Use_The_Med_Union
+	}
+	prerequisite = {
+		focus = CRO_Intelligence_Sharing
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Adriatic_Partnership"
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+		}
+		ITA = {
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Militarization_of_the_Economy
+	icon = GFX_GENERIC_Military_Exercise_1
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		OR = {
+			has_focus_tree = CRO_Military_Junta_Tree
+			has_focus_tree = CRO_Francetic_Tree
+			has_focus_tree = CRO_Duumvirate_Tree
+			AND = {
+				has_focus_tree = CRO_Crusader_Croatia_Tree
+				NOT = {
+					has_idea = CRO_corporatism_idea
+				}
+			}
+		}
+	}
+	mutually_exclusive = {
+		focus = CRO_Aristocratic_Investments
+		focus = CRO_Unity_Between_Corporation_And_State
+	}
+    available = {
+		has_completed_focus = CRO_The_Army_With_A_State
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Militarization_of_the_Economy"
+		add_political_power = 50
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Constant_Expansion_Of_Military_Spending
+	icon = GFX_GENERIC_Give_Money
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Militarization_of_the_Economy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Militarization_of_the_Economy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Constant_Expansion_Of_Military_Spending"
+		add_political_power = -100
+		add_stability = -0.1
+		random_owned_state = {
+			limit = {
+				industrial_complex > 1
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Transfer_Civilian_Assets_To_The_Military
+	icon = GFX_GENERIC_banking_law
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Militarization_of_the_Economy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Militarization_of_the_Economy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Transfer_Civilian_Assets_To_The_Military"
+		add_stability = -0.1
+		random_owned_state = {
+			limit = {
+				industrial_complex > 1
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}	
+	}
+}
+
+shared_focus = {
+	id = CRO_Subordinate_The_Economy_To_The_Military
+	icon = GFX_GENERIC_Auth_Dem
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Constant_Expansion_Of_Military_Spending
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Transfer_Civilian_Assets_To_The_Military
+	}
+	prerequisite = {
+		focus = CRO_Constant_Expansion_Of_Military_Spending
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Subordinate_The_Economy_To_The_Military"
+		add_stability = -0.1
+		random_owned_state = {
+			limit = {
+				industrial_complex > 1
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		custom_effect_tooltip = cro_army_reform_5_tt
+		add_to_variable = { CRO_Army_With_A_State_Modifier_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CRO_Army_With_A_State_Modifier_production_factory_max_efficiency_factor = 0.05 }
+	}
+}
+
+shared_focus = {
+	id = CRO_Unemployed_To_The_Military
+	icon = GFX_GENERIC_Soviet_Soldiers_Village
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Subordinate_The_Economy_To_The_Military
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Subordinate_The_Economy_To_The_Military
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Unemployed_To_The_Military"
+		add_war_support = -0.1
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = CRO_Unemployed_To_The_Military_tt
+		add_to_variable = { CRO_Army_With_A_State_Modifier_conscription = 0.01 }
+	}
+}
+
+shared_focus = {
+	id = CRO_National_Militia
+	icon = GFX_GENERIC_militia
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Unemployed_To_The_Military
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Spy_On_The_Neighbours
+	}
+	prerequisite = {
+		focus = CRO_Unemployed_To_The_Military
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_State_Guard"
+		custom_effect_tooltip = CRO_National_Militia_tt
+		add_to_variable = { CRO_Army_With_A_State_Modifier_conscription = 0.02 }
+	}
+}
+
+shared_focus = {
+	id = CRO_Arms_Race
+	icon = GFX_RFP_New_age_New_arms
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Unemployed_To_The_Military
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Unemployed_To_The_Military
+	}
+	prerequisite = {
+		focus = CRO_Support_State_Unions
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Arms_Race"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = cro_army_reform_5_tt
+		add_to_variable = { CRO_Army_With_A_State_Modifier_industrial_capacity_factory = 0.05 }
+		add_to_variable = { CRO_Army_With_A_State_Modifier_production_factory_max_efficiency_factor = 0.05 }
+	}
+}
+
+shared_focus = {
+	id = CRO_Military_Industrial_Complex
+	icon = GFX_GENERIC_planned_economy
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_National_Militia
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_National_Militia
+	}
+	prerequisite = {
+		focus = CRO_Arms_Race
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Military_Industrial_Complex"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Unity_Between_Corporation_And_State
+	icon = GFX_GENERIC_Import_Economy
+	cost = 5
+	x = 4
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		OR = {
+			has_focus_tree = CRO_Military_Junta_Tree
+			has_focus_tree = CRO_Francetic_Tree
+			has_focus_tree = CRO_Duumvirate_Tree
+			AND = {
+				has_focus_tree = CRO_Crusader_Croatia_Tree
+				NOT = {
+					has_idea = CRO_corporatism_idea
+				}
+			}
+		}
+	}
+	mutually_exclusive = {
+		focus = CRO_Militarization_of_the_Economy
+		focus = CRO_Aristocratic_Investments
+	}
+    available = {
+		has_idea = CRO_actual_corporatism_idea
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Unity_Between_Corporation_And_State"
+		cro_improve_corporatism = yes
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Labour_Capital_Conflict_Ministry
+	icon = GFX_GENERIC_Government
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Unity_Between_Corporation_And_State
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Unity_Between_Corporation_And_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Labour_Capital_Conflict_Ministry"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.05
+		}
+		cro_improve_corporatism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Puppet_Socialist_Party
+	icon = GFX_GENERIC_Expand_Act
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Unity_Between_Corporation_And_State
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Unity_Between_Corporation_And_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Puppet_Socialist_Party"
+		add_political_power = -50
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		cro_improve_corporatism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_An_Olive_Branch_To_Left_Frankists
+	icon = GFX_goal_generic_forceful_treaty
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Puppet_Socialist_Party
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Labour_Capital_Conflict_Ministry
+	}
+	prerequisite = {
+		focus = CRO_Puppet_Socialist_Party
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_An_Olive_Branch_To_Left_Frankists"
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		cro_improve_corporatism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Support_State_Unions
+	icon = GFX_SPA_Union
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_An_Olive_Branch_To_Left_Frankists
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Subordinate_The_Economy_To_The_Military
+		focus = CRO_An_Olive_Branch_To_Left_Frankists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Support_State_Unions"
+		IF = {
+			limit = {
+				has_completed_focus = CRO_Unity_Between_Corporation_And_State
+			}
+			cro_improve_corporatism = yes
+		}	
+		else = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.05
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}	
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}		
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Fascist_Worker_Coops
+	icon = GFX_RUS_Money_for_the_Working_Man
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_An_Olive_Branch_To_Left_Frankists
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_An_Olive_Branch_To_Left_Frankists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Fascist_Worker_Coops"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}	
+		cro_improve_corporatism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Agrarian_Colonisation
+	icon = GFX_GENERIC_Strong_Farming
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_An_Olive_Branch_To_Left_Frankists
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_An_Olive_Branch_To_Left_Frankists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Agrarian_Colonisation"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}	
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}	
+		cro_improve_corporatism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Worker_Employee_Collaboration
+	icon = GFX_RFP_class_colabration
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Fascist_Worker_Coops
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Support_State_Unions
+	}
+	prerequisite = {
+		focus = CRO_Fascist_Worker_Coops
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Agrarian_Colonisation"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		cro_improve_corporatism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Seek_Agricultural_Autarky
+	icon = GFX_GENERIC_agriculture_2
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Fascist_Worker_Coops
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Fascist_Worker_Coops
+	}
+	prerequisite = {
+		focus = CRO_Agrarian_Colonisation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Seek_Agricultural_Autarky"
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}	
+		cro_improve_corporatism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_A_Totalitarian_Economy
+	icon = GFX_GENERIC_state_economy
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Seek_Agricultural_Autarky
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Worker_Employee_Collaboration
+	}
+	prerequisite = {
+		focus = CRO_Seek_Agricultural_Autarky
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_A_Totalitarian_Economy"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		cro_improve_corporatism = yes
+	}
+}
+
+
+
+shared_focus = {
+	id = CRO_Towards_A_Free_Market
+	icon = GFX_GENERIC_money
+	cost = 5
+	x = -4
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		has_focus_tree = CRO_Democratic_Tree
+	}
+	mutually_exclusive = {
+		focus = CRO_Continue_Agrarianism
+		focus = CRO_Building_A_Modern_Welfare_State
+	}
+    available = {
+		has_idea = CRO_liberal_economy
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Towards_A_Free_Market"
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Tax_Cuts
+	icon = GFX_GENERIC_cut_tax_landowners
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Towards_A_Free_Market
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Towards_A_Free_Market
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Tax_Cuts"
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Gradual_Privatisation_of_the_Economy
+	icon = GFX_GENERIC_privatization
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Towards_A_Free_Market
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Towards_A_Free_Market
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Gradual_Privatisation_of_the_Economy"
+		add_political_power = 200
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Empower_The_Employers
+	icon = GFX_GENERIC_Market_Liberal
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Gradual_Privatisation_of_the_Economy
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Tax_Cuts
+	}
+	prerequisite = {
+		focus = CRO_Gradual_Privatisation_of_the_Economy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Empower_The_Employers"
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Disempower_The_Unions
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Empower_The_Employers
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Empower_The_Employers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Disempower_The_Unions"
+		add_political_power = 100
+		add_stability = -0.05
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = -0.05
+		}
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Support_Small_Businesses
+	icon = GFX_ENG_small_businesses
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Empower_The_Employers
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Empower_The_Employers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Support_Small_Businesses"
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Seek_Foreign_Investment
+	icon = GFX_GENERIC_external_investments
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Support_Small_Businesses
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Disempower_The_Unions
+	}
+	prerequisite = {
+		focus = CRO_Support_Small_Businesses
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Seek_Foreign_Investment"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Promote_Cars
+	icon = GFX_GENERIC_road_works
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Support_Small_Businesses
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Disempower_The_Unions
+	}
+	prerequisite = {
+		focus = CRO_Support_Small_Businesses
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Promote_Cars"
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Free_Market_Free_People
+	icon = GFX_GENERIC_Social_Liberalism
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Seek_Foreign_Investment
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Seek_Foreign_Investment
+	}
+	prerequisite = {
+		focus = CRO_Promote_Cars
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Free_Market_Free_People"
+		cro_upgrade_liberal_economy = yes
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Building_A_Modern_Welfare_State
+	icon = GFX_GENERIC_Industrial_Social_Democracy
+	cost = 5
+	x = 5
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		has_focus_tree = CRO_Democratic_Tree
+	}
+	mutually_exclusive = {
+		focus = CRO_Towards_A_Free_Market
+		focus = CRO_Continue_Agrarianism
+	}
+    available = {
+		has_idea = CRO_social_welfares
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Building_A_Modern_Welfare_State"
+		cro_improve_social_welfares = yes
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Tax_Reform
+	icon = GFX_NRI_Formalise_the_Tax_Code
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Building_A_Modern_Welfare_State
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Building_A_Modern_Welfare_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Tax_Reform"
+		add_political_power = 50
+		add_stability = -0.05
+		cro_improve_social_welfares = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Begin_Massive_Public_Works
+	icon = GFX_GENERIC_modern_socialist_construction
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Tax_Reform
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Tax_Reform
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Begin_Massive_Public_Works"
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				infrastructure < 10
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		cro_improve_social_welfares = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_A_Modern_Healthcare_Service
+	icon = GFX_GENERIC_Healthcare_Bill
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Socialization_Of_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Socialization_Of_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_A_Modern_Healthcare_Service"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		cro_improve_social_welfares = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_An_End_To_Unemployment
+	icon = GFX_GENERIC_food_for_worker
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Socialization_Of_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Socialization_Of_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_An_End_To_Unemployment"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		cro_improve_social_welfares = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Empower_Unions
+	icon = GFX_GENERIC_Socialist_Unions
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Socialization_Of_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Socialization_Of_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Empower_Unions"
+		add_political_power = 100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		cro_improve_social_welfares = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_For_The_Common_Man
+	icon = GFX_GENERIC_SocDem_Star
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = CRO_Socialization_Of_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Empower_Unions
+	}
+	prerequisite = {
+		focus = CRO_An_End_To_Unemployment
+	}
+	prerequisite = {
+		focus = CRO_A_Modern_Healthcare_Service
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Empower_Unions"
+		add_ideas = CRO_humanist_policy  
+	}
+}
+
+shared_focus = {
+	id = CRO_Socialization_Of_Industry
+	icon = GFX_GENERIC_Clogs_Socialist
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Begin_Massive_Public_Works
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Social_Programs
+	}
+	prerequisite = {
+		focus = CRO_Nationalization_Push
+	}
+	prerequisite = {
+		focus = CRO_Begin_Massive_Public_Works
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_A_Modern_Healthcare_Service"
+		cro_improve_social_welfares = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Continue_Agrarianism
+	icon = GFX_GENERIC_agriculture_2
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_The_New_Croatian_Industry
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_The_New_Croatian_Industry
+	}
+	allow_branch = {
+		has_focus_tree = CRO_Democratic_Tree
+	}
+	mutually_exclusive = {
+		focus = CRO_Towards_A_Free_Market
+		focus = CRO_Building_A_Modern_Welfare_State
+	}
+    available = {
+		has_idea = CRO_Agrarianism
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Continue_Agrarianism"
+		cro_improve_agrarianism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Cautious_Industrialization
+	icon = GFX_ENG_strategic_industries
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Continue_Agrarianism
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Continue_Agrarianism
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Cautious_Industrialization"
+		cro_improve_agrarianism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Worker_Protections
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	cost = 5
+	x = 3
+	y = 1
+	relative_position_id = CRO_Continue_Agrarianism
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Continue_Agrarianism
+		focus = CRO_Building_A_Modern_Welfare_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Worker_Protections"
+		add_political_power = -100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		IF = {
+			limit = {
+				has_completed_focus = CRO_Building_A_Modern_Welfare_State
+			}
+			cro_improve_social_welfares = yes
+		}
+		IF = {
+			limit = {
+				has_completed_focus = CRO_Continue_Agrarianism
+			}
+			cro_improve_agrarianism = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Social_Programs
+	icon = GFX_RUS_The_Social_Security_Act
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Worker_Protections
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Worker_Protections
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Social_Programs"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.05
+		}
+		IF = {
+			limit = {
+				has_completed_focus = CRO_Building_A_Modern_Welfare_State
+			}
+			cro_improve_social_welfares = yes
+		}
+		IF = {
+			limit = {
+				has_completed_focus = CRO_Continue_Agrarianism
+			}
+			cro_improve_agrarianism = yes
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Nationalization_Push
+	icon = GFX_GENERIC_further_nationalisation
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Worker_Protections
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Worker_Protections
+	}
+	prerequisite = {
+		focus = CRO_Building_A_Modern_Welfare_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Nationalization_Push"
+		add_political_power = -100
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		cro_improve_social_welfares = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Union_Of_Farmers
+	icon = GFX_GENERIC_FARMER
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Cautious_Industrialization
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Cautious_Industrialization
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Nationalization_Push"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		cro_improve_agrarianism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Preventing_Urban_Sprawl
+	icon = GFX_GENERIC_Urban_Road
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Cautious_Industrialization
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Cautious_Industrialization
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Preventing_Urban_Sprawl"
+		cro_improve_agrarianism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Strengthen_Economic_Interventionism
+	icon = GFX_GENERIC_industrial_grey
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Preventing_Urban_Sprawl
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Preventing_Urban_Sprawl
+	}
+	prerequisite = {
+		focus = CRO_Social_Programs
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Strengthen_Economic_Interventionism"
+		cro_improve_agrarianism = yes
+	}
+}
+shared_focus = {
+	id = CRO_Social_Catholicism
+	icon = GFX_GENERIC_Catholic_Government
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Preventing_Urban_Sprawl
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Union_Of_Farmers
+	}
+	prerequisite = {
+		focus = CRO_Preventing_Urban_Sprawl
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Social_Catholicism"
+		add_political_power = 100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		cro_improve_agrarianism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Peasant_Cooperatives
+	icon = GFX_GENERIC_Strong_Farming
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Strengthen_Economic_Interventionism
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Social_Catholicism
+	}
+	prerequisite = {
+		focus = CRO_Strengthen_Economic_Interventionism
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Glorious_Son_of_the_Croatian_People"
+		add_political_power = -100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+		}
+		cro_improve_agrarianism = yes
+	}
+}
+
+shared_focus = {
+	id = CRO_Glorious_Son_of_the_Croatian_People
+	icon = GFX_CRO_Croatia
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Peasant_Cooperatives
+	cancelable = yes
+	prerequisite = {
+		focus = CRO_Peasant_Cooperatives
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Glorious_Son_of_the_Croatian_People"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		cro_improve_agrarianism = yes
+	}
+}
+
+
+shared_focus = {
+	id = CRO_The_Beauty_Of_Our_Nation
+	icon = GFX_CRO_Croatia
+	cost = 5
+	x = 24
+	y = 6
+	offset = {
+		x = -2
+		y = 1
+		trigger = {
+			OR = {
+				has_focus_tree = croatia_generic_puppet_tree
+				has_focus_tree = CRO_Generic_Tree
+			}
+		}
+	}
+	offset = {
+		x = -3
+		y = -1
+		trigger = {
+			has_focus_tree = CRO_Artukovic_Tree
+		}
+	}
+	offset = {
+		x = -4
+		trigger = {
+			has_focus_tree = CRO_Kingdom_Tree
+		}
+	}
+	offset = {
+		x = -6
+		y = -1
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	offset = {
+		x = -3
+		y = -1
+		trigger = {
+			has_focus_tree = CRO_Bakaric_Tree
+		}
+	}
+	offset = {
+		x = -4
+		y = -1
+		trigger = {
+			has_focus_tree = CRO_Nikola_Car_Tree
+		}
+	}
+	offset = {
+		x = -3
+		y = -1
+		trigger = {
+			has_focus_tree = CRO_Francetic_Tree
+		}
+	}
+	offset = {
+		x = -4
+		y = -2
+		trigger = {
+			has_focus_tree = CRO_Democratic_Tree
+		}
+	}
+	offset = {
+		x = -2
+		y = 1
+		trigger = {
+			has_focus_tree = CRO_Duumvirate_Tree
+		}
+	}
+	offset = {
+		x = -3
+		trigger = {
+			has_focus_tree = CRO_Crusader_Croatia_Tree
+		}
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_The_Beauty_Of_Our_Nation"
+        add_stability = 0.05
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = CRO_Expand_National_Parks
+	icon = GFX_GENERIC_Nature_Good
+	cost = 5
+	x = 0
+	y = 1
+	cancelable = yes
+	relative_position_id = CRO_The_Beauty_Of_Our_Nation
+	prerequisite = {
+		focus = CRO_The_Beauty_Of_Our_Nation
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Expand_National_Parks"
+        add_political_power = 50
+		add_stability = 0.02
+	}
+}
+
+shared_focus = {
+	id = CRO_No_Tourism
+	icon = GFX_GENERIC_Fist_Chain
+	cost = 5
+	x = -3
+	y = 1
+	cancelable = yes
+	relative_position_id = CRO_Expand_National_Parks
+	prerequisite = {
+		focus = CRO_Expand_National_Parks
+	}
+	mutually_exclusive = {
+		focus = CRO_Heavily_Restricted_Tourism
+	}
+	mutually_exclusive = {
+		focus = CRO_Moderate_Restricted_Tourism
+	}
+	mutually_exclusive = {
+		focus = CRO_Tourist_Boom
+	}
+	available = {
+	has_government = national_socialist
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_No_Tourism"
+        add_political_power = 200
+		add_stability = -0.1
+	}
+}
+
+shared_focus = {
+	id = CRO_Domestic_Tourism
+	icon = GFX_GEN_economic_friendship
+	cost = 5
+	x = 1
+	y = 1
+	cancelable = yes
+	relative_position_id = CRO_No_Tourism
+	prerequisite = {
+		focus = CRO_No_Tourism
+		focus = CRO_Heavily_Restricted_Tourism
+	}
+	mutually_exclusive = {
+		focus = CRO_Economic_Boom
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Domestic_Tourism"
+        add_ideas = CRO_Domestic_Tourism_Cycle
+	}
+}
+
+shared_focus = {
+	id = CRO_Heavily_Restricted_Tourism
+	icon = GFX_ITA_Encourage_Tourism
+	cost = 5
+	x = -1
+	y = 1
+	cancelable = yes
+	relative_position_id = CRO_Expand_National_Parks
+	prerequisite = {
+		focus = CRO_Expand_National_Parks
+	}
+	mutually_exclusive = {
+		focus = CRO_Moderate_Restricted_Tourism
+	}
+	mutually_exclusive = {
+		focus = CRO_Tourist_Boom
+	}
+	mutually_exclusive = {
+		focus = CRO_No_Tourism
+	}
+	available = {
+	has_government = fascist
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Heavily_Restricted_Tourism"
+        add_political_power = 100
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = CRO_Moderate_Restricted_Tourism
+	icon = GFX_GENERIC_Promote_Tourism
+	cost = 5
+	x = 1
+	y = 1
+	cancelable = yes
+	relative_position_id = CRO_Expand_National_Parks
+	prerequisite = {
+		focus = CRO_Expand_National_Parks
+	}
+	mutually_exclusive = {
+		focus = CRO_Heavily_Restricted_Tourism
+	}
+	mutually_exclusive = {
+		focus = CRO_Tourist_Boom
+	}
+	mutually_exclusive = {
+		focus = CRO_No_Tourism
+	}
+	available = {
+		OR = {
+	has_government = paternal_autocrat
+	has_government = bolshevik_leninist
+	has_government = marxist_leninist
+	 }
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Moderate_Restricted_Tourism"
+		add_political_power = -100
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = CRO_Tourist_Boom
+	icon = GFX_GENERIC_tourism_2
+	cost = 5
+	x = 3
+	y = 1
+	cancelable = yes
+	relative_position_id = CRO_Expand_National_Parks
+	prerequisite = {
+		focus = CRO_Expand_National_Parks
+	}
+	mutually_exclusive = {
+		focus = CRO_Heavily_Restricted_Tourism
+	}
+	mutually_exclusive = {
+		focus = CRO_Moderate_Restricted_Tourism
+	}
+	mutually_exclusive = {
+		focus = CRO_No_Tourism
+	}
+	available = {
+		OR = {
+	has_government = socialist
+	has_government = social_democrat
+	has_government = liberal
+	has_government = conservative
+	 }
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Tourist_Boom"
+		add_political_power = -200
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = CRO_Economic_Boom
+	icon = GFX_CRO_Economic_Boom
+	cost = 5
+	x = 1
+	y = 1
+	cancelable = yes
+	relative_position_id = CRO_Moderate_Restricted_Tourism
+	prerequisite = {
+		focus = CRO_Moderate_Restricted_Tourism
+		focus = CRO_Tourist_Boom
+	}
+	mutually_exclusive = {
+		focus = CRO_Domestic_Tourism
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Economic_Boom"
+        add_ideas = CRO_Economic_Boom_idea
+	}
+}
+
+
+shared_focus = {
+	id = CRO_Yugo_Liberation
+	icon = GFX_SER_focus_send_out_the_partisans
+	cost = 5
+	x = 20
+	y = 1
+	offset = {
+		x = -2
+		trigger = {
+			has_focus_tree = CRO_Socialist_Tree
+		}
+	}
+	available = {
+		always = no
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Liberation"
+		custom_effect_tooltip = Focus_be_Bypassed_tt
+		hidden_effect = { cro_remove_bosnia_modifiers = yes }
+		IF = {
+			limit = {
+				NOT = { has_country_leader = { name = "Nikola Car" ruling_only = yes } }
+			}
+			set_cosmetic_tag = CRO_Yugoslavia
+       		#set_party_name = {
+            #   ideology = socialist
+            #    name = SSPJ
+            #    long_name = SSPJ_long
+      		#}
+			#set_party_name = {
+			#	ideology = bolshevik_leninist 
+			#	name = SKJ
+			#	long_name = SKJ_long
+			#}
+			set_party_name = {
+				ideology = socialist
+				name = KPJ
+				long_name = KPJ_long
+			}
+			set_party_name = {
+				ideology = bolshevik_leninist
+				name = KPJ
+				long_name = KPJ_long
+			}
+			set_party_name = {
+				ideology = marxist_leninist
+				name = KPJ
+				long_name = KPJ_long
+			}
+		}
+		IF = {
+			limit = {
+				has_country_leader = { name = "Nikola Car" ruling_only = yes }
+			}
+			set_cosmetic_tag = CRO_Yugoslav_Liberation_Army
+			set_party_name = {
+				ideology = socialist
+				name = AVNOJ
+				long_name = AVNOJ_long
+			}
+			set_party_name = {
+				ideology = marxist_leninist
+				name = AVNOJ
+				long_name = AVNOJ_long
+			}
+			set_party_name = {
+				ideology = bolshevik_leninist
+				name = AVNOJ
+				long_name = AVNOJ_long
+			}
+		}
+        add_state_core = 105
+        add_state_core = 104
+        add_state_core = 983
+        add_state_core = 103
+        add_state_core = 1016
+        add_state_core = 163
+        add_state_core = 770
+        add_state_core = 102
+        add_state_core = 765
+        add_state_core = 815
+        add_state_core = 814
+        add_state_core = 813
+        add_state_core = 812
+        add_state_core = 772
+        add_state_core = 819
+        add_state_core = 45
+        add_state_core = 981
+        add_state_core = 979
+        add_state_core = 980
+        add_state_core = 772
+        add_state_core = 107
+        add_state_core = 108
+        add_state_core = 982
+        #add_state_core = 811
+        add_state_core = 818
+		add_state_core = 106
+		IF = {
+			limit = {
+				NOT = {
+					has_country_flag = YUGO_Formed
+				}
+			}
+			set_country_flag = YUGO_Formed
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_Italy
+	icon = GFX_SER_focus_end_mare_nostrum
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Yugo_Liberation
+	prerequisite = {
+		focus = CRO_Yugo_Liberation
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Italy"
+                create_wargoal = {
+			type = take_state_focus
+			target = ITA
+		        }
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_Friuli
+	icon = GFX_SER_focus_legacy_of_the_partisans
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Yugo_Italy
+	prerequisite = {
+		focus = CRO_Yugo_Italy
+	}
+	available = {
+		has_idea = CRO_HoG_Vladimir_Bakaric
+	}
+	bypass = {
+		has_idea = CRO_HoG_Vladimir_Bakaric
+		owns_state = 736
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Friuli"
+		add_state_claim = 736
+		IF = {
+			limit = {
+				ITA = {
+					NOT = {
+						is_subject_of = CRO
+					}
+				}
+			}
+			custom_effect_tooltip = gain_friuli_if_italy_puppet_tt
+		}
+		else_IF = {
+			limit = {
+				ITA = {
+					is_subject_of = CRO
+				}
+			}
+			736 = {
+				transfer_state_to = CRO
+				hidden_effect = {
+					add_dynamic_modifier = { modifier = yugoslavian_friuli days = 730 }
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_Vojvodina
+	icon = GFX_CRO_The_Hungarian_Problem
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Yugo_Liberation
+	prerequisite = {
+		focus = CRO_Yugo_Liberation
+	}
+	bypass = { owns_state = 45 owns_state = 819 }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Vojvodina"
+		IF = {
+			limit = {
+				45 = {
+					owner = {
+						owns_state = 819
+						NOT = {
+							original_tag = CRO
+						}
+					}
+				}
+			}
+			45 = {
+				owner = {
+					country_event = {
+						id = twrcroatia.259 
+						hours = 2
+					}
+				}
+			}
+		}
+		else = {
+			45 = {
+				owner = {
+					country_event = {
+						id = twrcroatia.259 
+						hours = 2
+					}
+				}
+			}
+			IF = {
+				limit = {
+					NOT = {
+						owns_state = 819
+					}
+				}
+				819 = {
+					owner = {
+						country_event = {
+							id = twrcroatia.259 
+							hours = 2
+						}
+					}
+				}
+			}			
+		}     
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_West_Banat
+	icon = GFX_SER_focus_destroy_banat
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Yugo_Vojvodina
+	prerequisite = {
+		focus = CRO_Yugo_Vojvodina
+	}
+	bypass = { owns_state = 772 }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_West_Banat"
+ 		IF = {
+			limit = {
+				772 = {
+					owner = {
+						NOT = {
+							tag = SBA
+						}
+					}
+				}
+			}
+			772 = {
+				owner = {
+					country_event = {
+						id = twrcroatia.259 
+						hours = 2
+					}
+				}
+			}
+		}
+		else = {
+			772 = {
+				owner = {
+					CRO = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}					
+					}
+				}
+			}
+		}   
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_Serbia
+	icon = GFX_SER_focus_Unified_Democratic_Government
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Yugo_Liberation
+	prerequisite = {
+		focus = CRO_Yugo_Liberation
+	}
+	bypass = {
+		SER = { exists = no }
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Serbia"
+                create_wargoal = {
+			type = annex_everything
+			target = SER
+		        }
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_Slovenia
+	icon = GFX_SLV_focus_the_nla_pds_ascendent
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Yugo_Italy
+	prerequisite = {
+		focus = CRO_Yugo_Italy
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Slovenia"
+		custom_effect_tooltip = CRO_declare_war_germany_tt
+		IF = {
+            limit = {
+                OR = {
+					GER = { owns_state = 102 }
+					HGR = { owns_state = 102 }
+					HSS = { owns_state = 102 }
+					DDR = { owns_state = 102 }
+				}
+            }
+        	unlock_decision_tooltip = CRO_ask_germany_to_give_slovenia
+	    }
+        IF = { 
+            limit = {
+                SLV = { exists = yes is_fascist = no }
+			}
+            SLV = { country_event = { id = twrcroatia.91 } }
+		}
+		IF = {
+            limit = {
+                SLV = { exists = yes is_fascist = yes }
+            }
+            create_wargoal = {
+				type = annex_everything
+				target = SLV
+			}	
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_Macedonia
+	icon = GFX_SER_focus_end_bulgarian_hegemony
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Yugo_Serbia
+	prerequisite = {
+		focus = CRO_Yugo_Serbia
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Slovenia"
+                create_wargoal = {
+			type = take_state_focus
+			target = BUL
+		        }
+			ALB = { country_event = twrcroatia.251 }
+	}
+}
+
+shared_focus = {
+	id = CRO_Yugo_Consolidate_Socialist_Yugoslavia
+	icon = GFX_SER_focus_consolidate_socialist_yugoslavia
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = CRO_Yugo_Vojvodina
+	prerequisite = {
+		focus = CRO_Yugo_Slovenia
+	}
+	prerequisite = {
+		focus = CRO_Yugo_Macedonia
+	}
+	prerequisite = {
+		focus = CRO_Yugo_West_Banat
+	}
+	available = {
+		custom_trigger_tooltip = {
+		tooltip = cro_holds_yugoslav_lands
+        owns_state = 105
+        owns_state = 109
+        owns_state = 104
+        owns_state = 983
+        owns_state = 103
+        owns_state = 1016
+        owns_state = 163
+        owns_state = 770
+        owns_state = 102
+        owns_state = 765
+        owns_state = 815
+        owns_state = 814
+        owns_state = 813
+        owns_state = 812
+        owns_state = 772
+        owns_state = 819
+        owns_state = 45
+        owns_state = 981
+        owns_state = 979
+        owns_state = 980
+        owns_state = 772
+        owns_state = 107
+        owns_state = 108
+        owns_state = 982
+		}
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Yugo_Consolidate_Socialist_Yugoslavia"
+		custom_effect_tooltip = CRO_Reunify_Yugo_tt
+		IF = { 
+			limit = {
+				has_idea = CRO_Stratocratic_Socialism 
+				}
+			custom_effect_tooltip = CRO_Remove_Stratocratic_Socialism_tt
+			hidden_effect = {
+				remove_ideas = CRO_Stratocratic_Socialism
+			}
+		}
+	}
+}
+
+
+
+shared_focus = {
+	id = CRO_Path_To_Greater_Croatia
+	icon = GFX_CRO_Cast_Them_Away
+	cost = 5
+	x = 20
+	y = 1
+	available = {
+			has_completed_focus = CRO_Artukovic_Claim_Greater_Croatia
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Path_To_Greater_Croatia"
+                add_war_support = 0.10
+	}
+}
+
+shared_focus = {
+	id = CRO_Recover_Backa
+	icon = GFX_CRO_The_Hungarian_Problem
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Path_To_Greater_Croatia
+	prerequisite = {
+		focus = CRO_Path_To_Greater_Croatia
+	}
+	bypass = { owns_state = 45 owns_state = 819 }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Recover_Backa"
+		IF = {
+			limit = {
+				45 = {
+					owner = {
+						owns_state = 819
+						NOT = {
+							original_tag = CRO
+						}
+					}
+				}
+			}
+			45 = {
+				owner = {
+					country_event = {
+						id = twrcroatia.259 
+						hours = 2
+					}
+				}
+			}
+		}
+		else = {
+			45 = {
+				owner = {
+					country_event = {
+						id = twrcroatia.259 
+						hours = 2
+					}
+				}
+			}
+			IF = {
+				limit = {
+					NOT = {
+						owns_state = 819
+					}
+				}
+				819 = {
+					owner = {
+						country_event = {
+							id = twrcroatia.259 
+							hours = 2
+						}
+					}
+				}
+			}			
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Seize_East_Adriatic
+	icon = GFX_ITA_stab_italy
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Path_To_Greater_Croatia
+	prerequisite = {
+		focus = CRO_Path_To_Greater_Croatia
+	}
+	cancelable = yes
+	bypass = { owns_state = 765 owns_state = 915 owns_state = 163 }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Seize_East_Adriatic"
+		IF = {
+			limit = {
+				ITA = {
+					OR = {
+						owns_state = 765
+						owns_state = 815
+						owns_state = 163
+					}
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ITA
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Conquer_West_Banat
+	icon = GFX_SER_focus_destroy_banat
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Path_To_Greater_Croatia
+	prerequisite = {
+		focus = CRO_Path_To_Greater_Croatia
+	}
+	available = { owns_state = 45 owns_state = 819 }
+	bypass = { owns_state = 772 }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Conquer_West_Banat"
+		IF = {
+			limit = {
+				772 = {
+					owner = {
+						NOT = {
+							tag = SBA
+						}
+					}
+				}
+			}
+			772 = {
+				owner = {
+					country_event = {
+						id = twrcroatia.259 
+						hours = 2
+					}
+				}
+			}
+		}
+		else = {
+			772 = {
+				owner = {
+					CRO = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}					
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Stabilize_Bosnia_Once_And_For_All
+	icon = GFX_CRO_enough_of_this_bosnian_nonsense
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = CRO_Recover_Backa
+	prerequisite = {
+		focus = CRO_Conquer_West_Banat
+	}
+	prerequisite = {
+		focus = CRO_Seize_East_Adriatic
+	}
+	prerequisite = {
+		focus = CRO_Recover_Backa
+	}
+	available = {
+		owns_state = 104
+		owns_state = 981
+		owns_state = 982
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Stabilize_Bosnia_Once_And_For_All"
+                104 = { 
+					add_core_of = CRO 
+					add_manpower = -2000
+					}
+                981 = { 
+					add_core_of = CRO 
+					add_manpower = -2000
+					}
+                982 = { 
+					add_core_of = CRO 
+					add_manpower = -2000
+					}
+	}
+}
+
+shared_focus = {
+	id = CRO_Prekmurje_Integration
+	icon = GFX_SOV_ivanov_Emphasizing_Ethnic_Integration
+	cost = 5
+	x = -3
+	y = 1
+	relative_position_id = CRO_Recover_Backa
+	prerequisite = {
+		focus = CRO_Conquer_West_Banat
+	}
+	prerequisite = {
+		focus = CRO_Seize_East_Adriatic
+	}
+	prerequisite = {
+		focus = CRO_Recover_Backa
+	}
+	available = { owns_state = 772 }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Prekmurje_Integration"
+                770 = { 
+					add_core_of = CRO 
+					add_manpower = -1000
+					}
+	}
+}
+
+shared_focus = {
+	id = CRO_Our_Sacred_Homeland
+	icon = GFX_CRO_Our_Sacred_Homeland
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = CRO_Prekmurje_Integration
+	prerequisite = {
+		focus = CRO_Stabilize_Bosnia_Once_And_For_All
+	}
+	prerequisite = {
+		focus = CRO_Prekmurje_Integration
+	}
+	available = {
+				819 = {
+				 is_owned_by = CRO
+				}
+				772 = {
+				 is_owned_by = CRO
+				}
+				163 = {
+				is_owned_by = CRO
+				}
+				815 = {
+				is_owned_by = CRO
+				}
+				813 = {
+				is_owned_by = CRO
+				}
+				105 = {
+				 is_owned_by = CRO
+				}
+				765 = {
+				 is_owned_by = CRO
+				}
+				814 = {
+				is_owned_by = CRO
+				}
+				811 = {
+				is_owned_by = CRO
+				}
+				812 = {
+				 is_owned_by = CRO
+				}
+				770 = {
+                is_owned_by = CRO
+				}
+				981 = {
+                is_owned_by = CRO
+				}
+				982 = {
+                is_owned_by = CRO
+				}
+				104 = {
+                is_owned_by = CRO
+				}
+				105 = {
+                is_owned_by = CRO
+				}
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Our_Sacred_Homeland"
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100	
+				hidden_effect = {
+					remove_state_claim = 770
+					remove_state_claim = 102
+					remove_state_claim = 765
+					remove_state_claim = 814
+					remove_state_claim = 811	
+					remove_state_claim = 812	
+					remove_state_claim = 105	
+				}	
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_Expansionism
+	icon = GFX_CRO_Cast_Them_Away
+	cost = 5
+	x = 21
+	y = 1
+	available = {
+			has_completed_focus = CRO_Francetic_Irredentism
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Path_To_Greater_Croatia"
+                add_war_support = 0.10
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_The_Bosnian_Problem
+	icon = GFX_CRO_The_Bosnian_Question
+	cost = 5
+	x = -2
+	y = 1
+	relative_position_id = CRO_Francetic_Expansionism
+	prerequisite = {
+		focus = CRO_Francetic_Expansionism
+	}
+    available = {
+        owns_state = 104
+        owns_state = 981
+        owns_state = 982
+        }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Francetic_The_Bosnian_Problem"
+ 		country_event = {
+			id = twrcroatia.32
+			hours = 7
+		}        
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_Stabilize_Bosnia
+	icon = GFX_CRO_enough_of_this_bosnian_nonsense
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Francetic_The_Bosnian_Problem
+	prerequisite = {
+		focus = CRO_Francetic_Vojvodina
+	}
+	prerequisite = {
+		focus = CRO_Francetic_Coast
+	}
+	prerequisite = {
+		focus = CRO_Francetic_The_Bosnian_Problem
+	}
+    available = {
+        owns_state = 104
+        owns_state = 981
+        owns_state = 982
+        }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Francetic_Stabilize_Bosnia"
+                104 = { 
+					add_core_of = CRO 
+					add_manpower = -2000
+					}
+                981 = { 
+					add_core_of = CRO 
+					add_manpower = -2000
+					}
+                982 = { 
+					add_core_of = CRO 
+					add_manpower = -2000
+					}    
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_Vojvodina
+	icon = GFX_CRO_The_Hungarian_Problem
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Francetic_Expansionism
+	prerequisite = {
+		focus = CRO_Francetic_Expansionism
+	}
+	bypass = { owns_state = 45 owns_state = 819 }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Francetic_Vojvodina"
+		45 = {
+			owner = {
+				country_event = {
+					id = twrcroatia.259 
+					hours = 2
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_Coast
+	icon = GFX_ITA_stab_italy
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Francetic_Expansionism
+	prerequisite = {
+		focus = CRO_Francetic_Expansionism
+	}
+	cancelable = yes
+	bypass = { owns_state = 765 owns_state = 915 owns_state = 163 }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Francetic_Coast"
+		IF = {
+			limit = {
+				ITA = {
+					OR = {
+						owns_state = 765
+						owns_state = 815
+						owns_state = 163
+					}
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ITA
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_Service_For_Religious_Tolerance
+	icon = GFX_HOL_Dutch_Army
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = CRO_Francetic_Vojvodina
+	prerequisite = {
+		focus = CRO_Francetic_Vojvodina
+	}
+	prerequisite = {
+		focus = CRO_Francetic_Coast
+	}
+	prerequisite = {
+		focus = CRO_Francetic_The_Bosnian_Problem
+	}
+	mutually_exclusive = { focus = CRO_Francetic_Intensify_Forced_Conversion }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Francetic_Service_For_Religious_Tolerance"
+		add_ideas = CRO_Minority_Service_For_Religious_Tolerance
+		add_ideas = CRO_Serb_Collaborators 
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_Intensify_Forced_Conversion
+	icon = GFX_TRV_fuck_minorities
+	cost = 5
+	x = 2
+	y = 1
+	relative_position_id = CRO_Francetic_Vojvodina
+	prerequisite = {
+		focus = CRO_Francetic_Vojvodina
+	}
+	prerequisite = {
+		focus = CRO_Francetic_Coast
+	}
+	prerequisite = {
+		focus = CRO_Francetic_The_Bosnian_Problem
+	}
+	mutually_exclusive = { focus = CRO_Francetic_Service_For_Religious_Tolerance }
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Francetic_Serbian_Problem"
+		add_ideas = CRO_Forced_Conversions_Intensified
+	}
+}
+
+shared_focus = {
+	id = CRO_Francetic_Croatia_Marches_On
+	icon = GFX_CRO_Croatia_Marches_On
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = CRO_Francetic_Vojvodina
+	prerequisite = {
+		focus = CRO_Francetic_Stabilize_Bosnia
+	}
+	prerequisite = {
+		focus = CRO_Francetic_Service_For_Religious_Tolerance
+		focus = CRO_Francetic_Intensify_Forced_Conversion
+	}
+	cancelable = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus CRO_Francetic_Croatia_Marches_On"
+        custom_effect_tooltip = CRO_reunification_decision_tt
+        set_country_flag = CRO_Reunify_Croatia_decision_flag
+	}
+}
