@@ -8,4 +8,4 @@ dependencies={
 }
 picture="thumbnail.png"
 supported_version="1.16.9"
-# description="Brings back removed focuses from other versions for god-knows why, vanilla politics, state releasing, political advisors. Adds faction-specific advisor systems for SS-Ordensstaat, Burgundian System, and General Government regimes. Features dynamic ideology drift mechanics tied to garrison control, operative trait synergies, and event chains for political management."
+remote_file_id="3504512857"
