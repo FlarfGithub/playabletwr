@@ -590,7 +590,12 @@ twr_garrison_drift_trigger = {
         compare = greater_than
     }
     modifier = {
-        fascism_drift = var:garrison_status
         twr_authoritarian_influence = var:garrison_status
+    }
+    on_add = {
+        add_popularity = {
+            ideology = fascist
+            popularity = var:garrison_status
+        }
     }
 }

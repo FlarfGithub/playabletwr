@@ -43,4 +43,3 @@ advisor_weights = {
             factor = 1.5
         }
     }
-}

@@ -2,29 +2,49 @@ ideas = {
     country = {
         # FASCIST SPIRITS
         TWR_fascist_movement_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_TUR_Nazi_Influence
             allowed = { }
             removal_cost = -1
             modifier = {
                 war_support_factor = 0.05
                 political_power_factor = 0.03
                 stability_factor = -0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_fascist_factor = 0.15
+                ideology_drift_national_socialist_factor = 0.15
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.10
+                ai_wants_more_divisions_factor = 0.05
+                join_faction_tension = 0.05
+                send_volunteers_tension = 0.03
             }
         }
         
         TWR_fascist_propaganda_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_Jew_Star_Burning
             allowed = { }
             removal_cost = -1
             modifier = {
                 war_support_factor = 0.10
                 political_power_factor = 0.05
                 stability_factor = -0.05
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_fascist_factor = 0.20
+                ideology_drift_national_socialist_factor = 0.20
+                fascist_acceptance = 5
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.15
+                ai_wants_more_divisions_factor = 0.08
+                join_faction_tension = 0.08
+                send_volunteers_tension = 0.05
+                justify_war_goal_time = -0.10
             }
         }
         
         TWR_fascist_mobilization_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GER_nazi_drive
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -32,11 +52,22 @@ ideas = {
                 political_power_factor = 0.07
                 stability_factor = -0.07
                 recruitable_population_factor = 0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_fascist_factor = 0.25
+                ideology_drift_national_socialist_factor = 0.25
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.20
+                ai_wants_more_divisions_factor = 0.10
+                join_faction_tension = 0.10
+                send_volunteers_tension = 0.07
+                justify_war_goal_time = -0.15
+                ai_focus_aggressive_factor = 0.10
             }
         }
         
         TWR_fascist_permanent_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GER_heer_pride
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -45,11 +76,23 @@ ideas = {
                 stability_factor = 0.05
                 recruitable_population_factor = 0.05
                 division_attack_factor = 0.05
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_fascist_factor = 0.30
+                ideology_drift_national_socialist_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.25
+                ai_wants_more_divisions_factor = 0.15
+                join_faction_tension = 0.12
+                send_volunteers_tension = 0.08
+                justify_war_goal_time = -0.20
+                ai_focus_aggressive_factor = 0.15
+                tension_drift_gain = 0.05
             }
         }
         
         TWR_fascist_victory_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_sword_shield
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -59,11 +102,24 @@ ideas = {
                 recruitable_population_factor = 0.10
                 division_attack_factor = 0.10
                 division_defense_factor = 0.05
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_fascist_factor = 0.35
+                ideology_drift_national_socialist_factor = 0.35
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.30
+                ai_wants_more_divisions_factor = 0.20
+                join_faction_tension = 0.15
+                send_volunteers_tension = 0.10
+                justify_war_goal_time = -0.25
+                ai_focus_aggressive_factor = 0.20
+                tension_drift_gain = 0.08
+                surrender_limit = 0.05
             }
         }
         
         TWR_fascist_coup_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_generic_recruitment_drive
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -73,23 +129,46 @@ ideas = {
                 recruitable_population_factor = 0.15
                 division_attack_factor = 0.15
                 division_defense_factor = 0.10
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_fascist_factor = 0.40
+                ideology_drift_national_socialist_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.40
+                ai_wants_more_divisions_factor = 0.25
+                join_faction_tension = 0.20
+                send_volunteers_tension = 0.15
+                justify_war_goal_time = -0.30
+                ai_focus_aggressive_factor = 0.25
+                tension_drift_gain = 0.10
+                surrender_limit = 0.10
             }
         }
         
-        # COMMUNIST SPIRITS
+        # COMMUNIST SPIRITS (Revolutionary Communism)
         TWR_communist_movement_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_Communist_Flame
             allowed = { }
             removal_cost = -1
             modifier = {
                 industrial_capacity_factory = 0.02
                 political_power_factor = 0.03
                 stability_factor = -0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_bolshevik_leninist_factor = 0.15
+                ideology_drift_marxist_leninist_factor = 0.15
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.05
+                ai_get_ally_desire_factor = 0.10
+                ai_join_ally_desire_factor = 0.05
+                send_volunteers_tension = 0.03
+                guarantee_tension = 0.02
             }
         }
         
         TWR_communist_propaganda_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_generic_workers_rights
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -97,11 +176,22 @@ ideas = {
                 political_power_factor = 0.05
                 stability_factor = -0.05
                 consumer_goods_factor = -0.02
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_bolshevik_leninist_factor = 0.20
+                ideology_drift_marxist_leninist_factor = 0.20
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.08
+                ai_get_ally_desire_factor = 0.15
+                ai_join_ally_desire_factor = 0.08
+                send_volunteers_tension = 0.05
+                guarantee_tension = 0.04
+                subversive_activities_upkeep = -0.10
             }
         }
         
         TWR_communist_mobilization_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_generic_communist_army
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -110,12 +200,23 @@ ideas = {
                 stability_factor = -0.07
                 consumer_goods_factor = -0.05
                 industrial_construction_speed_factor = 0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_bolshevik_leninist_factor = 0.25
+                ideology_drift_marxist_leninist_factor = 0.25
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.12
+                ai_get_ally_desire_factor = 0.20
+                ai_join_ally_desire_factor = 0.12
+                send_volunteers_tension = 0.07
+                guarantee_tension = 0.06
+                subversive_activities_upkeep = -0.15
+                ai_focus_aggressive_factor = 0.05
             }
         }
         
-        # --- FIXED: COMMUNIST PERMANENT & VICTORY SPIRITS ---
         TWR_communist_permanent_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_communist_side_bop
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -125,10 +226,24 @@ ideas = {
                 consumer_goods_factor = -0.12
                 industrial_construction_speed_factor = 0.10
                 resistance_target = -0.10
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_bolshevik_leninist_factor = 0.30
+                ideology_drift_marxist_leninist_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.15
+                ai_get_ally_desire_factor = 0.25
+                ai_join_ally_desire_factor = 0.15
+                send_volunteers_tension = 0.10
+                guarantee_tension = 0.08
+                subversive_activities_upkeep = -0.20
+                ai_focus_aggressive_factor = 0.10
+                tension_drift_gain = 0.03
             }
         }
+        
         TWR_communist_victory_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_Communist_Flame
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -138,11 +253,25 @@ ideas = {
                 consumer_goods_factor = -0.15
                 industrial_construction_speed_factor = 0.15
                 resistance_target = -0.15
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_bolshevik_leninist_factor = 0.35
+                ideology_drift_marxist_leninist_factor = 0.35
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.20
+                ai_get_ally_desire_factor = 0.30
+                ai_join_ally_desire_factor = 0.20
+                send_volunteers_tension = 0.12
+                guarantee_tension = 0.10
+                subversive_activities_upkeep = -0.25
+                ai_focus_aggressive_factor = 0.15
+                tension_drift_gain = 0.05
+                surrender_limit = 0.03
             }
         }
         
         TWR_communist_coup_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_Communist_Flame
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -152,23 +281,47 @@ ideas = {
                 consumer_goods_factor = -0.15
                 industrial_construction_speed_factor = 0.15
                 resistance_target = -0.15
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_bolshevik_leninist_factor = 0.40
+                ideology_drift_marxist_leninist_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.30
+                ai_get_ally_desire_factor = 0.35
+                ai_join_ally_desire_factor = 0.25
+                send_volunteers_tension = 0.15
+                guarantee_tension = 0.12
+                subversive_activities_upkeep = -0.30
+                ai_focus_aggressive_factor = 0.20
+                tension_drift_gain = 0.08
+                surrender_limit = 0.05
             }
         }
         
-        # DEMOCRATIC SPIRITS
+        # DEMOCRATIC SPIRITS (Social Democrat)
+        # Use a generic progress icon for democratic spirits
         TWR_democratic_movement_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_progress
             allowed = { }
             removal_cost = -1
             modifier = {
                 stability_factor = 0.03
                 political_power_factor = 0.02
                 trade_opinion_factor = 0.05
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_social_democrat_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.10
+                ai_get_ally_desire_factor = 0.15
+                ai_join_ally_desire_factor = 0.10
+                guarantee_cost = -0.05
+                tension_drift_gain = -0.03
             }
         }
         
         TWR_democratic_propaganda_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_high_society
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -176,11 +329,21 @@ ideas = {
                 political_power_factor = 0.03
                 trade_opinion_factor = 0.10
                 consumer_goods_factor = 0.02
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_social_democrat_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.15
+                ai_get_ally_desire_factor = 0.20
+                ai_join_ally_desire_factor = 0.15
+                guarantee_cost = -0.08
+                tension_drift_gain = -0.05
+                trade_opinion_factor = 0.05
             }
         }
         
         TWR_democratic_mobilization_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_education_reform
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -189,11 +352,22 @@ ideas = {
                 trade_opinion_factor = 0.15
                 consumer_goods_factor = 0.05
                 mobilization_speed = -0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_social_democrat_factor = 0.50
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.20
+                ai_get_ally_desire_factor = 0.25
+                ai_join_ally_desire_factor = 0.20
+                guarantee_cost = -0.10
+                tension_drift_gain = -0.07
+                trade_opinion_factor = 0.08
+                war_goal_justification_acceptance = 0.05
             }
         }
         
         TWR_democratic_permanent_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_welfare_state
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -203,11 +377,23 @@ ideas = {
                 consumer_goods_factor = 0.08
                 mobilization_speed = -0.05
                 defensive_war_stability_factor = 0.05
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_social_democrat_factor = 0.60
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.25
+                ai_get_ally_desire_factor = 0.30
+                ai_join_ally_desire_factor = 0.25
+                guarantee_cost = -0.12
+                tension_drift_gain = -0.10
+                trade_opinion_factor = 0.10
+                war_goal_justification_acceptance = 0.08
+                ai_focus_peaceful_factor = 0.10
             }
         }
         
         TWR_democratic_victory_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_loans
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -217,11 +403,24 @@ ideas = {
                 consumer_goods_factor = 0.10
                 mobilization_speed = -0.08
                 defensive_war_stability_factor = 0.10
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_social_democrat_factor = 0.70
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.30
+                ai_get_ally_desire_factor = 0.35
+                ai_join_ally_desire_factor = 0.30
+                guarantee_cost = -0.15
+                tension_drift_gain = -0.12
+                trade_opinion_factor = 0.12
+                war_goal_justification_acceptance = 0.10
+                ai_focus_peaceful_factor = 0.15
+                lend_lease_tension_factor = -0.10
             }
         }
         
         TWR_democratic_coup_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_minority_government
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -231,23 +430,46 @@ ideas = {
                 consumer_goods_factor = 0.15
                 mobilization_speed = -0.10
                 defensive_war_stability_factor = 0.15
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_social_democrat_factor = 0.80
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.35
+                ai_get_ally_desire_factor = 0.40
+                ai_join_ally_desire_factor = 0.35
+                guarantee_cost = -0.18
+                tension_drift_gain = -0.15
+                trade_opinion_factor = 0.15
+                war_goal_justification_acceptance = 0.12
+                ai_focus_peaceful_factor = 0.20
+                lend_lease_tension_factor = -0.15
             }
         }
         
-        # MONARCHIST SPIRITS
+        # MONARCHIST SPIRITS (Paternal Autocrat)
+        # Use a TWR king/queen GFX for monarchist spirits
         TWR_monarchist_movement_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_TWR_king_george_vi
             allowed = { }
             removal_cost = -1
             modifier = {
                 stability_factor = 0.02
                 political_power_factor = 0.03
                 army_morale_factor = 0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_paternal_autocrat_factor = 0.15
+                ideology_drift_conservative_factor = 0.15
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.05
+                ai_join_ally_desire_factor = 0.03
+                send_volunteers_tension = 0.02
+                justify_war_goal_time = -0.05
             }
         }
         
         TWR_monarchist_propaganda_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_TWR_king_boris_III
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -255,11 +477,21 @@ ideas = {
                 political_power_factor = 0.05
                 army_morale_factor = 0.05
                 conservative_acceptance = 5
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_paternal_autocrat_factor = 0.20
+                ideology_drift_conservative_factor = 0.20
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.08
+                ai_join_ally_desire_factor = 0.05
+                send_volunteers_tension = 0.04
+                justify_war_goal_time = -0.08
+                tension_drift_gain = 0.02
             }
         }
         
         TWR_monarchist_mobilization_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_TWR_king_simeon_ii
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -268,11 +500,22 @@ ideas = {
                 army_morale_factor = 0.08
                 conservative_acceptance = 10
                 army_org_factor = 0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_paternal_autocrat_factor = 0.25
+                ideology_drift_conservative_factor = 0.25
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.12
+                ai_join_ally_desire_factor = 0.08
+                send_volunteers_tension = 0.06
+                justify_war_goal_time = -0.10
+                tension_drift_gain = 0.04
+                ai_focus_aggressive_factor = 0.05
             }
         }
         
         TWR_monarchist_permanent_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_TWR_king_aimone
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -282,11 +525,23 @@ ideas = {
                 conservative_acceptance = 15
                 army_org_factor = 0.05
                 division_defense_factor = 0.02
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_paternal_autocrat_factor = 0.30
+                ideology_drift_conservative_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.15
+                ai_join_ally_desire_factor = 0.10
+                send_volunteers_tension = 0.08
+                justify_war_goal_time = -0.12
+                tension_drift_gain = 0.06
+                ai_focus_aggressive_factor = 0.08
+                surrender_limit = 0.03
             }
         }
         
         TWR_monarchist_victory_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_TWR_queen_elizabeth
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -296,11 +551,23 @@ ideas = {
                 conservative_acceptance = 20
                 army_org_factor = 0.08
                 division_defense_factor = 0.05
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_paternal_autocrat_factor = 0.35
+                ideology_drift_conservative_factor = 0.35
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.18
+                ai_join_ally_desire_factor = 0.12
+                send_volunteers_tension = 0.10
+                justify_war_goal_time = -0.15
+                tension_drift_gain = 0.08
+                ai_focus_aggressive_factor = 0.10
+                surrender_limit = 0.05
             }
         }
         
         TWR_monarchist_coup_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_TWR_queen_elizabeth
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -310,23 +577,45 @@ ideas = {
                 conservative_acceptance = 25
                 army_org_factor = 0.10
                 division_defense_factor = 0.08
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_paternal_autocrat_factor = 0.40
+                ideology_drift_conservative_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.22
+                ai_join_ally_desire_factor = 0.15
+                send_volunteers_tension = 0.12
+                justify_war_goal_time = -0.18
+                tension_drift_gain = 0.10
+                ai_focus_aggressive_factor = 0.12
+                surrender_limit = 0.08
             }
         }
         
-        # AUTHORITARIAN SPIRITS
+        # AUTHORITARIAN SPIRITS (Paternal Autocrat)
+        # Use a generic firm hand for authoritarian spirits
         TWR_authoritarian_movement_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_firm_hand
             allowed = { }
             removal_cost = -1
             modifier = {
                 political_power_factor = 0.05
                 stability_factor = 0.02
                 army_org_factor = 0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_paternal_autocrat_factor = 0.15
+                ideology_drift_fascist_factor = 0.15
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.08
+                ai_wants_more_divisions_factor = 0.03
+                join_faction_tension = 0.04
+                send_volunteers_tension = 0.02
             }
         }
         
         TWR_authoritarian_propaganda_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_gasmask_wearer
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -334,11 +623,21 @@ ideas = {
                 stability_factor = 0.05
                 army_org_factor = 0.05
                 fascist_acceptance = 5
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_paternal_autocrat_factor = 0.20
+                ideology_drift_fascist_factor = 0.20
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.12
+                ai_wants_more_divisions_factor = 0.05
+                join_faction_tension = 0.06
+                send_volunteers_tension = 0.04
+                justify_war_goal_time = -0.08
             }
         }
         
         TWR_authoritarian_mobilization_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_occult_stab
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -347,11 +646,22 @@ ideas = {
                 army_org_factor = 0.08
                 fascist_acceptance = 10
                 mobilization_speed = 0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_paternal_autocrat_factor = 0.25
+                ideology_drift_fascist_factor = 0.25
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.16
+                ai_wants_more_divisions_factor = 0.08
+                join_faction_tension = 0.08
+                send_volunteers_tension = 0.06
+                justify_war_goal_time = -0.12
+                ai_focus_aggressive_factor = 0.08
             }
         }
         
         TWR_authoritarian_permanent_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_black_sun_soldiers
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -361,11 +671,23 @@ ideas = {
                 fascist_acceptance = 15
                 mobilization_speed = 0.05
                 division_attack_factor = 0.02
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_paternal_autocrat_factor = 0.30
+                ideology_drift_fascist_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.20
+                ai_wants_more_divisions_factor = 0.12
+                join_faction_tension = 0.10
+                send_volunteers_tension = 0.08
+                justify_war_goal_time = -0.15
+                ai_focus_aggressive_factor = 0.12
+                tension_drift_gain = 0.04
             }
         }
         
         TWR_authoritarian_victory_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_stagnant_bureaucracy
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -375,11 +697,24 @@ ideas = {
                 fascist_acceptance = 20
                 mobilization_speed = 0.08
                 division_attack_factor = 0.05
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_paternal_autocrat_factor = 0.35
+                ideology_drift_fascist_factor = 0.35
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.25
+                ai_wants_more_divisions_factor = 0.15
+                join_faction_tension = 0.12
+                send_volunteers_tension = 0.10
+                justify_war_goal_time = -0.18
+                ai_focus_aggressive_factor = 0.15
+                tension_drift_gain = 0.06
+                surrender_limit = 0.04
             }
         }
         
         TWR_authoritarian_coup_spirit = {
-            picture = GFX_idea_generic_fascist_ideology
+            picture = GFX_idea_GENERIC_skull_friekorp
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -389,23 +724,46 @@ ideas = {
                 fascist_acceptance = 25
                 mobilization_speed = 0.10
                 division_attack_factor = 0.08
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_paternal_autocrat_factor = 0.40
+                ideology_drift_fascist_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_wants_offensive_war_factor = 0.30
+                ai_wants_more_divisions_factor = 0.18
+                join_faction_tension = 0.15
+                send_volunteers_tension = 0.12
+                justify_war_goal_time = -0.22
+                ai_focus_aggressive_factor = 0.18
+                tension_drift_gain = 0.08
+                surrender_limit = 0.06
             }
         }
         
         # LIBERAL SPIRITS
+        # Use a generic education icon for liberal spirits
         TWR_liberal_movement_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_global_economy
             allowed = { }
             removal_cost = -1
             modifier = {
                 stability_factor = 0.03
                 political_power_factor = 0.02
                 consumer_goods_factor = 0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_liberal_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.08
+                ai_get_ally_desire_factor = 0.12
+                ai_join_ally_desire_factor = 0.08
+                guarantee_cost = -0.04
+                tension_drift_gain = -0.02
             }
         }
         
         TWR_liberal_propaganda_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_high_society
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -413,11 +771,21 @@ ideas = {
                 political_power_factor = 0.03
                 consumer_goods_factor = 0.05
                 liberal_acceptance = 5
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_liberal_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.12
+                ai_get_ally_desire_factor = 0.16
+                ai_join_ally_desire_factor = 0.12
+                guarantee_cost = -0.06
+                tension_drift_gain = -0.04
+                trade_opinion_factor = 0.04
             }
         }
         
         TWR_liberal_mobilization_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_loans
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -426,11 +794,22 @@ ideas = {
                 consumer_goods_factor = 0.08
                 liberal_acceptance = 10
                 trade_opinion_factor = 0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_liberal_factor = 0.50
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.16
+                ai_get_ally_desire_factor = 0.20
+                ai_join_ally_desire_factor = 0.16
+                guarantee_cost = -0.08
+                tension_drift_gain = -0.06
+                trade_opinion_factor = 0.06
+                war_goal_justification_acceptance = 0.04
             }
         }
         
         TWR_liberal_permanent_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_education_reform
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -440,11 +819,23 @@ ideas = {
                 liberal_acceptance = 30
                 trade_opinion_factor = 0.10
                 production_factory_efficiency_gain_factor = 0.10
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_liberal_factor = 0.60
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.20
+                ai_get_ally_desire_factor = 0.24
+                ai_join_ally_desire_factor = 0.20
+                guarantee_cost = -0.10
+                tension_drift_gain = -0.08
+                trade_opinion_factor = 0.08
+                war_goal_justification_acceptance = 0.06
+                ai_focus_peaceful_factor = 0.08
             }
         }
         
         TWR_liberal_victory_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_progress
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -454,11 +845,24 @@ ideas = {
                 liberal_acceptance = 35
                 trade_opinion_factor = 0.15
                 production_factory_efficiency_gain_factor = 0.15
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_liberal_factor = 0.70
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.24
+                ai_get_ally_desire_factor = 0.28
+                ai_join_ally_desire_factor = 0.24
+                guarantee_cost = -0.12
+                tension_drift_gain = -0.10
+                trade_opinion_factor = 0.10
+                war_goal_justification_acceptance = 0.08
+                ai_focus_peaceful_factor = 0.12
+                lend_lease_tension_factor = -0.08
             }
         }
         
         TWR_liberal_coup_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_minority_government
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -468,23 +872,46 @@ ideas = {
                 liberal_acceptance = 25
                 trade_opinion_factor = 0.10
                 production_factory_efficiency_gain_factor = 0.08
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_liberal_factor = 0.80
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.28
+                ai_get_ally_desire_factor = 0.32
+                ai_join_ally_desire_factor = 0.28
+                guarantee_cost = -0.14
+                tension_drift_gain = -0.12
+                trade_opinion_factor = 0.12
+                war_goal_justification_acceptance = 0.10
+                ai_focus_peaceful_factor = 0.15
+                lend_lease_tension_factor = -0.12
             }
         }
         
         # CONSERVATIVE SPIRITS
+        # Use a generic cross for conservative spirits
         TWR_conservative_movement_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_welfare_state
             allowed = { }
             removal_cost = -1
             modifier = {
                 stability_factor = 0.02
                 political_power_factor = 0.03
                 army_morale_factor = 0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_conservative_factor = 0.15
+                ideology_drift_paternal_autocrat_factor = 0.15
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.06
+                ai_join_ally_desire_factor = 0.04
+                send_volunteers_tension = 0.03
+                justify_war_goal_time = -0.06
             }
         }
         
         TWR_conservative_propaganda_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_agrarian_nation
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -492,11 +919,21 @@ ideas = {
                 political_power_factor = 0.05
                 army_morale_factor = 0.05
                 conservative_acceptance = 5
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_conservative_factor = 0.20
+                ideology_drift_paternal_autocrat_factor = 0.20
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.09
+                ai_join_ally_desire_factor = 0.06
+                send_volunteers_tension = 0.05
+                justify_war_goal_time = -0.09
+                tension_drift_gain = 0.03
             }
         }
         
         TWR_conservative_mobilization_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_rural_urban_divide
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -505,11 +942,22 @@ ideas = {
                 army_morale_factor = 0.08
                 conservative_acceptance = 10
                 division_defense_factor = 0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_conservative_factor = 0.25
+                ideology_drift_paternal_autocrat_factor = 0.25
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.13
+                ai_join_ally_desire_factor = 0.09
+                send_volunteers_tension = 0.07
+                justify_war_goal_time = -0.11
+                tension_drift_gain = 0.05
+                ai_focus_aggressive_factor = 0.06
             }
         }
         
         TWR_conservative_permanent_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_women_working
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -519,11 +967,23 @@ ideas = {
                 conservative_acceptance = 15
                 division_defense_factor = 0.05
                 army_org_factor = 0.02
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_conservative_factor = 0.30
+                ideology_drift_paternal_autocrat_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.16
+                ai_join_ally_desire_factor = 0.11
+                send_volunteers_tension = 0.09
+                justify_war_goal_time = -0.13
+                tension_drift_gain = 0.07
+                ai_focus_aggressive_factor = 0.09
+                surrender_limit = 0.04
             }
         }
         
         TWR_conservative_victory_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_women_working
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -533,11 +993,23 @@ ideas = {
                 conservative_acceptance = 20
                 division_defense_factor = 0.08
                 army_org_factor = 0.05
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_conservative_factor = 0.35
+                ideology_drift_paternal_autocrat_factor = 0.35
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.19
+                ai_join_ally_desire_factor = 0.13
+                send_volunteers_tension = 0.11
+                justify_war_goal_time = -0.16
+                tension_drift_gain = 0.09
+                ai_focus_aggressive_factor = 0.11
+                surrender_limit = 0.06
             }
         }
         
         TWR_conservative_coup_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_cross
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -547,23 +1019,45 @@ ideas = {
                 conservative_acceptance = 25
                 division_defense_factor = 0.10
                 army_org_factor = 0.08
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_conservative_factor = 0.40
+                ideology_drift_paternal_autocrat_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_get_ally_desire_factor = 0.23
+                ai_join_ally_desire_factor = 0.16
+                send_volunteers_tension = 0.13
+                justify_war_goal_time = -0.19
+                tension_drift_gain = 0.11
+                ai_focus_aggressive_factor = 0.13
+                surrender_limit = 0.08
             }
         }
         
         # SOCIALIST SPIRITS
+        # Use a generic red plan for socialist spirits
         TWR_socialist_movement_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_red_plan
             allowed = { }
             removal_cost = -1
             modifier = {
                 industrial_capacity_factory = 0.02
                 political_power_factor = 0.02
                 stability_factor = 0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_socialist_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.05
+                ai_get_ally_desire_factor = 0.08
+                ai_join_ally_desire_factor = 0.05
+                guarantee_cost = -0.03
+                tension_drift_gain = -0.01
             }
         }
         
         TWR_socialist_propaganda_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_red_guns_revolution
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -571,11 +1065,21 @@ ideas = {
                 political_power_factor = 0.03
                 stability_factor = 0.05
                 socialist_acceptance = 5
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_socialist_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.08
+                ai_get_ally_desire_factor = 0.12
+                ai_join_ally_desire_factor = 0.08
+                guarantee_cost = -0.05
+                tension_drift_gain = -0.03
+                subversive_activities_upkeep = -0.05
             }
         }
         
         TWR_socialist_mobilization_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_Communist_Flame
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -584,11 +1088,22 @@ ideas = {
                 stability_factor = 0.08
                 socialist_acceptance = 10
                 consumer_goods_factor = -0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_socialist_factor = 0.50
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.12
+                ai_get_ally_desire_factor = 0.16
+                ai_join_ally_desire_factor = 0.12
+                send_volunteers_tension = 0.07
+                guarantee_tension = 0.06
+                subversive_activities_upkeep = -0.08
+                war_goal_justification_acceptance = 0.03
             }
         }
         
         TWR_socialist_permanent_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_Communist_Flame
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -598,11 +1113,23 @@ ideas = {
                 socialist_acceptance = 15
                 consumer_goods_factor = -0.05
                 industrial_construction_speed_factor = 0.02
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_socialist_factor = 0.60
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.16
+                ai_get_ally_desire_factor = 0.20
+                ai_join_ally_desire_factor = 0.16
+                guarantee_cost = -0.09
+                tension_drift_gain = -0.07
+                subversive_activities_upkeep = -0.12
+                war_goal_justification_acceptance = 0.05
+                ai_focus_peaceful_factor = 0.06
             }
         }
         
         TWR_socialist_victory_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_red_guns_revolution
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -612,11 +1139,24 @@ ideas = {
                 socialist_acceptance = 20
                 consumer_goods_factor = -0.08
                 industrial_construction_speed_factor = 0.05
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_socialist_factor = 0.70
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.20
+                ai_get_ally_desire_factor = 0.24
+                ai_join_ally_desire_factor = 0.20
+                guarantee_cost = -0.11
+                tension_drift_gain = -0.09
+                subversive_activities_upkeep = -0.15
+                war_goal_justification_acceptance = 0.07
+                ai_focus_peaceful_factor = 0.09
+                lend_lease_tension_factor = -0.06
             }
         }
         
         TWR_socialist_coup_spirit = {
-            picture = GFX_idea_generic_communist_ideology
+            picture = GFX_idea_GENERIC_red_plan
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -626,23 +1166,46 @@ ideas = {
                 socialist_acceptance = 25
                 consumer_goods_factor = -0.10
                 industrial_construction_speed_factor = 0.08
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_socialist_factor = 0.80
+                
+                # AI and Diplomacy
+                ai_wants_ally_factor = 0.24
+                ai_get_ally_desire_factor = 0.28
+                ai_join_ally_desire_factor = 0.24
+                guarantee_cost = -0.13
+                tension_drift_gain = -0.11
+                subversive_activities_upkeep = -0.18
+                war_goal_justification_acceptance = 0.09
+                ai_focus_peaceful_factor = 0.12
+                lend_lease_tension_factor = -0.09
             }
         }
         
-        # TECHNOCRAT SPIRITS
+        # TECHNOCRAT SPIRITS (Paternal Autocrat)
+        # Use a generic progress icon for technocrat spirits
         TWR_technocrat_movement_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_nuclear_reactor
             allowed = { }
             removal_cost = -1
             modifier = {
                 research_speed_factor = 0.02
                 political_power_factor = 0.02
                 stability_factor = 0.02
+                ideology_drift_defence_factor = -0.10
+                ideology_drift_paternal_autocrat_factor = 0.15
+                ideology_drift_conservative_factor = 0.15
+                
+                # AI and Diplomacy
+                ai_accept_join_faction_desire = 0.05
+                ai_accept_ally_desire = 0.05
+                trade_opinion_factor = 0.03
+                tension_drift_gain = -0.02
             }
         }
         
         TWR_technocrat_propaganda_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_TA_Observer
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -650,11 +1213,21 @@ ideas = {
                 political_power_factor = 0.03
                 stability_factor = 0.05
                 acceptance_of_democratic_diplomacy = 5
+                ideology_drift_defence_factor = -0.15
+                ideology_drift_paternal_autocrat_factor = 0.20
+                ideology_drift_conservative_factor = 0.20
+                
+                # AI and Diplomacy
+                ai_accept_join_faction_desire = 0.08
+                ai_accept_ally_desire = 0.08
+                trade_opinion_factor = 0.06
+                tension_drift_gain = -0.04
+                send_volunteers_tension = 0.02
             }
         }
         
         TWR_technocrat_mobilization_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_progress
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -663,11 +1236,22 @@ ideas = {
                 stability_factor = 0.08
                 acceptance_of_democratic_diplomacy = 10
                 production_factory_efficiency_gain_factor = 0.02
+                ideology_drift_defence_factor = -0.20
+                ideology_drift_paternal_autocrat_factor = 0.25
+                ideology_drift_conservative_factor = 0.25
+                
+                # AI and Diplomacy
+                ai_accept_join_faction_desire = 0.12
+                ai_accept_ally_desire = 0.12
+                trade_opinion_factor = 0.09
+                tension_drift_gain = -0.06
+                send_volunteers_tension = 0.04
+                guarantee_cost = -0.04
             }
         }
         
         TWR_technocrat_permanent_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_progress
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -677,11 +1261,23 @@ ideas = {
                 acceptance_of_democratic_diplomacy = 15
                 production_factory_efficiency_gain_factor = 0.05
                 industrial_construction_speed_factor = 0.02
+                ideology_drift_defence_factor = -0.25
+                ideology_drift_paternal_autocrat_factor = 0.30
+                ideology_drift_conservative_factor = 0.30
+                
+                # AI and Diplomacy
+                ai_accept_join_faction_desire = 0.15
+                ai_accept_ally_desire = 0.15
+                trade_opinion_factor = 0.12
+                tension_drift_gain = -0.08
+                send_volunteers_tension = 0.06
+                guarantee_cost = -0.06
+                ai_focus_peaceful_factor = 0.07
             }
         }
         
         TWR_technocrat_victory_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_education_reform
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -691,11 +1287,24 @@ ideas = {
                 acceptance_of_democratic_diplomacy = 20
                 production_factory_efficiency_gain_factor = 0.08
                 industrial_construction_speed_factor = 0.05
+                ideology_drift_defence_factor = -0.30
+                ideology_drift_paternal_autocrat_factor = 0.35
+                ideology_drift_conservative_factor = 0.35
+                
+                # AI and Diplomacy
+                ai_accept_join_faction_desire = 0.18
+                ai_accept_ally_desire = 0.18
+                trade_opinion_factor = 0.15
+                tension_drift_gain = -0.10
+                send_volunteers_tension = 0.08
+                guarantee_cost = -0.08
+                ai_focus_peaceful_factor = 0.10
+                lend_lease_tension_factor = -0.07
             }
         }
         
         TWR_technocrat_coup_spirit = {
-            picture = GFX_idea_generic_democratic_ideology
+            picture = GFX_idea_GENERIC_education_reform
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -705,12 +1314,25 @@ ideas = {
                 acceptance_of_democratic_diplomacy = 25
                 production_factory_efficiency_gain_factor = 0.10
                 industrial_construction_speed_factor = 0.08
+                ideology_drift_defence_factor = -0.35
+                ideology_drift_paternal_autocrat_factor = 0.40
+                ideology_drift_conservative_factor = 0.40
+                
+                # AI and Diplomacy
+                ai_accept_join_faction_desire = 0.22
+                ai_accept_ally_desire = 0.22
+                trade_opinion_factor = 0.18
+                tension_drift_gain = -0.12
+                send_volunteers_tension = 0.10
+                guarantee_cost = -0.10
+                ai_focus_peaceful_factor = 0.13
+                lend_lease_tension_factor = -0.10
             }
         }
         
         # IDEOLOGY DRIFT BOOST (for focus/event references)
         twr_ideology_drift_boost = {
-            picture = GFX_idea_generic_political_reform
+            picture = GFX_idea_GENERIC_progress
             allowed = { }
             removal_cost = -1
             modifier = {
@@ -720,6 +1342,7 @@ ideas = {
         }
     }
     
+    # MILITARY SPIRITS (UNCHANGED)
     GEN_european_armour = {
         picture = GFX_idea_generic_army
         allowed = { }

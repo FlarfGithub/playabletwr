@@ -1,8 +1,8 @@
-namespace = TWR_playabletwr
+namespace = TWR_political
 
 # Democratic Election Event
 country_event = {
-    id = TWR_playabletwr.1
+    id = TWR_political.1
     is_triggered_only = no
     title = TWR_playabletwr_democratic_election_title
     desc = TWR_playabletwr_democratic_election_desc
@@ -16,15 +16,21 @@ country_event = {
 
 # Civil War Event
 country_event = {
-    id = TWR_playabletwr.2
-    is_triggered_only = no
-    title = TWR_playabletwr_civil_war_title
-    desc = TWR_playabletwr_civil_war_desc
-    picture = GFX_report_event_civil_war
-    trigger = { NOT = { has_government = democratic } }
+    id = generic_political_event.1
+    is_triggered_only = yes
+    title = generic_political_event.1.t
+    desc = generic_political_event.1.d
+    picture = GFX_report_event_generic_political_drift
     option = {
-        name = TWR_playabletwr_civil_war_option
-        start_civil_war = { ideology = democratic size = 0.3 }
+        name = generic_political_event.1.a
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.1
+        }
+    }
+    option = {
+        name = generic_political_event.1.b
+        start_civil_war = { ideology = conservative size = 0.3 }
     }
 }
 

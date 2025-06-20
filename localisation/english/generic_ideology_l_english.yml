@@ -8,7 +8,7 @@ GEN_FAS_Revolution:0 "Fascist Revolution"
 GEN_FAS_Revolution_desc:0 "The Fascists have risen to power through revolution."
 
 GEN_FAL_Revolution:0 "Falangist Revolution"
-GEN_FAL_Revolution_desc":0 "The Falangists have risen to power through revolution."
+GEN_FAL_Revolution_desc:0 "The Falangists have risen to power through revolution."
 
 GEN_SOC_Revolution:0 "Social Democrat Revolution"
 GEN_SOC_Revolution_desc:0 "The Social Democrats have risen to power through revolution."
@@ -17,13 +17,13 @@ GEN_LIB_Revolution:0 "Liberal Revolution"
 GEN_LIB_Revolution_desc:0 "The Liberals have risen to power through revolution."
 
 GEN_CON_Revolution:0 "Conservative Revolution"
-GEN_CON_Revolution_desc":0 "The Conservatives have risen to power through revolution."
+GEN_CON_Revolution_desc:0 "The Conservatives have risen to power through revolution."
 
 GEN_MAR_Revolution:0 "Marxist Revolution"
-GEN_MAR_Revolution_desc":0 "The Marxists have risen to power through revolution."
+GEN_MAR_Revolution_desc:0 "The Marxists have risen to power through revolution."
 
 GEN_STA_Revolution:0 "Stalinist Revolution"
-GEN_STA_Revolution_desc":0 "The Stalinists have risen to power through revolution."
+GEN_STA_Revolution_desc:0 "The Stalinists have risen to power through revolution."
 
 GEN_ANA_Revolution:0 "Anarchist Revolution"
 GEN_ANA_Revolution_desc:0 "The Anarchists have risen to power through revolution." 

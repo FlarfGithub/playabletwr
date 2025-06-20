@@ -1,0 +1,12 @@
+political_decisions = {
+	icon = generic_political_pressure
+	picture = GFX_decision_cat_political_pressure
+	
+	allowed = {
+		always = yes
+	}
+	
+	visible = {
+		always = yes
+	}
+} 
