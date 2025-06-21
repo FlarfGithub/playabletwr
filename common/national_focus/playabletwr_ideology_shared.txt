@@ -1,4 +1,3 @@
-# FASCIST PATH (TWR-style, visually blended with generic focuses)
 shared_focus = {
   id = PTWR_Fascist_Path
   icon = GFX_GER_gray_swastika_government
@@ -83,7 +82,6 @@ shared_focus = {
   }
 }
 
-# COMMUNIST PATH (TWR-style, visually blended with generic focuses)
 shared_focus = {
   id = PTWR_Communist_Path
   icon = GFX_focus_SOV_the_supreme_soviet
@@ -168,7 +166,6 @@ shared_focus = {
   }
 }
 
-# MONARCHIST PATH (TWR-style, visually blended with generic focuses)
 shared_focus = {
   id = PTWR_Monarchist_Path
   icon = GFX_focus_generic_monarchy_1
@@ -253,7 +250,6 @@ shared_focus = {
   }
 }
 
-# DEMOCRATIC PATH (TWR-style, comprehensive, dramatic, dynamic)
 shared_focus = {
   id = PTWR_Democratic_Path
   icon = GFX_focus_AFG_parliamentary_democracy
@@ -338,7 +334,6 @@ shared_focus = {
   }
 }
 
-# AUTHORITARIAN PATH (TWR-style, comprehensive, dramatic, dynamic)
 shared_focus = {
   id = PTWR_Authoritarian_Path
   icon = GFX_focus_ger_return_of_the_kaiser
@@ -423,7 +418,6 @@ shared_focus = {
   }
 }
 
-# LIBERAL PATH (TWR-style, comprehensive, dramatic, dynamic)
 shared_focus = {
   id = PTWR_Liberal_Path
   icon = GFX_focus_spr_torchbearers_of_tomorrow
@@ -508,7 +502,6 @@ shared_focus = {
   }
 }
 
-# CONSERVATIVE PATH (TWR-style, comprehensive, dramatic, dynamic)
 shared_focus = {
   id = PTWR_Conservative_Path
   icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -593,7 +586,6 @@ shared_focus = {
   }
 }
 
-# SOCIALIST PATH (TWR-style, comprehensive, dramatic, dynamic)
 shared_focus = {
   id = PTWR_Socialist_Path
   icon = GFX_SOV_the_glory_of_the_red_army_ccp_2d_sov_compatibility
@@ -678,7 +670,6 @@ shared_focus = {
   }
 }
 
-# TECHNOCRAT PATH (TWR-style, comprehensive, dramatic, dynamic)
 shared_focus = {
   id = PTWR_Technocrat_Path
   icon = GFX_SOV_socialist_humanism_ccp_2d_sov_compatibility
