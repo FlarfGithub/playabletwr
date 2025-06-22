@@ -1333,6 +1333,34 @@ ideas = {
                 political_power_factor = 0.05
             }
         }
+        
+        TWR_faction_member_spirit = {
+            picture = GFX_idea_generic_allies
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 0.1
+                stability_factor = 0.05
+            }
+        }
+        TWR_faction_founder_spirit = {
+            picture = GFX_idea_generic_leader
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                war_support = 0.1
+                justify_war_goal_time = -0.1
+            }
+        }
+        TWR_neutrality_commitment = {
+            picture = GFX_idea_generic_neutrality
+            allowed = { }
+            removal_cost = -1
+            modifier = {
+                trade_opinion_factor = 0.3
+                justify_war_goal_time = 0.2
+            }
+        }
     }
     
     # MILITARY SPIRITS (UNCHANGED)

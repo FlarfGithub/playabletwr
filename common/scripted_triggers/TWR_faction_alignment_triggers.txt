@@ -1,0 +1,34 @@
+# Scripted triggers for ideology-specific faction existence
+TWR_fascist_faction_exists = {
+  OR = {
+    AND = {
+      faction_exists = neue_ordnung
+      faction_leader = { tag = GER }
+    }
+    AND = {
+      faction_exists = mediterranean_pact
+      faction_leader = { tag = ITA }
+    }
+  }
+}
+TWR_communist_faction_exists = {
+  OR = {
+    AND = {
+      faction_exists = comintern
+      faction_leader = { tag = SOV }
+    }
+    AND = {
+      faction_exists = workers_front
+      faction_leader = { has_government = socialist }
+    }
+  }
+}
+TWR_democratic_faction_exists = {
+  OR = {
+    AND = {
+      faction_exists = toronto_accord
+      faction_leader = { tag = USA }
+    }
+  }
+}
+# All non-existent factions (royal_pact, concord, etc.) removed for compliance

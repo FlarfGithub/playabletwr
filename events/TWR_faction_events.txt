@@ -1,0 +1,35 @@
+country_event = {
+  id = TWR_faction_creation.1
+  title = TWR_faction_creation_title
+  desc = TWR_faction_creation_desc
+  picture = GFX_goal_generic_diplomatic_meeting
+  is_triggered_only = yes
+  immediate = {
+    clr_country_flag = TWR_create_custom_faction
+    if = { limit = { continent = europe } set_temp_variable = { region_suffix = "European" } }
+    else_if = { limit = { continent = asia } set_temp_variable = { region_suffix = "Asian" } }
+    else_if = { limit = { continent = south_america } set_temp_variable = { region_suffix = "South American" } }
+    else = { set_temp_variable = { region_suffix = "Global" } }
+    if = {
+      limit = { check_variable = { TWR_faction_ideology = fascist } }
+      random_list = {
+        30 = { set_temp_variable = { faction_name = "[region_suffix] Order" } }
+        30 = { set_temp_variable = { faction_name = "[region_suffix] Axis" } }
+        40 = { set_temp_variable = { faction_name = "New [region_suffix] Order" } }
+      }
+    }
+    else_if = {
+      limit = { check_variable = { TWR_faction_ideology = democratic } }
+      random_list = {
+        50 = { set_temp_variable = { faction_name = "[region_suffix] Alliance" } }
+        50 = { set_temp_variable = { faction_name = "[region_suffix] Concord" } }
+      }
+    }
+    // Similar blocks for other ideologies
+    create_faction = { name = temp_variable:faction_name }
+    add_ideas = TWR_faction_founder_spirit
+  }
+  option = {
+    name = TWR_faction_creation_confirm
+  }
+}
