@@ -4,12 +4,16 @@ game_rule = {
     option = {
         name = allow_political_revolutions_yes
         text = "Allow Political Revolutions"
-        allow = yes
+        allowed = {
+            always = yes
+        }
     }
     option = {
         name = allow_political_revolutions_no
         text = "Disallow Political Revolutions"
-        allow = no
+        allowed = {
+            always = yes
+        }
     }
 }
 
@@ -19,12 +23,16 @@ game_rule = {
     option = {
         name = allow_elections_yes
         text = "Allow Elections"
-        allow = yes
+        allowed = {
+            always = yes
+        }
     }
     option = {
         name = allow_elections_no
         text = "Disallow Elections"
-        allow = no
+        allowed = {
+            always = yes
+        }
     }
 }
 
