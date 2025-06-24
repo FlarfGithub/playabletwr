@@ -19,14 +19,18 @@ game_rule = {
 	name = allow_political_revolutions
 	group = "political_rules"
 	
-	option = {
-		name = allow_political_revolutions_yes
-		allow = yes
-	}
-	option = {
-		name = allow_political_revolutions_no
-		allow = no
-	}
+        option = {
+                name = allow_political_revolutions_yes
+                allowed = {
+                        always = yes
+                }
+        }
+        option = {
+                name = allow_political_revolutions_no
+                allowed = {
+                        always = yes
+                }
+        }
 }
 
 ### TWR GAME RULES
