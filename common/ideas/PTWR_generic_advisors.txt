@@ -1,11 +1,10 @@
 ideas = {
-    country = {
+    political_advisor = {
         PTWR_generic_fascist_advisor = {
             picture = generic_fascist
             allowed = { has_government = fascist }
             cost = 150
             modifier = { political_power_gain = 0.05 }
-            advisor = { slot = political_advisor }
         }
         PTWR_generic_communist_advisor = {
             picture = generic_communist
@@ -54,7 +53,6 @@ ideas = {
             allowed = { has_government = marxist_leninist }
             cost = 150
             modifier = { political_power_gain = 0.05 }
-            advisor = { slot = political_advisor }
         }
     }
 }
