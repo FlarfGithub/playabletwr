@@ -1,37 +1,27 @@
 shared_focus = {
-  id = PTWR_expansionism_start
-  icon = GFX_goal_generic_alliance
-  x = 0
-  y = 0
-  cost = 10
-  available = {
-    any_neighbor_country = { NOT = { has_war_with = ROOT } }
-  }
-  completion_reward = {
-    add_political_power = 50
-  }
+    id = PTWR_expansionism_start
+    icon = GFX_goal_generic_alliance
+    x = 0
+    y = 0
+    cost = 10
+    available = {
+        any_neighbor_country = { NOT = { has_war_with = ROOT } }
+    }
+    completion_reward = {
+        add_political_power = 50
+    }
 }
 
 shared_focus = {
-  id = PTWR_expansionism_conquest
-  icon = GFX_goal_generic_major_alliance
-  relative_position_id = PTWR_expansionism_start
-  x = 0
-  y = 1
-  cost = 10
-  prerequisite = { focus = PTWR_expansionism_start }
-  available = {
-
-  id = PTWR_expansionism
-  icon = GFX_goal_generic_major_alliance
-  x = 0
-  y = 0
-  cost = 10
-  available = { 
-
-    any_neighbor_country = { NOT = { has_war_with = ROOT } }
-  }
-  completion_reward = {
-    country_event = { id = TWR_expansion.1 }
-  }
+    id = PTWR_expansionism_conquest
+    icon = GFX_goal_generic_major_alliance
+    relative_position_id = PTWR_expansionism_start
+    x = 0
+    y = 1
+    cost = 10
+    prerequisite = { focus = PTWR_expansionism_start }
+    available = { }
+    completion_reward = {
+        country_event = { id = TWR_expansion.1 }
+    }
 }
