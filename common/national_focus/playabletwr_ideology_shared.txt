@@ -140,7 +140,7 @@ shared_focus = {
   prerequisite = { focus = PTWR_communist_mobilization }
   available = { NOT = { has_war = yes } NOT = { is_subject = yes } }
   completion_reward = {
-    remove_ideas = TWR_communist_movement_spirt
+    remove_ideas = TWR_communist_movement_spirit
     remove_ideas = TWR_communist_propaganda_spirit
     remove_ideas = TWR_communist_mobilization_spirit
     add_ideas = TWR_communist_permanent_spirit
