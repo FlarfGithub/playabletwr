@@ -21,6 +21,14 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_expansionism_start }
   available = {
+
+  id = PTWR_expansionism
+  icon = GFX_goal_generic_major_alliance
+  x = 0
+  y = 0
+  cost = 10
+  available = { 
+
     any_neighbor_country = { NOT = { has_war_with = ROOT } }
   }
   completion_reward = {
