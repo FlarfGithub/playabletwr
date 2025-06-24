@@ -120,7 +120,9 @@ shared_focus = {
     TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
+
   mutually_exclusive = { focus = PTWR_communist_join_workers_front focus = PTWR_communist_neutral_path focus = PTWR_communist_own_path }
+
   completion_reward = {
     add_to_faction = SOV
     add_ideas = TWR_faction_member_spirit
@@ -138,7 +140,9 @@ shared_focus = {
     TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
+
   mutually_exclusive = { focus = PTWR_communist_join_comintern focus = PTWR_communist_neutral_path focus = PTWR_communist_own_path }
+
   completion_reward = {
     add_to_faction = FRA
     add_ideas = TWR_faction_member_spirit
