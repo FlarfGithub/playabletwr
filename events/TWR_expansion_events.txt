@@ -1,0 +1,15 @@
+# Expansionism Events
+country_event = {
+  id = TWR_expansion.1
+  is_triggered_only = yes
+  immediate = {
+    random_neighbor_country = {
+      limit = { NOT = { has_war_with = ROOT } }
+      ROOT = {
+        create_wargoal = { type = annex_everything target = THIS }
+        add_ai_strategy = { type = conquer id = THIS value = 200 }
+      }
+    }
+  }
+  option = { name = OK }
+}

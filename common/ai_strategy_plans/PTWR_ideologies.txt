@@ -1,0 +1,107 @@
+PTWR_Fascist_Generic = {
+    name = "PTWR Fascist AI"
+    desc = "Aggressive behavior for fascist nations"
+    allowed = { has_government = fascist }
+    enable = { has_government = fascist }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 50
+    }
+}
+
+PTWR_Communist_Generic = {
+    name = "PTWR Communist AI"
+    desc = "Expansionist behavior for communists"
+    allowed = { has_government = bolshevik_leninist }
+    enable = { has_government = bolshevik_leninist }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 40
+    }
+}
+
+PTWR_Democratic_Generic = {
+    name = "PTWR Democratic AI"
+    desc = "More defensive for democracies"
+    allowed = { has_government = social_democrat }
+    enable = { has_government = social_democrat }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 10
+    }
+}
+
+PTWR_Authoritarian_Generic = {
+    name = "PTWR Authoritarian AI"
+    desc = "Balanced aggression"
+    allowed = { has_government = paternal_autocrat }
+    enable = { has_government = paternal_autocrat }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 30
+    }
+}
+
+PTWR_Liberal_Generic = {
+    name = "PTWR Liberal AI"
+    desc = "Defensive stance"
+    allowed = { has_government = liberal }
+    enable = { has_government = liberal }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 15
+    }
+}
+
+PTWR_Conservative_Generic = {
+    name = "PTWR Conservative AI"
+    desc = "Cautious expansion"
+    allowed = { has_government = conservative }
+    enable = { has_government = conservative }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 20
+    }
+}
+
+PTWR_Socialist_Generic = {
+    name = "PTWR Socialist AI"
+    desc = "Supports revolutionary wars"
+    allowed = { has_government = socialist }
+    enable = { has_government = socialist }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 35
+    }
+}
+
+PTWR_Technocrat_Generic = {
+    name = "PTWR Technocrat AI"
+    desc = "Focus on research, limited wars"
+    allowed = { has_government = technocrat }
+    enable = { has_government = technocrat }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 20
+    }
+}
+
+PTWR_Monarchist_Generic = {
+    name = "PTWR Monarchist AI"
+    desc = "Moderate expansion"
+    allowed = { has_government = monarchist }
+    enable = { has_government = monarchist }
+    ai_strategy = {
+        type = conquer
+        id = DEFAULT
+        value = 25
+    }
+}

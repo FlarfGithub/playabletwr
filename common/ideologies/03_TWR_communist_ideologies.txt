@@ -38,7 +38,7 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_join_factions = no			
-			can_create_factions = no		
+                        can_create_factions = yes
 			can_create_collaboration_government = yes
 			can_access_market = no
 		}
@@ -92,7 +92,7 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_join_factions = no			
-			can_create_factions = no	
+                        can_create_factions = yes
 			can_create_collaboration_government = yes
 			can_access_market = no		
 		}
@@ -148,7 +148,7 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_join_factions = no			
-			can_create_factions = no		
+                        can_create_factions = yes
 			can_create_collaboration_government = yes
 			can_access_market = no	
 		}

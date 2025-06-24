@@ -1,0 +1,13 @@
+shared_focus = {
+  id = PTWR_expansionism
+  icon = GFX_goal_generic_major_alliance
+  x = 0
+  y = 0
+  cost = 10
+  available = { 
+    any_neighbor_country = { NOT = { has_war_with = ROOT } }
+  }
+  completion_reward = {
+    country_event = { id = TWR_expansion.1 }
+  }
+}
