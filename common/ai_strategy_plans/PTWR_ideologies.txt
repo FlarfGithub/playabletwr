@@ -85,8 +85,8 @@ PTWR_Socialist_Generic = {
 PTWR_Technocrat_Generic = {
     name = "PTWR Technocrat AI"
     desc = "Focus on research, limited wars"
-    allowed = { has_government = technocrat }
-    enable = { has_government = technocrat }
+    allowed = { has_government = paternal_autocrat }
+    enable = { has_government = paternal_autocrat }
     ai_strategy = {
         type = conquer
         id = DEFAULT
@@ -97,8 +97,8 @@ PTWR_Technocrat_Generic = {
 PTWR_Monarchist_Generic = {
     name = "PTWR Monarchist AI"
     desc = "Moderate expansion"
-    allowed = { has_government = monarchist }
-    enable = { has_government = monarchist }
+    allowed = { has_government = paternal_autocrat }
+    enable = { has_government = paternal_autocrat }
     ai_strategy = {
         type = conquer
         id = DEFAULT
