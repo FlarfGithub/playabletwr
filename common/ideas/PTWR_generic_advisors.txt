@@ -1,14 +1,58 @@
 ideas = {
-    PTWR_generic_fascist_advisor = {
-        picture = generic_fascist
-        allowed = { has_government = fascist }
-        cost = 150
-        modifier = { political_power_gain = 0.05 }
-    }
-    PTWR_generic_communist_advisor = {
-        picture = generic_communist
-        allowed = { has_government = bolshevik_leninist }
-        cost = 150
-        modifier = { political_power_gain = 0.05 }
+    country = {
+        PTWR_generic_fascist_advisor = {
+            picture = generic_fascist
+            allowed = { has_government = fascist }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_communist_advisor = {
+            picture = generic_communist
+            allowed = { has_government = bolshevik_leninist }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_monarchist_advisor = {
+            picture = generic_monarchist
+            allowed = { has_government = monarchist }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_authoritarian_advisor = {
+            picture = generic_authoritarian
+            allowed = { has_government = paternal_autocrat }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_liberal_advisor = {
+            picture = generic_liberal
+            allowed = { has_government = liberal }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_conservative_advisor = {
+            picture = generic_conservative
+            allowed = { has_government = conservative }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_social_democrat_advisor = {
+            picture = generic_social_democrat
+            allowed = { has_government = social_democrat }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_socialist_advisor = {
+            picture = generic_socialist
+            allowed = { has_government = socialist }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
+        PTWR_generic_marxist_advisor = {
+            picture = generic_communist
+            allowed = { has_government = marxist_leninist }
+            cost = 150
+            modifier = { political_power_gain = 0.05 }
+        }
     }
 }
