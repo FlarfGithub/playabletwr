@@ -54,5 +54,5 @@ ideas = {
             cost = 150
             modifier = { political_power_gain = 0.05 }
         }
-    }
+
 }
