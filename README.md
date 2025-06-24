@@ -118,6 +118,17 @@ playabletwr/
 3. Test in-game
 4. Commit and push changes
 
+## Testing
+
+This repository includes a script to check that country tags are unique in
+`common/countries/colors.txt`. Run the script with Python:
+
+```bash
+python3 tests/test_unique_colors.py
+```
+
+The command exits with a non-zero status if any tag is defined more than once.
+
 ## Version History
 
 ### v1.0.0 (Current)
