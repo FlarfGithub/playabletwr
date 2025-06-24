@@ -1,0 +1,16 @@
+political_actions = {
+    PTWR_issue_trade_embargo = {
+        icon = generic_nationalism
+        allowed = { always = yes }
+        visible = { has_political_power > 0 }
+        cost = 200
+        available = {
+            has_diplomatic_relation = no
+        }
+        complete_effect = {
+            add_opinion_modifier = { target = FROM modifier = embargo }
+            reverse_add_opinion_modifier = { target = FROM modifier = embargo }
+        }
+        ai_will_do = { base = 5 }
+    }
+}

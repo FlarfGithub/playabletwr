@@ -756,7 +756,7 @@ shared_focus = {
 
 shared_focus = {
   id = PTWR_faction_alignment_start_fascist
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_fascist_victory
   x = 0
   y = 1
@@ -767,11 +767,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_communist
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_communist_victory
   x = 0
   y = 1
@@ -782,11 +785,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_monarchist
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_monarchist_victory
   x = 0
   y = 1
@@ -797,11 +803,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_democratic
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_democratic_victory
   x = 0
   y = 1
@@ -812,11 +821,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_authoritarian
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_authoritarian_victory
   x = 0
   y = 1
@@ -827,11 +839,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_liberal
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_liberal_victory
   x = 0
   y = 1
@@ -842,11 +857,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_conservative
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_conservative_victory
   x = 0
   y = 1
@@ -857,11 +875,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_socialist
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_socialist_victory
   x = 0
   y = 1
@@ -872,11 +893,14 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
 shared_focus = {
   id = PTWR_faction_alignment_start_technocrat
-  icon = GFX_goal_generic_diplomatic_meeting
+  icon = GFX_goal_generic_major_alliance
   relative_position_id = PTWR_technocrat_victory
   x = 0
   y = 1
@@ -887,5 +911,8 @@ shared_focus = {
     NOT = { is_subject = yes }
     NOT = { is_in_faction = yes }
   }
-  completion_reward = { add_political_power = 50 }
+  completion_reward = {
+    if = { limit = { NOT = { is_in_faction = yes } } create_faction = "[ROOT.GetName] Bloc" }
+    add_political_power = 50
+}
 }
