@@ -3,8 +3,8 @@ shared_focus = {
   icon = GFX_goal_generic_create_faction
   cost = 0
   available = { has_country_flag = TWR_create_custom_faction }
-  completion_reward = {
-    hidden_effect = { country_event = TWR_faction_creation.1 }
-  }
+    completion_reward = {
+      hidden_effect = { country_event = { id = TWR_faction_creation.1 } }
+    }
 }
 // Add this focus to the end of each ideology's alignment tree as appropriate.
