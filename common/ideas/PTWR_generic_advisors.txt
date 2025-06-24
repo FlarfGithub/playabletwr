@@ -1,4 +1,4 @@
-ideas = 
+ideas = {
     political_advisor = {
         PTWR_generic_fascist_advisor = {
             picture = generic_fascist
@@ -55,4 +55,5 @@ ideas =
             modifier = { political_power_gain = 0.05 }
         }
 
+}
 }

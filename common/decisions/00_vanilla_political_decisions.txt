@@ -4,32 +4,32 @@ decisions = {
 		boost_democratic_popularity = {
 			icon = GFX_goal_generic_demand_territory
 			cost = 10
-			available = { has_government = democratic }
-			visible = { has_government = democratic }
+			available = { has_government = conservative }
+			visible = { has_government = conservative }
 			remove_effect = { add_popularity = { ideology = conservative popularity = 0.1 } }
 		}
 
 		boost_fascist_popularity = {
 			icon = GFX_goal_generic_fascist_drift
 			cost = 10
-			available = { has_government = fascism }
-			visible = { has_government = fascism }
+			available = { has_government = fascist }
+			visible = { has_government = fascist }
 			remove_effect = { add_popularity = { ideology = fascist popularity = 0.1 } }
 		}
 
 		boost_communist_popularity = {
 			icon = GFX_goal_generic_support_the_left_right
 			cost = 10
-			available = { has_government = communism }
-			visible = { has_government = communism }
+			available = { has_government = marxist_leninist }
+			visible = { has_government = marxist_leninist }
 			remove_effect = { add_popularity = { ideology = marxist_leninist popularity = 0.1 } }
 		}
 
 		boost_neutrality_popularity = {
 			icon = GFX_goal_generic_neutrality_focus
 			cost = 10
-			available = { has_government = neutrality }
-			visible = { has_government = neutrality }
+			available = { has_government = paternal_autocrat }
+			visible = { has_government = paternal_autocrat }
 			remove_effect = { add_popularity = { ideology = paternal_autocrat popularity = 0.1 } }
 		}
 
