@@ -40,7 +40,7 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 			can_join_factions = no			
-			can_create_factions = no	
+                        can_create_factions = yes
 			can_create_collaboration_government = no
 			can_access_market = no	
 		}
@@ -99,7 +99,7 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 			can_join_factions = no			
-			can_create_factions = no		
+                        can_create_factions = yes
 			can_create_collaboration_government = no
 			can_access_market = no	
 		}
@@ -155,7 +155,7 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 			can_join_factions = no			
-			can_create_factions = no			
+                        can_create_factions = yes
 			can_create_collaboration_government = no
 			can_access_market = no
 		}
