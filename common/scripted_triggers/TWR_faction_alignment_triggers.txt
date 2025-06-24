@@ -1,34 +1,28 @@
 # Scripted triggers for ideology-specific faction existence
 TWR_fascist_faction_exists = {
   OR = {
-    AND = {
-      faction_exists = neue_ordnung
-      faction_leader = { tag = GER }
-    }
-    AND = {
-      faction_exists = mediterranean_pact
-      faction_leader = { tag = ITA }
-    }
+    GER = { is_faction_leader = yes }
+    ITA = { is_faction_leader = yes }
   }
 }
 TWR_communist_faction_exists = {
   OR = {
-    AND = {
-      faction_exists = comintern
-      faction_leader = { tag = SOV }
-    }
-    AND = {
-      faction_exists = workers_front
-      faction_leader = { has_government = socialist }
+    SOV = { is_faction_leader = yes }
+    any_country = {
+      is_faction_leader = yes
+      has_government = socialist
     }
   }
 }
 TWR_democratic_faction_exists = {
-  OR = {
-    AND = {
-      faction_exists = toronto_accord
-      faction_leader = { tag = USA }
-    }
+  USA = { is_faction_leader = yes }
+}
+# Technocrat-themed factions are not present in base TWR. This trigger simply
+# checks if any paternal autocrat country currently leads a faction.
+TWR_technocrat_faction_exists = {
+  any_country = {
+    is_faction_leader = yes
+    has_government = paternal_autocrat
   }
 }
 # All non-existent factions (royal_pact, concord, etc.) removed for compliance
