@@ -5,11 +5,6 @@ TLA = {
 }
 
 MLT = {
-	color = rgb { 255 153 153 }
-	color_ui = rgb { 255 153 153 }
-}
-
-MLT = {
 	color = rgb { 137 43 79 }
 	color_ui = rgb { 137 43 79 }
 }
@@ -467,11 +462,6 @@ SAU = {
 }
 SIA = {
 	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
-}
-SIK = {
-	#color = rgb { 245 12 55 }
-	color = rgb { 71 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {
