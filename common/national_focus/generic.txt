@@ -19,4 +19,6 @@ focus_tree = {
     shared_focus = PTWR_Conservative_Path
     shared_focus = PTWR_Socialist_Path
     shared_focus = PTWR_Technocrat_Path
+    shared_focus = PTWR_expansionism_start
+    shared_focus = PTWR_expansionism_conquest
 }
