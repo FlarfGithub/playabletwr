@@ -9,15 +9,12 @@ ideas = {
                 war_support_factor = 0.05
                 political_power_factor = 0.03
                 stability_factor = -0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_fascist_factor = 0.15
-                ideology_drift_national_socialist_factor = 0.15
+                drift_defence_factor = -0.10
+                fascist_drift = 0.15
+                national_socialist_drift = 0.15
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.10
-                ai_wants_more_divisions_factor = 0.05
-                join_faction_tension = 0.05
-                send_volunteers_tension = 0.03
+                # removed obsolete AI modifiers
             }
         }
         
@@ -29,17 +26,12 @@ ideas = {
                 war_support_factor = 0.10
                 political_power_factor = 0.05
                 stability_factor = -0.05
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_fascist_factor = 0.20
-                ideology_drift_national_socialist_factor = 0.20
+                drift_defence_factor = -0.15
+                fascist_drift = 0.20
+                national_socialist_drift = 0.20
                 fascist_acceptance = 5
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.15
-                ai_wants_more_divisions_factor = 0.08
-                join_faction_tension = 0.08
-                send_volunteers_tension = 0.05
-                justify_war_goal_time = -0.10
             }
         }
         
@@ -52,16 +44,11 @@ ideas = {
                 political_power_factor = 0.07
                 stability_factor = -0.07
                 recruitable_population_factor = 0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_fascist_factor = 0.25
-                ideology_drift_national_socialist_factor = 0.25
+                drift_defence_factor = -0.20
+                fascist_drift = 0.25
+                national_socialist_drift = 0.25
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.20
-                ai_wants_more_divisions_factor = 0.10
-                join_faction_tension = 0.10
-                send_volunteers_tension = 0.07
-                justify_war_goal_time = -0.15
                 ai_focus_aggressive_factor = 0.10
             }
         }
@@ -76,18 +63,12 @@ ideas = {
                 stability_factor = 0.05
                 recruitable_population_factor = 0.05
                 division_attack_factor = 0.05
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_fascist_factor = 0.30
-                ideology_drift_national_socialist_factor = 0.30
+                drift_defence_factor = -0.25
+                fascist_drift = 0.30
+                national_socialist_drift = 0.30
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.25
-                ai_wants_more_divisions_factor = 0.15
-                join_faction_tension = 0.12
-                send_volunteers_tension = 0.08
-                justify_war_goal_time = -0.20
                 ai_focus_aggressive_factor = 0.15
-                tension_drift_gain = 0.05
             }
         }
         
@@ -102,18 +83,12 @@ ideas = {
                 recruitable_population_factor = 0.10
                 division_attack_factor = 0.10
                 division_defense_factor = 0.05
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_fascist_factor = 0.35
-                ideology_drift_national_socialist_factor = 0.35
+                drift_defence_factor = -0.30
+                fascist_drift = 0.35
+                national_socialist_drift = 0.35
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.30
-                ai_wants_more_divisions_factor = 0.20
-                join_faction_tension = 0.15
-                send_volunteers_tension = 0.10
-                justify_war_goal_time = -0.25
                 ai_focus_aggressive_factor = 0.20
-                tension_drift_gain = 0.08
                 surrender_limit = 0.05
             }
         }
@@ -129,18 +104,12 @@ ideas = {
                 recruitable_population_factor = 0.15
                 division_attack_factor = 0.15
                 division_defense_factor = 0.10
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_fascist_factor = 0.40
-                ideology_drift_national_socialist_factor = 0.40
+                drift_defence_factor = -0.35
+                fascist_drift = 0.40
+                national_socialist_drift = 0.40
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.40
-                ai_wants_more_divisions_factor = 0.25
-                join_faction_tension = 0.20
-                send_volunteers_tension = 0.15
-                justify_war_goal_time = -0.30
                 ai_focus_aggressive_factor = 0.25
-                tension_drift_gain = 0.10
                 surrender_limit = 0.10
             }
         }
@@ -154,15 +123,13 @@ ideas = {
                 industrial_capacity_factory = 0.02
                 political_power_factor = 0.03
                 stability_factor = -0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_bolshevik_leninist_factor = 0.15
-                ideology_drift_marxist_leninist_factor = 0.15
+                drift_defence_factor = -0.10
+                bolshevik_leninist_drift = 0.15
+                marxist_leninist_drift = 0.15
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.05
                 ai_get_ally_desire_factor = 0.10
                 ai_join_ally_desire_factor = 0.05
-                send_volunteers_tension = 0.03
                 guarantee_tension = 0.02
             }
         }
@@ -176,15 +143,13 @@ ideas = {
                 political_power_factor = 0.05
                 stability_factor = -0.05
                 consumer_goods_factor = -0.02
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_bolshevik_leninist_factor = 0.20
-                ideology_drift_marxist_leninist_factor = 0.20
+                drift_defence_factor = -0.15
+                bolshevik_leninist_drift = 0.20
+                marxist_leninist_drift = 0.20
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.08
                 ai_get_ally_desire_factor = 0.15
                 ai_join_ally_desire_factor = 0.08
-                send_volunteers_tension = 0.05
                 guarantee_tension = 0.04
                 subversive_activities_upkeep = -0.10
             }
@@ -200,15 +165,13 @@ ideas = {
                 stability_factor = -0.07
                 consumer_goods_factor = -0.05
                 industrial_construction_speed_factor = 0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_bolshevik_leninist_factor = 0.25
-                ideology_drift_marxist_leninist_factor = 0.25
+                drift_defence_factor = -0.20
+                bolshevik_leninist_drift = 0.25
+                marxist_leninist_drift = 0.25
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.12
                 ai_get_ally_desire_factor = 0.20
                 ai_join_ally_desire_factor = 0.12
-                send_volunteers_tension = 0.07
                 guarantee_tension = 0.06
                 subversive_activities_upkeep = -0.15
                 ai_focus_aggressive_factor = 0.05
@@ -226,19 +189,16 @@ ideas = {
                 consumer_goods_factor = -0.12
                 industrial_construction_speed_factor = 0.10
                 resistance_target = -0.10
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_bolshevik_leninist_factor = 0.30
-                ideology_drift_marxist_leninist_factor = 0.30
+                drift_defence_factor = -0.25
+                bolshevik_leninist_drift = 0.30
+                marxist_leninist_drift = 0.30
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.15
                 ai_get_ally_desire_factor = 0.25
                 ai_join_ally_desire_factor = 0.15
-                send_volunteers_tension = 0.10
                 guarantee_tension = 0.08
                 subversive_activities_upkeep = -0.20
                 ai_focus_aggressive_factor = 0.10
-                tension_drift_gain = 0.03
             }
         }
         
@@ -253,19 +213,16 @@ ideas = {
                 consumer_goods_factor = -0.15
                 industrial_construction_speed_factor = 0.15
                 resistance_target = -0.15
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_bolshevik_leninist_factor = 0.35
-                ideology_drift_marxist_leninist_factor = 0.35
+                drift_defence_factor = -0.30
+                bolshevik_leninist_drift = 0.35
+                marxist_leninist_drift = 0.35
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.20
                 ai_get_ally_desire_factor = 0.30
                 ai_join_ally_desire_factor = 0.20
-                send_volunteers_tension = 0.12
                 guarantee_tension = 0.10
                 subversive_activities_upkeep = -0.25
                 ai_focus_aggressive_factor = 0.15
-                tension_drift_gain = 0.05
                 surrender_limit = 0.03
             }
         }
@@ -281,19 +238,16 @@ ideas = {
                 consumer_goods_factor = -0.15
                 industrial_construction_speed_factor = 0.15
                 resistance_target = -0.15
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_bolshevik_leninist_factor = 0.40
-                ideology_drift_marxist_leninist_factor = 0.40
+                drift_defence_factor = -0.35
+                bolshevik_leninist_drift = 0.40
+                marxist_leninist_drift = 0.40
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.30
                 ai_get_ally_desire_factor = 0.35
                 ai_join_ally_desire_factor = 0.25
-                send_volunteers_tension = 0.15
                 guarantee_tension = 0.12
                 subversive_activities_upkeep = -0.30
                 ai_focus_aggressive_factor = 0.20
-                tension_drift_gain = 0.08
                 surrender_limit = 0.05
             }
         }
@@ -307,15 +261,13 @@ ideas = {
                 stability_factor = 0.03
                 political_power_factor = 0.02
                 trade_opinion_factor = 0.05
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_social_democrat_factor = 0.30
+                drift_defence_factor = -0.10
+                social_democrat_drift = 0.30
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.10
                 ai_get_ally_desire_factor = 0.15
                 ai_join_ally_desire_factor = 0.10
                 guarantee_cost = -0.05
-                tension_drift_gain = -0.03
             }
         }
         
@@ -328,15 +280,13 @@ ideas = {
                 political_power_factor = 0.03
                 trade_opinion_factor = 0.10
                 consumer_goods_factor = 0.02
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_social_democrat_factor = 0.40
+                drift_defence_factor = -0.15
+                social_democrat_drift = 0.40
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.15
                 ai_get_ally_desire_factor = 0.20
                 ai_join_ally_desire_factor = 0.15
                 guarantee_cost = -0.08
-                tension_drift_gain = -0.05
                 trade_opinion_factor = 0.05
             }
         }
@@ -351,17 +301,14 @@ ideas = {
                 trade_opinion_factor = 0.15
                 consumer_goods_factor = 0.05
                 mobilization_speed = -0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_social_democrat_factor = 0.50
+                drift_defence_factor = -0.20
+                social_democrat_drift = 0.50
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.20
                 ai_get_ally_desire_factor = 0.25
                 ai_join_ally_desire_factor = 0.20
                 guarantee_cost = -0.10
-                tension_drift_gain = -0.07
                 trade_opinion_factor = 0.08
-                war_goal_justification_acceptance = 0.05
             }
         }
         
@@ -376,17 +323,14 @@ ideas = {
                 consumer_goods_factor = 0.08
                 mobilization_speed = -0.05
                 defensive_war_stability_factor = 0.05
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_social_democrat_factor = 0.60
+                drift_defence_factor = -0.25
+                social_democrat_drift = 0.60
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.25
                 ai_get_ally_desire_factor = 0.30
                 ai_join_ally_desire_factor = 0.25
                 guarantee_cost = -0.12
-                tension_drift_gain = -0.10
                 trade_opinion_factor = 0.10
-                war_goal_justification_acceptance = 0.08
                 ai_focus_peaceful_factor = 0.10
             }
         }
@@ -402,19 +346,15 @@ ideas = {
                 consumer_goods_factor = 0.10
                 mobilization_speed = -0.08
                 defensive_war_stability_factor = 0.10
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_social_democrat_factor = 0.70
+                drift_defence_factor = -0.30
+                social_democrat_drift = 0.70
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.30
                 ai_get_ally_desire_factor = 0.35
                 ai_join_ally_desire_factor = 0.30
                 guarantee_cost = -0.15
-                tension_drift_gain = -0.12
                 trade_opinion_factor = 0.12
-                war_goal_justification_acceptance = 0.10
                 ai_focus_peaceful_factor = 0.15
-                lend_lease_tension_factor = -0.10
             }
         }
         
@@ -429,19 +369,15 @@ ideas = {
                 consumer_goods_factor = 0.15
                 mobilization_speed = -0.10
                 defensive_war_stability_factor = 0.15
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_social_democrat_factor = 0.80
+                drift_defence_factor = -0.35
+                social_democrat_drift = 0.80
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.35
                 ai_get_ally_desire_factor = 0.40
                 ai_join_ally_desire_factor = 0.35
                 guarantee_cost = -0.18
-                tension_drift_gain = -0.15
                 trade_opinion_factor = 0.15
-                war_goal_justification_acceptance = 0.12
                 ai_focus_peaceful_factor = 0.20
-                lend_lease_tension_factor = -0.15
             }
         }
         
@@ -454,15 +390,13 @@ ideas = {
                 stability_factor = 0.02
                 political_power_factor = 0.03
                 army_morale_factor = 0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_paternal_autocrat_factor = 0.15
-                ideology_drift_conservative_factor = 0.15
+                drift_defence_factor = -0.10
+                paternal_autocrat_drift = 0.15
+                conservative_drift = 0.15
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.05
                 ai_join_ally_desire_factor = 0.03
-                send_volunteers_tension = 0.02
-                justify_war_goal_time = -0.05
             }
         }
         
@@ -475,16 +409,13 @@ ideas = {
                 political_power_factor = 0.05
                 army_morale_factor = 0.05
                 conservative_acceptance = 5
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_paternal_autocrat_factor = 0.20
-                ideology_drift_conservative_factor = 0.20
+                drift_defence_factor = -0.15
+                paternal_autocrat_drift = 0.20
+                conservative_drift = 0.20
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.08
                 ai_join_ally_desire_factor = 0.05
-                send_volunteers_tension = 0.04
-                justify_war_goal_time = -0.08
-                tension_drift_gain = 0.02
             }
         }
         
@@ -498,16 +429,13 @@ ideas = {
                 army_morale_factor = 0.08
                 conservative_acceptance = 10
                 army_org_factor = 0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_paternal_autocrat_factor = 0.25
-                ideology_drift_conservative_factor = 0.25
+                drift_defence_factor = -0.20
+                paternal_autocrat_drift = 0.25
+                conservative_drift = 0.25
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.12
                 ai_join_ally_desire_factor = 0.08
-                send_volunteers_tension = 0.06
-                justify_war_goal_time = -0.10
-                tension_drift_gain = 0.04
                 ai_focus_aggressive_factor = 0.05
             }
         }
@@ -523,16 +451,13 @@ ideas = {
                 conservative_acceptance = 15
                 army_org_factor = 0.05
                 division_defense_factor = 0.02
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_paternal_autocrat_factor = 0.30
-                ideology_drift_conservative_factor = 0.30
+                drift_defence_factor = -0.25
+                paternal_autocrat_drift = 0.30
+                conservative_drift = 0.30
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.15
                 ai_join_ally_desire_factor = 0.10
-                send_volunteers_tension = 0.08
-                justify_war_goal_time = -0.12
-                tension_drift_gain = 0.06
                 ai_focus_aggressive_factor = 0.08
                 surrender_limit = 0.03
             }
@@ -549,16 +474,13 @@ ideas = {
                 conservative_acceptance = 20
                 army_org_factor = 0.08
                 division_defense_factor = 0.05
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_paternal_autocrat_factor = 0.35
-                ideology_drift_conservative_factor = 0.35
+                drift_defence_factor = -0.30
+                paternal_autocrat_drift = 0.35
+                conservative_drift = 0.35
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.18
                 ai_join_ally_desire_factor = 0.12
-                send_volunteers_tension = 0.10
-                justify_war_goal_time = -0.15
-                tension_drift_gain = 0.08
                 ai_focus_aggressive_factor = 0.10
                 surrender_limit = 0.05
             }
@@ -575,16 +497,13 @@ ideas = {
                 conservative_acceptance = 25
                 army_org_factor = 0.10
                 division_defense_factor = 0.08
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_paternal_autocrat_factor = 0.40
-                ideology_drift_conservative_factor = 0.40
+                drift_defence_factor = -0.35
+                paternal_autocrat_drift = 0.40
+                conservative_drift = 0.40
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.22
                 ai_join_ally_desire_factor = 0.15
-                send_volunteers_tension = 0.12
-                justify_war_goal_time = -0.18
-                tension_drift_gain = 0.10
                 ai_focus_aggressive_factor = 0.12
                 surrender_limit = 0.08
             }
@@ -599,15 +518,11 @@ ideas = {
                 political_power_factor = 0.05
                 stability_factor = 0.02
                 army_org_factor = 0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_paternal_autocrat_factor = 0.15
-                ideology_drift_fascist_factor = 0.15
+                drift_defence_factor = -0.10
+                paternal_autocrat_drift = 0.15
+                fascist_drift = 0.15
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.08
-                ai_wants_more_divisions_factor = 0.03
-                join_faction_tension = 0.04
-                send_volunteers_tension = 0.02
             }
         }
         
@@ -620,16 +535,11 @@ ideas = {
                 stability_factor = 0.05
                 army_org_factor = 0.05
                 fascist_acceptance = 5
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_paternal_autocrat_factor = 0.20
-                ideology_drift_fascist_factor = 0.20
+                drift_defence_factor = -0.15
+                paternal_autocrat_drift = 0.20
+                fascist_drift = 0.20
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.12
-                ai_wants_more_divisions_factor = 0.05
-                join_faction_tension = 0.06
-                send_volunteers_tension = 0.04
-                justify_war_goal_time = -0.08
             }
         }
         
@@ -643,16 +553,11 @@ ideas = {
                 army_org_factor = 0.08
                 fascist_acceptance = 10
                 mobilization_speed = 0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_paternal_autocrat_factor = 0.25
-                ideology_drift_fascist_factor = 0.25
+                drift_defence_factor = -0.20
+                paternal_autocrat_drift = 0.25
+                fascist_drift = 0.25
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.16
-                ai_wants_more_divisions_factor = 0.08
-                join_faction_tension = 0.08
-                send_volunteers_tension = 0.06
-                justify_war_goal_time = -0.12
                 ai_focus_aggressive_factor = 0.08
             }
         }
@@ -668,18 +573,12 @@ ideas = {
                 fascist_acceptance = 15
                 mobilization_speed = 0.05
                 division_attack_factor = 0.02
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_paternal_autocrat_factor = 0.30
-                ideology_drift_fascist_factor = 0.30
+                drift_defence_factor = -0.25
+                paternal_autocrat_drift = 0.30
+                fascist_drift = 0.30
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.20
-                ai_wants_more_divisions_factor = 0.12
-                join_faction_tension = 0.10
-                send_volunteers_tension = 0.08
-                justify_war_goal_time = -0.15
                 ai_focus_aggressive_factor = 0.12
-                tension_drift_gain = 0.04
             }
         }
         
@@ -694,18 +593,12 @@ ideas = {
                 fascist_acceptance = 20
                 mobilization_speed = 0.08
                 division_attack_factor = 0.05
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_paternal_autocrat_factor = 0.35
-                ideology_drift_fascist_factor = 0.35
+                drift_defence_factor = -0.30
+                paternal_autocrat_drift = 0.35
+                fascist_drift = 0.35
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.25
-                ai_wants_more_divisions_factor = 0.15
-                join_faction_tension = 0.12
-                send_volunteers_tension = 0.10
-                justify_war_goal_time = -0.18
                 ai_focus_aggressive_factor = 0.15
-                tension_drift_gain = 0.06
                 surrender_limit = 0.04
             }
         }
@@ -721,18 +614,12 @@ ideas = {
                 fascist_acceptance = 25
                 mobilization_speed = 0.10
                 division_attack_factor = 0.08
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_paternal_autocrat_factor = 0.40
-                ideology_drift_fascist_factor = 0.40
+                drift_defence_factor = -0.35
+                paternal_autocrat_drift = 0.40
+                fascist_drift = 0.40
                 
                 # AI and Diplomacy
-                ai_wants_offensive_war_factor = 0.30
-                ai_wants_more_divisions_factor = 0.18
-                join_faction_tension = 0.15
-                send_volunteers_tension = 0.12
-                justify_war_goal_time = -0.22
                 ai_focus_aggressive_factor = 0.18
-                tension_drift_gain = 0.08
                 surrender_limit = 0.06
             }
         }
@@ -746,15 +633,13 @@ ideas = {
                 stability_factor = 0.03
                 political_power_factor = 0.02
                 consumer_goods_factor = 0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_liberal_factor = 0.30
+                drift_defence_factor = -0.10
+                liberal_drift = 0.30
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.08
                 ai_get_ally_desire_factor = 0.12
                 ai_join_ally_desire_factor = 0.08
                 guarantee_cost = -0.04
-                tension_drift_gain = -0.02
             }
         }
         
@@ -767,15 +652,13 @@ ideas = {
                 political_power_factor = 0.03
                 consumer_goods_factor = 0.05
                 liberal_acceptance = 5
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_liberal_factor = 0.40
+                drift_defence_factor = -0.15
+                liberal_drift = 0.40
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.12
                 ai_get_ally_desire_factor = 0.16
                 ai_join_ally_desire_factor = 0.12
                 guarantee_cost = -0.06
-                tension_drift_gain = -0.04
                 trade_opinion_factor = 0.04
             }
         }
@@ -790,17 +673,14 @@ ideas = {
                 consumer_goods_factor = 0.08
                 liberal_acceptance = 10
                 trade_opinion_factor = 0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_liberal_factor = 0.50
+                drift_defence_factor = -0.20
+                liberal_drift = 0.50
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.16
                 ai_get_ally_desire_factor = 0.20
                 ai_join_ally_desire_factor = 0.16
                 guarantee_cost = -0.08
-                tension_drift_gain = -0.06
                 trade_opinion_factor = 0.06
-                war_goal_justification_acceptance = 0.04
             }
         }
         
@@ -815,17 +695,14 @@ ideas = {
                 liberal_acceptance = 30
                 trade_opinion_factor = 0.10
                 production_factory_efficiency_gain_factor = 0.10
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_liberal_factor = 0.60
+                drift_defence_factor = -0.25
+                liberal_drift = 0.60
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.20
                 ai_get_ally_desire_factor = 0.24
                 ai_join_ally_desire_factor = 0.20
                 guarantee_cost = -0.10
-                tension_drift_gain = -0.08
                 trade_opinion_factor = 0.08
-                war_goal_justification_acceptance = 0.06
                 ai_focus_peaceful_factor = 0.08
             }
         }
@@ -841,19 +718,15 @@ ideas = {
                 liberal_acceptance = 35
                 trade_opinion_factor = 0.15
                 production_factory_efficiency_gain_factor = 0.15
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_liberal_factor = 0.70
+                drift_defence_factor = -0.30
+                liberal_drift = 0.70
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.24
                 ai_get_ally_desire_factor = 0.28
                 ai_join_ally_desire_factor = 0.24
                 guarantee_cost = -0.12
-                tension_drift_gain = -0.10
                 trade_opinion_factor = 0.10
-                war_goal_justification_acceptance = 0.08
                 ai_focus_peaceful_factor = 0.12
-                lend_lease_tension_factor = -0.08
             }
         }
         
@@ -868,19 +741,15 @@ ideas = {
                 liberal_acceptance = 25
                 trade_opinion_factor = 0.10
                 production_factory_efficiency_gain_factor = 0.08
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_liberal_factor = 0.80
+                drift_defence_factor = -0.35
+                liberal_drift = 0.80
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.28
                 ai_get_ally_desire_factor = 0.32
                 ai_join_ally_desire_factor = 0.28
                 guarantee_cost = -0.14
-                tension_drift_gain = -0.12
                 trade_opinion_factor = 0.12
-                war_goal_justification_acceptance = 0.10
                 ai_focus_peaceful_factor = 0.15
-                lend_lease_tension_factor = -0.12
             }
         }
         
@@ -893,15 +762,13 @@ ideas = {
                 stability_factor = 0.02
                 political_power_factor = 0.03
                 army_morale_factor = 0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_conservative_factor = 0.15
-                ideology_drift_paternal_autocrat_factor = 0.15
+                drift_defence_factor = -0.10
+                conservative_drift = 0.15
+                paternal_autocrat_drift = 0.15
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.06
                 ai_join_ally_desire_factor = 0.04
-                send_volunteers_tension = 0.03
-                justify_war_goal_time = -0.06
             }
         }
         
@@ -914,16 +781,13 @@ ideas = {
                 political_power_factor = 0.05
                 army_morale_factor = 0.05
                 conservative_acceptance = 5
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_conservative_factor = 0.20
-                ideology_drift_paternal_autocrat_factor = 0.20
+                drift_defence_factor = -0.15
+                conservative_drift = 0.20
+                paternal_autocrat_drift = 0.20
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.09
                 ai_join_ally_desire_factor = 0.06
-                send_volunteers_tension = 0.05
-                justify_war_goal_time = -0.09
-                tension_drift_gain = 0.03
             }
         }
         
@@ -937,16 +801,13 @@ ideas = {
                 army_morale_factor = 0.08
                 conservative_acceptance = 10
                 division_defense_factor = 0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_conservative_factor = 0.25
-                ideology_drift_paternal_autocrat_factor = 0.25
+                drift_defence_factor = -0.20
+                conservative_drift = 0.25
+                paternal_autocrat_drift = 0.25
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.13
                 ai_join_ally_desire_factor = 0.09
-                send_volunteers_tension = 0.07
-                justify_war_goal_time = -0.11
-                tension_drift_gain = 0.05
                 ai_focus_aggressive_factor = 0.06
             }
         }
@@ -962,16 +823,13 @@ ideas = {
                 conservative_acceptance = 15
                 division_defense_factor = 0.05
                 army_org_factor = 0.02
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_conservative_factor = 0.30
-                ideology_drift_paternal_autocrat_factor = 0.30
+                drift_defence_factor = -0.25
+                conservative_drift = 0.30
+                paternal_autocrat_drift = 0.30
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.16
                 ai_join_ally_desire_factor = 0.11
-                send_volunteers_tension = 0.09
-                justify_war_goal_time = -0.13
-                tension_drift_gain = 0.07
                 ai_focus_aggressive_factor = 0.09
                 surrender_limit = 0.04
             }
@@ -988,16 +846,13 @@ ideas = {
                 conservative_acceptance = 20
                 division_defense_factor = 0.08
                 army_org_factor = 0.05
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_conservative_factor = 0.35
-                ideology_drift_paternal_autocrat_factor = 0.35
+                drift_defence_factor = -0.30
+                conservative_drift = 0.35
+                paternal_autocrat_drift = 0.35
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.19
                 ai_join_ally_desire_factor = 0.13
-                send_volunteers_tension = 0.11
-                justify_war_goal_time = -0.16
-                tension_drift_gain = 0.09
                 ai_focus_aggressive_factor = 0.11
                 surrender_limit = 0.06
             }
@@ -1014,16 +869,13 @@ ideas = {
                 conservative_acceptance = 25
                 division_defense_factor = 0.10
                 army_org_factor = 0.08
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_conservative_factor = 0.40
-                ideology_drift_paternal_autocrat_factor = 0.40
+                drift_defence_factor = -0.35
+                conservative_drift = 0.40
+                paternal_autocrat_drift = 0.40
                 
                 # AI and Diplomacy
                 ai_get_ally_desire_factor = 0.23
                 ai_join_ally_desire_factor = 0.16
-                send_volunteers_tension = 0.13
-                justify_war_goal_time = -0.19
-                tension_drift_gain = 0.11
                 ai_focus_aggressive_factor = 0.13
                 surrender_limit = 0.08
             }
@@ -1038,15 +890,13 @@ ideas = {
                 industrial_capacity_factory = 0.02
                 political_power_factor = 0.02
                 stability_factor = 0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_socialist_factor = 0.30
+                drift_defence_factor = -0.10
+                socialist_drift = 0.30
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.05
                 ai_get_ally_desire_factor = 0.08
                 ai_join_ally_desire_factor = 0.05
                 guarantee_cost = -0.03
-                tension_drift_gain = -0.01
             }
         }
         
@@ -1059,15 +909,13 @@ ideas = {
                 political_power_factor = 0.03
                 stability_factor = 0.05
                 socialist_acceptance = 5
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_socialist_factor = 0.40
+                drift_defence_factor = -0.15
+                socialist_drift = 0.40
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.08
                 ai_get_ally_desire_factor = 0.12
                 ai_join_ally_desire_factor = 0.08
                 guarantee_cost = -0.05
-                tension_drift_gain = -0.03
                 subversive_activities_upkeep = -0.05
             }
         }
@@ -1082,17 +930,14 @@ ideas = {
                 stability_factor = 0.08
                 socialist_acceptance = 10
                 consumer_goods_factor = -0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_socialist_factor = 0.50
+                drift_defence_factor = -0.20
+                socialist_drift = 0.50
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.12
                 ai_get_ally_desire_factor = 0.16
                 ai_join_ally_desire_factor = 0.12
                 guarantee_cost = -0.07
-                tension_drift_gain = -0.05
                 subversive_activities_upkeep = -0.08
-                war_goal_justification_acceptance = 0.03
             }
         }
         
@@ -1107,17 +952,14 @@ ideas = {
                 socialist_acceptance = 15
                 consumer_goods_factor = -0.05
                 industrial_construction_speed_factor = 0.02
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_socialist_factor = 0.60
+                drift_defence_factor = -0.25
+                socialist_drift = 0.60
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.16
                 ai_get_ally_desire_factor = 0.20
                 ai_join_ally_desire_factor = 0.16
                 guarantee_cost = -0.09
-                tension_drift_gain = -0.07
                 subversive_activities_upkeep = -0.12
-                war_goal_justification_acceptance = 0.05
                 ai_focus_peaceful_factor = 0.06
             }
         }
@@ -1133,19 +975,15 @@ ideas = {
                 socialist_acceptance = 20
                 consumer_goods_factor = -0.08
                 industrial_construction_speed_factor = 0.05
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_socialist_factor = 0.70
+                drift_defence_factor = -0.30
+                socialist_drift = 0.70
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.20
                 ai_get_ally_desire_factor = 0.24
                 ai_join_ally_desire_factor = 0.20
                 guarantee_cost = -0.11
-                tension_drift_gain = -0.09
                 subversive_activities_upkeep = -0.15
-                war_goal_justification_acceptance = 0.07
                 ai_focus_peaceful_factor = 0.09
-                lend_lease_tension_factor = -0.06
             }
         }
         
@@ -1160,19 +998,15 @@ ideas = {
                 socialist_acceptance = 25
                 consumer_goods_factor = -0.10
                 industrial_construction_speed_factor = 0.08
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_socialist_factor = 0.80
+                drift_defence_factor = -0.35
+                socialist_drift = 0.80
                 
                 # AI and Diplomacy
-                ai_wants_ally_factor = 0.24
                 ai_get_ally_desire_factor = 0.28
                 ai_join_ally_desire_factor = 0.24
                 guarantee_cost = -0.13
-                tension_drift_gain = -0.11
                 subversive_activities_upkeep = -0.18
-                war_goal_justification_acceptance = 0.09
                 ai_focus_peaceful_factor = 0.12
-                lend_lease_tension_factor = -0.09
             }
         }
         
@@ -1185,15 +1019,14 @@ ideas = {
                 research_speed_factor = 0.02
                 political_power_factor = 0.02
                 stability_factor = 0.02
-                ideology_drift_defence_factor = -0.10
-                ideology_drift_paternal_autocrat_factor = 0.15
-                ideology_drift_conservative_factor = 0.15
+                drift_defence_factor = -0.10
+                paternal_autocrat_drift = 0.15
+                conservative_drift = 0.15
                 
                 # AI and Diplomacy
                 ai_accept_join_faction_desire = 0.05
                 ai_accept_ally_desire = 0.05
                 trade_opinion_factor = 0.03
-                tension_drift_gain = -0.02
             }
         }
         
@@ -1205,17 +1038,14 @@ ideas = {
                 research_speed_factor = 0.05
                 political_power_factor = 0.03
                 stability_factor = 0.05
-                acceptance_of_democratic_diplomacy = 5
-                ideology_drift_defence_factor = -0.15
-                ideology_drift_paternal_autocrat_factor = 0.20
-                ideology_drift_conservative_factor = 0.20
+                drift_defence_factor = -0.15
+                paternal_autocrat_drift = 0.20
+                conservative_drift = 0.20
                 
                 # AI and Diplomacy
                 ai_accept_join_faction_desire = 0.08
                 ai_accept_ally_desire = 0.08
                 trade_opinion_factor = 0.06
-                tension_drift_gain = -0.04
-                send_volunteers_tension = 0.02
             }
         }
         
@@ -1227,18 +1057,15 @@ ideas = {
                 research_speed_factor = 0.08
                 political_power_factor = 0.05
                 stability_factor = 0.08
-                acceptance_of_democratic_diplomacy = 10
                 production_factory_efficiency_gain_factor = 0.02
-                ideology_drift_defence_factor = -0.20
-                ideology_drift_paternal_autocrat_factor = 0.25
-                ideology_drift_conservative_factor = 0.25
+                drift_defence_factor = -0.20
+                paternal_autocrat_drift = 0.25
+                conservative_drift = 0.25
                 
                 # AI and Diplomacy
                 ai_accept_join_faction_desire = 0.12
                 ai_accept_ally_desire = 0.12
                 trade_opinion_factor = 0.09
-                tension_drift_gain = -0.06
-                send_volunteers_tension = 0.04
                 guarantee_cost = -0.04
             }
         }
@@ -1251,19 +1078,16 @@ ideas = {
                 research_speed_factor = 0.10
                 political_power_factor = 0.07
                 stability_factor = 0.10
-                acceptance_of_democratic_diplomacy = 15
                 production_factory_efficiency_gain_factor = 0.05
                 industrial_construction_speed_factor = 0.02
-                ideology_drift_defence_factor = -0.25
-                ideology_drift_paternal_autocrat_factor = 0.30
-                ideology_drift_conservative_factor = 0.30
+                drift_defence_factor = -0.25
+                paternal_autocrat_drift = 0.30
+                conservative_drift = 0.30
                 
                 # AI and Diplomacy
                 ai_accept_join_faction_desire = 0.15
                 ai_accept_ally_desire = 0.15
                 trade_opinion_factor = 0.12
-                tension_drift_gain = -0.08
-                send_volunteers_tension = 0.06
                 guarantee_cost = -0.06
                 ai_focus_peaceful_factor = 0.07
             }
@@ -1277,22 +1101,18 @@ ideas = {
                 research_speed_factor = 0.15
                 political_power_factor = 0.10
                 stability_factor = 0.15
-                acceptance_of_democratic_diplomacy = 20
                 production_factory_efficiency_gain_factor = 0.08
                 industrial_construction_speed_factor = 0.05
-                ideology_drift_defence_factor = -0.30
-                ideology_drift_paternal_autocrat_factor = 0.35
-                ideology_drift_conservative_factor = 0.35
+                drift_defence_factor = -0.30
+                paternal_autocrat_drift = 0.35
+                conservative_drift = 0.35
                 
                 # AI and Diplomacy
                 ai_accept_join_faction_desire = 0.18
                 ai_accept_ally_desire = 0.18
                 trade_opinion_factor = 0.15
-                tension_drift_gain = -0.10
-                send_volunteers_tension = 0.08
                 guarantee_cost = -0.08
                 ai_focus_peaceful_factor = 0.10
-                lend_lease_tension_factor = -0.07
             }
         }
         
@@ -1304,22 +1124,18 @@ ideas = {
                 research_speed_factor = 0.20
                 political_power_factor = 0.15
                 stability_factor = 0.20
-                acceptance_of_democratic_diplomacy = 25
                 production_factory_efficiency_gain_factor = 0.10
                 industrial_construction_speed_factor = 0.08
-                ideology_drift_defence_factor = -0.35
-                ideology_drift_paternal_autocrat_factor = 0.40
-                ideology_drift_conservative_factor = 0.40
+                drift_defence_factor = -0.35
+                paternal_autocrat_drift = 0.40
+                conservative_drift = 0.40
                 
                 # AI and Diplomacy
                 ai_accept_join_faction_desire = 0.22
                 ai_accept_ally_desire = 0.22
                 trade_opinion_factor = 0.18
-                tension_drift_gain = -0.12
-                send_volunteers_tension = 0.10
                 guarantee_cost = -0.10
                 ai_focus_peaceful_factor = 0.13
-                lend_lease_tension_factor = -0.10
             }
         }
         
@@ -1349,7 +1165,6 @@ ideas = {
             removal_cost = -1
             modifier = {
                 war_support = 0.1
-                justify_war_goal_time = -0.1
             }
         }
         TWR_neutrality_commitment = {
@@ -1358,7 +1173,6 @@ ideas = {
             removal_cost = -1
             modifier = {
                 trade_opinion_factor = 0.3
-                justify_war_goal_time = 0.2
             }
         }
     }
