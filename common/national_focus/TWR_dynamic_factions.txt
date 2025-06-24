@@ -7,4 +7,4 @@ shared_focus = {
       hidden_effect = { country_event = { id = TWR_faction_creation.1 } }
     }
 }
-// Add this focus to the end of each ideology's alignment tree as appropriate.
+# Add this focus to the end of each ideology's alignment tree as appropriate.
