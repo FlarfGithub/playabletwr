@@ -120,9 +120,7 @@ shared_focus = {
     TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
-
   mutually_exclusive = { focus = PTWR_communist_join_workers_front focus = PTWR_communist_neutral_path focus = PTWR_communist_own_path }
-
   completion_reward = {
     add_to_faction = SOV
     add_ideas = TWR_faction_member_spirit
@@ -140,9 +138,7 @@ shared_focus = {
     TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
-
   mutually_exclusive = { focus = PTWR_communist_join_comintern focus = PTWR_communist_neutral_path focus = PTWR_communist_own_path }
-
   completion_reward = {
     add_to_faction = FRA
     add_ideas = TWR_faction_member_spirit
@@ -285,6 +281,7 @@ shared_focus = {
   y = 1
   cost = 10
   prerequisite = { focus = PTWR_monarchist_alignment_options }
+  mutually_exclusive = { focus = PTWR_monarchist_neutral_path focus = PTWR_monarchist_own_path }
   available = {
     TWR_fascist_faction_exists = yes
     NOT = { is_in_faction = yes }
@@ -357,6 +354,7 @@ shared_focus = {
   y = 1
   cost = 10
   prerequisite = { focus = PTWR_authoritarian_alignment_options }
+  mutually_exclusive = { focus = PTWR_authoritarian_neutral_path focus = PTWR_authoritarian_own_path }
   available = {
     TWR_fascist_faction_exists = yes
     NOT = { is_in_faction = yes }
@@ -575,6 +573,7 @@ shared_focus = {
   y = 1
   cost = 10
   prerequisite = { focus = PTWR_socialist_alignment_options }
+  mutually_exclusive = { focus = PTWR_socialist_join_comintern focus = PTWR_socialist_neutral_path focus = PTWR_socialist_own_path }
   available = {
     TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
@@ -592,6 +591,7 @@ shared_focus = {
   y = 1
   cost = 10
   prerequisite = { focus = PTWR_socialist_alignment_options }
+  mutually_exclusive = { focus = PTWR_socialist_join_workers_front focus = PTWR_socialist_neutral_path focus = PTWR_socialist_own_path }
   available = {
     TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
@@ -665,6 +665,7 @@ shared_focus = {
   y = 1
   cost = 10
   prerequisite = { focus = PTWR_technocrat_alignment_options }
+  mutually_exclusive = { focus = PTWR_technocrat_neutral_path focus = PTWR_technocrat_own_path }
   available = {
     TWR_technocrat_faction_exists = yes
     NOT = { is_in_faction = yes }

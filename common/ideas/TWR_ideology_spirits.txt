@@ -1218,4 +1218,8 @@ ideas = {
             army_experience_gain = 0.05
         }
     }
+    # close the country block
+  }
+# close the ideas container
 }
+
