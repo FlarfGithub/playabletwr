@@ -1,4 +1,4 @@
-ideas = {
+ideas = 
     political_advisor = {
         PTWR_generic_fascist_advisor = {
             picture = generic_fascist

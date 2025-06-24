@@ -5,7 +5,7 @@ political_actions = {
         visible = { has_political_power > 0 }
         cost = 200
         available = {
-            has_diplomatic_relation = no
+            always = yes
         }
         complete_effect = {
             add_opinion_modifier = { target = FROM modifier = embargo }
