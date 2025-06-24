@@ -1,9 +1,10 @@
 shared_focus = {
   id = PTWR_fascist_alignment_start
   icon = GFX_goal_generic_diplomatic_meeting
-  relative_position_id = PTWR_fascist_victory
   x = 0
   y = 1
+  cost = 10
+  relative_position_id = PTWR_fascist_victory
   cost = 10
   prerequisite = { focus = PTWR_fascist_victory }
   available = {
@@ -85,10 +86,10 @@ shared_focus = {
 shared_focus = {
   id = PTWR_communist_alignment_start
   icon = GFX_goal_generic_diplomatic_meeting
-  relative_position_id = PTWR_communist_victory
   x = 0
   y = 1
   cost = 10
+  relative_position_id = PTWR_communist_victory
   prerequisite = { focus = PTWR_communist_victory }
   available = {
     NOT = { has_war = yes }
@@ -177,10 +178,10 @@ shared_focus = {
 shared_focus = {
   id = PTWR_democratic_alignment_start
   icon = GFX_goal_generic_diplomatic_meeting
-  relative_position_id = PTWR_democratic_victory
   x = 0
   y = 1
   cost = 10
+  relative_position_id = PTWR_democratic_victory
   prerequisite = { focus = PTWR_democratic_victory }
   available = {
     NOT = { has_war = yes }
@@ -250,10 +251,10 @@ shared_focus = {
 shared_focus = {
   id = PTWR_monarchist_alignment_start
   icon = GFX_goal_generic_diplomatic_meeting
-  relative_position_id = PTWR_monarchist_victory
   x = 0
   y = 1
   cost = 10
+  relative_position_id = PTWR_monarchist_victory
   prerequisite = { focus = PTWR_monarchist_victory }
   available = {
     NOT = { has_war = yes }
@@ -323,10 +324,10 @@ shared_focus = {
 shared_focus = {
   id = PTWR_authoritarian_alignment_start
   icon = GFX_goal_generic_diplomatic_meeting
-  relative_position_id = PTWR_authoritarian_victory
   x = 0
   y = 1
   cost = 10
+  relative_position_id = PTWR_authoritarian_victory
   prerequisite = { focus = PTWR_authoritarian_victory }
   available = {
     NOT = { has_war = yes }
@@ -396,10 +397,10 @@ shared_focus = {
 shared_focus = {
   id = PTWR_liberal_alignment_start
   icon = GFX_goal_generic_diplomatic_meeting
-  relative_position_id = PTWR_liberal_victory
   x = 0
   y = 1
   cost = 10
+  relative_position_id = PTWR_liberal_victory
   prerequisite = { focus = PTWR_liberal_victory }
   available = {
     NOT = { has_war = yes }
@@ -469,10 +470,10 @@ shared_focus = {
 shared_focus = {
   id = PTWR_conservative_alignment_start
   icon = GFX_goal_generic_diplomatic_meeting
-  relative_position_id = PTWR_conservative_victory
   x = 0
   y = 1
   cost = 10
+  relative_position_id = PTWR_conservative_victory
   prerequisite = { focus = PTWR_conservative_victory }
   available = {
     NOT = { has_war = yes }
