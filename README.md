@@ -155,6 +155,16 @@ For issues, questions, or suggestions:
 - Join our Discord server (link coming soon)
 - Check the Steam Workshop page (coming soon)
 
+## Documentation
+
+The [Hearts of Iron IV Modding Wiki](https://hoi4.paradoxwikis.com/Category:Modding)
+is the authoritative reference for scripting, effects, and triggers. All files
+in this submod strive to follow the syntax described there. When adding new
+features ensure that you only use triggers and effects present in the base game
+or the latest Thousand Week Reich release. The main TWR repository is available
+at [FlarfGithub/originaltwrmod](https://github.com/FlarfGithub/originaltwrmod)
+for additional examples and integration guidance.
+
 ---
 
 **Note**: This is a submod and requires the Thousand Week Reich mod to function. Always ensure TWR is up to date and properly installed. 

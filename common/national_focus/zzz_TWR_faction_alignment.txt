@@ -33,7 +33,7 @@ shared_focus = {
   prerequisite = { focus = PTWR_fascist_alignment_options }
   mutually_exclusive = { focus = PTWR_fascist_mediterranean_pact focus = PTWR_fascist_neutral_path focus = PTWR_fascist_own_path }
   available = {
-    faction_exists = neue_ordnung
+    TWR_fascist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
@@ -50,7 +50,7 @@ shared_focus = {
   prerequisite = { focus = PTWR_fascist_alignment_options }
   mutually_exclusive = { focus = PTWR_fascist_join_neue_ordnung focus = PTWR_fascist_neutral_path focus = PTWR_fascist_own_path }
   available = {
-    faction_exists = mediterranean_pact
+    TWR_fascist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
@@ -117,11 +117,12 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_communist_alignment_options }
   available = {
-    faction_exists = comintern
+    TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
+  mutually_exclusive = { focus = PTWR_communist_join_workers_front focus = PTWR_communist_neutral_path focus = PTWR_communist_own_path }
   completion_reward = {
-    join_faction = comintern
+    add_to_faction = SOV
     add_ideas = TWR_faction_member_spirit
   }
 }
@@ -134,11 +135,12 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_communist_alignment_options }
   available = {
-    faction_exists = workers_front
+    TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
+  mutually_exclusive = { focus = PTWR_communist_join_comintern focus = PTWR_communist_neutral_path focus = PTWR_communist_own_path }
   completion_reward = {
-    join_faction = workers_front
+    add_to_faction = FRA
     add_ideas = TWR_faction_member_spirit
   }
 }
@@ -208,7 +210,7 @@ shared_focus = {
   prerequisite = { focus = PTWR_democratic_alignment_options }
   mutually_exclusive = { focus = PTWR_democratic_neutral_path focus = PTWR_democratic_own_path }
   available = {
-    faction_exists = toronto_accord
+    TWR_democratic_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
@@ -280,7 +282,7 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_monarchist_alignment_options }
   available = {
-    faction_exists = mediterranean_pact
+    TWR_fascist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
@@ -352,7 +354,7 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_authoritarian_alignment_options }
   available = {
-    faction_exists = mediterranean_pact
+    TWR_fascist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
@@ -425,7 +427,7 @@ shared_focus = {
   prerequisite = { focus = PTWR_liberal_alignment_options }
   mutually_exclusive = { focus = PTWR_liberal_neutral_path focus = PTWR_liberal_own_path }
   available = {
-    faction_exists = toronto_accord
+    TWR_democratic_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
@@ -498,7 +500,7 @@ shared_focus = {
   prerequisite = { focus = PTWR_conservative_alignment_options }
   mutually_exclusive = { focus = PTWR_conservative_neutral_path focus = PTWR_conservative_own_path }
   available = {
-    faction_exists = toronto_accord
+    TWR_democratic_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
@@ -570,11 +572,11 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_socialist_alignment_options }
   available = {
-    faction_exists = workers_front
+    TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
-    join_faction = workers_front
+    add_to_faction = FRA
     add_ideas = TWR_faction_member_spirit
   }
 }
@@ -587,11 +589,11 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_socialist_alignment_options }
   available = {
-    faction_exists = comintern
+    TWR_communist_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
-    join_faction = comintern
+    add_to_faction = SOV
     add_ideas = TWR_faction_member_spirit
   }
 }
@@ -660,11 +662,11 @@ shared_focus = {
   cost = 10
   prerequisite = { focus = PTWR_technocrat_alignment_options }
   available = {
-    faction_exists = technate
+    TWR_technocrat_faction_exists = yes
     NOT = { is_in_faction = yes }
   }
   completion_reward = {
-    join_faction = technate
+    TWR_create_faction_effect = yes
     add_ideas = TWR_faction_member_spirit
   }
 }
